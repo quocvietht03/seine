@@ -1,0 +1,256 @@
+.__bt-team-style-default {
+  .bt-post {
+    &--inner {
+      position: relative;
+      overflow: hidden;
+      background: #FFF;
+      border: 1px solid #DBDBDB;
+      border-radius: 15px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    &--thumbnail {
+      line-height: 0;
+    }
+    &--infor {
+      text-align: center;
+      padding: 30px 15px;
+    }
+    &--title {
+      font-size: 22px;
+      margin: 0 0 4px;
+    }
+    &--job {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    &--prf-link {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      color: $color-accent;
+      margin-bottom: 20px;
+      a {
+        text-decoration: underline;
+      }
+    }
+    &--social {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      a {
+        line-height: 0;
+        img {
+          width: auto;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.single-dealer {
+  .bt-main-content-ss {
+    .bt-post {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      &--main {
+        width: calc(66.66% - 15px);
+      }
+      &--sidebar {
+        width: calc(33.33% - 15px);
+      }
+      .bt-main-posts-ss {
+        .bt-post {
+          &--thumbnail {
+            margin-bottom: 50px;
+            .bt-cover-image {
+              border-radius: 20px;
+            }
+          }
+          &--title {
+            font-size: 30px;
+            margin: 0 0 30px;
+          }
+          &--meta {
+            display: flex;
+            flex-wrap: wrap;
+            background: #FFFFFF;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 1px solid #DADADA;
+            border-radius: 10px;
+          }
+          &--meta-col {
+            width: 33.33%;
+            &:not(:last-child) {
+              width: calc(33.33% - 1px);
+              border-right: 1px solid #DADADA;
+            }
+          }
+          &--meta-item {
+            padding: 18px 30px;
+            .bt-meta-item {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              font-size: 16px;
+              line-height: 150%;
+              padding-left: 32px;
+            }
+            svg {
+              position: absolute;
+              top: 5px;
+              left: 0;
+              width: 22px;
+              height: auto;
+              color: $color-accent;
+            }
+            .bt-label {
+              font-size: 14px;
+              color: #848484;
+            }
+            .bt-value {
+              font-weight: 500;
+            }
+          }
+          &--content {
+            @extend .__bt-format-post-content;
+            &:after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+            a {
+              text-decoration: underline;
+            }
+            .page-links {
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+      .bt-car-by-dealer-ss {
+        padding-top: 105px;
+        &--heading {
+          font-size: 30px;
+          margin: 0 0 40px;
+        }
+        &--list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          .bt-post {
+            @extend .__bt-post-car-default;
+            width: calc(50% - 15px);
+          }
+        }
+
+        @media(max-width: $break-sm) {
+          &--list {
+            .bt-post {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .bt-review-ss {
+        margin-top: 105px;
+      }
+      .bt-sidebar-wrap {
+        position: sticky;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .bt-sidebar-block {
+          background: #FFFFFF;
+          padding: 30px;
+          overflow: hidden;
+          border: 1px solid #DADADA;
+          border-radius: 20px;
+          .bt-block-heading {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 10px;
+          }
+          &.bt-contact-block {
+            color: #FFFFFF;
+            background: $color-accent;
+            .gform_wrapper {
+              .gform_heading {
+                .gform_title,
+                .gform_description {
+                  color: #FFFFFF;
+                }
+              }
+              .gform-body {
+                input:not([type="checkbox"],[type="radio"]),
+                select,
+                textarea {
+                  color: #FFFFFF;
+                  background: transparent;
+                  border-color: #FFFFFF;
+                }
+              }
+              .gform_footer {
+                input[type="submit"] {
+                  color: $color-secondary !important;
+                  background: #FFFFFF !important;
+                }
+              }
+            }
+          }
+          &.bt-location-block {
+            .bt-location-text {
+              position: relative;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 150%;
+              margin-bottom: 25px;
+              padding-left: 28px;
+              svg {
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 22px;
+                height: auto;
+                fill: $color-accent;
+              }
+            }
+            .bt-location-map {
+              .bt-cover-iframe {
+                padding-bottom: 70%;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media(max-width: $break-lg) {
+
+    }
+
+    @media(max-width: $break-md) {
+      &--main,
+      &--sidebar {
+        width: 100%;
+      }
+    }
+
+    @media(max-width: $break-sm) {
+
+    }
+
+    @media(max-width: $break-xs) {
+
+    }
+
+    @media(max-width: 420px) {
+
+    }
+  }
+}
