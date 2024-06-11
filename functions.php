@@ -25,8 +25,8 @@ add_filter('upload_mimes', 'seine_mime_types');
 if (!function_exists('seine_fonts_url')) {
 	function seine_fonts_url() {
 		global $seine_options;
-		$base_font = 'Muli';
-		$head_font = 'Montserrat';
+		$base_font = 'Cormorant';
+		$head_font = 'DM Sans';
 
 		$font_url = '';
 		if ( 'off' !== _x( 'on', 'Google font: on or off', 'seine' ) ) {
@@ -40,12 +40,12 @@ if (!function_exists('seine_enqueue_scripts')) {
 	function seine_enqueue_scripts() {
 		global $seine_options;
 
-		if(is_singular('car') || is_singular('product')) {
-			wp_enqueue_script('slick-slider', get_template_directory_uri().'/assets/libs/slick/slick.min.js', array('jquery'), '', true);
-			wp_enqueue_style('slick-slider', get_template_directory_uri(). '/assets/libs/slick/slick.css',array(), false);
+		// if(is_singular('car') || is_singular('product')) {
+		// 	wp_enqueue_script('slick-slider', get_template_directory_uri().'/assets/libs/slick/slick.min.js', array('jquery'), '', true);
+		// 	wp_enqueue_style('slick-slider', get_template_directory_uri(). '/assets/libs/slick/slick.css',array(), false);
 
-			wp_enqueue_script('zoom-master', get_template_directory_uri().'/assets/libs/zoom-master/jquery.zoom.min.js', array('jquery'), '', true);
-		}
+		// 	wp_enqueue_script('zoom-master', get_template_directory_uri().'/assets/libs/zoom-master/jquery.zoom.min.js', array('jquery'), '', true);
+		// }
 
 		wp_enqueue_script('select2', get_template_directory_uri().'/assets/libs/select2/select2.min.js', array('jquery'), '', true);
 		wp_enqueue_style('select2', get_template_directory_uri(). '/assets/libs/select2/select2.min.css',array(), false);
@@ -101,13 +101,9 @@ require_once get_template_directory() . '/install/plugin-required.php';
 require_once get_template_directory() . '/install/import-pack/import-functions.php';
 
 /* CPT Load */
-require_once get_template_directory().'/framework/cpt-service.php';
-require_once get_template_directory().'/framework/cpt-car.php';
-require_once get_template_directory().'/framework/cpt-dealer.php';
+require_once get_template_directory().'/framework/cpt-therapist.php';
+require_once get_template_directory().'/framework/cpt-packages.php';
 require_once get_template_directory().'/framework/cpt-testimonial.php';
-require_once get_template_directory().'/framework/cpt-podcast.php';
-require_once get_template_directory().'/framework/cpt-client.php';
-require_once get_template_directory().'/framework/cpt-pricing.php';
 
 /* ACF Options */
 require_once get_template_directory().'/framework/acf-options.php';

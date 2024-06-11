@@ -81,7 +81,7 @@ if ( ! function_exists( 'seine_wp_title' ) ) {
 if (!function_exists('seine_logo')) {
 	function seine_logo($url = '', $height = 30) {
 		if(!$url){
-			$url = get_template_directory_uri().'/assets/images/logo.png';
+			$url = get_template_directory_uri().'/assets/images/site-logo.png';
 		}
 		echo '<a href="'.home_url('/').'"><img class="logo" style="height: '.esc_attr($height).'px; width: auto;" src="'.esc_url($url).'" alt="'.esc_attr__('Logo', 'seine').'"/></a>';
 	}

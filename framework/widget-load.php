@@ -57,38 +57,14 @@ class ElementorWidgets {
 			'post-loop-item',
 			'post-loop-item-style-1',
 			'post-loop-item-style-2',
-			'cars-wishlist',
-			'mini-wishlist',
-			'cars-compare',
-			'mini-compare',
-			'cars-search',
-			'cars-search-style-1',
-			'cars-search-style-2',
-			'car-loop-item',
-			'car-loop-item-style-1',
-			'car-loop-item-style-2',
-			'podcast-grid',
-			'podcast-grid-style-1',
-			'podcast-grid-style-2',
-			'podcast-loop-item',
-			'podcast-loop-item-style-1',
-			'team-loop-item',
 			'testimonial-slider',
 			'testimonial-loop-item',
 			'client-loop-item',
-			'service-loop-item',
-			'service-loop-item-style-1',
-			'service-loop-item-style-2',
-			'pricing-tabs',
 			'orbit-circle',
 			'pattern-background',
 			'buble-background',
 			'product-loop-item',
-			'account-login',
 			'highlighted-heading',
-			'list-image-text',
-			'card-image-text-grid',
-			'list-icon-text',
 		);
 
 		return $this->widgets;
@@ -183,36 +159,17 @@ class ElementorWidgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ContactInformation\Widget_ContactInformation());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PageBreadcrumb\Widget_PageBreadcrumb());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\StepList\Widget_StepList());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarsWishlist\Widget_CarsWishlist());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\MiniWishlist\Widget_MiniWishlist());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarsCompare\Widget_CarsCompare());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\MiniCompare\Widget_MiniCompare());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarsSearch\Widget_CarsSearch());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarsSearchStyle1\Widget_CarsSearchStyle1());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarsSearchStyle2\Widget_CarsSearchStyle2());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarLoopItem\Widget_CarLoopItem());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarLoopItemStyle1\Widget_CarLoopItemStyle1());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CarLoopItemStyle2\Widget_CarLoopItemStyle2());
+
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PostGrid\Widget_PostGrid());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PostGridStyle1\Widget_PostGridStyle1());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PostGridStyle2\Widget_PostGridStyle2());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PostLoopItem\Widget_PostLoopItem());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PostLoopItemStyle1\Widget_PostLoopItemStyle1());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PostLoopItemStyle2\Widget_PostLoopItemStyle2());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PodcastGrid\Widget_PodcastGrid());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PodcastGridStyle1\Widget_PodcastGridStyle1());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PodcastGridStyle2\Widget_PodcastGridStyle2());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PodcastLoopItem\Widget_PodcastLoopItem());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PodcastLoopItemStyle1\Widget_PodcastLoopItemStyle1());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TeamLoopItem\Widget_TeamLoopItem());
+
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TestimonialSlider\Widget_TestimonialSlider());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TestimonialLoopItem\Widget_TestimonialLoopItem());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ClientLoopItem\Widget_ClientLoopItem());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PricingTabs\Widget_PricingTabs());
-
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ServiceLoopItem\Widget_ServiceLoopItem());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ServiceLoopItemStyle1\Widget_ServiceLoopItemStyle1());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ServiceLoopItemStyle2\Widget_ServiceLoopItemStyle2());
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\OrbitCircle\Widget_OrbitCircle());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PatternBackground\Widget_PatternBackground());
@@ -220,12 +177,9 @@ class ElementorWidgets {
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ProductLoopItem\Widget_ProductLoopItem());
 
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\AccountLogin\Widget_AccountLogin());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\HighlightedHeading\Widget_HighlightedHeading());
 
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ListImageText\Widget_ListImageText());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\CardImageTextGrid\Widget_CardImageTextGrid());
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ListIconText\Widget_ListIconText());
+
 	}
 
 	/**

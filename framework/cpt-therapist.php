@@ -1,30 +1,30 @@
 <?php
 /*
- * Dealer CPT
+ * Therapist CPT
  */
 
-function seine_dealer_register() {
+function seine_therapist_register() {
 
-	$cpt_slug = get_theme_mod('seine_dealer_slug');
+	$cpt_slug = get_theme_mod('seine_therapist_slug');
 
 	if(isset($cpt_slug) && $cpt_slug != ''){
 		$cpt_slug = $cpt_slug;
 	} else {
-		$cpt_slug = 'dealer';
+		$cpt_slug = 'therapist';
 	}
 
 	$labels = array(
-		'name'               => esc_html__( 'Dealers', 'seine' ),
-		'singular_name'      => esc_html__( 'Dealer', 'seine' ),
+		'name'               => esc_html__( 'Therapists', 'seine' ),
+		'singular_name'      => esc_html__( 'Therapist', 'seine' ),
 		'add_new'            => esc_html__( 'Add New', 'seine' ),
-		'add_new_item'       => esc_html__( 'Add New Dealer', 'seine' ),
-		'all_items'          => esc_html__( 'All Dealers', 'seine' ),
-		'edit_item'          => esc_html__( 'Edit Dealer', 'seine' ),
-		'new_item'           => esc_html__( 'Add New Dealer', 'seine' ),
+		'add_new_item'       => esc_html__( 'Add New Therapist', 'seine' ),
+		'all_items'          => esc_html__( 'All Therapist', 'seine' ),
+		'edit_item'          => esc_html__( 'Edit Therapist', 'seine' ),
+		'new_item'           => esc_html__( 'Add New Therapist', 'seine' ),
 		'view_item'          => esc_html__( 'View Item', 'seine' ),
-		'search_items'       => esc_html__( 'Search Dealers', 'seine' ),
-		'not_found'          => esc_html__( 'No dealer(s) found', 'seine' ),
-		'not_found_in_trash' => esc_html__( 'No dealer(s) found in trash', 'seine' )
+		'search_items'       => esc_html__( 'Search Therapist', 'seine' ),
+		'not_found'          => esc_html__( 'No therapist(s) found', 'seine' ),
+		'not_found_in_trash' => esc_html__( 'No therapist(s) found in trash', 'seine' )
 	);
 
   $args = array(
@@ -39,18 +39,18 @@ function seine_dealer_register() {
 		'supports'        => array('title', 'editor', 'thumbnail', 'comments')
   );
 
-  add_filter( 'enter_title_here',  'seine_dealer_change_default_title');
+  add_filter( 'enter_title_here',  'seine_therapist_change_default_title');
 
-  register_post_type( 'dealer' , $args );
+  register_post_type( 'therapist' , $args );
 }
-add_action('init', 'seine_dealer_register', 1);
+add_action('init', 'seine_therapist_register', 1);
 
 
-function seine_dealer_taxonomy() {
+function seine_therapist_taxonomy() {
 
 	register_taxonomy(
-		"dealer_categories",
-		array("dealer"),
+		"therapist_categories",
+		array("therapist"),
 		array(
 			"hierarchical"   => true,
 			"label"          => "Categories",
@@ -60,8 +60,8 @@ function seine_dealer_taxonomy() {
 	);
 
 	register_taxonomy(
-        'dealer_tag',
-        'dealer',
+        'therapist_tag',
+        'therapist',
         array(
             'hierarchical'  => false,
             'label'         => __( 'Tags', 'seine' ),
@@ -72,34 +72,34 @@ function seine_dealer_taxonomy() {
     );
 
 }
-add_action('init', 'seine_dealer_taxonomy', 1);
+add_action('init', 'seine_therapist_taxonomy', 1);
 
 
-function seine_dealer_change_default_title( $title ) {
+function seine_therapist_change_default_title( $title ) {
 	$screen = get_current_screen();
 
-	if ( 'dealer' == $screen->post_type )
-		$title = esc_html__( "Enter the dealer's name here", 'seine' );
+	if ( 'therapist' == $screen->post_type )
+		$title = esc_html__( "Enter the therapist's name here", 'seine' );
 
 	return $title;
 }
 
 
-function seine_dealer_edit_columns( $dealer_columns ) {
-	$dealer_columns = array(
+function seine_therapist_edit_columns( $therapist_columns ) {
+	$therapist_columns = array(
 		"cb"                     => "<input type=\"checkbox\" />",
 		"title"                  => esc_html__('Title', 'seine'),
 		"thumbnail"              => esc_html__('Thumbnail', 'seine'),
-		"dealer_categories" 			 => esc_html__('Categories', 'seine'),
+		"therapist_categories" 			 => esc_html__('Categories', 'seine'),
 		"date"                   => esc_html__('Date', 'seine'),
 	);
-	return $dealer_columns;
+	return $therapist_columns;
 }
-add_filter( 'manage_edit-dealer_columns', 'seine_dealer_edit_columns' );
+add_filter( 'manage_edit-therapist_columns', 'seine_therapist_edit_columns' );
 
-function seine_dealer_column_display( $dealer_columns, $post_id ) {
+function seine_therapist_column_display( $therapist_columns, $post_id ) {
 
-	switch ( $dealer_columns ) {
+	switch ( $therapist_columns ) {
 
 		// Display the thumbnail in the column view
 		case "thumbnail":
@@ -118,10 +118,10 @@ function seine_dealer_column_display( $dealer_columns, $post_id ) {
 			}
 			break;
 
-		// Display the dealer tags in the column view
-		case "dealer_categories":
+		// Display the therapist tags in the column view
+		case "therapist_categories":
 
-		if ( $category_list = get_the_term_list( $post_id, 'dealer_categories', '', ', ', '' ) ) {
+		if ( $category_list = get_the_term_list( $post_id, 'therapist_categories', '', ', ', '' ) ) {
 			echo $category_list; // No need to escape
 		} else {
 			echo esc_html__('None', 'seine');
@@ -129,4 +129,4 @@ function seine_dealer_column_display( $dealer_columns, $post_id ) {
 		break;
 	}
 }
-add_action( 'manage_dealer_posts_custom_column', 'seine_dealer_column_display', 10, 2 );
+add_action( 'manage_therapist_posts_custom_column', 'seine_therapist_column_display', 10, 2 );
