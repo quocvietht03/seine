@@ -1,22 +1,22 @@
-.__bt-heading-style{
-    @media (min-width: 1200px) and (max-width: 1439.98px) { 
+.__bt-heading-style {
+    @media (min-width: 1200px) and (max-width: 1439.98px) {
         font-size: 55px;
     }
 
-    @media (min-width: 1025px) and (max-width: 1199.98px) { 
+    @media (min-width: 1025px) and (max-width: 1199.98px) {
         font-size: 45px;
     }
 }
 
-.__bt-pd-container-full-width{
+.__bt-pd-container-full-width {
     > .elementor-element {
-        &:first-child{
+        &:first-child {
             @media (min-width: 1450px) {
                 padding-left: calc((100% - var(--container-max-width)) / 2);
             }
         }
 
-        &:last-child{
+        &:last-child {
             @media (min-width: 1450px) {
                 padding-right: calc((100% - var(--container-max-width)) / 2);
             }
@@ -24,7 +24,103 @@
     }
 }
 
+.elementor-element {
+    &.bt-section-hero-home1 {
+        .bt-section-content-hero {
+            .elementor-widget-image {
+                img {
+                    animation-name: bt-animation-hang-sink, bt-animation-hang;
+                    animation-duration: 0.3s, 1.5s;
+                    animation-delay: 0s, 0.3s;
+                    animation-timing-function: ease-out, ease-in-out;
+                    animation-iteration-count: 1, infinite;
+                    animation-fill-mode: forwards;
+                }
+            }
 
-.elementor-element{
-
+            @media (max-width: 1797px) and (min-width: $break-tl) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .bt-heading-sh {
+                .elementor-heading-title {
+                    @media (max-width: 1575px) and (min-width: $break-tl) {
+                        font-size: 50px;
+                    }
+                    @media (max-width: 1325px) and (min-width: $break-tl) {
+                        max-width: 500px;
+                    }
+                }
+            }
+            @media (max-width: 1325px) and (min-width: $break-tl) {
+                .bt-col-image-left {
+                    padding-right: 15px;
+                }
+                .bt-col-image-right {
+                    padding-left: 15px;
+                }
+            }
+            @media (max-width: $break-lg) and (min-width: $break-tl) {
+                .bt-col-content {
+                    .elementor-button {
+                        padding: 18px 35px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .bt-list-icon-custom.elementor-element {
+            .elementor-widget-container {
+                overflow: initial;
+            }
+            .elementor-icon-list-items.elementor-inline-items {
+                @media (max-width: 1797px) and (min-width: $break-tl) {
+                    margin-right: calc(-20px / 2);
+                    margin-left: calc(-20px / 2);
+                }
+                .elementor-icon-list-item {
+                    svg {
+                        margin: 0;
+                        padding: 16px;
+                        border: 1px solid $color-accent;
+                        border-radius: 50%;
+                        @media (max-width: $break-lg) and (min-width: $break-tl) {
+                            width: 60px;
+                            height: 60px;
+                            padding: 10px;
+                        }
+                        @media (max-width: $break-tl) {
+                            padding: 10px;
+                        }
+                        @media (max-width: 420px) {
+                            padding: 5px;
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                    .elementor-icon-list-text {
+                        @media (max-width: 420px) {
+                            font-size: 17px;
+                        }
+                    }
+                    &:first-child {
+                        margin-left: 0 !important;
+                    }
+                    &:last-child {
+                        margin-right: 0 !important;
+                    }
+                    @media (max-width: 1797px) and (min-width: $break-tl) {
+                        margin-right: calc(20px / 2);
+                        margin-left: calc(20px / 2);
+                        .elementor-icon-list-icon {
+                            padding-right: 8px;
+                        }
+                    }
+                    @media (max-width: 1575px) and (min-width: $break-tl) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
 }

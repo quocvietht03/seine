@@ -515,3 +515,23 @@ body {
 .bt-effect-move-horizontal-center{
 	animation: effectMoveHorizontalCenter 2s linear infinite;
 }
+
+@keyframes bt-animation-hang {
+    0% {
+        transform: translateY(8px)
+    }
+
+    50% {
+        transform: translateY(4px)
+    }
+
+    100% {
+        transform: translateY(8px)
+    }
+}
+
+@keyframes bt-animation-hang-sink {
+    100% {
+        transform: translateY(8px)
+    }
+}

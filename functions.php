@@ -102,7 +102,7 @@ require_once get_template_directory() . '/install/import-pack/import-functions.p
 
 /* CPT Load */
 require_once get_template_directory().'/framework/cpt-therapist.php';
-require_once get_template_directory().'/framework/cpt-packages.php';
+require_once get_template_directory().'/framework/cpt-service.php';
 require_once get_template_directory().'/framework/cpt-testimonial.php';
 
 /* ACF Options */
