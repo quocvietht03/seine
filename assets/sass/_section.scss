@@ -123,4 +123,37 @@
             }
         }
     }
+    &.bt-section-about-home1 {
+        @media (max-width: 1350px) and (min-width: $break-tl) {
+            .bt-elwg-highlighted-heading {
+                h3 {
+                    font-size: 43px !important;
+                    line-height: 53px !important;
+                }
+            }
+            > .e-con-inner {
+                grid-column-gap: 30px;
+            }
+            .bt-col-button-author {
+                margin-top: 25px;
+                .elementor-button-wrapper {
+                    .elementor-button {
+                        padding: 18px 28px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-subcribe {
+        @media (max-width: 1350px) and (min-width: $break-tl) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .elementor-heading-title {
+            @media (max-width: 1125px) and (min-width: $break-tl) {
+                font-size: 30px !important;
+            }
+        }
+    }
 }

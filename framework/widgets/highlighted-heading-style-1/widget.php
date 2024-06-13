@@ -1,6 +1,6 @@
 <?php
 
-namespace SeineElementorWidgets\Widgets\HighlightedHeading;
+namespace SeineElementorWidgets\Widgets\HighlightedHeadingStyle1;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -10,17 +10,17 @@ use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Box_Shadow;
 
-class Widget_HighlightedHeading extends Widget_Base
+class Widget_HighlightedHeadingStyle1 extends Widget_Base
 {
 
 	public function get_name()
 	{
-		return 'bt-highlighted-heading';
+		return 'bt-highlighted-heading-style-1';
 	}
 
 	public function get_title()
 	{
-		return __('Highlighted Heading', 'seine');
+		return __('Highlighted Heading Style 1', 'seine');
 	}
 
 	public function get_icon()
@@ -41,45 +41,51 @@ class Widget_HighlightedHeading extends Widget_Base
 				'label' => __('Heading', 'seine'),
 			]
 		);
+		$repeater = new Repeater();
 
-		$this->add_control(
-			'before_text',
+
+		$repeater->add_control(
+			'text_title',
 			[
-				'label'       => esc_html__('Before Text', 'seine'),
-				'type'        => Controls_Manager::TEXT,
+				'label' => __('Text', 'autoart'),
+				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default'     => 'This is the heading',
+				'default' => __('Text Heading', 'autoart'),
 			]
 		);
-
-		$this->add_control(
-			'highlighted_text',
+		$repeater->add_control(
+			'style_title',
 			[
-				'label'       => esc_html__('Highlighted Text', 'seine'),
-				'type'        => Controls_Manager::TEXT,
-				'label_block' => true,
-				'default'     => 'Highlighted',
-			]
-		);
-
-		$this->add_control(
-			'after_text',
-			[
-				'label'       => esc_html__('After Text', 'seine'),
-				'type'        => Controls_Manager::TEXT,
-				'label_block' => true,
-				'default'     => '',
-			]
-		);
-
-		$this->add_control(
-			'highlighted_image',
-			[
-				'label'   => esc_html__('Highlighted Image', 'seine'),
-				'type'    => Controls_Manager::MEDIA,
-				'default' => [
-					'url' => '',
+				'label' => __('Style', 'seine'),
+				'type' => Controls_Manager::SELECT,
+				'default' => '1',
+				'options' => [
+					'1' => '1',
+					'2' => '2',
 				],
+			]
+		);
+		$this->add_control(
+			'list',
+			[
+				'label' => __('List Style Heading', 'autoart'),
+				'type' => Controls_Manager::REPEATER,
+				'fields' => $repeater->get_controls(),
+				'default' => [
+					[
+						'text_title' => __('This is the heading', 'autoart'),
+						'style_title' => '1'
+					],
+					[
+						'text_title' => __('Highlighted', 'autoart'),
+						'style_title' => '2'
+					],
+					[
+						'text_title' => __('After heading', 'autoart'),
+						'style_title' => '1'
+					],
+				],
+				'title_field' => '{{{ text_title }}}',
 			]
 		);
 
@@ -146,7 +152,7 @@ class Widget_HighlightedHeading extends Widget_Base
 				'default' => 'start',
 				'toggle' => true,
 				'selectors' => [
-					'{{WRAPPER}} .bt-elwg-highlighted-heading' => 'justify-content: {{VALUE}};',
+					'{{WRAPPER}} .bt-elwg-highlighted-heading' => 'justify-content: {{VALUE}};text-align: {{VALUE}};',
 				],
 			]
 		);
@@ -198,43 +204,7 @@ class Widget_HighlightedHeading extends Widget_Base
 			]
 		);
 
-		$this->add_responsive_control(
-			'highlighted_image_width',
-			[
-				'label' => __('Width Highlighted Image', 'seine'),
-				'type'  => Controls_Manager::SLIDER,
-				'size_units' => ['px', '%'],
-				'range' => [
-					'px' => [
-						'min' => 0,
-						'max' => 100,
-						'step' => 1,
-					],
-					'%' => [
-						'min' => 0,
-						'max' => 100,
-					],
-				],
-				'default' => [
-					'unit' => '%',
-					'size' => 70,
-				],
-				'selectors' => [
-					'{{WRAPPER}} .bt-elwg-highlighted-heading .__text-highlighted img' => 'min-width: calc( 100% + {{SIZE}}{{UNIT}} )',
-				],
-			]
-		);
 
-		$this->add_control(
-			'show_animation',
-			[
-				'label'    => __('Animation', 'seine'),
-				'type'     => Controls_Manager::SWITCHER,
-				'label_on' => __('Show', 'seine'),
-				'label_off' => __('Hide', 'seine'),
-				'default'  => '',
-			]
-		);
 
 		$this->end_controls_section();
 	}
@@ -250,44 +220,40 @@ class Widget_HighlightedHeading extends Widget_Base
 		$settings = $this->get_settings_for_display();
 		$html_tag = isset($settings['html_tag']) ? $settings['html_tag'] : '';
 		$link     = isset($settings['link_heading']) ? $settings['link_heading'] : '';
-		$before_text = isset($settings['before_text']) ? $settings['before_text'] : '';
-		$after_text  = isset($settings['after_text']) ? $settings['after_text'] : '';
-		$hl_text     = isset($settings['highlighted_text']) ? $settings['highlighted_text'] : '';
-		$hl_image    = (isset($settings['highlighted_image']) && !empty($settings['highlighted_image'])) ? $settings['highlighted_image']['url'] : '';
-		$animation   = (isset($settings['show_animation']) && $settings['show_animation'] == 'yes') ? 'animationed' : '';
+		if (empty($settings['list'])) {
+			return;
+		}
 ?>
 
-		<div class="bt-elwg-highlighted-heading <?php echo $animation ?>">
+		<div class="bt-elwg-highlighted-heading">
 			<?php echo "<$html_tag>"; ?>
 
 			<?php if (!empty($link)) : ?>
 				<a href="<?php echo esc_url($link); ?>">
-					<?php echo !empty($before_text) ? $before_text : ''; ?>
-
-					<?php if (!empty($hl_text)) : ?>
-						<span class="__text-highlighted">
-							<?php echo $hl_text; ?>
-							<?php if ($hl_image) { ?>
-								<img src='<?php echo esc_url($hl_image) ?>' alt="img" />
+					<?php foreach ($settings['list'] as $index => $item) : ?>
+						<?php if ($item['text_title']) : ?>
+							<?php if ($item['style_title'] == 1) { ?>
+								<?php echo $item['text_title']; ?>
+							<?php } else { ?>
+								<span class="__text-highlighted">
+									<?php echo $item['text_title']; ?>
+								</span>
 							<?php } ?>
-						</span>
-					<?php endif; ?>
-
-					<?php echo !empty($after_text) ? $after_text : ''; ?>
+						<?php endif; ?>
+					<?php endforeach; ?>
 				</a>
 			<?php else : ?>
-				<?php echo !empty($before_text) ? $before_text : ''; ?>
-
-				<?php if (!empty($hl_text)) : ?>
-					<span class="__text-highlighted">
-						<?php echo $hl_text; ?>
-						<?php if ($hl_image) { ?>
-							<img src='<?php echo esc_url($hl_image) ?>' alt="img" />
+				<?php foreach ($settings['list'] as $index => $item) : ?>
+					<?php if ($item['text_title']) : ?>
+						<?php if ($item['style_title'] == 1) { ?>
+							<?php echo $item['text_title']; ?>
+						<?php } else { ?>
+							<span class="__text-highlighted">
+								<?php echo $item['text_title']; ?>
+							</span>
 						<?php } ?>
-					</span>
-				<?php endif; ?>
-
-				<?php echo !empty($after_text) ? $after_text : ''; ?>
+					<?php endif; ?>
+				<?php endforeach; ?>
 			<?php endif; ?>
 
 			<?php echo "</$html_tag>"; ?>

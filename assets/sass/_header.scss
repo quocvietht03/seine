@@ -283,7 +283,7 @@
       &.bt-col-right {
         .elementor-button-wrapper {
           a {
-            @media (max-width: 1500px) and (min-width: $break-lg) {
+            @media (max-width: 1520px) and (min-width: $break-lg) {
               font-size: 16px;
               padding: 13px 35px;
             }
@@ -293,12 +293,12 @@
             }
           }
         }
-        @media (max-width: 1360px) and (min-width: $break-tl) {
+        @media (max-width: 1370px) and (min-width: $break-tl) {
           padding-left: 30px;
         }
       }
       &.bt-col-left {
-        @media (max-width: 1360px) and (min-width: $break-tl) {
+        @media (max-width: 1370px) and (min-width: $break-tl) {
           padding-right: 30px;
         }
       }

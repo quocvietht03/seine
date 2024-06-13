@@ -1,4 +1,5 @@
 <?php
+
 namespace SeineElementorWidgets;
 
 /**
@@ -7,7 +8,8 @@ namespace SeineElementorWidgets;
  * Main ElementorWidgets class
  * @since 1.0.0
  */
-class ElementorWidgets {
+class ElementorWidgets
+{
 
 	/**
 	 * Instance
@@ -30,8 +32,9 @@ class ElementorWidgets {
 	 *
 	 * @return ElementorWidgets An instance of the class.
 	 */
-	public static function instance() {
-		if ( is_null( self::$_instance ) ) {
+	public static function instance()
+	{
+		if (is_null(self::$_instance)) {
 			self::$_instance = new self();
 		}
 		return self::$_instance;
@@ -39,7 +42,8 @@ class ElementorWidgets {
 
 	public $widgets = array();
 
-	public function widgets_list() {
+	public function widgets_list()
+	{
 
 		$this->widgets = array(
 			'site-information',
@@ -65,6 +69,8 @@ class ElementorWidgets {
 			'buble-background',
 			'product-loop-item',
 			'highlighted-heading',
+			'highlighted-heading-style-1',
+			'popular-services'
 		);
 
 		return $this->widgets;
@@ -78,9 +84,9 @@ class ElementorWidgets {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function widget_styles() {
-		wp_enqueue_style('slick-slider', get_template_directory_uri(). '/assets/libs/slick/slick.css',array(), false);
-
+	public function widget_styles()
+	{
+		wp_enqueue_style('slick-slider', get_template_directory_uri() . '/assets/libs/slick/slick.css', array(), false);
 	}
 
 	/**
@@ -91,10 +97,11 @@ class ElementorWidgets {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function widget_scripts() {
-		wp_register_script('slick-slider', get_template_directory_uri().'/assets/libs/slick/slick.min.js', array('jquery'), '', true);
-		wp_register_script('select2-min', get_template_directory_uri().'/assets/libs/select2/select2.min.js', array('jquery'), '', true);
-		wp_register_script('elementor-widgets',  get_stylesheet_directory_uri() . '/framework/widgets/frontend.js', [ 'jquery' ], '', true );
+	public function widget_scripts()
+	{
+		wp_register_script('slick-slider', get_template_directory_uri() . '/assets/libs/slick/slick.min.js', array('jquery'), '', true);
+		wp_register_script('select2-min', get_template_directory_uri() . '/assets/libs/select2/select2.min.js', array('jquery'), '', true);
+		wp_register_script('elementor-widgets',  get_stylesheet_directory_uri() . '/framework/widgets/frontend.js', ['jquery'], '', true);
 	}
 
 	/**
@@ -105,16 +112,16 @@ class ElementorWidgets {
 	 * @since 1.0.0
 	 * @access private
 	 */
-	private function include_widgets_files() {
+	private function include_widgets_files()
+	{
 
-		foreach( $this->widgets_list() as $widget ) {
-			require_once( get_stylesheet_directory() . '/framework/widgets/'. $widget .'/widget.php' );
+		foreach ($this->widgets_list() as $widget) {
+			require_once(get_stylesheet_directory() . '/framework/widgets/' . $widget . '/widget.php');
 
-			foreach( glob( get_stylesheet_directory() . '/framework/widgets/'. $widget .'/skins/*.php') as $filepath ) {
+			foreach (glob(get_stylesheet_directory() . '/framework/widgets/' . $widget . '/skins/*.php') as $filepath) {
 				include $filepath;
 			}
 		}
-
 	}
 
 	/**
@@ -125,15 +132,15 @@ class ElementorWidgets {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function register_categories( $elements_manager ) {
+	public function register_categories($elements_manager)
+	{
 
 		$elements_manager->add_category(
 			'seine',
 			[
-				'title' => esc_html__( 'Seine', 'seine' )
+				'title' => esc_html__('Seine', 'seine')
 			]
 		);
-
 	}
 
 	/**
@@ -144,7 +151,8 @@ class ElementorWidgets {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function register_widgets() {
+	public function register_widgets()
+	{
 		// Its is now safe to include Widgets files
 		$this->include_widgets_files();
 
@@ -171,6 +179,8 @@ class ElementorWidgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TestimonialLoopItem\Widget_TestimonialLoopItem());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ClientLoopItem\Widget_ClientLoopItem());
 
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PopularServices\Widget_PopularServices());
+
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\OrbitCircle\Widget_OrbitCircle());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PatternBackground\Widget_PatternBackground());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\BubleBackground\Widget_BubleBackground());
@@ -178,8 +188,7 @@ class ElementorWidgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ProductLoopItem\Widget_ProductLoopItem());
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\HighlightedHeading\Widget_HighlightedHeading());
-
-
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\HighlightedHeadingStyle1\Widget_HighlightedHeadingStyle1());
 	}
 
 	/**
@@ -190,20 +199,20 @@ class ElementorWidgets {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function __construct() {
+	public function __construct()
+	{
 
 		// Register widget styles
-		add_action( 'elementor/frontend/after_register_styles', [ $this, 'widget_styles' ] );
+		add_action('elementor/frontend/after_register_styles', [$this, 'widget_styles']);
 
 		// Register widget scripts
-		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'widget_scripts' ] );
+		add_action('elementor/frontend/after_register_scripts', [$this, 'widget_scripts']);
 
 		// Register categories
-		add_action( 'elementor/elements/categories_registered', [ $this, 'register_categories' ] );
+		add_action('elementor/elements/categories_registered', [$this, 'register_categories']);
 
 		// Register widgets
-		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
-
+		add_action('elementor/widgets/widgets_registered', [$this, 'register_widgets']);
 	}
 }
 

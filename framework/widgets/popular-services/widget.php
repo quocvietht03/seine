@@ -1,6 +1,5 @@
 <?php
-
-namespace SeineElementorWidgets\Widgets\PostGrid;
+namespace SeineElementorWidgets\Widgets\PopularServices;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -10,17 +9,17 @@ use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Box_Shadow;
 
-class Widget_PostGrid extends Widget_Base
+class Widget_PopularServices extends Widget_Base
 {
 
 	public function get_name()
 	{
-		return 'bt-post-grid';
+		return 'bt-popular-services';
 	}
 
 	public function get_title()
 	{
-		return __('Post Grid', 'seine');
+		return __('Popular Services', 'seine');
 	}
 
 	public function get_icon()
@@ -38,7 +37,7 @@ class Widget_PostGrid extends Widget_Base
 		$supported_ids = [];
 
 		$wp_query = new \WP_Query(array(
-			'post_type' => 'post',
+			'post_type' => 'service',
 			'post_status' => 'publish'
 		));
 
@@ -57,7 +56,7 @@ class Widget_PostGrid extends Widget_Base
 		$supported_taxonomies = [];
 
 		$categories = get_terms(array(
-			'taxonomy' => 'post_categories',
+			'taxonomy' => 'service_categories',
 			'hide_empty' => false,
 		));
 		if (!empty($categories)  && !is_wp_error($categories)) {
@@ -79,11 +78,16 @@ class Widget_PostGrid extends Widget_Base
 		);
 
 		$this->add_control(
-			'posts_per_page',
+			'columns',
 			[
-				'label' => __('Posts Per Page', 'seine'),
-				'type' => Controls_Manager::NUMBER,
-				'default' => 6,
+				'label' => __( 'Columns', 'seine' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => '5',
+				'options' => [
+					'3' => '3',
+					'4' => '4',
+					'5' => '5',
+				],
 			]
 		);
 
@@ -104,7 +108,7 @@ class Widget_PostGrid extends Widget_Base
 				'label' => __('Image Ratio', 'seine'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
-					'size' => 0.66,
+					'size' => 1,
 				],
 				'range' => [
 					'px' => [
@@ -116,17 +120,6 @@ class Widget_PostGrid extends Widget_Base
 				'selectors' => [
 					'{{WRAPPER}} .bt-post--featured .bt-cover-image' => 'padding-bottom: calc( {{SIZE}} * 100% );',
 				],
-			]
-		);
-
-		$this->add_control(
-			'show_pagination',
-			[
-				'label' => __('Pagination', 'seine'),
-				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __('Show', 'seine'),
-				'label_off' => __('Hide', 'seine'),
-				'default' => '',
 			]
 		);
 
@@ -244,6 +237,14 @@ class Widget_PostGrid extends Widget_Base
 					'asc' => __('ASC', 'seine'),
 					'desc' => __('DESC', 'seine'),
 				],
+			]
+		);
+		$this->add_control(
+			'posts_per_page',
+			[
+				'label' => __('Posts Per Page', 'seine'),
+				'type' => Controls_Manager::NUMBER,
+				'default' => 6,
 			]
 		);
 
@@ -437,85 +438,6 @@ class Widget_PostGrid extends Widget_Base
 
 		$this->end_controls_section();
 
-		$this->start_controls_section(
-			'section_style_pagination',
-			[
-				'label' => esc_html__('Pagination', 'seine'),
-				'tab' => Controls_Manager::TAB_STYLE,
-				'condition' => [
-					'show_pagination!' => '',
-				],
-			]
-		);
-
-		$this->add_control(
-			'pagination_color',
-			[
-				'label' => __('Color', 'seine'),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-pagination .page-numbers:not(.current)' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_control(
-			'pagination_color_hover',
-			[
-				'label' => __('Color Hover', 'seine'),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-pagination .page-numbers:not(.current, .dots):hover' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_control(
-			'pagination_color_current',
-			[
-				'label' => __('Color Current', 'seine'),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-pagination .page-numbers.current' => 'background-color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name' => 'pagination_typography',
-				'label' => __('Typography', 'seine'),
-				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-pagination .page-numbers',
-			]
-		);
-
-		$this->add_responsive_control(
-			'pagination_space',
-			[
-				'label' => __('Space', 'seine'),
-				'type' => Controls_Manager::SLIDER,
-				'default' => [
-					'size' => 60,
-				],
-				'range' => [
-					'px' => [
-						'min' => 0,
-						'max' => 100,
-						'step' => 5,
-					],
-				],
-				'selectors' => [
-					'{{WRAPPER}} .bt-pagination' => 'margin-top: {{SIZE}}{{UNIT}};',
-				],
-			]
-		);
-
-		$this->end_controls_section();
 	}
 
 	protected function register_controls()
@@ -532,17 +454,14 @@ class Widget_PostGrid extends Widget_Base
 		$settings = $this->get_settings_for_display();
 
 		$args = [
-			'post_type' => 'post',
+			'post_type' => 'service',
 			'post_status' => 'publish',
 			'posts_per_page' => $settings['posts_per_page'],
 			'orderby' => $settings['orderby'],
 			'order' => $settings['order'],
 		];
 
-		if ($settings['show_pagination'] == 'yes') {
-			$args['paged'] = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		}
-
+	
 		if (!empty($settings['ids'])) {
 			$args['post__in'] = $settings['ids'];
 		}
@@ -554,7 +473,7 @@ class Widget_PostGrid extends Widget_Base
 		if (!empty($settings['category'])) {
 			$args['tax_query'] = array(
 				array(
-					'taxonomy' 		=> 'post_categories',
+					'taxonomy' 		=> 'service_categories',
 					'terms' 		=> $settings['category'],
 					'field' 		=> 'term_id',
 					'operator' 		=> 'IN'
@@ -565,7 +484,7 @@ class Widget_PostGrid extends Widget_Base
 		if (!empty($settings['category_exclude'])) {
 			$args['tax_query'] = array(
 				array(
-					'taxonomy' 		=> 'post_categories',
+					'taxonomy' 		=> 'service_categories',
 					'terms' 		=> $settings['category_exclude'],
 					'field' 		=> 'term_id',
 					'operator' 		=> 'NOT IN'
@@ -586,21 +505,18 @@ class Widget_PostGrid extends Widget_Base
 		$query = $this->query_posts();
 
 ?>
-		<div class="bt-elwg-post-grid--default">
+		<div class="bt-elwg-service-popular--default">
 			<?php
 			if ($query->have_posts()) {
 			?>
-				<div class="bt-post-grid">
+				<div class="bt-service-popular">
 					<?php
 					while ($query->have_posts()) : $query->the_post();
-						get_template_part('framework/templates/post', 'style', array('image-size' => $settings['thumbnail_size'], 'layout' => 'default'));
+						get_template_part('framework/templates/service', 'popular', array('image-size' => $settings['thumbnail_size']));
 					endwhile;
 					?>
 				</div>
 			<?php
-				if ($settings['show_pagination'] == 'yes') {
-					seine_paginate_links($query);
-				}
 			} else {
 				get_template_part('framework/templates/post', 'none');
 			}
