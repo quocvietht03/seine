@@ -48,7 +48,7 @@ class Widget_HighlightedHeading extends Widget_Base
 				'label'       => esc_html__('Before Text', 'seine'),
 				'type'        => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default'     => 'This is the heading',
+				'default'     => esc_html__('This is the heading', 'seine'),
 			]
 		);
 
@@ -58,7 +58,7 @@ class Widget_HighlightedHeading extends Widget_Base
 				'label'       => esc_html__('Highlighted Text', 'seine'),
 				'type'        => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default'     => 'Highlighted',
+				'default'     => esc_html__('Highlighted', 'seine'),
 			]
 		);
 
@@ -146,7 +146,7 @@ class Widget_HighlightedHeading extends Widget_Base
 				'default' => 'start',
 				'toggle' => true,
 				'selectors' => [
-					'{{WRAPPER}} .bt-elwg-highlighted-heading' => 'justify-content: {{VALUE}};',
+					'{{WRAPPER}} .bt-elwg-highlighted-heading' => 'justify-content: {{VALUE}};text-align: {{VALUE}};',
 				],
 			]
 		);

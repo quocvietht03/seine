@@ -25,6 +25,11 @@
 }
 
 .elementor-element {
+    &.bt-text-view-more {
+        a {
+            color: $color-accent;
+        }
+    }
     &.bt-section-hero-home1 {
         .bt-section-content-hero {
             .elementor-widget-image {
@@ -153,6 +158,21 @@
         .elementor-heading-title {
             @media (max-width: 1125px) and (min-width: $break-tl) {
                 font-size: 30px !important;
+            }
+        }
+    }
+    &.bt-section-banner {
+        .bt-col-content-banner {
+            @media (max-width: $break-lg) and (min-width: $break-tl) {
+                padding-left: 15px;
+            }
+            @media (max-width: $break-xs) {
+                padding-left: 20px;
+            }
+        }
+        .bt-col-background-banner {
+            @media (max-width: $break-xs) {
+                background-position: 34% 0 !important;
             }
         }
     }

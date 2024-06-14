@@ -120,7 +120,7 @@ class Widget_PopularServices extends Widget_Base
 				'selectors' => [
 					'{{WRAPPER}} .bt-post--featured .bt-cover-image' => 'padding-bottom: calc( {{SIZE}} * 100% );',
 				],
-			]
+			] 
 		);
 
 		$this->end_controls_section();
@@ -315,40 +315,43 @@ class Widget_PopularServices extends Widget_Base
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'section_style_content',
+			'section_style_background_overlay',
 			[
-				'label' => esc_html__('Content', 'seine'),
+				'label' => esc_html__('Background Overlay', 'seine'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 
 		$this->add_control(
-			'date_style',
+			'background_overlay_border_radius',
 			[
-				'label' => __('Date', 'seine'),
-				'type' => Controls_Manager::HEADING,
+				'label' => __('Border Radius', 'seine'),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => ['px', '%'],
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--content' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
 			]
 		);
-
 		$this->add_control(
-			'date_color',
+			'background_overlay_color',
 			[
-				'label' => __('Color', 'seine'),
+				'label' => __('Background', 'seine'),
 				'type' => Controls_Manager::COLOR,
-				'default' => '',
+				'default' => 'rgba(24, 29, 41, 0.5)',
 				'selectors' => [
-					'{{WRAPPER}} .bt-post--publish' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--content' => 'background: {{VALUE}};',
 				],
 			]
 		);
 
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'section_style_content',
 			[
-				'name' => 'date_typography',
-				'label' => __('Typography', 'seine'),
-				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-post--publish',
+				'label' => esc_html__('Content', 'seine'),
+				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -367,7 +370,7 @@ class Widget_PopularServices extends Widget_Base
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-post--title' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--title a' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -391,48 +394,6 @@ class Widget_PopularServices extends Widget_Base
 				'label' => __('Typography', 'seine'),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .bt-post--title',
-			]
-		);
-
-		$this->add_control(
-			'meta_style',
-			[
-				'label' => __('Meta', 'seine'),
-				'type' => Controls_Manager::HEADING,
-			]
-		);
-
-		$this->add_control(
-			'meta_color',
-			[
-				'label' => __('Color', 'seine'),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--meta' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_control(
-			'meta_color_hover',
-			[
-				'label' => __('Color Hover', 'seine'),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--meta a:hover' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name' => 'meta_typography',
-				'label' => __('Typography', 'seine'),
-				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-post--meta',
 			]
 		);
 
@@ -509,7 +470,7 @@ class Widget_PopularServices extends Widget_Base
 			<?php
 			if ($query->have_posts()) {
 			?>
-				<div class="bt-service-popular">
+				<div class="bt-service-popular columns-<?php echo $settings['columns'] ?>">
 					<?php
 					while ($query->have_posts()) : $query->the_post();
 						get_template_part('framework/templates/service', 'popular', array('image-size' => $settings['thumbnail_size']));

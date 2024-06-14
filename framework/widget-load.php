@@ -70,7 +70,8 @@ class ElementorWidgets
 			'product-loop-item',
 			'highlighted-heading',
 			'highlighted-heading-style-1',
-			'popular-services'
+			'popular-services',
+			'pricing-item'
 		);
 
 		return $this->widgets;
@@ -189,6 +190,7 @@ class ElementorWidgets
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\HighlightedHeading\Widget_HighlightedHeading());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\HighlightedHeadingStyle1\Widget_HighlightedHeadingStyle1());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PricingItem\Widget_PricingItem());
 	}
 
 	/**
