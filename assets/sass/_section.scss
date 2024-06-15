@@ -176,4 +176,42 @@
             }
         }
     }
+    &.bt-section-appointment{
+        .bt-elwg-highlighted-heading{
+            h3 span{
+                display: initial;
+            }
+        }
+        .bt-list-custom-appointment.elementor-element {
+            .elementor-icon-list-items.elementor-inline-items {
+                .elementor-icon-list-item {
+                    margin-bottom: 20px;
+                    svg {
+                        margin: 0;
+                        padding: 16px;
+                        border: 1px solid $color-accent;
+                        border-radius: 50%;
+                        @media (max-width: $break-lg) and (min-width: $break-tl) {
+                            width: 60px;
+                            height: 60px;
+                            padding: 10px;
+                        }
+                        @media (max-width: $break-tl) {
+                            padding: 10px;
+                        }
+                        @media (max-width: 420px) {
+                            padding: 5px;
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                    .elementor-icon-list-text {
+                        @media (max-width: 420px) {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -5903,6 +5903,27 @@ body {
     color: var(--e-global-color-accent, #E96CA7);
     text-decoration-line: underline; }
 
+.bt-elwg-time-list--default .bt-time-list {
+  margin: 0;
+  list-style: none;
+  padding: 0; }
+.bt-elwg-time-list--default .bt-time--item:not(:last-child) {
+  padding-bottom: 14px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c2c2c2; }
+.bt-elwg-time-list--default .bt-time--title {
+  color: var(--e-global-color-text, #555);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; }
+.bt-elwg-time-list--default .bt-time--date {
+  color: var(--e-global-color-accent, #E96CA7);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; }
+
 .elementor-widget-button .elementor-button-icon svg {
   width: fit-content; }
 
@@ -6019,5 +6040,30 @@ body {
 @media (max-width: 519.98px) {
   .elementor-element.bt-section-banner .bt-col-background-banner {
     background-position: 34% 0 !important; } }
+.elementor-element.bt-section-appointment .bt-elwg-highlighted-heading h3 span {
+  display: initial; }
+.elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
+  margin-bottom: 20px; }
+  .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item svg {
+    margin: 0;
+    padding: 16px;
+    border: 1px solid var(--e-global-color-accent, #E96CA7);
+    border-radius: 50%; }
+    @media (max-width: 1199.98px) and (min-width: 1024.98px) {
+      .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item svg {
+        width: 60px;
+        height: 60px;
+        padding: 10px; } }
+    @media (max-width: 1024.98px) {
+      .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item svg {
+        padding: 10px; } }
+    @media (max-width: 420px) {
+      .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item svg {
+        padding: 5px;
+        width: 35px;
+        height: 35px; } }
+  @media (max-width: 420px) {
+    .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item .elementor-icon-list-text {
+      font-size: 17px; } }
 
 /*# sourceMappingURL=main.css.map */
