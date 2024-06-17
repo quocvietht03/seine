@@ -1,20 +1,41 @@
+.gform-theme--framework :where(
+    :not(html):not(iframe):not(canvas):not(img):not(svg):not(video)
+    :not(svg *):not(symbol *):not(.gform-theme__no-reset--el)
+    :not(.gform-theme__no-reset--children *):not(.gform-theme__disable)
+    :not(.gform-theme__disable *):not(.gform-theme__disable-reset)
+    :not(.gform-theme__disable-reset *):not(.gform_heading *):not(.gfield--type-html *)
+    :not(.gfield--type-section *):not(.form_saved_message > *)
+    :not(.form_saved_message_sent > *):not(.gform_confirmation_message *)
+    :not(.wp-editor-container):not(.mce-tinymce):not(.mce-tinymce *)
+    :not(.wp-editor-area):not(.gfield_description > *)
+    :not(.gform-field-label--type-inline > :not(span))
+) {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    display: revert;
+    all: revert-layer;
+}
 .gform_wrapper {
   &.gform-theme--api,
   &.gform-theme--foundation {
-    --gf-form-gap-x: 12px;
-    --gf-form-gap-y: 12px;
+    --gf-form-gap-x: 10px;
+    --gf-form-gap-y: 10px;
   }
   .gform_heading {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     .gform_title {
-      font-size: 36px;
-      font-weight: 700;
-      margin: 0;
+      font-family: $secondary-font;
+      font-size: 50px;
+      font-weight: 600;
     }
     .gform_description {
-      font-size: 20px;
+      font-size: 18px;
+      font-style: normal;
       font-weight: 500;
-      line-height: 150%;
       margin: 4px 0 0;
     }
   }
@@ -23,20 +44,21 @@
     select,
     textarea {
       font-size: 18px;
-      font-weight: 500;
-      line-height: 150%;
+      font-weight: 400;
+      line-height: 200%;
       height: auto;
-      color: $color-text;
-      background: #FFFFFF;
-      padding: 16px 24px;
-      border: 2px solid #DADADA;
-      border-radius: 10px;
+      color: var(--e-global-color-text, #555);
+      background: transparent;
+      padding: 10px 24px 10px 0;
+      border: none;
+      border-bottom: 1px solid #8C8C8C;
+      border-radius: 0;
       outline: none;
       box-shadow: none;
     }
     textarea {
       min-block-size: auto !important;
-      height: 130px;
+      height: 100px;
     }
   }
   .gform_footer {
@@ -49,9 +71,9 @@
       text-align: center !important;
       color: #FFFFFF !important;
       background: $color-accent !important;
-      padding: 16px 40px !important;
+      padding: 17px 40px !important;
       border: none !important;
-      border-radius: 10px !important;
+      border-radius: 0 !important;
       &.gform-button--width-full {
         width: 100% !important;
       }

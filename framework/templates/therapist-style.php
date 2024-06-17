@@ -13,35 +13,12 @@ $socials = get_field('socials');
     <?php } ?>
 
     <div class="bt-post--infor">
-      <?php echo seine_post_title_render(); ?>
-
-      <?php
+    <?php
         if(!empty($job)) {
           echo '<div class="bt-post--job">' . $job . '</div>';
         }
       ?>
-
-      <?php if(!empty($prf_link)) { ?>
-        <div class="bt-post--prf-link">
-          <?php echo '<a href="' . esc_url($prf_link['url']) . '" target="' . esc_attr($prf_link['target']) . '">' . $prf_link['title'] . '</a>'; ?>
-        </div>
-      <?php } ?>
-
-      <?php if(!empty($socials)) { ?>
-        <div class="bt-post--social">
-          <?php
-            foreach ($socials as $item) {
-              if(!empty($item['icon'])) {
-              ?>
-                <a class="bt-social" href="<?php echo esc_url($item['link']); ?>" target="_blank">
-                  <img src="<?php echo esc_url($item['icon']) ?>" alt="" />
-                </a>
-              <?php
-              }
-            }
-          ?>
-        </div>
-      <?php } ?>
+      <?php echo seine_post_title_render(); ?>
     </div>
   </div>
 </article>

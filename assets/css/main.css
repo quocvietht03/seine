@@ -676,13 +676,17 @@ img.alignright {
     transform: rotate(180deg); }
   .select2-container .select2-selection--single,
   .elementor-editor-active .select2-container .select2-selection--single {
-    height: 56px;
-    border-radius: 10px;
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0px 0 24px;
-    gap: 10px; }
+    padding: 10px 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #8C8C8C;
+    gap: 10px;
+    height: 58px;
+    font-size: 18px;
+    background: transparent; }
     .select2-container .select2-selection--single .select2-selection__arrow,
     .elementor-editor-active .select2-container .select2-selection--single .select2-selection__arrow {
       width: 20px;
@@ -694,7 +698,7 @@ img.alignright {
         top: 50%;
         left: 50%;
         color: var(--e-global-color-accent, #E96CA7);
-        margin: -4px 0 0 -7px;
+        margin: -4px 0 0 -13px;
         transition: all 0.3s; }
   .select2-container--default .select2-selection--single .select2-selection__rendered,
   .elementor-editor-active .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -2243,37 +2247,57 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
     font-size: 14px;
     line-height: 150%; }
 
+.gform-theme--framework :where(:not(html):not(iframe):not(canvas):not(img):not(svg):not(video)
+:not(svg *):not(symbol *):not(.gform-theme__no-reset--el)
+:not(.gform-theme__no-reset--children *):not(.gform-theme__disable)
+:not(.gform-theme__disable *):not(.gform-theme__disable-reset)
+:not(.gform-theme__disable-reset *):not(.gform_heading *):not(.gfield--type-html *)
+:not(.gfield--type-section *):not(.form_saved_message > *)
+:not(.form_saved_message_sent > *):not(.gform_confirmation_message *)
+:not(.wp-editor-container):not(.mce-tinymce):not(.mce-tinymce *)
+:not(.wp-editor-area):not(.gfield_description > *)
+:not(.gform-field-label--type-inline > :not(span))) {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  display: revert;
+  all: revert-layer; }
+
 .gform_wrapper.gform-theme--api, .gform_wrapper.gform-theme--foundation {
-  --gf-form-gap-x: 12px;
-  --gf-form-gap-y: 12px; }
+  --gf-form-gap-x: 10px;
+  --gf-form-gap-y: 10px; }
 .gform_wrapper .gform_heading {
-  margin-bottom: 30px; }
+  margin-bottom: 25px; }
   .gform_wrapper .gform_heading .gform_title {
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0; }
+    font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+    font-size: 50px;
+    font-weight: 600; }
   .gform_wrapper .gform_heading .gform_description {
-    font-size: 20px;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    line-height: 150%;
     margin: 4px 0 0; }
 .gform_wrapper .gform-body input:not([type="checkbox"], [type="radio"]),
 .gform_wrapper .gform-body select,
 .gform_wrapper .gform-body textarea {
   font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
+  font-weight: 400;
+  line-height: 200%;
   height: auto;
   color: var(--e-global-color-text, #555);
-  background: #FFFFFF;
-  padding: 16px 24px;
-  border: 2px solid #DADADA;
-  border-radius: 10px;
+  background: transparent;
+  padding: 10px 24px 10px 0;
+  border: none;
+  border-bottom: 1px solid #8C8C8C;
+  border-radius: 0;
   outline: none;
   box-shadow: none; }
 .gform_wrapper .gform-body textarea {
   min-block-size: auto !important;
-  height: 130px; }
+  height: 100px; }
 .gform_wrapper .gform_footer input[type="submit"] {
   display: inline-block !important;
   font-size: 18px !important;
@@ -2283,9 +2307,9 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
   text-align: center !important;
   color: #FFFFFF !important;
   background: var(--e-global-color-accent, #E96CA7) !important;
-  padding: 16px 40px !important;
+  padding: 17px 40px !important;
   border: none !important;
-  border-radius: 10px !important; }
+  border-radius: 0 !important; }
   .gform_wrapper .gform_footer input[type="submit"].gform-button--width-full {
     width: 100% !important; }
 .gform_wrapper .gform_validation_errors {
@@ -3515,41 +3539,33 @@ body {
         text-align: left;
         margin-left: 0; } }
 
-.__bt-therapist-style-default .bt-post--inner, .bt-elwg-team-loop-therapist--default .bt-post--inner {
+.__bt-therapist-style-default .bt-post--inner, .bt-elwg-therapist-loop-item--default .bt-post--inner {
   position: relative;
-  overflow: hidden;
-  background: #FFF;
-  border: 1px solid #DBDBDB;
-  border-radius: 15px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); }
-.__bt-therapist-style-default .bt-post--thumbnail, .bt-elwg-team-loop-therapist--default .bt-post--thumbnail {
+  overflow: hidden; }
+.__bt-therapist-style-default .bt-post--thumbnail, .bt-elwg-therapist-loop-item--default .bt-post--thumbnail {
   line-height: 0; }
-.__bt-therapist-style-default .bt-post--infor, .bt-elwg-team-loop-therapist--default .bt-post--infor {
+.__bt-therapist-style-default .bt-post--infor, .bt-elwg-therapist-loop-item--default .bt-post--infor {
   text-align: center;
-  padding: 30px 15px; }
-.__bt-therapist-style-default .bt-post--title, .bt-elwg-team-loop-therapist--default .bt-post--title {
-  font-size: 22px;
-  margin: 0 0 4px; }
-.__bt-therapist-style-default .bt-post--job, .bt-elwg-team-loop-therapist--default .bt-post--job {
-  font-size: 16px;
-  margin-bottom: 20px; }
-.__bt-therapist-style-default .bt-post--prf-link, .bt-elwg-team-loop-therapist--default .bt-post--prf-link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 150%;
-  color: var(--e-global-color-accent, #E96CA7);
-  margin-bottom: 20px; }
-  .__bt-therapist-style-default .bt-post--prf-link a, .bt-elwg-team-loop-therapist--default .bt-post--prf-link a {
-    text-decoration: underline; }
-.__bt-therapist-style-default .bt-post--social, .bt-elwg-team-loop-therapist--default .bt-post--social {
-  display: flex;
-  justify-content: center;
-  gap: 12px; }
-  .__bt-therapist-style-default .bt-post--social a, .bt-elwg-team-loop-therapist--default .bt-post--social a {
-    line-height: 0; }
-    .__bt-therapist-style-default .bt-post--social a img, .bt-elwg-team-loop-therapist--default .bt-post--social a img {
-      width: auto;
-      height: 20px; }
+  padding: 31px 15px 30px;
+  background: #f7f4ef;
+  position: relative; }
+.__bt-therapist-style-default .bt-post--title, .bt-elwg-therapist-loop-item--default .bt-post--title {
+  color: #222;
+  font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize; }
+.__bt-therapist-style-default .bt-post--job, .bt-elwg-therapist-loop-item--default .bt-post--job {
+  font-size: 15px;
+  background: var(--e-global-color-accent, #E96CA7);
+  padding: 6px 15px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .single-therapist .bt-main-content-ss .bt-post {
   position: relative;
@@ -3570,16 +3586,16 @@ body {
   .single-therapist .bt-main-content-ss .bt-post .bt-main-posts-ss .bt-post--meta {
     display: flex;
     flex-wrap: wrap;
-    background: #FFFFFF;
+    background: #ffffff;
     overflow: hidden;
     margin-bottom: 30px;
-    border: 1px solid #DADADA;
+    border: 1px solid #dadada;
     border-radius: 10px; }
   .single-therapist .bt-main-content-ss .bt-post .bt-main-posts-ss .bt-post--meta-col {
     width: 33.33%; }
     .single-therapist .bt-main-content-ss .bt-post .bt-main-posts-ss .bt-post--meta-col:not(:last-child) {
       width: calc(33.33% - 1px);
-      border-right: 1px solid #DADADA; }
+      border-right: 1px solid #dadada; }
   .single-therapist .bt-main-content-ss .bt-post .bt-main-posts-ss .bt-post--meta-item {
     padding: 18px 30px; }
     .single-therapist .bt-main-content-ss .bt-post .bt-main-posts-ss .bt-post--meta-item .bt-meta-item {
@@ -3630,30 +3646,30 @@ body {
     flex-direction: column;
     gap: 30px; }
     .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block {
-      background: #FFFFFF;
+      background: #ffffff;
       padding: 30px;
       overflow: hidden;
-      border: 1px solid #DADADA;
+      border: 1px solid #dadada;
       border-radius: 20px; }
       .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block .bt-block-heading {
         font-size: 30px;
         font-weight: 700;
         margin: 0 0 10px; }
       .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-contact-block {
-        color: #FFFFFF;
+        color: #ffffff;
         background: var(--e-global-color-accent, #E96CA7); }
         .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-contact-block .gform_wrapper .gform_heading .gform_title,
         .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-contact-block .gform_wrapper .gform_heading .gform_description {
-          color: #FFFFFF; }
+          color: #ffffff; }
         .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-contact-block .gform_wrapper .gform-body input:not([type="checkbox"], [type="radio"]),
         .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-contact-block .gform_wrapper .gform-body select,
         .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-contact-block .gform_wrapper .gform-body textarea {
-          color: #FFFFFF;
+          color: #ffffff;
           background: transparent;
-          border-color: #FFFFFF; }
+          border-color: #ffffff; }
         .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-contact-block .gform_wrapper .gform_footer input[type="submit"] {
           color: var(--e-global-color-secondary, #111) !important;
-          background: #FFFFFF !important; }
+          background: #ffffff !important; }
       .single-therapist .bt-main-content-ss .bt-post .bt-sidebar-wrap .bt-sidebar-block.bt-location-block .bt-location-text {
         position: relative;
         font-size: 18px;
@@ -5859,6 +5875,9 @@ body {
 .bt-elwg-pricing-item .bt-pricing--contentinfo {
   padding: 31px 44px 40px 38px;
   background: #f7f4ef; }
+  @media (max-width: 519.98px) {
+    .bt-elwg-pricing-item .bt-pricing--contentinfo {
+      padding: 30px; } }
 .bt-elwg-pricing-item .bt-pricing--listinfo {
   padding: 0;
   margin-bottom: 40px; }
@@ -5892,6 +5911,9 @@ body {
   padding: 21px 48px;
   background: #e96ca7;
   display: inline-block; }
+  @media (max-width: 519.98px) {
+    .bt-elwg-pricing-item .bt-pricing--button {
+      padding: 18px 30px; } }
 .bt-elwg-pricing-item .bt-pricing--buttonmore {
   color: var(--e-global-color-text, #555);
   font-size: 16px;
@@ -5939,10 +5961,10 @@ body {
     font-size: 45px; } }
 
 @media (min-width: 1450px) {
-  .__bt-pd-container-full-width > .elementor-element:first-child {
+  .__bt-pd-container-full-width > .elementor-element:first-child, .elementor-element.bt-section-testimonials-home1 > .elementor-element:first-child {
     padding-left: calc((100% - var(--container-max-width)) / 2); } }
 @media (min-width: 1450px) {
-  .__bt-pd-container-full-width > .elementor-element:last-child {
+  .__bt-pd-container-full-width > .elementor-element:last-child, .elementor-element.bt-section-testimonials-home1 > .elementor-element:last-child {
     padding-right: calc((100% - var(--container-max-width)) / 2); } }
 
 .elementor-element.bt-text-view-more a {
@@ -6065,5 +6087,101 @@ body {
   @media (max-width: 420px) {
     .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item .elementor-icon-list-text {
       font-size: 17px; } }
+@media (max-width: 1199.98px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-appointment .bt-col-opening-hours {
+    padding: 31px; }
+    .elementor-element.bt-section-appointment .bt-col-opening-hours > .e-con-inner {
+      padding: 31px; } }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform_confirmation_message {
+  color: #fff; }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform_heading {
+  display: flex;
+  flex-direction: column-reverse;
+  grid-gap: 3px; }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform_heading .gform_title {
+    color: #fff; }
+    @media (max-width: 519.98px) {
+      .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform_heading .gform_title {
+        font-size: 45px; } }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform_heading .gform_description {
+    color: #fff;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin: 0; }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body input:not([type="checkbox"], [type="radio"]),
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body select,
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body textarea {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  z-index: 1; }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .select2-selection--single {
+  border-bottom: 2px solid #fff; }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .select2-selection--single .select2-selection__rendered {
+    color: #fff; }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .select2-selection--single .select2-selection__arrow b {
+    border-color: #fff transparent transparent transparent;
+    border-width: 9px 8px 0 8px;
+    margin-left: -13px;
+    margin-top: 0; }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .ginput_container.ginput_container_date svg {
+  position: absolute;
+  right: 13px; }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px; }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice input {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding-block: 0;
+    padding-inline: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+    opacity: 0; }
+    .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice input:checked ~ .checkmark {
+      background-image: url("../images/active-checkbox.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: 75%; }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice .checkmark {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: #fff5f4; }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice label {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff;
+    margin: 0; }
+    .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice label a {
+      text-decoration: underline;
+      color: #fff; }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body textarea {
+  min-block-size: auto !important;
+  height: 100px; }
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform_footer {
+  margin-top: 31px; }
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform_footer input[type="submit"] {
+    background: transparent !important;
+    border: 3px solid #fff !important;
+    width: 100% !important; }
+@media (max-width: 1199.98px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 {
+    padding: 31px; }
+    .elementor-element.bt-section-appointment .bt-form-appointment-home1 > .e-con-inner {
+      padding: 31px; } }
 
 /*# sourceMappingURL=main.css.map */

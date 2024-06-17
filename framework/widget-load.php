@@ -72,7 +72,8 @@ class ElementorWidgets
 			'highlighted-heading-style-1',
 			'popular-services',
 			'pricing-item',
-			'time-list'
+			'time-list',
+			'therapist-loop-item'
 		);
 
 		return $this->widgets;
@@ -180,6 +181,7 @@ class ElementorWidgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TestimonialSlider\Widget_TestimonialSlider());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TestimonialLoopItem\Widget_TestimonialLoopItem());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ClientLoopItem\Widget_ClientLoopItem());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TherapistLoopItem\Widget_TherapistLoopItem());
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PopularServices\Widget_PopularServices());
 

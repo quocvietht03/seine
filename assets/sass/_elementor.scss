@@ -630,7 +630,7 @@
   }
 }
 
-.bt-elwg-team-loop-therapist {
+.bt-elwg-therapist-loop-item{
   &--default {
     @extend .__bt-therapist-style-default;
   }
@@ -1148,6 +1148,9 @@
     &--contentinfo {
       padding: 31px 44px 40px 38px;
       background: #f7f4ef;
+      @media(max-width:$break-xs){
+        padding: 30px;
+      }
     }
     &--listinfo {
       padding: 0;
@@ -1187,6 +1190,9 @@
       padding: 21px 48px;
       background: #e96ca7;
       display: inline-block;
+      @media(max-width:$break-xs){
+        padding: 18px 30px;
+      }
     }
     &--buttonmore {
       color: $color-text;

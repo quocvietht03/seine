@@ -176,9 +176,9 @@
             }
         }
     }
-    &.bt-section-appointment{
-        .bt-elwg-highlighted-heading{
-            h3 span{
+    &.bt-section-appointment {
+        .bt-elwg-highlighted-heading {
+            h3 span {
                 display: initial;
             }
         }
@@ -213,5 +213,134 @@
                 }
             }
         }
+        .bt-col-opening-hours{
+            @media(max-width:$break-lg) and (min-width:$break-tl){
+                padding: 31px;
+                >.e-con-inner{
+                    padding: 31px;
+                }
+            }
+        }
+        .bt-form-appointment-home1 {
+            .gform_confirmation_message{
+                color: #fff;
+            }
+            .gform_heading {
+                display: flex;
+                flex-direction: column-reverse;
+                grid-gap: 3px;
+                .gform_title {
+                    color: #fff;
+                    @media(max-width:$break-xs){
+                        font-size: 45px;
+                    }
+                }
+                .gform_description {
+                    color: #fff;
+                    letter-spacing: 1.8px;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+            }
+            .gform-body {
+                input:not([type="checkbox"], [type="radio"]),
+                select,
+                textarea {
+                    color: #fff;
+                    border-bottom: 2px solid #fff;
+                    width: 100%;
+                    z-index: 1;
+                }
+                .select2-selection--single {
+                    border-bottom: 2px solid #fff;
+                    .select2-selection__rendered {
+                        color: #fff;
+                    }
+                    .select2-selection__arrow b {
+                        border-color: #fff transparent transparent transparent;
+                        border-width: 9px 8px 0 8px;
+                        margin-left: -13px;
+                        margin-top: 0;
+                    }
+                }
+                .ginput_container.ginput_container_date {
+                    svg {
+                        position: absolute;
+                        right: 13px;
+                    }
+                }
+                .gfield--input-type-checkbox {
+                    .gchoice {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        padding-left: 30px;
+                        input {
+                            margin: 0;
+                            width: 20px;
+                            height: 20px;
+                            border: none;
+                            padding-block: 0;
+                            padding-inline: 0;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+                            z-index: 2;
+                            opacity: 0;
+                            &:checked ~ .checkmark {
+                                background-image: url("../images/active-checkbox.svg");
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-size: 75%;
+                            }
+                        }
+                        .checkmark {
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+                            background: #fff5f4;
+                        }
+                        label {
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 36px;
+                            color: #fff;
+                            margin: 0;
+                            a {
+                                text-decoration: underline;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                textarea {
+                    min-block-size: auto !important;
+                    height: 100px;
+                }
+            }
+            .gform_footer {
+                margin-top: 31px;
+                input[type="submit"] {
+                    background: transparent !important;
+                    border: 3px solid #fff !important;
+                    width: 100% !important;
+                }
+            }
+            @media(max-width:$break-lg) and (min-width:$break-tl){
+                padding: 31px;
+                >.e-con-inner{
+                    padding: 31px;
+                }
+            }
+        }
+    }
+    &.bt-section-testimonials-home1{
+        @extend .__bt-pd-container-full-width
     }
 }

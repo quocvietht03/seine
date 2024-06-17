@@ -3,47 +3,34 @@
     &--inner {
       position: relative;
       overflow: hidden;
-      background: #FFF;
-      border: 1px solid #DBDBDB;
-      border-radius: 15px;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     }
     &--thumbnail {
       line-height: 0;
     }
     &--infor {
       text-align: center;
-      padding: 30px 15px;
+      padding: 31px 15px 30px;
+      background: #f7f4ef;
+      position: relative;
     }
     &--title {
-      font-size: 22px;
-      margin: 0 0 4px;
+      color: #222;
+      font-family: $secondary-font;
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: capitalize;
     }
     &--job {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    &--prf-link {
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 150%;
-      color: $color-accent;
-      margin-bottom: 20px;
-      a {
-        text-decoration: underline;
-      }
-    }
-    &--social {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      a {
-        line-height: 0;
-        img {
-          width: auto;
-          height: 20px;
-        }
-      }
+      font-size: 15px;
+      background: $color-accent;
+      padding: 6px 15px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.4;
+      position: absolute;
+      top: -17px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -76,17 +63,17 @@
           &--meta {
             display: flex;
             flex-wrap: wrap;
-            background: #FFFFFF;
+            background: #ffffff;
             overflow: hidden;
             margin-bottom: 30px;
-            border: 1px solid #DADADA;
+            border: 1px solid #dadada;
             border-radius: 10px;
           }
           &--meta-col {
             width: 33.33%;
             &:not(:last-child) {
               width: calc(33.33% - 1px);
-              border-right: 1px solid #DADADA;
+              border-right: 1px solid #dadada;
             }
           }
           &--meta-item {
@@ -143,7 +130,7 @@
           gap: 30px;
         }
 
-        @media(max-width: $break-sm) {
+        @media (max-width: $break-sm) {
           &--list {
             .bt-post {
               width: 100%;
@@ -161,10 +148,10 @@
         flex-direction: column;
         gap: 30px;
         .bt-sidebar-block {
-          background: #FFFFFF;
+          background: #ffffff;
           padding: 30px;
           overflow: hidden;
-          border: 1px solid #DADADA;
+          border: 1px solid #dadada;
           border-radius: 20px;
           .bt-block-heading {
             font-size: 30px;
@@ -172,28 +159,28 @@
             margin: 0 0 10px;
           }
           &.bt-contact-block {
-            color: #FFFFFF;
+            color: #ffffff;
             background: $color-accent;
             .gform_wrapper {
               .gform_heading {
                 .gform_title,
                 .gform_description {
-                  color: #FFFFFF;
+                  color: #ffffff;
                 }
               }
               .gform-body {
-                input:not([type="checkbox"],[type="radio"]),
+                input:not([type="checkbox"], [type="radio"]),
                 select,
                 textarea {
-                  color: #FFFFFF;
+                  color: #ffffff;
                   background: transparent;
-                  border-color: #FFFFFF;
+                  border-color: #ffffff;
                 }
               }
               .gform_footer {
                 input[type="submit"] {
                   color: $color-secondary !important;
-                  background: #FFFFFF !important;
+                  background: #ffffff !important;
                 }
               }
             }
@@ -226,27 +213,23 @@
       }
     }
 
-    @media(max-width: $break-lg) {
-
+    @media (max-width: $break-lg) {
     }
 
-    @media(max-width: $break-md) {
+    @media (max-width: $break-md) {
       &--main,
       &--sidebar {
         width: 100%;
       }
     }
 
-    @media(max-width: $break-sm) {
-
+    @media (max-width: $break-sm) {
     }
 
-    @media(max-width: $break-xs) {
-
+    @media (max-width: $break-xs) {
     }
 
-    @media(max-width: 420px) {
-
+    @media (max-width: 420px) {
     }
   }
 }

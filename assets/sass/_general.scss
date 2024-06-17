@@ -87,13 +87,17 @@
   }
 
   .select2-selection--single {
-    height: 56px;
-    border-radius: 10px;
+    border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0px 0 24px;
+    padding: 10px 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #8C8C8C;
     gap: 10px;
+    height: 58px;
+    font-size: 18px;
+    background: transparent;
 
     .select2-selection {
       &__arrow {
@@ -105,7 +109,7 @@
           top: 50%;
           left: 50%;
           color: $color-accent;
-          margin: -4px 0 0 -7px;
+          margin: -4px 0 0 -13px;
           transition: all 0.3s;
         }
       }

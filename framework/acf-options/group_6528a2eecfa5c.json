@@ -1,32 +1,7 @@
 {
     "key": "group_6528a2eecfa5c",
-    "title": "Dealer Options",
+    "title": "Therapists Options",
     "fields": [
-        {
-            "key": "field_661636cf5a2e1",
-            "label": "Avatar",
-            "name": "avatar",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "preview_size": "thumbnail"
-        },
         {
             "key": "field_6528a2ef02aa5",
             "label": "Job",
@@ -46,46 +21,6 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_660f9f79cbc9a",
-            "label": "Location",
-            "name": "location",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_66163861fe544",
-            "label": "Map Iframe",
-            "name": "map_iframe",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": 4,
-            "placeholder": "",
-            "new_lines": ""
         },
         {
             "key": "field_660f9fbdcd6f1",
@@ -128,29 +63,9 @@
             "append": ""
         },
         {
-            "key": "field_661633bb2b6f1",
-            "label": "Message Link",
-            "name": "message_link",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_661633ecb3385",
-            "label": "Whatsapp Link",
-            "name": "whatsapp_link",
+            "key": "field_660f9f79cbc9a",
+            "label": "Address",
+            "name": "address",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -244,7 +159,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "dealer"
+                "value": "therapist"
             }
         ]
     ],
@@ -257,5 +172,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712732359
+    "modified": 1718606289
 }
