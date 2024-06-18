@@ -13,7 +13,7 @@ class Widget_TherapistLoopItem extends Widget_Base {
 
 
 	public function get_name() {
-		return 'bt-post-loop-item';
+		return 'bt-therapist-loop-item';
 	}
 
 	public function get_title() {

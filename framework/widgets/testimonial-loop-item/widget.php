@@ -41,23 +41,6 @@ class Widget_TestimonialLoopItem extends Widget_Base {
 			]
 		);
 
-		$this->add_control(
-			'box_border_width',
-			[
-				'label' => __( 'Border Width', 'seine' ),
-				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px' ],
-				'range' => [
-					'px' => [
-						'min' => 0,
-						'max' => 50,
-					],
-				],
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'border-style: solid; border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
-				],
-			]
-		);
 
 		$this->add_control(
 			'box_border_radius',
@@ -97,27 +80,6 @@ class Widget_TestimonialLoopItem extends Widget_Base {
 			]
 		);
 
-		$this->add_control(
-			'box_bg_color',
-			[
-				'label' => __( 'Background Color', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'background-color: {{VALUE}}',
-				],
-			]
-		);
-
-		$this->add_control(
-			'box_border_color',
-			[
-				'label' => __( 'Border Color', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'border-color: {{VALUE}}',
-				],
-			]
-		);
 
 		$this->end_controls_section();
 
@@ -144,19 +106,7 @@ class Widget_TestimonialLoopItem extends Widget_Base {
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-post--quote-icon' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_control(
-			'quote_icon_bg_color',
-			[
-				'label' => __( 'Background Color', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--quote-icon' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--quote-icon svg path' => 'fill: {{VALUE}};',
 				],
 			]
 		);
@@ -272,40 +222,6 @@ class Widget_TestimonialLoopItem extends Widget_Base {
 				'label' => __( 'Typography', 'seine' ),
 				'default' => '',
 				'selector' => '{{WRAPPER}} .bt-post--desc',
-			]
-		);
-
-		$this->add_control(
-			'info_style',
-			[
-				'label' => __( 'Info Background', 'seine' ),
-				'type' => Controls_Manager::HEADING,
-			]
-		);
-
-		$this->add_control(
-			'info_bg_color',
-			[
-				'label' => __( 'Background Color', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--infor,
-					{{WRAPPER}} .bt-post--infor:before' => 'background-color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_control(
-			'info_bg_color_hover',
-			[
-				'label' => __( 'Background Color Hover', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-post:hover .bt-post--infor,
-					{{WRAPPER}} .bt-post:hover .bt-post--infor:before' => 'background-color: {{VALUE}};',
-				],
 			]
 		);
 

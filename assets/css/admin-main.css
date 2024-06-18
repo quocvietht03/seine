@@ -1037,8 +1037,10 @@ html :where(.editor-styles-wrapper) {
       transform: translateY(-50%);
       left: 0;
       background: #fff5f4; }
-    .__bt-newsletter-form-style form .tnp-privacy-field label a:hover, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a:hover {
+    .__bt-newsletter-form-style form .tnp-privacy-field label a, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a {
       color: #fff; }
+      .__bt-newsletter-form-style form .tnp-privacy-field label a:hover, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a:hover {
+        color: #fff; }
   @media (max-width: 767.98px) {
     .__bt-newsletter-form-style form .tnp-privacy-field, .__bt-newsletter-form-style-2 form .tnp-privacy-field {
       position: absolute;

@@ -208,34 +208,49 @@
   }
 
   &--style-1 {
+    row-gap: 40px;
     .bt-elwg-site-infor {
       &--item {
         > a {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 18px;
         }
 
         &-icon {
-          min-width: 54px;
-          min-height: 54px;
-          background-color: #fff;
+          min-width: 67px;
+          min-height: 67px;
+          background-color: $color-accent;
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 50%;
           svg {
             width: 100%;
             height: auto;
-            max-width: 24px;
+            max-width: 30px;
             margin: 0;
+          }
+        }
+        &-content {
+          h4 {
+            color: $color-primary;
+            font-family: $secondary-font;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 33px;
+          }
+          span {
+            color: $color-text;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
           }
         }
 
         &.address {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 18px;
         }
       }
     }
@@ -630,7 +645,7 @@
   }
 }
 
-.bt-elwg-therapist-loop-item{
+.bt-elwg-therapist-loop-item {
   &--default {
     @extend .__bt-therapist-style-default;
   }
@@ -828,50 +843,41 @@
   &--default {
     .bt-post {
       padding: 10px;
-      &:hover {
-        .bt-post {
-          &--infor {
-            background: $color-accent;
-            &:before {
-              background: $color-accent;
-            }
-          }
-          &--title,
-          &--job {
-            color: #fff;
+      &--quote-icon {
+        position: absolute;
+        z-index: 3;
+        right: 27px;
+        top: 24px;
+        @media (max-width: $break-xs) {
+          right: 14px;
+          top: 13px;
+          svg {
+            width: 40px;
+            height: 40px;
           }
         }
-      }
-      &--quote-icon {
-        position: relative;
-        z-index: 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 68px;
-        height: 68px;
-        color: #fff;
-        background: $color-accent;
-        margin: 0 auto -37px;
-        border-radius: 100px;
-        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5);
       }
       &--inner {
         position: relative;
         overflow: hidden;
+        padding: 51px 71px;
         z-index: 1;
-        background: #fff;
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
-        border-radius: 15px;
+        background-image: url("../images/bg-item-testimonials.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (max-width: $break-xs) {
+          padding: 35px;
+        }
       }
       &--desc {
-        font-size: 20px;
-        font-weight: 500;
+        color: $color-text;
+        font-family: $secondary-font;
+        font-size: 26px;
         font-style: italic;
-        text-align: center;
-        padding: 60px 25px 30px;
+        font-weight: 400;
+        line-height: 36px;
         > * {
-          max-width: 280px;
           margin-left: auto;
           margin-right: auto;
           &:first-child {
@@ -886,29 +892,16 @@
         position: relative;
         display: flex;
         align-items: center;
-        background: $color-secondary;
-        padding: 25px;
+        padding-top: 28px;
         transition: all 0.3s;
-        &:before {
-          content: "";
-          position: absolute;
-          top: -8px;
-          right: 50px;
-          width: 20px;
-          height: 20px;
-          background: $color-secondary;
-          border-radius: 2px;
-          transform: rotate(45deg);
-          transition: all 0.3s;
-        }
       }
       &--avatar {
         display: flex;
         overflow: hidden;
-        width: 52px;
-        height: 52px;
+        width: 88px;
+        height: 88px;
         background: #f5f5f5;
-        border-radius: 100px;
+        border-radius: 50%;
         img {
           width: 100%;
           height: 100%;
@@ -916,26 +909,58 @@
         }
       }
       &--title-wrap {
-        width: calc(100% - 52px);
-        padding-left: 12px;
+        width: calc(100% - 88px);
+        padding-left: 22px;
       }
       &--title {
-        font-size: 20px;
         color: #fff;
-        margin-bottom: 2px;
+        font-family: $secondary-font;
+        font-size: 30px;
+        font-weight: 600;
         transition: all 0.3s;
+        margin-bottom: 5px;
       }
       &--job {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
         color: $color-accent;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
         transition: all 0.3s;
       }
     }
   }
 }
-
+.bt-elwg-service-list {
+  &--default {
+    .bt-service-list{
+      display: flex;
+      flex-direction: column;
+      grid-gap: 30px;
+    }
+    .bt-service-list-item {
+      display: flex;
+      grid-gap: 8px;
+      align-items: center;
+    }
+    .bt-post {
+      &--icon{
+        height: 20px;
+      }
+      &--title {
+        color: $color-primary;
+        font-family: $secondary-font;
+        font-size: 20px;
+        font-weight: 500;
+        a{
+          color: $color-primary;
+        font-family: $secondary-font;
+        font-size: 20px;
+        font-weight: 500;
+        }
+      }
+    }
+  }
+}
 .bt-elwg-client-loop-item {
   &--default {
     a {
@@ -1148,7 +1173,7 @@
     &--contentinfo {
       padding: 31px 44px 40px 38px;
       background: #f7f4ef;
-      @media(max-width:$break-xs){
+      @media (max-width: $break-xs) {
         padding: 30px;
       }
     }
@@ -1190,7 +1215,7 @@
       padding: 21px 48px;
       background: #e96ca7;
       display: inline-block;
-      @media(max-width:$break-xs){
+      @media (max-width: $break-xs) {
         padding: 18px 30px;
       }
     }
@@ -1211,7 +1236,7 @@
 .bt-elwg-time-list {
   &--default {
     .bt-time {
-      &-list{
+      &-list {
         margin: 0;
         list-style: none;
         padding: 0;
