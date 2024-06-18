@@ -6127,12 +6127,12 @@ body {
 .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .ginput_container.ginput_container_date svg {
   position: absolute;
   right: 13px; }
-.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice {
+.elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield_checkbox .gchoice {
   display: flex;
   align-items: center;
   position: relative;
   padding-left: 30px; }
-  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice input {
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield_checkbox .gchoice input {
     margin: 0;
     width: 20px;
     height: 20px;
@@ -6145,13 +6145,13 @@ body {
     left: 0;
     z-index: 2;
     opacity: 0; }
-    .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice input:checked ~ .checkmark {
+    .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield_checkbox .gchoice input:checked ~ .checkmark {
       background-image: url("../images/active-checkbox.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-size: 75%; }
-  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice .checkmark {
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield_checkbox .gchoice .checkmark {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -6159,14 +6159,14 @@ body {
     transform: translateY(-50%);
     left: 0;
     background: #fff5f4; }
-  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice label {
+  .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield_checkbox .gchoice label {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
     color: #fff;
     margin: 0; }
-    .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield--input-type-checkbox .gchoice label a {
+    .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body .gfield_checkbox .gchoice label a {
       text-decoration: underline;
       color: #fff; }
 .elementor-element.bt-section-appointment .bt-form-appointment-home1 .gform-body textarea {
