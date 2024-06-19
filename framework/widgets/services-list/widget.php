@@ -207,7 +207,45 @@ class Widget_ServicesList extends Widget_Base
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
+		$this->add_responsive_control(
+			'section_ratio',
+			[
+				'label' => __('Space Between', 'seine'),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 30,
+				],
+				'range' => [
+					'px' => [
+						'min' => 1,
+						'max' => 100,
+						'step' => 1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .bt-service-list ' => 'grid-gap: {{SIZE}}px;',
+				],
+			]
+		);
+		$this->add_control(
+			'icon_style',
+			[
+				'label' => __('Icon', 'seine'),
+				'type' => Controls_Manager::HEADING,
+			]
+		);
 
+		$this->add_control(
+			'icon_color',
+			[
+				'label' => __('Color', 'seine'),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--icon svg path' => 'fill: {{VALUE}};',
+				],
+			]
+		);
 		$this->add_control(
 			'title_style',
 			[

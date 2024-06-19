@@ -416,4 +416,15 @@
             }
         }
     }
+    &.elementor-widget-smartslider{
+        .bt-col-slider-button-play{
+            left: -64px;
+            top: 27px;
+            @media(max-width:350px){
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    
 }

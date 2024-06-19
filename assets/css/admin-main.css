@@ -632,13 +632,13 @@ html :where(.editor-styles-wrapper) {
     background: var(--e-global-color-accent, #E96CA7);
     border-radius: 100px; }
     .__bt-socials-style a.bt-facebook {
-      background: #186cb0; }
+      background: #186CB0; }
     .__bt-socials-style a.bt-linkedin {
       background: #074682; }
     .__bt-socials-style a.bt-twitter {
-      background: #00b3d3; }
+      background: #00B3D3; }
     .__bt-socials-style a.bt-google {
-      background: var(--e-global-color-accent, #E96CA7); }
+      background: #ffffff; }
     .__bt-socials-style a svg {
       fill: currentColor; }
 

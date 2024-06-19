@@ -293,12 +293,12 @@
             }
           }
         }
-        @media (max-width: 1370px) and (min-width: $break-tl) {
+        @media (max-width: 1380px) and (min-width: $break-tl) {
           padding-left: 30px;
         }
       }
       &.bt-col-left {
-        @media (max-width: 1370px) and (min-width: $break-tl) {
+        @media (max-width: 1380px) and (min-width: $break-tl) {
           padding-right: 30px;
         }
       }
@@ -329,9 +329,58 @@
       }
     }
   }
+  &.bt-header-nav-style-2 {
+    > .e-con-inner {
+      > .elementor-element {
+        @media (max-width: 1390px) and (min-width: $break-tl) {
+          &:nth-child(2) {
+            padding-left: 15px;
+            width: 55%;
+          }
+          &:last-child {
+            width: 24%;
+          }
+        }
+        @media (max-width: 1390px) and (min-width: $break-tl) {
+          &:first-child {
+            width: 15%;
+          }
+          &:nth-child(2) {
+            width: 60%;
+          }
+          &:last-child {
+            width: 25%;
+          }
+        }
+        @media (max-width: 1180px) and (min-width: $break-tl) {
+          &:first-child {
+            padding: 10px;
+          }
+          &:nth-child(2) {
+            width: 62%;
+            .elementor-nav-menu {
+              .elementor-item {
+                font-size: 18px;
+                margin-left: 6px;
+              }
+            }
+          }
+          &:last-child {
+            width: 23%;
+            .bt-button-header-2 {
+              .elementor-button {
+                padding: 17px 20px;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 body.admin-bar .dialog-type-lightbox {
-  &.bt-menu-mobile-popup{
+  &.bt-menu-mobile-popup {
     position: fixed;
     top: 45px;
   }

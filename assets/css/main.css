@@ -1133,16 +1133,16 @@ img.alignright {
     border-radius: 100px; }
     .__bt-socials-style a.bt-facebook, .bt-post-author--socials a.bt-facebook, .bt-elwg-site-social a.bt-facebook,
     .bt-elwg-site-social-style-2 a.bt-facebook {
-      background: #186cb0; }
+      background: #186CB0; }
     .__bt-socials-style a.bt-linkedin, .bt-post-author--socials a.bt-linkedin, .bt-elwg-site-social a.bt-linkedin,
     .bt-elwg-site-social-style-2 a.bt-linkedin {
       background: #074682; }
     .__bt-socials-style a.bt-twitter, .bt-post-author--socials a.bt-twitter, .bt-elwg-site-social a.bt-twitter,
     .bt-elwg-site-social-style-2 a.bt-twitter {
-      background: #00b3d3; }
+      background: #00B3D3; }
     .__bt-socials-style a.bt-google, .bt-post-author--socials a.bt-google, .bt-elwg-site-social a.bt-google,
     .bt-elwg-site-social-style-2 a.bt-google {
-      background: var(--e-global-color-accent, #E96CA7); }
+      background: #ffffff; }
     .__bt-socials-style a svg, .bt-post-author--socials a svg, .bt-elwg-site-social a svg,
     .bt-elwg-site-social-style-2 a svg {
       fill: currentColor; }
@@ -1426,10 +1426,10 @@ img.alignright {
       .bt-social-mcn-ss.bt-style-2 .bt-social-mcn-ss--heading {
         max-width: 430px; } }
 
-.__bt-newsletter-form-style form, .__bt-newsletter-form-style-2 form, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form, .elementor-widget-shortcode .tnp-subscription-minimal form {
+.__bt-newsletter-form-style form, .__bt-newsletter-form-style-2 form, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form, .elementor-widget-shortcode .tnp-subscription-minimal form {
   position: relative;
   text-align: left !important; }
-  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email {
+  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email {
     width: 100%;
     max-width: calc(100% - 295px);
     border: none;
@@ -1438,12 +1438,11 @@ img.alignright {
     border-bottom: 2px solid #fff;
     margin: 0; }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email {
+      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email {
         max-width: 100%; } }
-  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email,
+  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email,
   .__bt-newsletter-form-style form input.tnp-email::placeholder,
   .__bt-newsletter-form-style-2 form input.tnp-email::placeholder,
-  .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder,
   .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email::placeholder,
   .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder {
     font-size: 18px;
@@ -1453,14 +1452,13 @@ img.alignright {
     color: #fff;
     font-family: var(--e-global-typography-text-font-family, "DM Sans"); }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email,
+      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email,
       .__bt-newsletter-form-style form input.tnp-email::placeholder,
       .__bt-newsletter-form-style-2 form input.tnp-email::placeholder,
-      .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder,
       .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email::placeholder,
       .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder {
         font-size: 16px; } }
-  .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after {
+  .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after {
     content: "";
     background-image: url("../images/icon-subcribe.svg");
     background-position: center;
@@ -1474,7 +1472,7 @@ img.alignright {
     transform: translateY(-50%);
     right: 203px; }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after {
+      .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after {
         width: 20px;
         height: 20px;
         top: inherit;
@@ -1482,7 +1480,7 @@ img.alignright {
         right: inherit;
         left: 30px;
         bottom: 19px; } }
-  .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit {
+  .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1506,14 +1504,14 @@ img.alignright {
     border: 3px solid #fff;
     z-index: 1; }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit {
+      .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit {
         position: relative;
         top: initial;
         transform: unset;
         margin-top: 50px;
         font-size: 16px;
         padding: 16px 30px 16px 60px; } }
-  .__bt-newsletter-form-style form .tnp-privacy-field label, .__bt-newsletter-form-style-2 form .tnp-privacy-field label, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label {
+  .__bt-newsletter-form-style form .tnp-privacy-field label, .__bt-newsletter-form-style-2 form .tnp-privacy-field label, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label {
     color: #fff;
     font-size: 15px;
     font-style: normal;
@@ -1521,7 +1519,7 @@ img.alignright {
     line-height: 36px;
     position: relative;
     padding-left: 30px; }
-    .__bt-newsletter-form-style form .tnp-privacy-field label input, .__bt-newsletter-form-style-2 form .tnp-privacy-field label input, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label input, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label input, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label input {
+    .__bt-newsletter-form-style form .tnp-privacy-field label input, .__bt-newsletter-form-style-2 form .tnp-privacy-field label input, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label input, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label input {
       margin: 0;
       width: 20px;
       height: 20px;
@@ -1548,21 +1546,21 @@ img.alignright {
       transform: translateY(-50%);
       left: 0;
       background: #fff5f4; }
-    .__bt-newsletter-form-style form .tnp-privacy-field label a, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label a, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a {
+    .__bt-newsletter-form-style form .tnp-privacy-field label a, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label a, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a {
       color: #fff; }
       .__bt-newsletter-form-style form .tnp-privacy-field label a:hover, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a:hover, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label a:hover, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a:hover {
         color: #fff; }
   @media (max-width: 767.98px) {
-    .__bt-newsletter-form-style form .tnp-privacy-field, .__bt-newsletter-form-style-2 form .tnp-privacy-field, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field {
+    .__bt-newsletter-form-style form .tnp-privacy-field, .__bt-newsletter-form-style-2 form .tnp-privacy-field, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field {
       position: absolute;
       bottom: 60px;
       margin: 0; } }
 
-.__bt-newsletter-form-style-2 form::before, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form::before, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::before, .__bt-newsletter-form-style-2 form::after, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after {
+.__bt-newsletter-form-style-2 form::before, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::before, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after {
   content: " ";
   display: inline-block;
   position: absolute; }
-.__bt-newsletter-form-style-2 form::before, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form::before, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::before {
+.__bt-newsletter-form-style-2 form::before, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::before {
   width: 9px;
   height: 15px;
   background-position: center;
@@ -1571,7 +1569,7 @@ img.alignright {
   bottom: 8px;
   right: 30px;
   z-index: 9; }
-.__bt-newsletter-form-style-2 form::after, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after {
+.__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after {
   width: 45px;
   height: 48px;
   background-color: var(--e-global-color-secondary, #111);
@@ -1581,15 +1579,15 @@ img.alignright {
   right: 13px;
   border-radius: 10px;
   z-index: 8; }
-.__bt-newsletter-form-style-2 form input.tnp-email, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email::placeholder, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email::placeholder {
+.__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email::placeholder, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email::placeholder {
   font-size: 16px;
   line-height: normal; }
-.__bt-newsletter-form-style-2 form input.tnp-email, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email {
+.__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email {
   height: 53px;
   padding: 16px 67px 16px 58px;
   max-width: 100%;
   background-position: center left 26px; }
-.__bt-newsletter-form-style-2 form input.tnp-submit, .elementor-element.bt-newsletter-footer-style-3 .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit {
+.__bt-newsletter-form-style-2 form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit {
   font-size: 0;
   width: 45px;
   height: 48px;
@@ -1885,10 +1883,10 @@ img.alignright {
   .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right .elementor-button-wrapper a {
     font-size: 14px;
     padding: 10px 25px; } }
-@media (max-width: 1370px) and (min-width: 1024.98px) {
+@media (max-width: 1380px) and (min-width: 1024.98px) {
   .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right {
     padding-left: 30px; } }
-@media (max-width: 1370px) and (min-width: 1024.98px) {
+@media (max-width: 1380px) and (min-width: 1024.98px) {
   .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-left {
     padding-right: 30px; } }
 @media (max-width: 1199.98px) and (min-width: 1024.98px) {
@@ -1904,6 +1902,32 @@ img.alignright {
       margin-left: 0; }
     .elementor-location-header .elementor-element.bt-header-nav-style-1 ul.elementor-nav-menu li.menu-item:last-child a.elementor-item {
       margin-right: 0; } }
+@media (max-width: 1390px) and (min-width: 1024.98px) {
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:nth-child(2) {
+    padding-left: 15px;
+    width: 55%; }
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:last-child {
+    width: 24%; } }
+@media (max-width: 1390px) and (min-width: 1024.98px) {
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:first-child {
+    width: 15%; }
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:nth-child(2) {
+    width: 60%; }
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:last-child {
+    width: 25%; } }
+@media (max-width: 1180px) and (min-width: 1024.98px) {
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:first-child {
+    padding: 10px; }
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:nth-child(2) {
+    width: 62%; }
+    .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:nth-child(2) .elementor-nav-menu .elementor-item {
+      font-size: 18px;
+      margin-left: 6px; }
+  .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:last-child {
+    width: 23%; }
+    .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:last-child .bt-button-header-2 .elementor-button {
+      padding: 17px 20px;
+      font-size: 16px; } }
 
 body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
   position: fixed;
@@ -1937,64 +1961,30 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
       height: 1px;
       background: #707070; }
 
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-site-footer-top > .e-con-inner > .elementor-element {
-    padding-left: 15px;
-    padding-right: 15px; } }
-
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-site-footer-bottom > .e-con-inner {
-    gap: 15px 15px; } }
-@media (min-width: 480px) and (max-width: 767.98px) {
-  .elementor-element.bt-site-footer-bottom > .e-con-inner > .elementor-element:nth-child(2) {
-    flex-wrap: nowrap;
-    gap: 15px; } }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-site-footer-bottom > .e-con-inner .elementor-widget-heading .elementor-heading-title {
-    font-size: 20px; } }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-site-footer-bottom > .e-con-inner .elementor-nav-menu--main li a {
-    font-size: 18px !important; } }
-.elementor-element.bt-site-footer-bottom .bt-elwg-site-social a {
-  width: 43px;
-  height: 43px; }
-  .elementor-element.bt-site-footer-bottom .bt-elwg-site-social a:nth-child(4) {
-    display: none; }
-.elementor-element.bt-site-footer-bottom .elementor-widget-social-icons .elementor-grid-item .elementor-social-icon.elementor-social-icon-linkedin-in {
-  box-sizing: border-box;
-  border: 2px solid #4D93E9; }
-.elementor-element.bt-site-footer-bottom .bt-elwg-site-infor a:hover {
-  text-decoration: underline; }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-footer-style-1 > .elementor-element:first-child h2.elementor-heading-title {
-    font-size: 20px; } }
-@media (min-width: 1200px) and (max-width: 1379.98px) {
-  .elementor-element.bt-footer-style-1 > .elementor-element:first-child .elementor-widget-icon-list > .elementor-widget-container {
+@media (min-width: 1024.98px) {
+  .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element:not(:last-child)::after {
+    content: "";
+    display: block;
+    background: #bfbfbf;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 1px;
+    height: 122px; } }
+@media (max-width: 1250px) and (min-width: 1024.98px) {
+  .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element:not(:first-child) {
     padding-left: 15px; } }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-footer-style-1 > .elementor-element:first-child .elementor-widget-icon-list > .elementor-widget-container {
-    padding-left: 10px; } }
-@media (min-width: 1200px) and (max-width: 1379.98px) {
-  .elementor-element.bt-footer-style-1 > .elementor-element:first-child .elementor-widget-icon-list .elementor-icon-list-item > a {
-    font-size: 16px; } }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-footer-style-1 > .elementor-element:first-child .elementor-widget-icon-list .elementor-icon-list-item > a {
-    font-size: 14px; } }
-@media (min-width: 1025px) and (max-width: 1279.98px) {
-  .elementor-element.bt-footer-style-3 > .e-con-inner > .elementor-element:last-child .elementor-element:first-child {
-    gap: 20px; } }
-@media (min-width: 1025px) and (max-width: 1279.98px) {
-  .elementor-element.bt-footer-style-3 > .e-con-inner > .elementor-element:last-child .elementor-element:first-child .bt-elwg-site-copyright {
-    font-size: 17px; } }
-@media (min-width: 1025px) and (max-width: 1279.98px) {
-  .elementor-element.bt-footer-style-3 > .e-con-inner > .elementor-element:last-child .elementor-element .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li > a {
-    font-size: 17px; } }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-footer-style-3 > .e-con-inner > .elementor-element:last-child .elementor-element .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child) > a {
-    margin-inline-end: calc(var(--e-nav-menu-horizontal-menu-item-margin) / 2); } }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
-  .elementor-element.bt-footer-style-3 > .e-con-inner > .elementor-element:last-child .elementor-element .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:first-child) > a {
-    margin-inline-start: calc(var(--e-nav-menu-horizontal-menu-item-margin) / 2); } }
+@media (max-width: 1095px) and (min-width: 1024.98px) {
+  .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element:first-child {
+    width: 30%; }
+  .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element:nth-child(2) {
+    width: 45%; } }
+@media (max-width: 1250px) and (min-width: 1024.98px) {
+  .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element .bt-elwg-site-infor.bt-elwg-site-infor--style-1 {
+    grid-gap: 15px; } }
+@media (max-width: 519.98px) {
+  .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element .bt-elwg-site-infor.bt-elwg-site-infor--style-1 {
+    grid-gap: 15px; } }
 
 .bt-site-titlebar {
   position: relative;
@@ -5154,16 +5144,19 @@ body {
 .bt-elwg-site-infor {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 40px; }
+  gap: 4px 50px; }
   .bt-elwg-site-infor--item {
     font-family: var(--e-global-typography-primary-font-family, "DM Sans");
     font-size: 16px;
     line-height: 150%;
     color: var(--e-global-color-primary, #222); }
+    .bt-elwg-site-infor--item a {
+      display: flex;
+      align-items: center;
+      grid-gap: 7px; }
     .bt-elwg-site-infor--item svg {
       fill: var(--e-global-color-accent, #E96CA7);
-      display: inline-block;
-      margin: 0 4px -1px 0; }
+      display: inline-block; }
   .bt-elwg-site-infor.separator .bt-elwg-site-infor--item {
     position: relative; }
     .bt-elwg-site-infor.separator .bt-elwg-site-infor--item:not(:last-child)::before {
@@ -5714,6 +5707,8 @@ body {
     font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
     font-size: 20px;
     font-weight: 500; }
+    .bt-elwg-service-list--default .bt-post--title a:hover {
+      color: var(--e-global-color-accent, #E96CA7); }
 
 .bt-elwg-client-loop-item--default a {
   display: block; }
@@ -6249,5 +6244,12 @@ body {
     margin-right: 15px; } }
 .elementor-element.bt-loop-post-home1 .bt-elwg-post-loop-item--default .bt-post--content {
   padding: 0 20px 53px; }
+.elementor-element.elementor-widget-smartslider .bt-col-slider-button-play {
+  left: -64px;
+  top: 27px; }
+  @media (max-width: 350px) {
+    .elementor-element.elementor-widget-smartslider .bt-col-slider-button-play {
+      left: 0;
+      top: 0; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -159,16 +159,20 @@
 .bt-elwg-site-infor {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 40px;
+  gap: 4px 50px;
   &--item {
     font-family: $primary-font;
     font-size: 16px;
     line-height: 150%;
     color: $color-primary;
+    a{
+      display: flex;
+      align-items: center;
+      grid-gap: 7px;
+    }
     svg {
       fill: $color-accent;
       display: inline-block;
-      margin: 0 4px -1px 0;
     }
   }
 
@@ -932,7 +936,7 @@
 }
 .bt-elwg-service-list {
   &--default {
-    .bt-service-list{
+    .bt-service-list {
       display: flex;
       flex-direction: column;
       grid-gap: 30px;
@@ -943,7 +947,7 @@
       align-items: center;
     }
     .bt-post {
-      &--icon{
+      &--icon {
         height: 20px;
       }
       &--title {
@@ -951,11 +955,14 @@
         font-family: $secondary-font;
         font-size: 20px;
         font-weight: 500;
-        a{
+        a {
           color: $color-primary;
-        font-family: $secondary-font;
-        font-size: 20px;
-        font-weight: 500;
+          font-family: $secondary-font;
+          font-size: 20px;
+          font-weight: 500;
+          &:hover {
+            color: $color-accent;
+          }
         }
       }
     }
