@@ -5846,6 +5846,93 @@ body {
       max-width: 175px; } }
   .bt-elwg-service-popular--default .bt-post--title a {
     color: #fff; }
+.bt-elwg-service-popular--style1 .bt-service-popular {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1.3%; }
+  @media (max-width: 1024.98px) {
+    .bt-elwg-service-popular--style1 .bt-service-popular {
+      grid-gap: 2%; } }
+.bt-elwg-service-popular--style1 .bt-post {
+  width: 24%; }
+  .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 5) {
+    margin-top: -4%; }
+  .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 8) {
+    width: 24.2%; }
+  @media (max-width: 1024.98px) {
+    .bt-elwg-service-popular--style1 .bt-post {
+      width: 32%;
+      margin-bottom: 2%; }
+      .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 5) {
+        margin-top: 0; }
+      .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 8) {
+        width: 32%; } }
+  @media (max-width: 767.98px) {
+    .bt-elwg-service-popular--style1 .bt-post {
+      width: 49%;
+      margin-bottom: 2%; }
+      .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 8) {
+        width: 49%; } }
+  .bt-elwg-service-popular--style1 .bt-post--inner {
+    position: relative; }
+  .bt-elwg-service-popular--style1 .bt-post--content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    transform: translateX(-50%);
+    left: 50%; }
+    @media (max-width: 1024.98px) {
+      .bt-elwg-service-popular--style1 .bt-post--content {
+        max-width: 100%; } }
+  .bt-elwg-service-popular--style1 .bt-post--featured {
+    max-width: 70%;
+    transform: rotate(45deg);
+    margin: 0 auto; }
+    @media (max-width: 1024.98px) {
+      .bt-elwg-service-popular--style1 .bt-post--featured {
+        max-width: 100%;
+        transform: rotate(0); } }
+    .bt-elwg-service-popular--style1 .bt-post--featured .bt-cover-image, .bt-elwg-service-popular--style1 .bt-post--featured .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image, .woocommerce .woocommerce-loop-product__thumbnail .bt-elwg-service-popular--style1 .bt-post--featured .wc-cover-image {
+      padding-bottom: calc(1 * 100%);
+      border-radius: 0; }
+      .bt-elwg-service-popular--style1 .bt-post--featured .bt-cover-image img, .bt-elwg-service-popular--style1 .bt-post--featured .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image img, .woocommerce .woocommerce-loop-product__thumbnail .bt-elwg-service-popular--style1 .bt-post--featured .wc-cover-image img {
+        transform: rotate(-90deg); }
+  .bt-elwg-service-popular--style1 .bt-post--title {
+    text-align: center;
+    font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 20px;
+    color: var(--e-global-color-primary, #222); }
+    @media (max-width: 1199.98px) and (min-width: 1024.98px) {
+      .bt-elwg-service-popular--style1 .bt-post--title {
+        font-size: 20px; } }
+    @media (max-width: 519.98px) {
+      .bt-elwg-service-popular--style1 .bt-post--title {
+        font-size: 20px;
+        padding: 10px;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px; } }
+    .bt-elwg-service-popular--style1 .bt-post--title a {
+      color: var(--e-global-color-primary, #222); }
 
 .bt-elwg-pricing-item .bt-pricing--featured {
   position: relative; }
@@ -5976,10 +6063,10 @@ body {
     font-size: 45px; } }
 
 @media (min-width: 1450px) {
-  .__bt-pd-container-full-width > .elementor-element:first-child, .elementor-element.bt-section-testimonials-home1 > .elementor-element:first-child {
+  .__bt-pd-container-full-width > .elementor-element:first-child, .elementor-element.bt-section-testimonials-home1 > .elementor-element:first-child, .elementor-element.bt-section-about-home2 > .elementor-element:first-child {
     padding-left: calc((100% - var(--container-max-width)) / 2); } }
 @media (min-width: 1450px) {
-  .__bt-pd-container-full-width > .elementor-element:last-child, .elementor-element.bt-section-testimonials-home1 > .elementor-element:last-child {
+  .__bt-pd-container-full-width > .elementor-element:last-child, .elementor-element.bt-section-testimonials-home1 > .elementor-element:last-child, .elementor-element.bt-section-about-home2 > .elementor-element:last-child {
     padding-right: calc((100% - var(--container-max-width)) / 2); } }
 
 .elementor-element.bt-text-view-more a {
@@ -6251,5 +6338,48 @@ body {
     .elementor-element.elementor-widget-smartslider .bt-col-slider-button-play {
       left: 0;
       top: 0; } }
+@media (max-width: 1330px) and (min-width: 1024.98px) {
+  .elementor-element.bt-list-icon-home2 .elementor-icon-list-items {
+    margin-right: -10px !important;
+    margin-left: -10px !important;
+    justify-content: flex-start !important;
+    grid-gap: 15px; } }
+@media (max-width: 1330px) and (min-width: 1024.98px) {
+  .elementor-element.bt-list-icon-home2 .elementor-icon-list-item {
+    margin-right: 10px !important;
+    margin-left: 10px !important; } }
+@media (max-width: 1024.98px) {
+  .elementor-element.bt-list-icon-home2 .elementor-icon-list-item {
+    margin-bottom: 15px; } }
+.elementor-element.bt-list-icon-home2 .elementor-icon-list-item svg {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--e-global-color-accent, #E96CA7);
+  border-radius: 50%; }
+  @media (max-width: 1199.98px) and (min-width: 1024.98px) {
+    .elementor-element.bt-list-icon-home2 .elementor-icon-list-item svg {
+      width: 60px;
+      height: 60px;
+      padding: 10px; } }
+  @media (max-width: 1024.98px) {
+    .elementor-element.bt-list-icon-home2 .elementor-icon-list-item svg {
+      padding: 10px; } }
+.elementor-element.bt-section-about-home2 > .elementor-element:first-child {
+  mix-blend-mode: multiply; }
+.elementor-element.bt-section-about-home2 > .elementor-element:last-child .bt-elwg-highlighted-heading h3 span {
+  display: initial; }
+@media (max-width: 767.98px) and (min-width: 519.98px) {
+  .elementor-element.bt-section-about-home2 > .elementor-element:last-child {
+    padding-top: 280px; } }
+@media (max-width: 1250px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-about-home2 > .elementor-element:first-child {
+    width: 20%;
+    padding-left: 15px; }
+    .elementor-element.bt-section-about-home2 > .elementor-element:first-child .elementor-widget-counter > .elementor-widget-container {
+      margin: -63px -300px 0px 0px; }
+  .elementor-element.bt-section-about-home2 > .elementor-element:last-child {
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 280px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -74,7 +74,8 @@ class ElementorWidgets
 			'pricing-item',
 			'time-list',
 			'therapist-loop-item',
-			'services-list'
+			'services-list',
+			'popular-service-style-1'
 		);
 
 		return $this->widgets;
@@ -185,6 +186,7 @@ class ElementorWidgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TherapistLoopItem\Widget_TherapistLoopItem());
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PopularServices\Widget_PopularServices());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PopularServicesStyle1\Widget_PopularServicesStyle1());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\ServicesList\Widget_ServicesList());
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\OrbitCircle\Widget_OrbitCircle());
