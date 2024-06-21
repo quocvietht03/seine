@@ -355,6 +355,26 @@ if (!function_exists('seine_post_button_render')) {
     </div>
   <?php }
 }
+/* Book Now Button */
+if (!function_exists('seine_service_button_book_now_render')) {
+  function seine_service_button_book_now_render($text)
+  { 
+    $site_infor = get_field('site_information', 'options') ?: ''; 
+    if (!empty($site_infor) && isset($site_infor)){
+      if(!empty($site_infor['page_book_now'])){
+        $book_now = esc_url($site_infor['page_book_now']);
+      }else{
+        $book_now = '#'; 
+      }
+    ?>
+    <div class="bt-post--button-booknow">
+      <a href="<?php echo $book_now; ?>">
+        <span> <?php echo esc_html($text) ?> </span>
+      </a>
+    </div>
+  <?php }
+  }
+}
 
 /* Author Icon */
 if (!function_exists('seine_author_icon_render')) {

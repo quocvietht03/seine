@@ -253,6 +253,7 @@
                 }
                 .select2-selection--single {
                     border-bottom: 2px solid #fff;
+                    font-size: 18px;
                     .select2-selection__rendered {
                         color: #fff;
                     }
@@ -481,8 +482,8 @@
                 &:first-child {
                     width: 20%;
                     padding-left: 15px;
-                    .elementor-widget-counter{
-                        > .elementor-widget-container{
+                    .elementor-widget-counter {
+                        > .elementor-widget-container {
                             margin: -63px -300px 0px 0px;
                         }
                     }
@@ -493,6 +494,54 @@
                     padding-left: 280px;
                 }
             }
+        }
+    }
+    &.bt-section-hours-home2 {
+        @media (max-width: 1470px) and (min-width: $break-tl) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media (max-width: 1110px) and (min-width: $break-tl) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        > .e-con-inner {
+            @media (max-width: 1470px) and (min-width: $break-tl) {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            @media (max-width: 1315px) and (min-width: $break-tl) {
+                grid-gap: 20px;
+            }
+            > .elementor-element {
+                &:first-child {
+                    @media (max-width: 1260px) and (min-width: $break-tl) {
+                        width: 40%;
+                    }
+                }
+                &:last-child {
+                    @media (max-width: 1260px) and (min-width: $break-tl) {
+                        width: 35%;
+                    }
+                    .bt-col-icon-phone{
+                        @media (max-width: 1110px) and (min-width: $break-tl) {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.bt-loop-testimonial-home2{
+        .elementor-swiper-button {
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

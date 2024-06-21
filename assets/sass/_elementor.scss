@@ -933,6 +933,88 @@
       }
     }
   }
+  &--style1 {
+    .bt-post {
+      &--inner {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 750px;
+        margin: 0 auto;
+      }
+      &--rating {
+        margin-bottom: 13px;
+      }
+      &--desc-wrap {
+        position: relative;
+      }
+      &--quote-icon {
+        position: absolute;
+        z-index: 3;
+        left: -3px;
+        top: -16px;
+      }
+      &--desc {
+        color: #fff;
+        text-align: center;
+        font-family: $secondary-font;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 46px;
+        > * {
+          margin-left: auto;
+          margin-right: auto;
+          &:first-child {
+            margin-top: 0;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &--infor {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        transition: all 0.3s;
+      }
+      &--avatar {
+        display: flex;
+        overflow: hidden;
+        width: 90px;
+        height: 90px;
+        background: #f5f5f5;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &--title-wrap {
+        width: calc(100% - 90px);
+        padding-left: 17px;
+        text-align: left;
+      }
+      &--signature{
+        img{
+          display: block;
+          max-height: 59px;
+          object-fit: cover;
+        }
+      }
+      &--titlejob {
+        color: #fff;
+        transition: all 0.3s;
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
 }
 .bt-elwg-service-list {
   &--default {
@@ -966,6 +1048,11 @@
         }
       }
     }
+  }
+}
+.bt-elwg-service-loop-item {
+  &--default {
+    @extend .__bt-service-style-default;
   }
 }
 .bt-elwg-client-loop-item {
@@ -1139,8 +1226,8 @@
       @media (max-width: $break-tl) {
         grid-gap: 2%;
       }
-      &.bt-col-item-5{
-        .bt-post{
+      &.bt-col-item-5 {
+        .bt-post {
           width: 32%;
           &:nth-child(n + 4) {
             margin-top: -5.4%;
@@ -1236,7 +1323,7 @@
           padding: 10px;
           left: 5px;
           right: 5px;
-          top:5px;
+          top: 5px;
           bottom: 5px;
         }
         a {

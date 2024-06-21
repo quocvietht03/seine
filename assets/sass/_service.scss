@@ -2,71 +2,111 @@
   .bt-post {
     &:hover {
       .bt-post {
-        &--inner {
-          background: #F0F0F0;
-          border-color: #F0F0F0;
-        }
-
-        &--title{
-          a{
+        &--title {
+          a {
             color: inherit;
           }
         }
       }
     }
-
-    &--inner, &--icon{
-      -webkit-transition: all .3s;
-      transition: all .3s;
-    }
-
-    &--inner {
-      box-sizing: border-box;
-      text-align: center;
-      background: #FFF;
-      padding: 48px 8% 50px 8%;
-      border-radius: 20px;
-      border: 5px solid #F0F0F0;
-    }
-
-    &--icon {
-      width: 100%;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      &-inner{
-        svg{
-          path{
-            fill:$color-accent;
-          }
-        }
+    &--featured {
+      .bt-cover-image {
+        min-height: 359px;
+        object-fit: cover;
       }
     }
 
-    &--title {
-      font-size: 22px;
+    &--infor {
+      position: relative;
+    }
+    &--content {
+      position: absolute;
+      bottom: 0;
+      padding: 27px 31px 21px;
+      background: #f7f4ef;
+      left: 31px;
+      right: 31px;
+      @media (max-width: 1100px) and (min-width: $break-tl) {
+        left: 15px;
+        right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      @media(max-width:400px){
+        left: 15px;
+        right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    &--price {
+      position: absolute;
+      right: 0;
+      top: -19px;
+      background: $color-accent;
+      color: #fff;
+      font-size: 18px;
       font-style: normal;
       font-weight: 700;
-      line-height: 133.2%;
-      margin: 21px 0 0 0;
+      line-height: normal;
+      padding: 7px 14px 8px 11px;
+      &::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 23px solid $color-accent;
+        border-left: 19px solid transparent;
+        position: absolute;
+        left: -19px;
+        top: 0;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 23px solid $color-accent;
+        border-left: 19px solid transparent;
+        position: absolute;
+        left: -19px;
+        bottom: 0;
+      }
     }
-
-    &--excerpt,  &--descc{
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 165%;
+    &--title {
+      color: $color-primary;
+      font-family: $secondary-font;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      a{
+        color: $color-primary;
+      }
     }
-
-    &--excerpt {
-      @extend .__bt-max-line-ellipsis;
-      margin: 8px  0 0 0;
+    &--description {
+      color: $color-accent;
+      font-size: 18px;
+      font-weight: 500;
     }
-
-    &--desc{
-      margin: 10px 0 0 0;
+    &--button-booknow {
+      margin: 0 31px;
+      @media (max-width: 1100px) and (min-width: $break-tl) {
+        margin: 0 15px;
+      }
+      @media(max-width:400px){
+        margin: 0 15px;
+      }
+      a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        background: $color-accent;
+        width: 100%;
+        display: block;
+        padding: 14px 15px;
+      }
     }
-    
   }
 }
-

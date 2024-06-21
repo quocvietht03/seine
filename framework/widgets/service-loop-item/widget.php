@@ -1,5 +1,5 @@
 <?php
-namespace SeineElementorWidgets\Widgets\PostLoopItem;
+namespace SeineElementorWidgets\Widgets\ServiceLoopItem;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -9,15 +9,15 @@ use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Box_Shadow;
 
-class Widget_PostLoopItem extends Widget_Base {
+class Widget_ServiceLoopItem extends Widget_Base {
 
 
 	public function get_name() {
-		return 'bt-post-loop-item';
+		return 'bt-service-loop-item';
 	}
 
 	public function get_title() {
-		return __( 'Post Loop Item', 'seine' );
+		return __( 'Service Loop Item', 'seine' );
 	}
 
 	public function get_icon() {
@@ -177,71 +177,154 @@ class Widget_PostLoopItem extends Widget_Base {
 				'name'     => 'title_typography',
 				'label'    => esc_html__( 'Typography', 'seine' ),
 				'default'  => '',
-				'selector' => '{{WRAPPER}} .bt-post--title a',
+				'selector' => '{{WRAPPER}} .bt-post--title',
 			]
 		);
 
 		$this->add_control(
-			'category_style',[
-				'label' => esc_html__( 'Category', 'seine' ),
+			'description_style',[
+				'label' => esc_html__( 'Description', 'seine' ),
 				'type'  => Controls_Manager::HEADING,
 			]
 		);
 		$this->add_control(
-			'category_color',[
+			'description_color',[
 				'label'     => esc_html__( 'Color', 'seine' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-post--category a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--description' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name'     => 'description_typography',
+				'label'    => esc_html__( 'Typography', 'seine' ),
+				'default'  => '',
+				'selector' => '{{WRAPPER}} .bt-post--description',
+			]
+		);
+		$this->add_control(
+			'price_style',[
+				'label' => esc_html__( 'Price', 'seine' ),
+				'type'  => Controls_Manager::HEADING,
+			]
+		);
+
+		$this->add_control(
+			'price_color',[
+				'label'     => esc_html__( 'Color', 'seine' ),
+				'type'      => Controls_Manager::COLOR,
+				'default'   => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--price' => 'color: {{VALUE}};',
 				],
 			]
 		);
 		$this->add_control(
-			'category_background',[
+			'price_background',[
 				'label'     => esc_html__( 'Background', 'seine' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-post--category a' => 'Background: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--price' => 'background: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--price:before' => 'border-top-color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--price:after' => 'border-bottom-color: {{VALUE}};',
 				],
 			]
 		);
+
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name'     => 'category_typography',
+				'name'     => 'price_typography',
 				'label'    => esc_html__( 'Typography', 'seine' ),
 				'default'  => '',
-				'selector' => '{{WRAPPER}} .bt-post--category a',
+				'selector' => '{{WRAPPER}} .bt-post--price',
 			]
 		);
 		$this->add_control(
-			'meta_style',[
-				'label' => esc_html__( 'Meta', 'seine' ),
+			'button_style',[
+				'label' => esc_html__( 'Button', 'seine' ),
 				'type'  => Controls_Manager::HEADING,
 			]
 		);
+		$this->start_controls_tabs( 'button_style_tabs' );
+
+		$this->start_controls_tab( 'style_normal',
+			[
+				'label' => __( 'Normal', 'seine' ),
+			]
+		);
 
 		$this->add_control(
-			'meta_color',[
-				'label'     => esc_html__( 'Color', 'seine' ),
-				'type'      => Controls_Manager::COLOR,
-				'default'   => '',
+			'button_text_color',
+			[
+				'label' => __( 'Text Color', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-post--publish span' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .bt-post-author--name' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--button-booknow a' => 'color: {{VALUE}};',
 				],
 			]
 		);
 
+		$this->add_control(
+			'button_bg_color',
+			[
+				'label' => __( 'Background Color', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--button-booknow a' => 'background-color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->end_controls_tab();
+
+		$this->start_controls_tab( 'style_hover',
+			[
+				'label' => __( 'Hover', 'seine' ),
+			]
+		);
+
+		$this->add_control(
+			'button_text_color_hover',
+			[
+				'label' => __( 'Text Color', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--button-booknow a:hover' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'button_bg_color_hover',
+			[
+				'label' => __( 'Background Color', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--button-booknow a:hover' => 'background-color: {{VALUE}}; border-color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->end_controls_tab();
+
+		$this->end_controls_tabs();
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name'     => 'meta_typography',
+				'name'     => 'button_typography',
 				'label'    => esc_html__( 'Typography', 'seine' ),
 				'default'  => '',
-				'selector' => '{{WRAPPER}} .bt-post-author--name, {{WRAPPER}} .bt-post--publish span',
+				'selector' => '{{WRAPPER}} .bt-post--button-booknow a',
 			]
 		);
 
@@ -257,8 +340,8 @@ class Widget_PostLoopItem extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-			<div class="bt-elwg-post-loop-item--default">
-				<?php get_template_part( 'framework/templates/post', 'style', array('image-size' => $settings['thumbnail_size'])); ?>
+			<div class="bt-elwg-service-loop-item--default">
+				<?php get_template_part( 'framework/templates/service', 'style', array('image-size' => $settings['thumbnail_size'])); ?>
 	    	</div>
 		<?php
 	}
