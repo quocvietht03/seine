@@ -209,7 +209,7 @@ class Widget_PopularServicesStyle1 extends Widget_Base
 			[
 				'label' => __( 'Posts Per Page', 'seine' ),
 				'type' => Controls_Manager::SELECT,
-				'default' => '4',
+				'default' => '7',
 				'options' => [
 					'1' => '1',
 					'2' => '2',
@@ -444,7 +444,7 @@ class Widget_PopularServicesStyle1 extends Widget_Base
 			<?php
 			if ($query->have_posts()) {
 			?>
-				<div class="bt-service-popular">
+				<div class="bt-service-popular bt-col-item-<?php echo $settings['posts_per_page'] ?>">
 					<?php
 					while ($query->have_posts()) : $query->the_post();
 						get_template_part('framework/templates/service', 'popular', array('image-size' => $settings['thumbnail_size']));

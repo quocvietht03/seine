@@ -1874,34 +1874,66 @@ img.alignright {
     .bt-site-header .bt-menu-toggle {
       display: flex; } }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(0); } }
 /* Elementor Header */
-@media (max-width: 1520px) and (min-width: 1199.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right .elementor-button-wrapper a {
-    font-size: 16px;
-    padding: 13px 35px; } }
-@media (max-width: 1199.98px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right .elementor-button-wrapper a {
-    font-size: 14px;
-    padding: 10px 25px; } }
-@media (max-width: 1380px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right {
-    padding-left: 30px; } }
-@media (max-width: 1380px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-left {
-    padding-right: 30px; } }
-@media (max-width: 1199.98px) and (min-width: 1024.98px) {
-  .elementor-location-header .elementor-element.bt-header-nav-style-1 {
-    padding-left: 15px;
-    padding-right: 15px; }
-    .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-widget-image {
-      width: 40%; }
-    .elementor-location-header .elementor-element.bt-header-nav-style-1 ul.elementor-nav-menu li.menu-item a.elementor-item {
-      font-size: 18px;
-      margin: 0 10px; }
-    .elementor-location-header .elementor-element.bt-header-nav-style-1 ul.elementor-nav-menu li.menu-item:first-child a.elementor-item {
-      margin-left: 0; }
-    .elementor-location-header .elementor-element.bt-header-nav-style-1 ul.elementor-nav-menu li.menu-item:last-child a.elementor-item {
-      margin-right: 0; } }
+.elementor-location-header .elementor-element.bt-header-nav-style-1 {
+  transition: padding 0.3s, font-size 0.3s; }
+  .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects {
+    background: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects .elementor-nav-menu--main .elementor-nav-menu .elementor-item {
+      color: var(--e-global-color-primary, #222);
+      fill: var(--e-global-color-primary, #222); }
+      .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects .elementor-nav-menu--main .elementor-nav-menu .elementor-item:hover {
+        color: var(--e-global-color-accent, #E96CA7);
+        fill: var(--e-global-color-accent, #E96CA7); }
+      .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects .elementor-nav-menu--main .elementor-nav-menu .elementor-item.elementor-item-active {
+        color: var(--e-global-color-accent, #E96CA7);
+        fill: var(--e-global-color-accent, #E96CA7); }
+    .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects .elementor-button {
+      background: var(--e-global-color-accent, #E96CA7);
+      padding: 16px 40px; }
+    .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects .bt-logo-main {
+      display: none; }
+    .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects .bt-logo-sticky {
+      display: block; }
+    @media (max-width: 1024.98px) {
+      .elementor-location-header .elementor-element.bt-header-nav-style-1.elementor-sticky--effects .elementor-icon svg {
+        fill: var(--e-global-color-accent, #E96CA7) !important; } }
+  @media (max-width: 1520px) and (min-width: 1199.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right .elementor-button-wrapper a {
+      font-size: 16px;
+      padding: 13px 35px; } }
+  @media (max-width: 1199.98px) and (min-width: 1024.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right .elementor-button-wrapper a {
+      font-size: 14px;
+      padding: 10px 25px; } }
+  @media (max-width: 1380px) and (min-width: 1024.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-right {
+      padding-left: 30px; } }
+  @media (max-width: 1380px) and (min-width: 1024.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-element.bt-col-left {
+      padding-right: 30px; } }
+  @media (max-width: 1199.98px) and (min-width: 1024.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-1 {
+      padding-left: 15px;
+      padding-right: 15px; }
+      .elementor-location-header .elementor-element.bt-header-nav-style-1 .elementor-widget-image {
+        width: 40%; }
+      .elementor-location-header .elementor-element.bt-header-nav-style-1 ul.elementor-nav-menu li.menu-item a.elementor-item {
+        font-size: 18px;
+        margin: 0 10px; }
+      .elementor-location-header .elementor-element.bt-header-nav-style-1 ul.elementor-nav-menu li.menu-item:first-child a.elementor-item {
+        margin-left: 0; }
+      .elementor-location-header .elementor-element.bt-header-nav-style-1 ul.elementor-nav-menu li.menu-item:last-child a.elementor-item {
+        margin-right: 0; } }
 @media (max-width: 1390px) and (min-width: 1024.98px) {
   .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:nth-child(2) {
     padding-left: 15px;
@@ -5857,6 +5889,17 @@ body {
   @media (max-width: 1024.98px) {
     .bt-elwg-service-popular--style1 .bt-service-popular {
       grid-gap: 2%; } }
+  .bt-elwg-service-popular--style1 .bt-service-popular.bt-col-item-5 .bt-post {
+    width: 32%; }
+    .bt-elwg-service-popular--style1 .bt-service-popular.bt-col-item-5 .bt-post:nth-child(n + 4) {
+      margin-top: -5.4%; }
+      @media (max-width: 1024.98px) {
+        .bt-elwg-service-popular--style1 .bt-service-popular.bt-col-item-5 .bt-post:nth-child(n + 4) {
+          margin-top: 0; } }
+    @media (max-width: 767.98px) {
+      .bt-elwg-service-popular--style1 .bt-service-popular.bt-col-item-5 .bt-post {
+        width: 49%;
+        margin-bottom: 2%; } }
 .bt-elwg-service-popular--style1 .bt-post {
   width: 24%; }
   .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 5) {

@@ -275,10 +275,61 @@
     }
   }
 }
-
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  
+  }
+  to {
+    transform: translateY(0);
+  
+  }
+}
 /* Elementor Header */
 .elementor-location-header .elementor-element {
   &.bt-header-nav-style-1 {
+    transition: padding 0.3s, font-size 0.3s;
+    &.elementor-sticky {
+      &--effects {
+        background: #fff;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+          padding-top: 10px;
+          padding-bottom: 10px;
+        .elementor-nav-menu--main {
+          .elementor-nav-menu {
+            .elementor-item {
+              color: $color-primary;
+              fill: $color-primary;
+              &:hover {
+                color: $color-accent;
+                fill: $color-accent;
+              }
+              &.elementor-item-active {
+                color: $color-accent;
+                fill: $color-accent;
+              }
+            }
+          }
+        }
+        .elementor-button{
+          background: $color-accent;
+          padding: 16px 40px;
+        }
+        .bt-logo-main {
+          display: none;
+        }
+        .bt-logo-sticky{
+          display: block;
+        }
+        @media(max-width: $break-tl){
+          .elementor-icon svg{
+              fill:$color-accent !important;
+          }
+        }
+        
+      }
+    }
     .elementor-element {
       &.bt-col-right {
         .elementor-button-wrapper {
