@@ -542,6 +542,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: $break-xs) {
+                &.elementor-swiper-button-prev {
+                    left: 40% !important;
+                    transform: translate(-40%, -50%) !important;
+                }
+                &.elementor-swiper-button-next {
+                    right: 40% !important;
+        transform: translate(40%, -50%) !important;
+                }
+            }
+        }
+        @media (max-width: $break-xs) {
+            padding-bottom: 80px;
         }
     }
 }

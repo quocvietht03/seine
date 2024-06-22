@@ -1,5 +1,5 @@
 <?php
-namespace SeineElementorWidgets\Widgets\ClientLoopItem;
+namespace SeineElementorWidgets\Widgets\BrandLoopItem;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -9,14 +9,14 @@ use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Box_Shadow;
 
-class Widget_ClientLoopItem extends Widget_Base {
+class Widget_BrandLoopItem extends Widget_Base {
 
 	public function get_name() {
-		return 'bt-client-loop-item';
+		return 'bt-brand-loop-item';
 	}
 
 	public function get_title() {
-		return __( 'Client Loop Item', 'seine' );
+		return __( 'Brand Loop Item', 'seine' );
 	}
 
 	public function get_icon() {
@@ -135,8 +135,8 @@ class Widget_ClientLoopItem extends Widget_Base {
 		$link = get_field('link');
 
 		?>
-			<div class="bt-elwg-client-loop-item--default">
-				<?php get_template_part( 'framework/templates/client', 'style' ); ?>
+			<div class="bt-elwg-brand-loop-item--default">
+				<?php get_template_part( 'framework/templates/brand', 'style' ); ?>
 	    </div>
 		<?php
 	}

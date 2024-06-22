@@ -40,6 +40,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	</div>
 	<div class="woocommerce-loop-product__infor">
 		<?php
+			do_action('seine_woocommerce_shop_loop_item_sold');
 			do_action('seine_woocommerce_shop_loop_item_subtitle');
 			do_action('seine_woocommerce_template_loop_product_link_open');
 			do_action('seine_woocommerce_template_loop_product_title');

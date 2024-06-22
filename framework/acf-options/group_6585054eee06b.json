@@ -1,6 +1,6 @@
 {
     "key": "group_6585054eee06b",
-    "title": "Client Options",
+    "title": "Brands Options",
     "fields": [
         {
             "key": "field_6585054ef3f45",
@@ -49,7 +49,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "client"
+                "value": "brand"
             }
         ]
     ],
@@ -62,5 +62,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1710857431
+    "modified": 1719022246
 }
