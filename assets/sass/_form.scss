@@ -1,23 +1,24 @@
-.gform-theme--framework :where(
+.gform-theme--framework
+  :where(
     :not(html):not(iframe):not(canvas):not(img):not(svg):not(video)
-    :not(svg *):not(symbol *):not(.gform-theme__no-reset--el)
-    :not(.gform-theme__no-reset--children *):not(.gform-theme__disable)
-    :not(.gform-theme__disable *):not(.gform-theme__disable-reset)
-    :not(.gform-theme__disable-reset *):not(.gform_heading *):not(.gfield--type-html *)
-    :not(.gfield--type-section *):not(.form_saved_message > *)
-    :not(.form_saved_message_sent > *):not(.gform_confirmation_message *)
-    :not(.wp-editor-container):not(.mce-tinymce):not(.mce-tinymce *)
-    :not(.wp-editor-area):not(.gfield_description > *)
-    :not(.gform-field-label--type-inline > :not(span))
-) {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    font: inherit;
-    color: inherit;
-    display: revert;
-    all: revert-layer;
+      :not(svg *):not(symbol *):not(.gform-theme__no-reset--el)
+      :not(.gform-theme__no-reset--children *):not(.gform-theme__disable)
+      :not(.gform-theme__disable *):not(.gform-theme__disable-reset)
+      :not(.gform-theme__disable-reset *):not(.gform_heading *):not(.gfield--type-html *)
+      :not(.gfield--type-section *):not(.form_saved_message > *)
+      :not(.form_saved_message_sent > *):not(.gform_confirmation_message *)
+      :not(.wp-editor-container):not(.mce-tinymce):not(.mce-tinymce *)
+      :not(.wp-editor-area):not(.gfield_description > *)
+      :not(.gform-field-label--type-inline > :not(span))
+  ) {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  display: revert;
+  all: revert-layer;
 }
 .gform_wrapper {
   &.gform-theme--api,
@@ -40,7 +41,7 @@
     }
   }
   .gform-body {
-    input:not([type="checkbox"],[type="radio"]),
+    input:not([type="checkbox"], [type="radio"]),
     select,
     textarea {
       font-size: 18px;
@@ -51,14 +52,25 @@
       background: transparent;
       padding: 10px 24px 10px 0;
       border: none;
-      border-bottom: 1px solid #8C8C8C;
+      border-bottom: 1px solid #8c8c8c;
       border-radius: 0;
       outline: none;
       box-shadow: none;
+      width: 100%;
     }
     textarea {
       min-block-size: auto !important;
       height: 100px;
+    }
+    .ginput_container_date {
+      position: relative;
+      svg {
+        position: absolute;
+        right: 13px;
+        path {
+          fill: $color-accent;
+        }
+      }
     }
   }
   .gform_footer {
@@ -69,7 +81,7 @@
       line-height: 150% !important;
       text-transform: uppercase !important;
       text-align: center !important;
-      color: #FFFFFF !important;
+      color: #ffffff !important;
       background: $color-accent !important;
       padding: 17px 40px !important;
       border: none !important;

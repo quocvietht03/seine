@@ -52,7 +52,7 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 				'label' => __( 'Image Ratio', 'seine' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
-					'size' => 0.66,
+					'size' => 0.86,
 				],
 				'range' => [
 					'px' => [
@@ -71,94 +71,7 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 	}
 
 	protected function register_style_section_controls() {
-		$this->start_controls_section(
-			'section_style_box',
-			[
-				'label' => esc_html__( 'Box', 'seine' ),
-				'tab' => Controls_Manager::TAB_STYLE,
-			]
-		);
-
-		$this->add_control(
-			'box_border_width',
-			[
-				'label' => __( 'Border Width', 'seine' ),
-				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px' ],
-				'range' => [
-					'px' => [
-						'min' => 0,
-						'max' => 50,
-					],
-				],
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'border-style: solid; border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
-				],
-			]
-		);
-
-		$this->add_control(
-			'box_border_radius',
-			[
-				'label' => __( 'Border Radius', 'seine' ),
-				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px', '%' ],
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-				],
-			]
-		);
-
-		$this->add_responsive_control(
-			'box_padding',
-			[
-				'label' => __( 'Padding', 'seine' ),
-				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => [ 'px' ],
-				'range' => [
-					'px' => [
-						'min' => 0,
-						'max' => 50,
-					],
-				],
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
-				],
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Box_Shadow::get_type(),
-			[
-				'name' => 'box_shadow',
-				'selector' => '{{WRAPPER}} .bt-post--inner',
-			]
-		);
-
-		$this->add_control(
-			'box_bg_color',
-			[
-				'label' => __( 'Background Color', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'background-color: {{VALUE}}',
-				],
-			]
-		);
-
-		$this->add_control(
-			'box_border_color',
-			[
-				'label' => __( 'Border Color', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--inner' => 'border-color: {{VALUE}}',
-				],
-			]
-		);
-
-		$this->end_controls_section();
-
+	
 		$this->start_controls_section(
 			'section_style_image',
 			[
@@ -224,6 +137,47 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
+		$this->add_control(
+			'category_style',
+			[
+				'label' => __( 'Category', 'seine' ),
+				'type' => Controls_Manager::HEADING,
+			]
+		);
+
+		$this->add_control(
+			'category_color',
+			[
+				'label' => __( 'Color', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--category a' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'category_bg_color',
+			[
+				'label' => __( 'Background Color', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-post--category a' => 'background-color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'category_typography',
+				'label' => __( 'Typography', 'seine' ),
+				'default' => '',
+				'selector' => '{{WRAPPER}} .bt-post--category a',
+			]
+		);
 
 		$this->add_control(
 			'date_style',
@@ -241,6 +195,7 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .bt-post--publish' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post--publish svg path' => 'fill: {{VALUE}};',
 				],
 			]
 		);
@@ -310,45 +265,21 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 		);
 
 		$this->add_control(
-			'meta_style',
+			'author_style',
 			[
-				'label' => __( 'Meta', 'seine' ),
+				'label' => __( 'Author', 'seine' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
 
 		$this->add_control(
-			'meta_color',
+			'author_color',
 			[
 				'label' => __( 'Color', 'seine' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-post--meta' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_control(
-			'meta_color_hover',
-			[
-				'label' => __( 'Color Hover', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--meta a:hover' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_control(
-			'meta_bg_color',
-			[
-				'label' => __( 'Background Color', 'seine' ),
-				'type' => Controls_Manager::COLOR,
-				'default' => '',
-				'selectors' => [
-					'{{WRAPPER}} .bt-post--meta' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .bt-post-author .bt-post-author--name' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -356,10 +287,10 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'meta_typography',
+				'name' => 'author_typography',
 				'label' => __( 'Typography', 'seine' ),
 				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-post--meta',
+				'selector' => '{{WRAPPER}} .bt-post-author .bt-post-author--name',
 			]
 		);
 
@@ -376,7 +307,7 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 		?>
 			<div class="bt-elwg-post-loop-item--style-1">
-				<?php get_template_part( 'framework/templates/post', 'style', array('image-size' => $settings['thumbnail_size'])); ?>
+				<?php get_template_part( 'framework/templates/post', 'style1', array('image-size' => $settings['thumbnail_size'])); ?>
 	    </div>
 		<?php
 	}

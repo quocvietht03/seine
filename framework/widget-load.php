@@ -77,7 +77,8 @@ class ElementorWidgets
 			'therapist-loop-item',
 			'services-list',
 			'popular-service-style-1',
-			'service-loop-item'
+			'service-loop-item',
+			'icon-phone-contact'
 		);
 
 		return $this->widgets;
@@ -203,6 +204,7 @@ class ElementorWidgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\HighlightedHeadingStyle1\Widget_HighlightedHeadingStyle1());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PricingItem\Widget_PricingItem());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TimeList\Widget_TimeList());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\IconPhoneContact\Widget_IconPhoneContact());
 	}
 
 	/**

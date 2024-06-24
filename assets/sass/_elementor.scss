@@ -1003,8 +1003,8 @@
         padding-left: 17px;
         text-align: left;
       }
-      &--signature{
-        img{
+      &--signature {
+        img {
           display: block;
           max-height: 59px;
           object-fit: cover;
@@ -1492,6 +1492,36 @@
       a {
         font-weight: 700;
         text-decoration: underline;
+      }
+    }
+  }
+}
+.bt-elwg-icon-text-box-item {
+  .bt-icon-text-box {
+    display: flex;
+    &--icon {
+      width: 52px;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    &--infor {
+      width: calc(100% - 52px);
+    }
+    &--heading {
+      color: $color-accent;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin:0 0 8px 0;
+    }
+    &--content {
+      color: $color-primary;
+      font-size: 26px;
+      font-weight: 700;
+      @media (max-width: $break-xs) {
+        font-size: 24px; 
       }
     }
   }

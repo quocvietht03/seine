@@ -177,7 +177,9 @@ function bt_custom_gform_init_script($form, $field_values)
 {
 	$script = "
         function LoadJsAfterSubmit() {
-            jQuery('.gform_wrapper select').select2();
+			if (jQuery('.gform_wrapper select').length > 0) {
+         	   jQuery('.gform_wrapper select').select2();
+			}
 			if (jQuery('.gfield_checkbox').length > 0) {
                 jQuery('.gfield_checkbox .gchoice').each(function() {
                     jQuery(this).append('<div class=\"checkmark\"></div>');

@@ -4,8 +4,12 @@
       position: relative;
       .wc-cover-image {
         @extend .bt-cover-image;
-        padding-bottom: 104%;
-        border-radius: 15px;
+        padding-bottom: 112%;
+        border-radius: 0;
+        background: #f9f9f9;
+        @media(max-width: $break-xs){
+          padding-bottom: 100%;
+        }
       }
       .button,
       .added_to_cart {
@@ -40,19 +44,15 @@
     }
 
     &__infor {
-      padding: 28px 31px 26px 31px;
-      border-radius: 20px;
-      border: 1px solid #d4d4d4;
-      background: #fff;
-      margin: 0 auto;
+      padding: 34px 30px 29px 30px;
       width: 100%;
-      max-width: calc(100% - 40px);
-      margin-top: -40px;
+      background: #f7f4ef;
       z-index: 9;
       position: relative;
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     &__subtitle {
@@ -65,17 +65,40 @@
     .star-rating {
       margin: 12px 0 0 0;
     }
-
+    &__sold {
+      background: $color-accent;
+      color: #fff;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      padding: 6px 18px;
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 1.35;
+      width: max-content;
+    }
     &__title {
-      font-size: 24px;
       line-height: 100%;
-      margin: 10px 0 0 0;
+      color: $color-primary;
+      text-align: center;
+      font-family: $secondary-font;
+      font-size: 26px;
+      font-weight: 500;
+      text-transform: capitalize;
     }
 
     .price {
       width: 100%;
-      display: inline-block;
-      margin: 16px 0 0 0;
+      display: block;
+      margin: 7px 0 0 0;
+      color: $color-accent;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration-line: underline;
+      text-align: center;
+      text-underline-offset: 3px;
     }
 
     &:hover {

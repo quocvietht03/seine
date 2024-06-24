@@ -23,7 +23,56 @@
         }
     }
 }
-
+.__bt_gfield_checkbox {
+    .gchoice {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 30px;
+        input {
+            margin: 0;
+            width: 20px;
+            height: 20px;
+            border: none;
+            padding-block: 0;
+            padding-inline: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            z-index: 2;
+            opacity: 0;
+            &:checked ~ .checkmark {
+                background-image: url("../images/active-checkbox.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-size: 75%;
+            }
+        }
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background: #fff5f4;
+        }
+        label {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+            color: #fff;
+            margin: 0;
+            a {
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+}
 .elementor-element {
     &.bt-text-view-more {
         a {
@@ -268,57 +317,13 @@
                     svg {
                         position: absolute;
                         right: 13px;
+                        path {
+                            fill: #fff;
+                        }
                     }
                 }
                 .gfield_checkbox {
-                    .gchoice {
-                        display: flex;
-                        align-items: center;
-                        position: relative;
-                        padding-left: 30px;
-                        input {
-                            margin: 0;
-                            width: 20px;
-                            height: 20px;
-                            border: none;
-                            padding-block: 0;
-                            padding-inline: 0;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            left: 0;
-                            z-index: 2;
-                            opacity: 0;
-                            &:checked ~ .checkmark {
-                                background-image: url("../images/active-checkbox.svg");
-                                background-position: center;
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                background-size: 75%;
-                            }
-                        }
-                        .checkmark {
-                            width: 20px;
-                            height: 20px;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            left: 0;
-                            background: #fff5f4;
-                        }
-                        label {
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 36px;
-                            color: #fff;
-                            margin: 0;
-                            a {
-                                text-decoration: underline;
-                                color: #fff;
-                            }
-                        }
-                    }
+                    @extend .__bt_gfield_checkbox;
                 }
                 textarea {
                     min-block-size: auto !important;
@@ -358,11 +363,11 @@
                 @media (max-width: $break-xs) {
                     &.elementor-swiper-button-prev {
                         left: 40%;
-                        transform: translate(-40%, -50%);
+                        transform: translate(-60%, -50%);
                     }
                     &.elementor-swiper-button-next {
                         right: 40%;
-                        transform: translate(40%, -50%);
+                        transform: translate(60%, -50%);
                     }
                 }
             }
@@ -523,7 +528,7 @@
                     @media (max-width: 1260px) and (min-width: $break-tl) {
                         width: 35%;
                     }
-                    .bt-col-icon-phone{
+                    .bt-col-icon-phone {
                         @media (max-width: 1110px) and (min-width: $break-tl) {
                             padding-left: 20px;
                             padding-right: 20px;
@@ -533,7 +538,7 @@
             }
         }
     }
-    &.bt-loop-testimonial-home2{
+    &.bt-loop-testimonial-home2 {
         .elementor-swiper-button {
             width: 60px;
             height: 60px;
@@ -542,19 +547,103 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            @media (max-width: $break-xs) {
+            @media (max-width: $break-sm) {
                 &.elementor-swiper-button-prev {
                     left: 40% !important;
-                    transform: translate(-40%, -50%) !important;
+                    transform: translate(-60%, -50%) !important;
                 }
                 &.elementor-swiper-button-next {
                     right: 40% !important;
-        transform: translate(40%, -50%) !important;
+                    transform: translate(60%, -50%) !important;
                 }
             }
         }
-        @media (max-width: $break-xs) {
+        @media (max-width: $break-sm) {
             padding-bottom: 80px;
+        }
+    }
+    &.bt-section-appointment-home2 {
+        > .elementor-element {
+            &:first-child {
+                .bt-heading-relaxation {
+                    .elementor-heading-title {
+                        @media (max-width: $break-lg) and (min-width: $break-tl) {
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+        }
+        .gform_wrapper {
+            text-align: center;
+            &.gform-theme--api,
+            &.gform-theme--foundation {
+                --gf-form-gap-x: 30px;
+            }
+            .gfield--width-half {
+                @media (max-width: $break-sm) {
+                    grid-column: 1 / -1;
+                }
+            }
+            .gform_heading {
+                margin-bottom: 22px;
+                @media(max-width: $break-xs){
+                    margin-bottom: 12px;
+                }
+                .gform_title {
+                    color: $color-primary;
+                    font-family: $secondary-font;
+                    font-size: 60px;
+                    font-weight: 600;
+                    margin-bottom: 7px;
+                    @media(max-width: $break-xs){
+                        font-size: 48px;
+                    }
+                }
+                .gform_description {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 33px;
+                    max-width: 647px;
+                    color: $color-text;
+                    @media(max-width: $break-xs){
+                        font-size: 18px;
+                    }
+                }
+            }
+            .gform-body {
+                .select2-selection--single {
+                    .select2-selection__arrow b {
+                        border-color: $color-accent transparent transparent transparent;
+                        border-width: 9px 8px 0 8px;
+                        margin-left: -13px;
+                        margin-top: 0;
+                    }
+                }
+                .gfield_checkbox {
+                    @extend .__bt_gfield_checkbox;
+                    .gchoice {
+                        label {
+                            color: #555;
+                            font-size: 16px;
+                            a {
+                                color: $color-accent;
+                            }
+                        }
+                        .checkmark {
+                            border: 1px solid #b0b0b0;
+                        }
+                    }
+                }
+            }
+            .gform_footer {
+                margin-top: 31px;
+                input[type="submit"] {
+                    padding: 20px 40px !important;
+                    width: 100% !important;
+                }
+            }
         }
     }
 }
