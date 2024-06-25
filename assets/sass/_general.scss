@@ -1050,14 +1050,15 @@
     text-align: left !important;
     input.tnp-email {
       width: 100%;
-      max-width: calc(100% - 295px);
       border: none;
-      background: transparent;
-      padding: 10px 0;
-      border-bottom: 2px solid #fff;
+      background: #F7F4EF;
+      padding: 15px 34px;
       margin: 0;
+      max-width: 100%;
+      margin-bottom: 19px;
       @media (max-width: $break-sm) {
         max-width: 100%;
+        padding: 10px 35px;
       }
     }
 
@@ -1067,7 +1068,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 36px;
-      color: #fff;
+      color: #555;
       font-family: $text-font;
       @media (max-width: $break-sm) {
         font-size: 16px;
@@ -1083,24 +1084,16 @@
       height: 24px;
       display: inline-block;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 203px;
+      top: 105px;
+      left: 38px;
       @media (max-width: $break-sm) {
         width: 20px;
         height: 20px;
-        top: inherit;
-        transform: initial;
-        right: inherit;
+        top: 94px;
         left: 30px;
-        bottom: 19px;
       }
     }
     input.tnp-submit {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 0;
       width: unset;
       min-width: 216px;
       font-size: 18px;
@@ -1109,28 +1102,23 @@
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase;
-      color: #fff;
       padding: 19px 37px 19px 75px;
       min-height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0;
-      background: transparent;
-      border: 3px solid #fff;
+      color: #fff;
+      border: 3px solid $color-accent;
+      background: $color-accent;
       z-index: 1;
       @media (max-width: $break-sm) {
-        position: relative;
-        top: initial;
-        transform: unset;
-        margin-top: 50px;
-        font-size: 16px;
-        padding: 16px 30px 16px 60px;
+        padding: 16px 30px 15px 60px;
       }
     }
     .tnp-privacy-field {
       label {
-        color: #fff;
+        color: $color-text;
         font-size: 15px;
         font-style: normal;
         font-weight: 400;
@@ -1166,18 +1154,14 @@
           transform: translateY(-50%);
           left: 0;
           background: #fff5f4;
+          border:1px solid #ccc;
         }
         a {
-          color: #fff;
+          color: $color-text;
           &:hover {
-            color: #fff;
+            color: $color-text;
           }
         }
-      }
-      @media (max-width: $break-sm) {
-        position: absolute;
-        bottom: 60px;
-        margin: 0;
       }
     }
   }

@@ -1434,39 +1434,42 @@ img.alignright {
       .bt-social-mcn-ss.bt-style-2 .bt-social-mcn-ss--heading {
         max-width: 430px; } }
 
-.__bt-newsletter-form-style form, .__bt-newsletter-form-style-2 form, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form, .elementor-widget-shortcode .tnp-subscription-minimal form {
+.__bt-newsletter-form-style form, .__bt-newsletter-form-style-2 form, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form, .elementor-widget-shortcode .tnp-subscription-minimal form, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form {
   position: relative;
   text-align: left !important; }
-  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email {
+  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email {
     width: 100%;
-    max-width: calc(100% - 295px);
     border: none;
-    background: transparent;
-    padding: 10px 0;
-    border-bottom: 2px solid #fff;
-    margin: 0; }
+    background: #F7F4EF;
+    padding: 15px 34px;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 19px; }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email {
-        max-width: 100%; } }
-  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email,
+      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email {
+        max-width: 100%;
+        padding: 10px 35px; } }
+  .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email,
   .__bt-newsletter-form-style form input.tnp-email::placeholder,
   .__bt-newsletter-form-style-2 form input.tnp-email::placeholder,
   .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email::placeholder,
-  .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder {
+  .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder,
+  .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email::placeholder {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
-    color: #fff;
+    color: #555;
     font-family: var(--e-global-typography-text-font-family, "DM Sans"); }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email,
+      .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email,
       .__bt-newsletter-form-style form input.tnp-email::placeholder,
       .__bt-newsletter-form-style-2 form input.tnp-email::placeholder,
       .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-email::placeholder,
-      .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder {
+      .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder,
+      .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email::placeholder {
         font-size: 16px; } }
-  .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after {
+  .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form::after {
     content: "";
     background-image: url("../images/icon-subcribe.svg");
     background-position: center;
@@ -1476,23 +1479,15 @@ img.alignright {
     height: 24px;
     display: inline-block;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 203px; }
+    top: 105px;
+    left: 38px; }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after {
+      .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form::after {
         width: 20px;
         height: 20px;
-        top: inherit;
-        transform: initial;
-        right: inherit;
-        left: 30px;
-        bottom: 19px; } }
-  .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+        top: 94px;
+        left: 30px; } }
+  .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-submit {
     width: unset;
     min-width: 216px;
     font-size: 18px;
@@ -1501,33 +1496,28 @@ img.alignright {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    color: #fff;
     padding: 19px 37px 19px 75px;
     min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    background: transparent;
-    border: 3px solid #fff;
+    color: #fff;
+    border: 3px solid var(--e-global-color-accent, #E96CA7);
+    background: var(--e-global-color-accent, #E96CA7);
     z-index: 1; }
     @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit {
-        position: relative;
-        top: initial;
-        transform: unset;
-        margin-top: 50px;
-        font-size: 16px;
-        padding: 16px 30px 16px 60px; } }
-  .__bt-newsletter-form-style form .tnp-privacy-field label, .__bt-newsletter-form-style-2 form .tnp-privacy-field label, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label {
-    color: #fff;
+      .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-submit {
+        padding: 16px 30px 15px 60px; } }
+  .__bt-newsletter-form-style form .tnp-privacy-field label, .__bt-newsletter-form-style-2 form .tnp-privacy-field label, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label {
+    color: var(--e-global-color-text, #555);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
     position: relative;
     padding-left: 30px; }
-    .__bt-newsletter-form-style form .tnp-privacy-field label input, .__bt-newsletter-form-style-2 form .tnp-privacy-field label input, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label input, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label input {
+    .__bt-newsletter-form-style form .tnp-privacy-field label input, .__bt-newsletter-form-style-2 form .tnp-privacy-field label input, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label input, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label input, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label input {
       margin: 0;
       width: 20px;
       height: 20px;
@@ -1540,29 +1530,25 @@ img.alignright {
       left: 0;
       z-index: 2;
       opacity: 0; }
-      .__bt-newsletter-form-style form .tnp-privacy-field label input:checked ~ .checkmark, .__bt-newsletter-form-style-2 form .tnp-privacy-field label input:checked ~ .checkmark, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label input:checked ~ .checkmark, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label input:checked ~ .checkmark {
+      .__bt-newsletter-form-style form .tnp-privacy-field label input:checked ~ .checkmark, .__bt-newsletter-form-style-2 form .tnp-privacy-field label input:checked ~ .checkmark, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label input:checked ~ .checkmark, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label input:checked ~ .checkmark, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label input:checked ~ .checkmark {
         background-image: url("../images/active-checkbox.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-size: 75%; }
-    .__bt-newsletter-form-style form .tnp-privacy-field label .checkmark, .__bt-newsletter-form-style-2 form .tnp-privacy-field label .checkmark, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label .checkmark, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label .checkmark {
+    .__bt-newsletter-form-style form .tnp-privacy-field label .checkmark, .__bt-newsletter-form-style-2 form .tnp-privacy-field label .checkmark, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label .checkmark, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label .checkmark, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label .checkmark {
       width: 20px;
       height: 20px;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       left: 0;
-      background: #fff5f4; }
-    .__bt-newsletter-form-style form .tnp-privacy-field label a, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label a, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a {
-      color: #fff; }
-      .__bt-newsletter-form-style form .tnp-privacy-field label a:hover, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a:hover, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label a:hover, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a:hover {
-        color: #fff; }
-  @media (max-width: 767.98px) {
-    .__bt-newsletter-form-style form .tnp-privacy-field, .__bt-newsletter-form-style-2 form .tnp-privacy-field, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field {
-      position: absolute;
-      bottom: 60px;
-      margin: 0; } }
+      background: #fff5f4;
+      border: 1px solid #ccc; }
+    .__bt-newsletter-form-style form .tnp-privacy-field label a, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label a, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label a {
+      color: var(--e-global-color-text, #555); }
+      .__bt-newsletter-form-style form .tnp-privacy-field label a:hover, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a:hover, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form .tnp-privacy-field label a:hover, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label a:hover, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label a:hover {
+        color: var(--e-global-color-text, #555); }
 
 .__bt-newsletter-form-style-2 form::before, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::before, .__bt-newsletter-form-style-2 form::after, .woocommerce .bt-main-product-ss div.product .bt-product-details-and-sidebar .bt-product-sidebar-newsletter--form form::after {
   content: " ";
@@ -2039,6 +2025,14 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
 @media (max-width: 519.98px) {
   .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element .bt-elwg-site-infor.bt-elwg-site-infor--style-1 {
     grid-gap: 15px; } }
+@media (max-width: 1199.98px) and (min-width: 1024.98px) {
+  .elementor-element.bt-site-footer-style1 > .e-con-inner > .elementor-element > .elementor-element:last-child {
+    width: 30%;
+    padding-left: 15px; }
+  .elementor-element.bt-site-footer-style1 > .e-con-inner > .elementor-element > .elementor-element:nth-child(2) {
+    width: 21%; } }
+.elementor-element.bt-site-footer-style1 > .e-con-inner > .elementor-element .tnp-subscription-minimal .tnp-privacy-field {
+  display: none; }
 
 .bt-site-titlebar {
   position: relative;
@@ -5366,6 +5360,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 50px; }
+  @media (max-width: 410px) {
+    .bt-elwg-site-infor {
+      column-gap: 10px !important; } }
   .bt-elwg-site-infor--item {
     font-family: var(--e-global-typography-primary-font-family, "DM Sans");
     font-size: 16px;
@@ -5374,10 +5371,17 @@ body {
     .bt-elwg-site-infor--item a {
       display: flex;
       align-items: center;
-      grid-gap: 7px; }
+      grid-gap: 11px; }
+    .bt-elwg-site-infor--item.address {
+      display: flex;
+      align-items: center;
+      grid-gap: 11px; }
     .bt-elwg-site-infor--item svg {
       fill: var(--e-global-color-accent, #E96CA7);
       display: inline-block; }
+      @media (max-width: 410px) {
+        .bt-elwg-site-infor--item svg {
+          width: 20px; } }
   .bt-elwg-site-infor.separator .bt-elwg-site-infor--item {
     position: relative; }
     .bt-elwg-site-infor.separator .bt-elwg-site-infor--item:not(:last-child)::before {
@@ -6500,6 +6504,68 @@ body {
 @media (max-width: 1575px) and (min-width: 1024.98px) {
   .elementor-element.bt-section-hero-home1 .bt-list-icon-custom.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
     margin-bottom: 10px; } }
+.elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 {
+  width: 100%; }
+  .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal {
+    margin: 0; }
+    .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email {
+      background: transparent;
+      border-bottom: 2px solid #fff;
+      max-width: calc(100% - 295px);
+      padding: 10px 0;
+      margin-bottom: 0; }
+      @media (max-width: 767.98px) {
+        .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email {
+          max-width: 100%; } }
+    .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email,
+    .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email::placeholder {
+      color: #fff; }
+      @media (max-width: 767.98px) {
+        .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email,
+        .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email::placeholder {
+          font-size: 16px; } }
+    .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-submit {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background: transparent;
+      border: 3px solid #fff; }
+      @media (max-width: 767.98px) {
+        .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-submit {
+          position: relative;
+          top: initial;
+          transform: unset;
+          margin-top: 50px;
+          font-size: 16px;
+          padding: 16px 30px 16px 60px; } }
+    .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form::after {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 203px;
+      left: initial; }
+      @media (max-width: 767.98px) {
+        .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form::after {
+          width: 20px;
+          height: 20px;
+          top: inherit;
+          transform: initial;
+          right: inherit;
+          left: 30px;
+          bottom: 19px; } }
+    .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label {
+      color: #fff; }
+      .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label .checkmark {
+        border: none; }
+      .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label a {
+        color: #fff; }
+        .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label a:hover {
+          color: #fff; }
+    @media (max-width: 767.98px) {
+      .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field {
+        position: absolute;
+        bottom: 60px;
+        margin: 0; } }
 @media (max-width: 1350px) and (min-width: 1024.98px) {
   .elementor-element.bt-section-about-home1 .bt-elwg-highlighted-heading h3 {
     font-size: 43px !important;
@@ -6668,6 +6734,10 @@ body {
     margin-left: -10px !important;
     justify-content: flex-start !important;
     grid-gap: 15px; } }
+@media (max-width: 519.98px) {
+  .elementor-element.bt-list-icon-home2 .elementor-icon-list-items {
+    margin: 0 !important;
+    grid-row-gap: 20px; } }
 @media (max-width: 1330px) and (min-width: 1024.98px) {
   .elementor-element.bt-list-icon-home2 .elementor-icon-list-item {
     margin-right: 10px !important;
@@ -6688,6 +6758,15 @@ body {
   @media (max-width: 1024.98px) {
     .elementor-element.bt-list-icon-home2 .elementor-icon-list-item svg {
       padding: 10px; } }
+@media (max-width: 519.98px) {
+  .elementor-element.bt-list-icon-home2 .elementor-icon-list-item {
+    width: 50%;
+    margin: 0 !important;
+    flex-direction: column;
+    grid-gap: 10px; }
+    .elementor-element.bt-list-icon-home2 .elementor-icon-list-item > a {
+      flex-direction: column;
+      grid-gap: 10px; } }
 .elementor-element.bt-section-about-home2 > .elementor-element:first-child {
   mix-blend-mode: multiply; }
 .elementor-element.bt-section-about-home2 > .elementor-element:last-child .bt-elwg-highlighted-heading h3 span {
@@ -6727,7 +6806,7 @@ body {
   .elementor-element.bt-section-hours-home2 > .e-con-inner > .elementor-element:last-child {
     width: 35%; } }
 @media (max-width: 1110px) and (min-width: 1024.98px) {
-  .elementor-element.bt-section-hours-home2 > .e-con-inner > .elementor-element:last-child .bt-col-icon-phone {
+  .elementor-element.bt-section-hours-home2 > .e-con-inner > .elementor-element:last-child .bt-col-icon-phone > .elementor-widget-container {
     padding-left: 20px;
     padding-right: 20px; } }
 .elementor-element.bt-loop-testimonial-home2 .elementor-swiper-button {
@@ -6802,5 +6881,8 @@ body {
     .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_footer input[type="submit"] {
       padding: 20px 40px !important;
       width: 100% !important; }
+@media (max-width: 1470px) and (min-width: 1301px) {
+  .elementor-element.bt-section-slider-home3 .elementor-element.bt-header-nav-style-3 {
+    position: relative; } }
 
 /*# sourceMappingURL=main.css.map */

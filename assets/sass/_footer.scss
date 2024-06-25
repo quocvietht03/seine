@@ -44,4 +44,26 @@
       }
     }
   }
+  &.bt-site-footer-style1 {
+    > .e-con-inner {
+      > .elementor-element {
+        > .elementor-element {
+          @media (max-width: $break-lg) and (min-width: $break-tl) {
+            &:last-child {
+              width: 30%;
+              padding-left: 15px;
+            }
+            &:nth-child(2) {
+              width: 21%;
+            }
+          }
+        }
+        .tnp-subscription-minimal {
+          .tnp-privacy-field {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

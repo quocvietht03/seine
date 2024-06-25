@@ -924,15 +924,16 @@ html :where(.editor-styles-wrapper) {
   text-align: left !important; }
   .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email {
     width: 100%;
-    max-width: calc(100% - 295px);
     border: none;
-    background: transparent;
-    padding: 10px 0;
-    border-bottom: 2px solid #fff;
-    margin: 0; }
+    background: #F7F4EF;
+    padding: 15px 34px;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 19px; }
     @media (max-width: 767.98px) {
       .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email {
-        max-width: 100%; } }
+        max-width: 100%;
+        padding: 10px 35px; } }
   .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email,
   .__bt-newsletter-form-style form input.tnp-email::placeholder,
   .__bt-newsletter-form-style-2 form input.tnp-email::placeholder {
@@ -940,7 +941,7 @@ html :where(.editor-styles-wrapper) {
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
-    color: #fff;
+    color: #555;
     font-family: var(--e-global-typography-text-font-family, "DM Sans"); }
     @media (max-width: 767.98px) {
       .__bt-newsletter-form-style form input.tnp-email, .__bt-newsletter-form-style-2 form input.tnp-email,
@@ -957,23 +958,15 @@ html :where(.editor-styles-wrapper) {
     height: 24px;
     display: inline-block;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 203px; }
+    top: 105px;
+    left: 38px; }
     @media (max-width: 767.98px) {
       .__bt-newsletter-form-style form::after, .__bt-newsletter-form-style-2 form::after {
         width: 20px;
         height: 20px;
-        top: inherit;
-        transform: initial;
-        right: inherit;
-        left: 30px;
-        bottom: 19px; } }
+        top: 94px;
+        left: 30px; } }
   .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
     width: unset;
     min-width: 216px;
     font-size: 18px;
@@ -982,26 +975,21 @@ html :where(.editor-styles-wrapper) {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    color: #fff;
     padding: 19px 37px 19px 75px;
     min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    background: transparent;
-    border: 3px solid #fff;
+    color: #fff;
+    border: 3px solid var(--e-global-color-accent, #E96CA7);
+    background: var(--e-global-color-accent, #E96CA7);
     z-index: 1; }
     @media (max-width: 767.98px) {
       .__bt-newsletter-form-style form input.tnp-submit, .__bt-newsletter-form-style-2 form input.tnp-submit {
-        position: relative;
-        top: initial;
-        transform: unset;
-        margin-top: 50px;
-        font-size: 16px;
-        padding: 16px 30px 16px 60px; } }
+        padding: 16px 30px 15px 60px; } }
   .__bt-newsletter-form-style form .tnp-privacy-field label, .__bt-newsletter-form-style-2 form .tnp-privacy-field label {
-    color: #fff;
+    color: var(--e-global-color-text, #555);
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -1034,16 +1022,12 @@ html :where(.editor-styles-wrapper) {
       top: 50%;
       transform: translateY(-50%);
       left: 0;
-      background: #fff5f4; }
+      background: #fff5f4;
+      border: 1px solid #ccc; }
     .__bt-newsletter-form-style form .tnp-privacy-field label a, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a {
-      color: #fff; }
+      color: var(--e-global-color-text, #555); }
       .__bt-newsletter-form-style form .tnp-privacy-field label a:hover, .__bt-newsletter-form-style-2 form .tnp-privacy-field label a:hover {
-        color: #fff; }
-  @media (max-width: 767.98px) {
-    .__bt-newsletter-form-style form .tnp-privacy-field, .__bt-newsletter-form-style-2 form .tnp-privacy-field {
-      position: absolute;
-      bottom: 60px;
-      margin: 0; } }
+        color: var(--e-global-color-text, #555); }
 
 .__bt-newsletter-form-style-2 form::before, .__bt-newsletter-form-style-2 form::after {
   content: " ";

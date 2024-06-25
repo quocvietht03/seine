@@ -176,6 +176,83 @@
                 }
             }
         }
+        .bt-form-subscribe-home1{
+            width: 100%;
+            .tnp-subscription-minimal {
+              margin: 0;
+              @extend .__bt-newsletter-form-style;
+              form {
+                input.tnp-email {
+                  background: transparent;
+                  border-bottom: 2px solid #fff;
+                  max-width: calc(100% - 295px);
+                  padding: 10px 0;
+                  margin-bottom: 0;
+                  @media (max-width: $break-sm) {
+                    max-width: 100%;
+                  }
+                }
+                input.tnp-email,
+                input.tnp-email::placeholder {
+                  color: #fff;
+                  @media (max-width: $break-sm) {
+                    font-size: 16px;
+                  }
+                }
+                input.tnp-submit {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                  background: transparent;
+                  border: 3px solid #fff;
+                  @media (max-width: $break-sm) {
+                    position: relative;
+                    top: initial;
+                    transform: unset;
+                    margin-top: 50px;
+                    font-size: 16px;
+                    padding: 16px 30px 16px 60px;
+                  }
+                }
+                &::after {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 203px;
+                    left: initial;
+                    @media (max-width: $break-sm) {
+                      width: 20px;
+                      height: 20px;
+                      top: inherit;
+                      transform: initial;
+                      right: inherit;
+                      left: 30px;
+                      bottom: 19px;
+                    }
+                  }
+                .tnp-privacy-field {
+                    label {
+                      color: #fff;
+                      .checkmark {
+                        border:none;
+                      }
+                      a {
+                        color: #fff;
+                        &:hover {
+                          color: #fff;
+                        }
+                      }
+                    }
+                    @media (max-width: $break-sm) {
+                        position: absolute;
+                        bottom: 60px;
+                        margin: 0;
+                      }
+                  }
+              }
+          
+            }
+        }
     }
     &.bt-section-about-home1 {
         @media (max-width: 1350px) and (min-width: $break-tl) {
@@ -439,6 +516,10 @@
                 justify-content: flex-start !important;
                 grid-gap: 15px;
             }
+            @media(max-width:$break-xs){
+                margin: 0 !important;
+                grid-row-gap: 20px;
+            }
         }
         .elementor-icon-list-item {
             @media (max-width: 1330px) and (min-width: $break-tl) {
@@ -461,6 +542,16 @@
                 }
                 @media (max-width: $break-tl) {
                     padding: 10px;
+                }
+            }
+            @media(max-width:$break-xs){
+                width: 50%;
+                margin: 0 !important;
+                flex-direction: column;
+                grid-gap: 10px;
+                > a{
+                    flex-direction: column;
+                    grid-gap: 10px;
                 }
             }
         }
@@ -529,9 +620,11 @@
                         width: 35%;
                     }
                     .bt-col-icon-phone {
-                        @media (max-width: 1110px) and (min-width: $break-tl) {
-                            padding-left: 20px;
-                            padding-right: 20px;
+                        > .elementor-widget-container {
+                            @media (max-width: 1110px) and (min-width: $break-tl) {
+                                padding-left: 20px;
+                                padding-right: 20px;
+                            }
                         }
                     }
                 }
@@ -587,7 +680,7 @@
             }
             .gform_heading {
                 margin-bottom: 22px;
-                @media(max-width: $break-xs){
+                @media (max-width: $break-xs) {
                     margin-bottom: 12px;
                 }
                 .gform_title {
@@ -596,7 +689,7 @@
                     font-size: 60px;
                     font-weight: 600;
                     margin-bottom: 7px;
-                    @media(max-width: $break-xs){
+                    @media (max-width: $break-xs) {
                         font-size: 48px;
                     }
                 }
@@ -607,7 +700,7 @@
                     line-height: 33px;
                     max-width: 647px;
                     color: $color-text;
-                    @media(max-width: $break-xs){
+                    @media (max-width: $break-xs) {
                         font-size: 18px;
                     }
                 }
@@ -644,6 +737,15 @@
                 input[type="submit"] {
                     padding: 20px 40px !important;
                     width: 100% !important;
+                }
+            }
+        }
+    }
+    &.bt-section-slider-home3{
+        .elementor-element{
+            &.bt-header-nav-style-3{
+                @media(max-width:1470px) and (min-width: 1301px){
+                    position: relative;
                 }
             }
         }
