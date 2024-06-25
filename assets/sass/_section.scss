@@ -668,7 +668,6 @@
             }
         }
         .gform_wrapper {
-            text-align: center;
             &.gform-theme--api,
             &.gform-theme--foundation {
                 --gf-form-gap-x: 30px;
@@ -680,6 +679,7 @@
             }
             .gform_heading {
                 margin-bottom: 22px;
+                text-align: center;
                 @media (max-width: $break-xs) {
                     margin-bottom: 12px;
                 }
@@ -741,13 +741,5 @@
             }
         }
     }
-    &.bt-section-slider-home3{
-        .elementor-element{
-            &.bt-header-nav-style-3{
-                @media(max-width:1470px) and (min-width: 1301px){
-                    position: relative;
-                }
-            }
-        }
-    }
+
 }

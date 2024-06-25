@@ -6830,59 +6830,55 @@ body {
 @media (max-width: 1199.98px) and (min-width: 1024.98px) {
   .elementor-element.bt-section-appointment-home2 > .elementor-element:first-child .bt-heading-relaxation .elementor-heading-title {
     font-size: 60px; } }
-.elementor-element.bt-section-appointment-home2 .gform_wrapper {
+.elementor-element.bt-section-appointment-home2 .gform_wrapper.gform-theme--api, .elementor-element.bt-section-appointment-home2 .gform_wrapper.gform-theme--foundation {
+  --gf-form-gap-x: 30px; }
+@media (max-width: 767.98px) {
+  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gfield--width-half {
+    grid-column: 1 / -1; } }
+.elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading {
+  margin-bottom: 22px;
   text-align: center; }
-  .elementor-element.bt-section-appointment-home2 .gform_wrapper.gform-theme--api, .elementor-element.bt-section-appointment-home2 .gform_wrapper.gform-theme--foundation {
-    --gf-form-gap-x: 30px; }
-  @media (max-width: 767.98px) {
-    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gfield--width-half {
-      grid-column: 1 / -1; } }
-  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading {
-    margin-bottom: 22px; }
+  @media (max-width: 519.98px) {
+    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading {
+      margin-bottom: 12px; } }
+  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_title {
+    color: var(--e-global-color-primary, #222);
+    font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 7px; }
     @media (max-width: 519.98px) {
-      .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading {
-        margin-bottom: 12px; } }
-    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_title {
-      color: var(--e-global-color-primary, #222);
-      font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
-      font-size: 60px;
-      font-weight: 600;
-      margin-bottom: 7px; }
-      @media (max-width: 519.98px) {
-        .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_title {
-          font-size: 48px; } }
-    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_description {
-      text-align: center;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 33px;
-      max-width: 647px;
-      color: var(--e-global-color-text, #555); }
-      @media (max-width: 519.98px) {
-        .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_description {
-          font-size: 18px; } }
-  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .select2-selection--single {
-    font-size: 18px;
-    font-weight: 400; }
-    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .select2-selection--single .select2-selection__arrow b {
-      border-color: var(--e-global-color-accent, #E96CA7) transparent transparent transparent;
-      border-width: 9px 8px 0 8px;
-      margin-left: -13px;
-      margin-top: 0; }
-  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .gfield_checkbox .gchoice label {
-    color: #555;
-    font-size: 16px; }
-    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .gfield_checkbox .gchoice label a {
-      color: var(--e-global-color-accent, #E96CA7); }
-  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .gfield_checkbox .gchoice .checkmark {
-    border: 1px solid #b0b0b0; }
-  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_footer {
-    margin-top: 31px; }
-    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_footer input[type="submit"] {
-      padding: 20px 40px !important;
-      width: 100% !important; }
-@media (max-width: 1470px) and (min-width: 1301px) {
-  .elementor-element.bt-section-slider-home3 .elementor-element.bt-header-nav-style-3 {
-    position: relative; } }
+      .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_title {
+        font-size: 48px; } }
+  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_description {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    max-width: 647px;
+    color: var(--e-global-color-text, #555); }
+    @media (max-width: 519.98px) {
+      .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_description {
+        font-size: 18px; } }
+.elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .select2-selection--single {
+  font-size: 18px;
+  font-weight: 400; }
+  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .select2-selection--single .select2-selection__arrow b {
+    border-color: var(--e-global-color-accent, #E96CA7) transparent transparent transparent;
+    border-width: 9px 8px 0 8px;
+    margin-left: -13px;
+    margin-top: 0; }
+.elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .gfield_checkbox .gchoice label {
+  color: #555;
+  font-size: 16px; }
+  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .gfield_checkbox .gchoice label a {
+    color: var(--e-global-color-accent, #E96CA7); }
+.elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .gfield_checkbox .gchoice .checkmark {
+  border: 1px solid #b0b0b0; }
+.elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_footer {
+  margin-top: 31px; }
+  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_footer input[type="submit"] {
+    padding: 20px 40px !important;
+    width: 100% !important; }
 
 /*# sourceMappingURL=main.css.map */
