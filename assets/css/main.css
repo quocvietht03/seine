@@ -2342,7 +2342,8 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
   border-radius: 0;
   outline: none;
   box-shadow: none;
-  width: 100%; }
+  width: 100%;
+  height: 58px; }
 .gform_wrapper .gform-body textarea {
   min-block-size: auto !important;
   height: 100px; }
