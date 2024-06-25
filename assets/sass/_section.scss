@@ -614,6 +614,8 @@
             }
             .gform-body {
                 .select2-selection--single {
+                    font-size: 18px;
+                    font-weight: 400;
                     .select2-selection__arrow b {
                         border-color: $color-accent transparent transparent transparent;
                         border-width: 9px 8px 0 8px;

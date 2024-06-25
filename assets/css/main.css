@@ -6782,11 +6782,14 @@ body {
       @media (max-width: 519.98px) {
         .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_heading .gform_description {
           font-size: 18px; } }
-  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .select2-selection--single .select2-selection__arrow b {
-    border-color: var(--e-global-color-accent, #E96CA7) transparent transparent transparent;
-    border-width: 9px 8px 0 8px;
-    margin-left: -13px;
-    margin-top: 0; }
+  .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .select2-selection--single {
+    font-size: 18px;
+    font-weight: 400; }
+    .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .select2-selection--single .select2-selection__arrow b {
+      border-color: var(--e-global-color-accent, #E96CA7) transparent transparent transparent;
+      border-width: 9px 8px 0 8px;
+      margin-left: -13px;
+      margin-top: 0; }
   .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform-body .gfield_checkbox .gchoice label {
     color: #555;
     font-size: 16px; }
