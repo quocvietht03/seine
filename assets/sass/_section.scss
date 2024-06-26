@@ -176,81 +176,80 @@
                 }
             }
         }
-        .bt-form-subscribe-home1{
+        .bt-form-subscribe-home1 {
             width: 100%;
             .tnp-subscription-minimal {
-              margin: 0;
-              @extend .__bt-newsletter-form-style;
-              form {
-                input.tnp-email {
-                  background: transparent;
-                  border-bottom: 2px solid #fff;
-                  max-width: calc(100% - 295px);
-                  padding: 10px 0;
-                  margin-bottom: 0;
-                  @media (max-width: $break-sm) {
-                    max-width: 100%;
-                  }
-                }
-                input.tnp-email,
-                input.tnp-email::placeholder {
-                  color: #fff;
-                  @media (max-width: $break-sm) {
-                    font-size: 16px;
-                  }
-                }
-                input.tnp-submit {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 0;
-                  background: transparent;
-                  border: 3px solid #fff;
-                  @media (max-width: $break-sm) {
-                    position: relative;
-                    top: initial;
-                    transform: unset;
-                    margin-top: 50px;
-                    font-size: 16px;
-                    padding: 16px 30px 16px 60px;
-                  }
-                }
-                &::after {
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 203px;
-                    left: initial;
-                    @media (max-width: $break-sm) {
-                      width: 20px;
-                      height: 20px;
-                      top: inherit;
-                      transform: initial;
-                      right: inherit;
-                      left: 30px;
-                      bottom: 19px;
-                    }
-                  }
-                .tnp-privacy-field {
-                    label {
-                      color: #fff;
-                      .checkmark {
-                        border:none;
-                      }
-                      a {
-                        color: #fff;
-                        &:hover {
-                          color: #fff;
+                margin: 0;
+                @extend .__bt-newsletter-form-style;
+                form {
+                    input.tnp-email {
+                        background: transparent;
+                        border-bottom: 2px solid #fff;
+                        max-width: calc(100% - 295px);
+                        padding: 10px 0;
+                        margin-bottom: 0;
+                        @media (max-width: $break-sm) {
+                            max-width: 100%;
                         }
-                      }
                     }
-                    @media (max-width: $break-sm) {
+                    input.tnp-email,
+                    input.tnp-email::placeholder {
+                        color: #fff;
+                        @media (max-width: $break-sm) {
+                            font-size: 16px;
+                        }
+                    }
+                    input.tnp-submit {
                         position: absolute;
-                        bottom: 60px;
-                        margin: 0;
-                      }
-                  }
-              }
-          
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                        background: transparent;
+                        border: 3px solid #fff;
+                        @media (max-width: $break-sm) {
+                            position: relative;
+                            top: initial;
+                            transform: unset;
+                            margin-top: 50px;
+                            font-size: 16px;
+                            padding: 16px 30px 16px 60px;
+                        }
+                    }
+                    &::after {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 203px;
+                        left: initial;
+                        @media (max-width: $break-sm) {
+                            width: 20px;
+                            height: 20px;
+                            top: inherit;
+                            transform: initial;
+                            right: inherit;
+                            left: 30px;
+                            bottom: 19px;
+                        }
+                    }
+                    .tnp-privacy-field {
+                        label {
+                            color: #fff;
+                            .checkmark {
+                                border: none;
+                            }
+                            a {
+                                color: #fff;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        @media (max-width: $break-sm) {
+                            position: absolute;
+                            bottom: 60px;
+                            margin: 0;
+                        }
+                    }
+                }
             }
         }
     }
@@ -303,11 +302,7 @@
         }
     }
     &.bt-section-appointment {
-        .bt-elwg-highlighted-heading {
-            h3 span {
-                display: initial;
-            }
-        }
+    
         .bt-list-custom-appointment.elementor-element {
             .elementor-icon-list-items.elementor-inline-items {
                 .elementor-icon-list-item {
@@ -516,7 +511,7 @@
                 justify-content: flex-start !important;
                 grid-gap: 15px;
             }
-            @media(max-width:$break-xs){
+            @media (max-width: $break-xs) {
                 margin: 0 !important;
                 grid-row-gap: 20px;
             }
@@ -544,15 +539,22 @@
                     padding: 10px;
                 }
             }
-            @media(max-width:$break-xs){
+            @media (max-width: $break-xs) {
                 width: 50%;
                 margin: 0 !important;
                 flex-direction: column;
                 grid-gap: 10px;
-                > a{
+                > a {
                     flex-direction: column;
                     grid-gap: 10px;
                 }
+            }
+        }
+    }
+    &.bt-button-play-video{
+        .elementor-icon-box-wrapper{
+            @media(max-width:$break-sm){
+                align-items: center;
             }
         }
     }
@@ -563,13 +565,7 @@
                 mix-blend-mode: multiply;
             }
             &:last-child {
-                .bt-elwg-highlighted-heading {
-                    h3 {
-                        span {
-                            display: initial;
-                        }
-                    }
-                }
+               
                 @media (max-width: $break-sm) and (min-width: $break-xs) {
                     padding-top: 280px;
                 }
@@ -741,5 +737,63 @@
             }
         }
     }
-
+    &.bt-loop-service-item {
+        &.elementor-grid-4 {
+            .elementor-grid {
+                @media (max-width: 1260px) and (min-width: $break-tl) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+    &.bt-section-about-home3 {
+        > .e-con-inner {
+            > .elementor-element {
+                @media (max-width: $break-lg) and (min-width: $break-tl) {
+                    &:first-child {
+                        padding-right: 15px;
+                    }
+                    &:last-child{
+                        .bt-col-list-icon-text{
+                            margin-top: 25px;
+                            grid-gap: 20px;
+                            .elementor-widget-icon-box.elementor-position-left {
+                                .elementor-icon-box-icon{
+                                    margin-right: 15px;
+                                }
+                                .elementor-icon-box-description{
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-wellness-journeys{
+        > .e-con-inner {
+            @media (max-width: 1105px) and (min-width: $break-tl) {
+                flex-wrap: wrap !important;
+            }
+            > .elementor-element {
+                &:first-child{
+                    @media (max-width: 1105px) and (min-width: $break-tl) {
+                        width: 100%;
+                     }
+                }
+                &:last-child{
+                    @media (max-width: 1260px) and (min-width: $break-tl) {
+                        padding-left: 15px;
+                    }
+                    @media (max-width: 1105px) and (min-width: $break-tl) {
+                       width: 100%;
+                       padding-top: 30px;
+                       padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
 }

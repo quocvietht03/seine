@@ -1968,6 +1968,50 @@ img.alignright {
       .elementor-location-header .elementor-element.bt-header-nav-style-2 > .e-con-inner > .elementor-element:last-child .bt-button-header-2 .elementor-button {
         padding: 17px 20px;
         font-size: 16px; } }
+.elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element.elementor-sticky--effects > .e-con-inner {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  @media (max-width: 1024.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element.elementor-sticky--effects > .e-con-inner {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element.elementor-sticky--effects > .e-con-inner > .elementor-element:first-child {
+    margin-bottom: 0; }
+    .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element.elementor-sticky--effects > .e-con-inner > .elementor-element:first-child img {
+      max-width: 170px; }
+      @media (max-width: 1024.98px) {
+        .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element.elementor-sticky--effects > .e-con-inner > .elementor-element:first-child img {
+          max-width: 140px; } }
+@media (max-width: 1024.98px) {
+  .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element.elementor-sticky--effects .elementor-icon svg {
+    fill: var(--e-global-color-accent, #E96CA7) !important; } }
+@media (max-width: 1199.98px) and (min-width: 1024.98px) {
+  .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element {
+    padding-left: 15px;
+    padding-right: 15px; } }
+.elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner {
+  transition: padding 0.3s, font-size 0.3s; }
+  .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:first-child img {
+    transition: 0.3s all; }
+  @media (max-width: 1340px) and (min-width: 1024.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container {
+      margin-right: 0; }
+      .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container .elementor-nav-menu .elementor-item {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px; } }
+  @media (max-width: 1199.98px) and (min-width: 1024.98px) {
+    .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:first-child {
+      width: 22%; }
+    .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:last-child {
+      width: 78%; }
+      .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:last-child .elementor-widget-nav-menu > .elementor-widget-container .elementor-nav-menu .elementor-item {
+        font-size: 18px;
+        margin-left: 7px;
+        margin-right: 7px; }
+      .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:last-child .bt-button-header-3 .elementor-button {
+        font-size: 16px;
+        padding: 16px 20px; } }
 
 body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
   position: fixed;
@@ -5368,10 +5412,16 @@ body {
     font-size: 16px;
     line-height: 150%;
     color: var(--e-global-color-primary, #222); }
+    @media (max-width: 410px) {
+      .bt-elwg-site-infor--item {
+        font-size: 14px !important; } }
     .bt-elwg-site-infor--item a {
       display: flex;
       align-items: center;
       grid-gap: 11px; }
+      @media (max-width: 410px) {
+        .bt-elwg-site-infor--item a {
+          grid-gap: 8px; } }
     .bt-elwg-site-infor--item.address {
       display: flex;
       align-items: center;
@@ -6056,7 +6106,8 @@ body {
       font-size: 72%; }
   .bt-elwg-highlighted-heading .__text-highlighted {
     position: relative;
-    color: var(--e-global-color-accent, #E96CA7); }
+    color: var(--e-global-color-accent, #E96CA7);
+    display: initial; }
     .bt-elwg-highlighted-heading .__text-highlighted img {
       position: absolute;
       min-width: calc(100% + 70%);
@@ -6593,8 +6644,6 @@ body {
 @media (max-width: 519.98px) {
   .elementor-element.bt-section-banner .bt-col-background-banner {
     background-position: 34% 0 !important; } }
-.elementor-element.bt-section-appointment .bt-elwg-highlighted-heading h3 span {
-  display: initial; }
 .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
   margin-bottom: 20px; }
   .elementor-element.bt-section-appointment .bt-list-custom-appointment.elementor-element .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item svg {
@@ -6767,10 +6816,11 @@ body {
     .elementor-element.bt-list-icon-home2 .elementor-icon-list-item > a {
       flex-direction: column;
       grid-gap: 10px; } }
+@media (max-width: 767.98px) {
+  .elementor-element.bt-button-play-video .elementor-icon-box-wrapper {
+    align-items: center; } }
 .elementor-element.bt-section-about-home2 > .elementor-element:first-child {
   mix-blend-mode: multiply; }
-.elementor-element.bt-section-about-home2 > .elementor-element:last-child .bt-elwg-highlighted-heading h3 span {
-  display: initial; }
 @media (max-width: 767.98px) and (min-width: 519.98px) {
   .elementor-element.bt-section-about-home2 > .elementor-element:last-child {
     padding-top: 280px; } }
@@ -6880,5 +6930,33 @@ body {
   .elementor-element.bt-section-appointment-home2 .gform_wrapper .gform_footer input[type="submit"] {
     padding: 20px 40px !important;
     width: 100% !important; }
+@media (max-width: 1260px) and (min-width: 1024.98px) {
+  .elementor-element.bt-loop-service-item.elementor-grid-4 .elementor-grid {
+    grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 1199.98px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-about-home3 > .e-con-inner > .elementor-element:first-child {
+    padding-right: 15px; }
+  .elementor-element.bt-section-about-home3 > .e-con-inner > .elementor-element:last-child .bt-col-list-icon-text {
+    margin-top: 25px;
+    grid-gap: 20px; }
+    .elementor-element.bt-section-about-home3 > .e-con-inner > .elementor-element:last-child .bt-col-list-icon-text .elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon {
+      margin-right: 15px; }
+    .elementor-element.bt-section-about-home3 > .e-con-inner > .elementor-element:last-child .bt-col-list-icon-text .elementor-widget-icon-box.elementor-position-left .elementor-icon-box-description {
+      font-size: 16px;
+      line-height: 26px; } }
+@media (max-width: 1105px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-wellness-journeys > .e-con-inner {
+    flex-wrap: wrap !important; } }
+@media (max-width: 1105px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-wellness-journeys > .e-con-inner > .elementor-element:first-child {
+    width: 100%; } }
+@media (max-width: 1260px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-wellness-journeys > .e-con-inner > .elementor-element:last-child {
+    padding-left: 15px; } }
+@media (max-width: 1105px) and (min-width: 1024.98px) {
+  .elementor-element.bt-section-wellness-journeys > .e-con-inner > .elementor-element:last-child {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */

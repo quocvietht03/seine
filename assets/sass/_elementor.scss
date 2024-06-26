@@ -170,10 +170,16 @@
     font-size: 16px;
     line-height: 150%;
     color: $color-primary;
+    @media(max-width:410px){
+      font-size: 14px !important;
+    }
     a {
       display: flex;
       align-items: center;
       grid-gap: 11px;
+      @media(max-width:410px){
+        grid-gap: 8px;
+      }
     }
     &.address{
       display: flex;
@@ -1125,6 +1131,7 @@
   .__text-highlighted {
     position: relative;
     color: $color-accent;
+    display: initial;
     img {
       position: absolute;
       min-width: calc(100% + 70%);
