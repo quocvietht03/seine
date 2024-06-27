@@ -796,4 +796,27 @@
             }
         }
     }
+    &.bt-loop-testimonial-home3 {
+        .elementor-swiper-button {
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $break-sm) {
+                &.elementor-swiper-button-prev {
+                    left: 40% !important;
+                    transform: translate(-60%, -95%) !important;
+                    top: 95% !important;
+                }
+                &.elementor-swiper-button-next {
+                    right: 40% !important;
+                    transform: translate(60%, -95%) !important;
+                    top: 95% !important;
+                }
+            }
+        }
+    }
 }

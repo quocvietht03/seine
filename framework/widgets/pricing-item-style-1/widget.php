@@ -1,6 +1,6 @@
 <?php
 
-namespace SeineElementorWidgets\Widgets\PricingItem;
+namespace SeineElementorWidgets\Widgets\PricingItemStyle1;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
@@ -11,17 +11,17 @@ use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Box_Shadow;
 
-class Widget_PricingItem extends Widget_Base
+class Widget_PricingItemStyle1 extends Widget_Base
 {
 
 	public function get_name()
 	{
-		return 'bt-pricing-item';
+		return 'bt-pricing-item-style1';
 	}
 
 	public function get_title()
 	{
-		return __('Pricing Item', 'seine');
+		return __('Pricing Item Style1', 'seine');
 	}
 
 	public function get_icon()
@@ -69,7 +69,7 @@ class Widget_PricingItem extends Widget_Base
 				'label' => __('Image Ratio', 'seine'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
-					'size' => 0.845,
+					'size' =>  0.444,
 				],
 				'range' => [
 					'px' => [
@@ -120,6 +120,16 @@ class Widget_PricingItem extends Widget_Base
 				'default' => esc_html__('60 Mins', 'seine'),
 			]
 		);
+		
+		$this->add_control(
+			'description_info',
+			[
+				'label' => esc_html__('Description Info', 'seine'),
+				'type' => Controls_Manager::TEXTAREA,
+				'label_block' => true,
+				'default' => '',
+			]
+		);
 
 		$repeater = new Repeater();
 
@@ -132,6 +142,17 @@ class Widget_PricingItem extends Widget_Base
 				'default' => esc_html__('This is the info', 'seine'),
 			]
 		);
+		$repeater->add_control(
+			'list_strikethrough',
+			[
+				'label' => __('Enable Strikethrough', 'seine'),
+				'type' => Controls_Manager::SWITCHER,
+				'label_on' => __('Yes', 'seine'),
+				'label_off' => __('No', 'seine'),
+				'return_value' => 'yes',
+				'default' => 'no',
+			]
+		);
 
 		$this->add_control(
 			'list_info',
@@ -141,13 +162,16 @@ class Widget_PricingItem extends Widget_Base
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'list_content' => esc_html__('Eiusd tempor incididunt ut labore et dolore magna .', 'seine')
+						'list_content' => esc_html__('Face masks', 'seine'),
+						'list_strikethrough' => 'no',
 					],
 					[
-						'list_content' => esc_html__('Ut enim  minim veniam quis.', 'seine')
+						'list_content' => esc_html__('Geothermal Spa', 'seine'),
+						'list_strikethrough' => 'no',
 					],
 					[
-						'list_content' => esc_html__('Proin efficitur, mauris vel condim entum pulvinar.', 'seine')
+						'list_content' => esc_html__('Aroma therapy', 'seine'),
+						'list_strikethrough' => 'no',
 					],
 				],
 				'title_field' => '{{{ list_content }}}',
@@ -159,7 +183,7 @@ class Widget_PricingItem extends Widget_Base
 				'label' => esc_html__('Button Text', 'seine'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__('Subscribe Now', 'seine'),
+				'default' => esc_html__('Book Now', 'seine'),
 			]
 		);
 
@@ -256,13 +280,13 @@ class Widget_PricingItem extends Widget_Base
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
-
+		
 		$this->add_control(
-			'background_content_image',
+			'background_overlay_image',
 			[
-				'label' => __('Background Content Image', 'seine'),
+				'label' => __('Background Overlay Image', 'seine'),
 				'type' => Controls_Manager::COLOR,
-				'default' => 'rgba(233, 108, 167, 0.9)',
+				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .bt-pricing--wrap-image' => 'background: {{VALUE}};',
 				],
@@ -407,14 +431,54 @@ class Widget_PricingItem extends Widget_Base
 			]
 		);
 		$this->add_control(
+			'background_content_images',
+			[
+				'label' => esc_html__('Background Images', 'seine'),
+				'type' => Controls_Manager::MEDIA,
+				'default' => [
+					'url' => '',
+				],
+				'selectors' => [
+					'{{WRAPPER}} .bt-pricing--infor::before' => 'background-image: url("{{URL}}");',
+				],
+			]
+		);
+		$this->add_control(
 			'background_content',
 			[
 				'label' => __('Background Content', 'seine'),
 				'type' => Controls_Manager::COLOR,
-				'default' => '#f7f4ef',
+				'default' => '',
 				'selectors' => [
 					'{{WRAPPER}} .bt-pricing--infor' => 'background: {{VALUE}};',
 				],
+			]
+		);
+		$this->add_control(
+			'description_info_pricing',
+			[
+				'label' => __('Description Info', 'seine'),
+				'type' => Controls_Manager::HEADING,
+			]
+		);
+		$this->add_control(
+			'description_color',
+			[
+				'label' => __('Description Color', 'seine'),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-pricing--description' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'description_typography',
+				'label' => __('Info Typography', 'seine'),
+				'default' => '',
+				'selector' => '{{WRAPPER}} .bt-pricing--description',
 			]
 		);
 		$this->add_control(
@@ -425,9 +489,20 @@ class Widget_PricingItem extends Widget_Base
 			]
 		);
 		$this->add_control(
+			'info_icon_color',
+			[
+				'label' => __('Icon Info Color', 'seine'),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-pricing--info li svg path' => 'fill: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_control(
 			'info_color',
 			[
-				'label' => __('Info Color', 'seine'),
+				'label' => __('Text Info Color', 'seine'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -450,7 +525,7 @@ class Widget_PricingItem extends Widget_Base
 				'label' => __('Margin Bottom', 'seine'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
-					'size' => 40,
+					'size' => 37,
 				],
 				'range' => [
 					'px' => [
@@ -558,6 +633,17 @@ class Widget_PricingItem extends Widget_Base
 			]
 		);
 		$this->add_control(
+			'button_more_wrap_color',
+			[
+				'label' => __('Button More Wrap Color', 'seine'),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-pricing--button-more' => 'color: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_control(
 			'button_more_color',
 			[
 				'label' => __('Button More Color', 'seine'),
@@ -593,7 +679,7 @@ class Widget_PricingItem extends Widget_Base
 		$settings = $this->get_settings_for_display();
 
 ?>
-		<div class="bt-elwg-pricing-item--default">
+		<div class="bt-elwg-pricing-item--style1">
 			<div class="bt-pricing-item">
 				<div class="bt-pricing--featured">
 					<?php if (!empty($settings['pricing_image'])) {
@@ -614,35 +700,38 @@ class Widget_PricingItem extends Widget_Base
 							echo '<h3 class="bt-pricing--heading">' . $settings['heading'] . '</h3>';
 						}
 						?>
-						<div class="bt-pricing--price-time">
-							<div class="bt-pricing--price">
-								<?php
-								if (!empty($settings['price'])) {
-									echo $settings['price'];
-								}
-								if (!empty($settings['price_after'])) {
-									echo '<span class="bt-pricing--price-after">' . $settings['price_after'] . '</span>';
-								}
-								?>
-							</div>
-							<div class="bt-pricing--time">
-								<?php
-								if (!empty($settings['time'])) {
-									echo $settings['time'];
-								}
-								?>
-							</div>
+						<div class="bt-pricing--price">
+							<?php
+							if (!empty($settings['price'])) {
+								echo $settings['price'];
+							}
+							if (!empty($settings['price_after'])) {
+								echo '<span class="bt-pricing--price-after">' . $settings['price_after'] . '</span>';
+							}
+							?>
 						</div>
+						<div class="bt-pricing--time">
+							<?php
+							if (!empty($settings['time'])) {
+								echo $settings['time'];
+							}
+							?>
+						</div>
+
 					</div>
 				</div>
 				<div class="bt-pricing--infor">
+					<?php if (!empty($settings['description_info'])) { 
+						echo '<div class="bt-pricing--description">'.$settings['description_info'].'</div>';
+					 } ?>
 					<?php if (!empty($settings['list_info'])) { ?>
 						<ul class="bt-pricing--info">
 							<?php foreach ($settings['list_info'] as $item) { ?>
-								<li>
+								<li <?php if ($item['list_strikethrough'] === 'yes') { ?> style="text-decoration-line: line-through;" <?php } ?>>
 									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
 										<path d="M2.75 8.33383C2.43934 8.3347 2.13528 8.42351 1.87299 8.58997C1.6107 8.75644 1.4009 8.99377 1.26787 9.2745C1.13483 9.55523 1.084 9.86789 1.12124 10.1763C1.15849 10.4847 1.28229 10.7763 1.47833 11.0173L5.65745 16.1367C5.80645 16.3217 5.99746 16.4685 6.21459 16.5649C6.43172 16.6613 6.66872 16.7045 6.90589 16.6908C7.41314 16.6636 7.8711 16.3923 8.16308 15.9461L16.8442 1.96522C16.8456 1.9629 16.8471 1.96058 16.8486 1.9583C16.9301 1.83323 16.9036 1.58538 16.7355 1.42968C16.6893 1.38693 16.6349 1.35408 16.5755 1.33316C16.5162 1.31224 16.4531 1.3037 16.3904 1.30805C16.3276 1.31241 16.2663 1.32957 16.2104 1.35848C16.1545 1.3874 16.1051 1.42745 16.0653 1.47617C16.0622 1.48 16.059 1.48378 16.0557 1.48749L7.30068 11.3793C7.26736 11.417 7.2269 11.4476 7.18164 11.4695C7.13638 11.4914 7.08723 11.504 7.03704 11.5067C6.98685 11.5095 6.93661 11.5022 6.88926 11.4853C6.84191 11.4684 6.79837 11.4423 6.7612 11.4085L3.85558 8.76437C3.55381 8.48774 3.15938 8.33414 2.75 8.33383Z" fill="#E96CA7" />
-									</svg><?php echo $item['list_content']; ?>
+									</svg>
+									<?php echo $item['list_content']; ?>
 								</li>
 							<?php } ?>
 						</ul>
