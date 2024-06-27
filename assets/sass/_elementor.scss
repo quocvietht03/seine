@@ -1519,6 +1519,7 @@
 .bt-elwg-icon-text-box-item {
   .bt-icon-text-box {
     display: flex;
+    align-items: center;
     &--icon {
       width: 52px;
       img {

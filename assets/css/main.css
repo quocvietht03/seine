@@ -6408,7 +6408,8 @@ body {
   text-decoration: underline; }
 
 .bt-elwg-icon-text-box-item .bt-icon-text-box {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .bt-elwg-icon-text-box-item .bt-icon-text-box--icon {
     width: 52px; }
     .bt-elwg-icon-text-box-item .bt-icon-text-box--icon img {

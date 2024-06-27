@@ -149,6 +149,27 @@ class Widget_IconPhoneContact extends Widget_Base
 				],
 			]
 		);
+		$this->add_responsive_control(
+			'content_gap',
+			[
+				'label' => __('Content Spacing', 'seine'),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 8,
+				],
+				'range' => [
+					'px' => [
+						'min' => 1,
+						'max' => 100,
+						'step' => 1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .bt-icon-text-box--heading' => 'margin-bottom: {{SIZE}}px;',
+				],
+			]
+		);
+
 
 		$this->add_control(
 			'heading_style',
