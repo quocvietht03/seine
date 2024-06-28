@@ -69,7 +69,7 @@ class Widget_PricingItemStyle1 extends Widget_Base
 				'label' => __('Image Ratio', 'seine'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
-					'size' =>  0.444,
+					'size' =>  0.53,
 				],
 				'range' => [
 					'px' => [

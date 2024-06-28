@@ -2012,6 +2012,8 @@ img.alignright {
       .elementor-location-header .elementor-element.bt-header-nav-style-3 > .e-con-inner > .elementor-element > .e-con-inner > .elementor-element:last-child .bt-button-header-3 .elementor-button {
         font-size: 16px;
         padding: 16px 20px; } }
+.elementor-location-header .elementor-element ul.elementor-nav-menu--dropdown {
+  min-width: 200px !important; }
 
 body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
   position: fixed;

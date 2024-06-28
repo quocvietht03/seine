@@ -551,6 +551,9 @@
       }
     }
   }
+  ul.elementor-nav-menu--dropdown {
+    min-width: 200px!important
+  }
 }
 body.admin-bar .dialog-type-lightbox {
   &.bt-menu-mobile-popup {
