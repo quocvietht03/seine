@@ -302,7 +302,6 @@
         }
     }
     &.bt-section-appointment {
-    
         .bt-list-custom-appointment.elementor-element {
             .elementor-icon-list-items.elementor-inline-items {
                 .elementor-icon-list-item {
@@ -551,9 +550,9 @@
             }
         }
     }
-    &.bt-button-play-video{
-        .elementor-icon-box-wrapper{
-            @media(max-width:$break-sm){
+    &.bt-button-play-video {
+        .elementor-icon-box-wrapper {
+            @media (max-width: $break-sm) {
                 align-items: center;
             }
         }
@@ -565,7 +564,6 @@
                 mix-blend-mode: multiply;
             }
             &:last-child {
-               
                 @media (max-width: $break-sm) and (min-width: $break-xs) {
                     padding-top: 280px;
                 }
@@ -753,15 +751,15 @@
                     &:first-child {
                         padding-right: 15px;
                     }
-                    &:last-child{
-                        .bt-col-list-icon-text{
+                    &:last-child {
+                        .bt-col-list-icon-text {
                             margin-top: 25px;
                             grid-gap: 20px;
                             .elementor-widget-icon-box.elementor-position-left {
-                                .elementor-icon-box-icon{
+                                .elementor-icon-box-icon {
                                     margin-right: 15px;
                                 }
-                                .elementor-icon-box-description{
+                                .elementor-icon-box-description {
                                     font-size: 16px;
                                     line-height: 26px;
                                 }
@@ -772,25 +770,25 @@
             }
         }
     }
-    &.bt-section-wellness-journeys{
+    &.bt-section-wellness-journeys {
         > .e-con-inner {
             @media (max-width: 1105px) and (min-width: $break-tl) {
                 flex-wrap: wrap !important;
             }
             > .elementor-element {
-                &:first-child{
+                &:first-child {
                     @media (max-width: 1105px) and (min-width: $break-tl) {
                         width: 100%;
-                     }
+                    }
                 }
-                &:last-child{
+                &:last-child {
                     @media (max-width: 1260px) and (min-width: $break-tl) {
                         padding-left: 15px;
                     }
                     @media (max-width: 1105px) and (min-width: $break-tl) {
-                       width: 100%;
-                       padding-top: 30px;
-                       padding-left: 0;
+                        width: 100%;
+                        padding-top: 30px;
+                        padding-left: 0;
                     }
                 }
             }
@@ -816,6 +814,66 @@
                     transform: translate(60%, -95%) !important;
                     top: 95% !important;
                 }
+            }
+        }
+    }
+    &.bt-section-info-maps {
+        iframe{
+            filter: invert(85%) sepia(50%) saturate(220%) hue-rotate(172deg) brightness(60%) contrast(100%);
+        }
+        .bt-elwg-site-infor {
+            &--style-1 {
+                .bt-elwg-site-infor {
+                    &--item {
+                        &.address {
+                            flex-direction: column;
+                        }
+                    }
+                    &--item-icon {
+                        min-width: 87px;
+                        min-height: 87px;
+                        svg {
+                            max-width: 38px;
+                        }
+                    }
+                    &--item-content {
+                        text-align: center;
+                        h4 {
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+            &--default {
+                border-top: 1px solid #dededd;
+                margin-top: 41px;
+                @media(max-width:600px){
+                    margin-top: 30px;
+                }
+                .bt-elwg-site-infor {
+                    &--item {
+                        width: 50%;
+                        padding: 20px 20px 22px 20px;
+                        &.email {
+                            border-left: 1px solid #dededd;
+                            padding-left: 37px;
+                        }
+                        @media(max-width:600px){
+                            width: 100%;
+                            padding: 15px;
+                            &.email {
+                                border-left: none;
+                                border-top: 1px solid #dededd;
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .elementor-button-wrapper {
+            .elementor-button {
+                width: 100%;
             }
         }
     }

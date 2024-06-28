@@ -80,7 +80,8 @@ class ElementorWidgets
 			'services-list',
 			'popular-service-style-1',
 			'service-loop-item',
-			'icon-phone-contact'
+			'icon-phone-contact',
+			'page-title-bar'
 		);
 
 		return $this->widgets;
@@ -209,6 +210,7 @@ class ElementorWidgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PricingItemStyle1\Widget_PricingItemStyle1());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TimeList\Widget_TimeList());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\IconPhoneContact\Widget_IconPhoneContact());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PageTitleBar\Widget_PageTitleBar());
 	}
 
 	/**

@@ -44,7 +44,30 @@ class Widget_TimeList extends Widget_Base
 				'label' => __('Content', 'seine'),
 			]
 		);
-
+		$this->add_control(
+			'time_enable_icon',
+			[
+				'label' => __('Enable Icon', 'seine'),
+				'type' => Controls_Manager::SWITCHER,
+				'label_on' => __('Yes', 'seine'),
+				'label_off' => __('No', 'seine'),
+				'return_value' => 'yes',
+				'default' => 'no',
+			]
+		);
+		$this->add_control(
+			'time_icon',
+			[
+				'label' => esc_html__('Icon', 'seine'),
+				'type' => Controls_Manager::MEDIA,
+				'default' => [
+					'url' => '',
+				],
+				'condition' => [
+					'time_enable_icon' => 'yes',
+				],
+			]
+		);
 		$repeater = new Repeater();
 
 		$repeater->add_control(
@@ -79,6 +102,7 @@ class Widget_TimeList extends Widget_Base
 					[
 						'time_title' => __('Monday', 'seine'),
 						'time_date' => __('12:00 pm - 08:00 pm', 'seine'),
+
 					],
 					[
 						'time_title' => __('Tuesday To Friday', 'seine'),
@@ -99,6 +123,65 @@ class Widget_TimeList extends Widget_Base
 	protected function register_style_section_controls()
 	{
 
+		$this->start_controls_section(
+			'section_style_icon',
+			[
+				'label' => esc_html__('Icon', 'seine'),
+				'tab' => Controls_Manager::TAB_STYLE,
+				'condition' => [
+					'time_enable_icon' => 'yes',
+				],
+			]
+		);
+		$this->add_responsive_control(
+			'icon_size',
+			[
+				'label' => __('Size', 'seine'),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 54,
+				],
+				'range' => [
+					'px' => [
+						'min' => 10,
+						'max' => 100,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .bt-elwg-site-infor' => 'column-gap: {{SIZE}}{{UNIT}}',
+				],
+
+				'condition' => [
+					'time_enable_icon' => 'yes',
+				],
+			]
+		);
+		$this->add_responsive_control(
+			'icon_gap',
+			[
+				'label' => __('Space Between', 'seine'),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 15,
+				],
+				'range' => [
+					'px' => [
+						'min' => 10,
+						'max' => 100,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .bt-elwg-site-infor' => 'column-gap: {{SIZE}}{{UNIT}}',
+				],
+
+				'condition' => [
+					'time_enable_icon' => 'yes',
+				],
+			]
+		);
+
+
+		$this->end_controls_section();
 
 		$this->start_controls_section(
 			'section_style_content',
@@ -189,11 +272,18 @@ class Widget_TimeList extends Widget_Base
 				<?php foreach ($settings['list'] as $index => $item) {
 				?>
 					<li class="bt-time--item">
-						<div class="bt-time--title">
-							<?php echo $item['time_title']; ?>
-						</div>
-						<div class="bt-time--date">
-							<?php echo $item['time_date']; ?>
+						<?php if (!empty($settings['time_enable_icon']) && $settings['time_enable_icon'] === 'yes' && !empty($settings['time_icon']['url'])) { ?>
+							<div class="bt-time--icon">
+								<img src="<?php echo esc_url($settings['time_icon']['url']); ?>" alt="">
+							</div>
+						<?php } ?>
+						<div class="bt-time--infor">
+							<div class="bt-time--title">
+								<?php echo $item['time_title']; ?>
+							</div>
+							<div class="bt-time--date">
+								<?php echo $item['time_date']; ?>
+							</div>
 						</div>
 					</li>
 				<?php } ?>

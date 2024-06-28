@@ -140,7 +140,13 @@ class Widget_SiteInformationStyle1 extends Widget_Base {
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
-
+		$this->add_control(
+			'icon_style',
+			[
+				'label' => __('Icon', 'seine'),
+				'type' => Controls_Manager::HEADING,
+			]
+		);
 		$this->add_control(
 			'icon_color',
 			[
@@ -152,7 +158,52 @@ class Widget_SiteInformationStyle1 extends Widget_Base {
 				],
 			]
 		);
+		$this->add_control(
+			'icon_background',
+			[
+				'label' => __( 'Icon Background', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-elwg-site-infor--item-icon' => 'background: {{VALUE}};',
+				],
+			]
+		);
+		$this->add_control(
+			'title_style',
+			[
+				'label' => __('Title', 'seine'),
+				'type' => Controls_Manager::HEADING,
+			]
+		);
+		$this->add_control(
+			'title_color',
+			[
+				'label' => __( 'Title Color', 'seine' ),
+				'type' => Controls_Manager::COLOR,
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}} .bt-elwg-site-infor--item-content h4' => 'color: {{VALUE}};',
+				],
+			]
+		);
 
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'title_typography',
+				'label' => __( 'Typography', 'seine' ),
+				'default' => '',
+				'selector' => '{{WRAPPER}} .bt-elwg-site-infor--item-content h4',
+			]
+		);
+		$this->add_control(
+			'text_style',
+			[
+				'label' => __('Text', 'seine'),
+				'type' => Controls_Manager::HEADING,
+			]
+		);
 		$this->add_control(
 			'text_color',
 			[
@@ -160,7 +211,7 @@ class Widget_SiteInformationStyle1 extends Widget_Base {
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-elwg-site-infor--item' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-elwg-site-infor--item-content span' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -172,7 +223,7 @@ class Widget_SiteInformationStyle1 extends Widget_Base {
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-elwg-site-infor--item a:hover' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-elwg-site-infor--item a:hover span' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -183,7 +234,7 @@ class Widget_SiteInformationStyle1 extends Widget_Base {
 				'name' => 'text_typography',
 				'label' => __( 'Typography', 'seine' ),
 				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-elwg-site-infor--item',
+				'selector' => '{{WRAPPER}} .bt-elwg-site-infor--item-content span',
 			]
 		);
 

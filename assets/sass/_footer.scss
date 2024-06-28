@@ -66,4 +66,38 @@
       }
     }
   }
+  &.bt-site-footer-style2 {
+    > .elementor-element {
+      @media (max-width: $break-lg) and (min-width: $break-tl) {
+        &:first-child {
+          width: 24%;
+        }
+        &:nth-child(2) {
+          width: 21%;
+        }
+        &:nth-child(3) {
+          .bt-time--date {
+            max-width: 170px;
+          }
+        }
+        &:last-child {
+          padding-left: 15px;
+        }
+      }
+      .bt-elwg-time-list--default {
+        .bt-time--item {
+          &::not(:last-child) {
+            padding-bottom: 22px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(69, 77, 95, 1);
+          }
+        }
+      }
+      .tnp-subscription-minimal {
+        .tnp-privacy-field {
+          display: none;
+        }
+      }
+    }
+  }
 }
