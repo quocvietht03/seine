@@ -413,6 +413,14 @@
     &--content {
       background: #f7f4ef;
       padding: 0 50px 53px;
+      @media (max-width: 1300px) and (min-width: $break-tl) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media (max-width: 880px) and (min-width: $break-sm) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
       @media (max-width: $break-xs) {
         padding-left: 15px;
         padding-right: 15px;
@@ -460,6 +468,23 @@
       padding: 9px 23px;
       align-items: center;
       position: relative;
+      @media (max-width: 1300px) and (min-width: $break-tl) {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      @media (max-width: $break-lg) and (min-width: $break-tl) {
+        padding: 9px;
+        .bt-post--publish {
+          padding-right: 10px;
+        }
+        .bt-post-author {
+          padding-left: 10px;
+        }
+      }
+      @media (max-width: 880px) and (min-width: $break-sm) {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
       @media (max-width: $break-xs) {
         margin-left: 15px;
         margin-right: 15px;
@@ -579,7 +604,7 @@
       @media (max-width: $break-lg) and (min-width: $break-tl) {
         padding-right: 20px;
       }
-      @media(max-width: $break-xs){
+      @media (max-width: $break-xs) {
         padding-right: 20px;
       }
       a {
@@ -614,7 +639,7 @@
       @media (max-width: $break-lg) and (min-width: $break-tl) {
         margin-left: 20px;
       }
-      @media(max-width: $break-xs){
+      @media (max-width: $break-xs) {
         margin-left: 20px;
         padding: 46px 25px 25px 25px;
       }

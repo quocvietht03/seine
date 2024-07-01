@@ -92,7 +92,7 @@
     align-items: center;
     justify-content: space-between;
     border: none;
-    border-bottom: 1px solid #8C8C8C;
+    border-bottom: 1px solid #8c8c8c;
     gap: 10px;
     height: 58px;
     background: transparent;
@@ -512,11 +512,15 @@
 
 .__bt-block-heading-style {
   position: relative;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 166.667%;
-  margin: 0 0 14px 0;
-  padding-left: 19px;
+  margin: 0 0 20px 0;
+  color: $color-primary;
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 92.308%;
+  letter-spacing: 0.2px;
+  padding-left: 23px;
   @media (max-width: $break-sm) {
     font-size: 20px;
   }
@@ -525,10 +529,10 @@
     position: absolute;
     top: 50%;
     left: 0;
-    width: 5px;
+    width: 8px;
     height: 100%;
     background: $color-accent;
-    max-height: 36px;
+    max-height: 30px;
     transform: translateY(-50%);
   }
 }
@@ -544,14 +548,18 @@
     width: 36px;
     height: 42px;
     font-family: $primary-font;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 150%;
     color: $color-primary;
     background: transparent;
-    border-radius: 10px;
     &:not(.current, .dots):hover {
       color: $color-accent;
+      svg {
+        path {
+          fill: $color-accent;
+        }
+      }
     }
     &.current {
       width: 42px;
@@ -643,13 +651,13 @@
     background: $color-accent;
     border-radius: 100px;
     &.bt-facebook {
-      background: #186CB0;
+      background: #186cb0;
     }
     &.bt-linkedin {
       background: #074682;
     }
     &.bt-twitter {
-      background: #00B3D3;
+      background: #00b3d3;
     }
     &.bt-google {
       background: #ffffff;
@@ -725,30 +733,22 @@
       }
     }
     &--gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      display: grid;
+      column-gap: 12px;
+      row-gap: 17px;
       &.bt-cols--2 {
-        .bt-ins-posts--image {
-          width: calc(50% - 5px);
-        }
+        grid-template-columns: repeat(2, 1fr);
       }
       &.bt-cols--3 {
-        .bt-ins-posts--image {
-          width: calc(33.33% - 6.7px);
-        }
+        grid-template-columns: repeat(3, 1fr);
       }
       &.bt-cols--4 {
-        .bt-ins-posts--image {
-          width: calc(25% - 7.5px);
-        }
+        grid-template-columns: repeat(4, 1fr);
       }
     }
     &--image {
-      width: calc(33.33% - 6.7px);
       .bt-cover-image {
         padding-bottom: 100%;
-        border-radius: 15px;
       }
     }
     &--link {
@@ -1051,7 +1051,7 @@
     input.tnp-email {
       width: 100%;
       border: none;
-      background: #F7F4EF;
+      background: #f7f4ef;
       padding: 15px 34px;
       margin: 0;
       max-width: 100%;
@@ -1154,7 +1154,7 @@
           transform: translateY(-50%);
           left: 0;
           background: #fff5f4;
-          border:1px solid #ccc;
+          border: 1px solid #ccc;
         }
         a {
           color: $color-text;

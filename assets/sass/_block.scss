@@ -2,16 +2,15 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 0;
   .bt-post {
     a {
       display: flex;
-      align-items: center;
       gap: 15px;
       color: inherit;
     }
     .bt-cover-image {
       padding-bottom: 100%;
-      border-radius: 15px;
     }
     &--thumbnail {
       width: 100px;
@@ -24,28 +23,37 @@
       align-items: center;
       gap: 8px;
       font-size: 14px;
-      font-weight: 700;
       line-height: 150%;
       color: $color-accent;
       margin-bottom: 8px;
+      text-transform: uppercase;
     }
     &--title {
       @extend .__bt-max-line-ellipsis;
-      font-size: 18px;
       word-break: break-word;
-      margin: 0 0 12px;
+      margin: 0 0 11px;
+      color: $color-primary;
+      font-family: $secondary-font;
+      font-size: 20px;
+      font-weight: 500;
     }
     &--author {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 150%;
+      color: $color-text;
+      display: flex;
+      gap: 6px;
+      align-items: center;
     }
   }
 }
 
 .bt-block-contact-information {
+
   @extend .__bt-contact-information-style;
 }
 
 .bt-block-instagram-posts {
+  padding: 0;
   @extend .__instagram-posts-style;
 }

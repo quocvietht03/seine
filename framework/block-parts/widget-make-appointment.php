@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Name: Widget - Contact Info
+ * Block Name: Widget - Make Appointment
 **/
 
 $heading = get_field('heading');

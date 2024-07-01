@@ -464,34 +464,6 @@
             }
         }
     }
-    &.bt-loop-post-home1 {
-        .bt-elwg-post-loop-item--default {
-            .bt-post {
-                &--info {
-                    @media (max-width: 1300px) and (min-width: $break-tl) {
-                        margin-left: 15px;
-                        margin-right: 15px;
-                    }
-                    @media (max-width: $break-lg) and (min-width: $break-tl) {
-                        padding: 9px;
-                        .bt-post--publish {
-                            padding-right: 10px;
-                        }
-                        .bt-post-author {
-                            padding-left: 10px;
-                        }
-                    }
-                    @media (max-width: 880px) and (min-width: $break-sm) {
-                        margin-left: 15px;
-                        margin-right: 15px;
-                    }
-                }
-                &--content {
-                    padding: 0 20px 53px;
-                }
-            }
-        }
-    }
     &.elementor-widget-smartslider {
         .bt-col-slider-button-play {
             left: -64px;
