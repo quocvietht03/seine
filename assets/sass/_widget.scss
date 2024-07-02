@@ -6,8 +6,11 @@
     margin: 0;
     background: #f7f4ef;
     padding: 40px;
+    @media (max-width: $break-lg) and (min-width: $break-md) {
+      padding: 30px 15px;
+    }
     @media (max-width: $break-xs) {
-      padding: 20px 15px;
+      padding: 30px 15px;
     }
   }
   .wp-block-heading,

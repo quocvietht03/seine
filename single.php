@@ -21,7 +21,7 @@ get_template_part( 'framework/templates/site', 'titlebar');
 							</div>
 							<?php
 							echo seine_tags_render();
-							echo seine_share_render();
+				
 							echo seine_author_render();
 
 							echo seine_related_posts();

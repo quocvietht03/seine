@@ -326,7 +326,7 @@ html :where(.editor-styles-wrapper) {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; }
 
-.__bt-button-style, .widget button, .widget input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .bt-block-contact-information .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link {
+.__bt-button-style, .widget button, .widget input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link {
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
@@ -341,17 +341,17 @@ html :where(.editor-styles-wrapper) {
   font-family: var(--e-global-typography-primary-font-family, "DM Sans");
   height: auto;
   min-height: auto; }
-  .__bt-button-style:hover, .widget button:hover, .widget input[type="submit"]:hover, .__bt-button-dark-style:hover, .__bt-contact-information-style .bt-contact-information--button:hover, .bt-block-contact-information .bt-contact-information--button:hover, .__bt-button-outline-style:hover, .__bt-button-outline-dark-style:hover, .bt-srq-box--book-link:hover, .__bt-button-style:focus, .widget button:focus, .widget input[type="submit"]:focus, .__bt-button-dark-style:focus, .__bt-contact-information-style .bt-contact-information--button:focus, .bt-block-contact-information .bt-contact-information--button:focus, .__bt-button-outline-style:focus, .__bt-button-outline-dark-style:focus, .bt-srq-box--book-link:focus {
+  .__bt-button-style:hover, .widget button:hover, .widget input[type="submit"]:hover, .__bt-button-dark-style:hover, .__bt-contact-information-style .bt-contact-information--button:hover, .__bt-button-outline-style:hover, .__bt-button-outline-dark-style:hover, .bt-srq-box--book-link:hover, .__bt-button-style:focus, .widget button:focus, .widget input[type="submit"]:focus, .__bt-button-dark-style:focus, .__bt-contact-information-style .bt-contact-information--button:focus, .__bt-button-outline-style:focus, .__bt-button-outline-dark-style:focus, .bt-srq-box--book-link:focus {
     color: #ffffff;
     background: var(--e-global-color-accent, #E96CA7); }
   @media (max-width: 519.98px) {
-    .__bt-button-style, .widget button, .widget input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .bt-block-contact-information .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link {
+    .__bt-button-style, .widget button, .widget input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link {
       font-size: 16px;
       padding: 12px 30px; } }
 
-.__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .bt-block-contact-information .bt-contact-information--button {
+.__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button {
   background: var(--e-global-color-secondary, #111); }
-  .__bt-button-dark-style:hover, .__bt-contact-information-style .bt-contact-information--button:hover, .bt-block-contact-information .bt-contact-information--button:hover, .__bt-button-dark-style:focus, .__bt-contact-information-style .bt-contact-information--button:focus, .bt-block-contact-information .bt-contact-information--button:focus {
+  .__bt-button-dark-style:hover, .__bt-contact-information-style .bt-contact-information--button:hover, .__bt-button-dark-style:focus, .__bt-contact-information-style .bt-contact-information--button:focus {
     background: var(--e-global-color-secondary, #111);
     border-color: var(--e-global-color-secondary, #111); }
 
@@ -648,40 +648,40 @@ html :where(.editor-styles-wrapper) {
     .__bt-socials-style a svg {
       fill: currentColor; }
 
-.__bt-contact-information-style .bt-contact-information, .bt-block-contact-information .bt-contact-information {
+.__bt-contact-information-style .bt-contact-information {
   background: var(--e-global-color-accent, #E96CA7);
   padding: 58px 40px;
   border-radius: 15px; }
-  .__bt-contact-information-style .bt-contact-information--head, .bt-block-contact-information .bt-contact-information--head {
+  .__bt-contact-information-style .bt-contact-information--head {
     font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
     font-size: 30px;
     color: #fff;
     margin: 0 0 5px; }
-  .__bt-contact-information-style .bt-contact-information--desc, .bt-block-contact-information .bt-contact-information--desc {
+  .__bt-contact-information-style .bt-contact-information--desc {
     font-size: 18px;
     line-height: 156%;
     color: #ffffff; }
-  .__bt-contact-information-style .bt-contact-information--button, .bt-block-contact-information .bt-contact-information--button {
+  .__bt-contact-information-style .bt-contact-information--button {
     text-transform: uppercase;
     margin-top: 32px; }
-  .__bt-contact-information-style .bt-contact-information--social, .bt-block-contact-information .bt-contact-information--social {
+  .__bt-contact-information-style .bt-contact-information--social {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 16px;
     margin-top: 46px; }
-    .__bt-contact-information-style .bt-contact-information--social a, .bt-block-contact-information .bt-contact-information--social a {
+    .__bt-contact-information-style .bt-contact-information--social a {
       display: inline-block;
       line-height: 0; }
-    .__bt-contact-information-style .bt-contact-information--social img, .bt-block-contact-information .bt-contact-information--social img {
+    .__bt-contact-information-style .bt-contact-information--social img {
       width: auto;
       height: 32px; }
 @media (max-width: 519.98px) {
-  .__bt-contact-information-style .bt-contact-information, .bt-block-contact-information .bt-contact-information {
+  .__bt-contact-information-style .bt-contact-information {
     padding: 36px 20px; }
-    .__bt-contact-information-style .bt-contact-information--head, .bt-block-contact-information .bt-contact-information--head {
+    .__bt-contact-information-style .bt-contact-information--head {
       font-size: 24px; }
-    .__bt-contact-information-style .bt-contact-information--desc, .bt-block-contact-information .bt-contact-information--desc {
+    .__bt-contact-information-style .bt-contact-information--desc {
       font-size: 16px; } }
 
 .__instagram-posts-style .bt-ins-posts--head, .bt-block-instagram-posts .bt-ins-posts--head {
@@ -1088,9 +1088,12 @@ html :where(.editor-styles-wrapper) {
   margin: 0;
   background: #f7f4ef;
   padding: 40px; }
+  @media (max-width: 1199.98px) and (min-width: 991.98px) {
+    .widget .wp-block-group {
+      padding: 30px 15px; } }
   @media (max-width: 519.98px) {
     .widget .wp-block-group {
-      padding: 20px 15px; } }
+      padding: 30px 15px; } }
 .widget ul,
 .widget ol {
   list-style: none;
@@ -1320,6 +1323,72 @@ html :where(.editor-styles-wrapper) {
     display: flex;
     gap: 6px;
     align-items: center; }
+
+.bt-block-make-appointment {
+  padding: 61px 40px 52px;
+  background-color: var(--e-global-color-accent, #e96ca7);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 1199.98px) and (min-width: 991.98px) {
+    .bt-block-make-appointment {
+      padding: 30px 15px; } }
+  @media (max-width: 519.98px) {
+    .bt-block-make-appointment {
+      padding: 40px 15px; } }
+  .bt-block-make-appointment .bt-make-appointment--sub-head {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase; }
+  .bt-block-make-appointment .bt-make-appointment--head {
+    color: #fff;
+    font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 9px 0 18px 0; }
+  .bt-block-make-appointment .bt-make-appointment--desc {
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    margin-bottom: 40px; }
+  .bt-block-make-appointment .bt-make-appointment--button {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    display: block;
+    padding: 18px;
+    text-align: center; }
+
+.bt-block-popular-category-posts .bt-popular-category-posts {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding-top: 10px; }
+  .bt-block-popular-category-posts .bt-popular-category-posts--item {
+    margin-bottom: 0; }
+    .bt-block-popular-category-posts .bt-popular-category-posts--item a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--e-global-color-primary, #222);
+      font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.3; }
+      .bt-block-popular-category-posts .bt-popular-category-posts--item a:hover {
+        color: var(--e-global-color-accent, #E96CA7); }
 
 .bt-block-instagram-posts {
   padding: 0; }

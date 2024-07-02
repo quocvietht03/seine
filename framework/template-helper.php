@@ -104,7 +104,6 @@ if (!function_exists('seine_nav_menu')) {
 		}
 	}
 }
-
 /* Page title */
 if (!function_exists('seine_page_title')) {
     function seine_page_title() {
@@ -122,7 +121,7 @@ if (!function_exists('seine_page_title')) {
 		}elseif (is_archive()) {
 			if (is_category()){
 				single_cat_title();
-			}elseif(get_post_type() == 'service'||get_post_type() == 'team'){
+			}elseif(get_post_type() == 'service'||get_post_type() == 'therapist'){
 				single_term_title();
 			}elseif (get_post_type() == 'product'){
 				if(wc_get_page_id( 'shop' )){
@@ -168,7 +167,23 @@ if (!function_exists('seine_page_title')) {
 		return ob_get_clean();
     }
 }
+/* Page title blurry */
+if (!function_exists('seine_page_title_blurry')) {
+    function seine_page_title_blurry() {
+		ob_start();
 
+		if(is_singular('post')){
+			esc_html_e('Blog Details', 'seine');
+		}elseif(is_singular('therapist')){
+			esc_html_e('SPA Therapist', 'seine');
+		}else{
+			echo seine_page_title();
+		}
+		
+
+		return ob_get_clean();
+    }
+}
 /* Page breadcrumb */
 if (!function_exists('seine_page_breadcrumb')) {
   function seine_page_breadcrumb($home_text = 'Home', $delimiter = '-') {

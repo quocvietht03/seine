@@ -10,7 +10,7 @@ $category = get_the_terms($post_id, 'category');
       <div class="bt-post--category">
         <?php
         if (!empty($category)) {
-          echo  '<a href="'.get_the_permalink().'">'.$category[0]->name.'</a>';
+          echo  '<a href="'.get_category_link($category[0]->term_id).'">'.$category[0]->name.'</a>';
         }
         ?>
       </div>

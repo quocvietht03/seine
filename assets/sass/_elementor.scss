@@ -338,52 +338,8 @@
     }
   }
 }
-.bt-elwg-page-title-bar {
-  .bt-page-title-bar {
-    position: relative;
-    &--blurry-title {
-      color: #fff;
-      text-align: center;
-      font-family: $secondary-font;
-      font-size: 200px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      opacity: 0.1;
-    }
-    &--infor {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100%;
-    }
-    &--title {
-      color: #fff;
-      text-align: center;
-      font-family: $secondary-font;
-      font-size: 60px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      margin-bottom: 5px;
-    }
-    &--breadcrumb {
-      color: #fff;
-      text-align: center;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      grid-gap: 10px;
-    }
-  }
+.bt-elwg-page-titlebar {
+  @extend .__bt-page-titlebar-style;
 }
 .bt-elwg-step-list {
   &--default {

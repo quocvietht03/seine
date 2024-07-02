@@ -35,6 +35,22 @@ class Widget_PageTitleBar extends Widget_Base
 
 	protected function register_content_section_controls()
 	{
+		$this->start_controls_section(
+			'section_content',
+			[
+				'label' => __('Content', 'seine'),
+			]
+		);
+		$this->add_control(
+			'custom_title_blurry',
+			[
+				'label' => __('Custom Title Blurry', 'seine'),
+				'type' => Controls_Manager::TEXT,
+				'label_block' => true,
+				'default' => '',
+			]
+		);
+		$this->end_controls_section();
 	}
 
 	protected function register_style_content_section_controls()
@@ -48,30 +64,30 @@ class Widget_PageTitleBar extends Widget_Base
 			]
 		);
 		$this->add_control(
-			'blurry_title_style',
+			'title_blurry_style',
 			[
-				'label' => __('Blurry Title', 'seine'),
+				'label' => __('Title Blurry', 'seine'),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
 		$this->add_control(
-			'blurry_title_color',
+			'title_blurry_color',
 			[
 				'label' => __('Color', 'seine'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-page-title-bar--blurry-title' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-page-titlebar--title-blurry' => 'color: {{VALUE}};',
 				],
 			]
 		);
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'blurry_title_typography',
+				'name' => 'title_blurry_typography',
 				'label' => __('Blurry Title Typography', 'seine'),
 				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-page-title-bar--blurry-title',
+				'selector' => '{{WRAPPER}} .bt-page-titlebar--title-blurry',
 			]
 		);
 		$this->add_control(
@@ -88,7 +104,7 @@ class Widget_PageTitleBar extends Widget_Base
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-page-title-bar--title' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-page-titlebar--title' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -98,7 +114,7 @@ class Widget_PageTitleBar extends Widget_Base
 				'name' => 'title_typography',
 				'label' => __('Title Typography', 'seine'),
 				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-page-title-bar--title',
+				'selector' => '{{WRAPPER}} .bt-page-titlebar--title',
 			]
 		);
 
@@ -116,7 +132,7 @@ class Widget_PageTitleBar extends Widget_Base
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-page-title-bar--breadcrumb' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-page-titlebar--breadcrumb' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -126,7 +142,7 @@ class Widget_PageTitleBar extends Widget_Base
 				'name' => 'breadcrumb_typography',
 				'label' => __('Breadcrumb Typography', 'seine'),
 				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-page-title-bar--breadcrumb',
+				'selector' => '{{WRAPPER}} .bt-page-titlebar--breadcrumb',
 			]
 		);
 
@@ -145,13 +161,17 @@ class Widget_PageTitleBar extends Widget_Base
 		$home_text = 'Home';
 		$delimiter = '|';
 ?>
-		<div class="bt-elwg-page-title-bar">
+		<div class="bt-elwg-page-titlebar">
 
-			<div class="bt-page-title-bar">
-				<div class="bt-page-title-bar--blurry-title"><?php echo seine_page_title(); ?></div>
-				<div class="bt-page-title-bar--infor">
-					<div class="bt-page-title-bar--title"><?php echo seine_page_title(); ?></div>
-					<div class="bt-page-title-bar--breadcrumb">
+			<div class="bt-page-titlebar">
+				<?php if (!empty($settings['custom_title_blurry'])) { ?>
+					<div class="bt-page-titlebar--title-blurry"><?php echo $settings['custom_title_blurry']; ?></div>
+				<?php } else { ?>
+					<div class="bt-page-titlebar--title-blurry"><?php echo seine_page_title(); ?></div>
+				<?php } ?>
+				<div class="bt-page-titlebar--infor">
+					<h1 class="bt-page-titlebar--title"><?php echo seine_page_title(); ?></h1>
+					<div class="bt-page-titlebar--breadcrumb">
 						<?php
 						echo seine_page_breadcrumb($home_text, $delimiter);
 						?>
