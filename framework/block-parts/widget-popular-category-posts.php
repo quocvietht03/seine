@@ -23,7 +23,6 @@ $popular_categories = get_field('popular_category');
     } else {
       $args = array(
         'number' => $number_category,
-        'hide_empty' => false
       );
       $all_categories = get_categories($args);
 

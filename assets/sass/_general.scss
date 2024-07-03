@@ -358,51 +358,60 @@
     font-size: 24px;
     margin: 24px 0 12px;
   }
+  .bt-no-margin-bottom{
+    margin-bottom: 0;
+  }
   blockquote {
     position: relative;
     background: #f1f1f1;
-    padding: 30px 30px 30px 125px;
-    border-radius: 10px 20px 20px 10px;
+    padding: 62px 62px 47px 129px;
+    margin-left: 55px;
+    margin-right: 55px;
+    background: #f7f4ef;
+    border: none;
+    color: $color-text;
+    font-family: $secondary-font;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
     > *:first-child {
       margin-top: 0 !important;
     }
     cite {
-      font-weight: 500;
       color: $color-accent;
+      font-family: $primary-font;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 164.7%;
+      font-style: normal;
     }
     .bt-quote-icon {
       position: absolute;
-      top: 30px;
-      left: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 76px;
-      height: 76px;
-      background: #ffffff;
-      border-radius: 100px;
+      top: 47px;
+      left: 52px;
       svg {
+        width: 60px;
+        height: 60px;
         color: $color-accent;
       }
     }
   }
   ul {
     list-style: none;
-    padding-left: 30px;
+    padding-left: 43px;
     @media (max-width: $break-xs) {
       padding-left: 15px;
     }
     li {
       position: relative;
-      padding-left: 36px;
-      &:not(:last-child) {
-        margin-bottom: 12px;
-        padding-bottom: 12px;
-        border-bottom: 1px solid #d9d9d9;
+      padding-left: 26px;
+      margin-bottom: 10px;
+      &:not(:last-child){
+        margin-bottom: 15px;
       }
       .bt-ul-icon {
         position: absolute;
-        top: 1px;
+        top: 4px;
         left: 0;
         line-height: 0;
         color: $color-accent;

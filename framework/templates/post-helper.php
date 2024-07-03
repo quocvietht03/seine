@@ -86,7 +86,9 @@ if (!function_exists('seine_post_featured_render')) {
       if (has_post_thumbnail()) {
     ?>
         <div class="bt-post--featured">
-          <?php the_post_thumbnail($image_size); ?>
+          <div class="bt-cover-image">
+            <?php the_post_thumbnail($image_size); ?>
+          </div>
         </div>
       <?php
       }
@@ -95,7 +97,9 @@ if (!function_exists('seine_post_featured_render')) {
       ?>
         <div class="bt-post--featured">
           <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail($image_size); ?>
+            <div class="bt-cover-image">
+              <?php the_post_thumbnail($image_size); ?>
+            </div>
           </a>
         </div>
     <?php
@@ -197,7 +201,7 @@ if (!function_exists('seine_post_meta_render')) {
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
               <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
             </svg>
-            <?php echo get_the_author(); ?>
+            <?php echo esc_html__('By', 'seine') . ' ' . get_the_author(); ?>
           </a>
         </li>
         <li class="bt-meta bt-meta--view">
@@ -285,9 +289,13 @@ if (!function_exists('seine_tags_render')) {
     if (has_tag()) {
     ?>
       <div class="bt-post-tags">
+        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.65527 3.85714C5.65527 3.06473 5.01911 2.42857 4.2267 2.42857C3.43429 2.42857 2.79813 3.06473 2.79813 3.85714C2.79813 4.64955 3.43429 5.28571 4.2267 5.28571C5.01911 5.28571 5.65527 4.64955 5.65527 3.85714ZM17.5638 10.2857C17.5638 10.6652 17.4075 11.0335 17.1508 11.2902L11.6709 16.7812C11.403 17.0379 11.0347 17.1942 10.6553 17.1942C10.2758 17.1942 9.90751 17.0379 9.65081 16.7812L1.6709 8.79018C1.1017 8.23214 0.655273 7.14955 0.655273 6.35714V1.71429C0.655273 0.933035 1.30259 0.285713 2.08384 0.285713H6.7267C7.51911 0.285713 8.6017 0.732143 9.1709 1.30134L17.1508 9.27009C17.4075 9.53795 17.5638 9.90625 17.5638 10.2857ZM21.8495 10.2857C21.8495 10.6652 21.6932 11.0335 21.4365 11.2902L15.9566 16.7812C15.6888 17.0379 15.3205 17.1942 14.941 17.1942C14.3606 17.1942 14.0705 16.9263 13.691 16.5357L18.9365 11.2902C19.1932 11.0335 19.3495 10.6652 19.3495 10.2857C19.3495 9.90625 19.1932 9.53795 18.9365 9.27009L10.9566 1.30134C10.3874 0.732143 9.30483 0.285713 8.51242 0.285713H11.0124C11.8048 0.285713 12.8874 0.732143 13.4566 1.30134L21.4365 9.27009C21.6932 9.53795 21.8495 9.90625 21.8495 10.2857Z" fill="#E96CA7" />
+        </svg>
+
         <?php
         if (has_tag()) {
-          the_tags('<span>' . esc_html__('Tags: ', 'seine') . '</span>', '', '');
+          the_tags('', '|', '');
         }
         ?>
       </div>
@@ -398,7 +406,7 @@ if (!function_exists('seine_author_icon_render')) {
         <path d="M6.66634 5.83333C6.66634 7.67428 8.15876 9.16667 9.99967 9.16667C11.8406 9.16667 13.333 7.67428 13.333 5.83333C13.333 3.99238 11.8406 2.5 9.99967 2.5C8.15876 2.5 6.66634 3.99238 6.66634 5.83333Z" stroke="#E96CA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M9.99967 11.6667C13.2213 11.6667 15.833 14.2784 15.833 17.5001H4.16634C4.16634 14.2784 6.77801 11.6667 9.99967 11.6667Z" stroke="#E96CA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
-      <h4 class="bt-post-author--name"> By <?php the_author(); ?> </h4>
+      <h4 class="bt-post-author--name"> <?php echo esc_html__('By', 'seine') . ' ' . get_the_author(); ?> </h4>
     </div>
   <?php }
 }
