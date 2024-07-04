@@ -337,7 +337,7 @@ html :where(.editor-styles-wrapper) {
   background: var(--e-global-color-accent, #E96CA7);
   padding: 16px 40px;
   border: none;
-  border-radius: 10px;
+  border-radius: 0;
   font-family: var(--e-global-typography-primary-font-family, "DM Sans");
   height: auto;
   min-height: auto; }
@@ -395,12 +395,20 @@ html :where(.editor-styles-wrapper) {
   margin-bottom: 0 !important; }
 .__bt-format-post-content h2 {
   font-size: 30px;
-  margin: 32px 0 16px; }
+  margin: 32px 0 16px;
+  color: var(--e-global-color-primary, #222);
+  font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: capitalize; }
 .__bt-format-post-content h3 {
   font-size: 24px;
-  margin: 24px 0 12px; }
-.__bt-format-post-content .bt-no-margin-bottom {
-  margin-bottom: 0; }
+  margin: 24px 0 12px;
+  color: var(--e-global-color-primary, #222);
+  font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: capitalize; }
 .__bt-format-post-content blockquote {
   position: relative;
   background: #f1f1f1;
@@ -416,6 +424,10 @@ html :where(.editor-styles-wrapper) {
   line-height: 30px; }
   .__bt-format-post-content blockquote > *:first-child {
     margin-top: 0 !important; }
+  @media (max-width: 1100px) and (min-width: 992px) {
+    .__bt-format-post-content blockquote {
+      margin-left: 15px;
+      margin-right: 15px; } }
   .__bt-format-post-content blockquote cite {
     color: var(--e-global-color-accent, #E96CA7);
     font-family: var(--e-global-typography-primary-font-family, "DM Sans");
@@ -431,6 +443,21 @@ html :where(.editor-styles-wrapper) {
       width: 60px;
       height: 60px;
       color: var(--e-global-color-accent, #E96CA7); }
+  @media (max-width: 600px) {
+    .__bt-format-post-content blockquote {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 30px 30px 30px 70px;
+      font-size: 20px;
+      line-height: 1.4; }
+      .__bt-format-post-content blockquote cite {
+        font-size: 16px; }
+      .__bt-format-post-content blockquote .bt-quote-icon {
+        top: 25px;
+        left: 15px; }
+        .__bt-format-post-content blockquote .bt-quote-icon svg {
+          width: 40px;
+          height: 40px; } }
 .__bt-format-post-content ul {
   list-style: none;
   padding-left: 43px; }
@@ -450,10 +477,13 @@ html :where(.editor-styles-wrapper) {
       line-height: 0;
       color: var(--e-global-color-accent, #E96CA7); }
 .__bt-format-post-content .wp-block-media-text {
-  gap: 30px 50px; }
+  margin-top: 52px;
+  gap: 30px; }
+  @media (max-width: 600px) {
+    .__bt-format-post-content .wp-block-media-text {
+      margin-top: 32px; } }
   .__bt-format-post-content .wp-block-media-text__media {
-    overflow: hidden;
-    border-radius: 20px; }
+    overflow: hidden; }
     .__bt-format-post-content .wp-block-media-text__media img {
       margin: 0 !important; }
   .__bt-format-post-content .wp-block-media-text__content {

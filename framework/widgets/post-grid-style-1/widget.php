@@ -748,7 +748,7 @@ class Widget_PostGridStyle1 extends Widget_Base {
               <div class="bt-post-grid">
                 <?php
                   while ( $query->have_posts() ) : $query->the_post();
-                    get_template_part( 'framework/templates/post', 'style', array('image-size' => $settings['thumbnail_size'], 'layout' => 'default'));
+                    get_template_part( 'framework/templates/post', 'style1', array('image-size' => $settings['thumbnail_size'], 'layout' => 'default'));
                   endwhile;
                 ?>
               </div>

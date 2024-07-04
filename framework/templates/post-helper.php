@@ -401,12 +401,12 @@ if (!function_exists('seine_service_button_book_now_render')) {
 if (!function_exists('seine_author_icon_render')) {
   function seine_author_icon_render()
   { ?>
-    <div class="bt-post-author">
+    <div class="bt-post-author-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M6.66634 5.83333C6.66634 7.67428 8.15876 9.16667 9.99967 9.16667C11.8406 9.16667 13.333 7.67428 13.333 5.83333C13.333 3.99238 11.8406 2.5 9.99967 2.5C8.15876 2.5 6.66634 3.99238 6.66634 5.83333Z" stroke="#E96CA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M9.99967 11.6667C13.2213 11.6667 15.833 14.2784 15.833 17.5001H4.16634C4.16634 14.2784 6.77801 11.6667 9.99967 11.6667Z" stroke="#E96CA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
-      <h4 class="bt-post-author--name"> <?php echo esc_html__('By', 'seine') . ' ' . get_the_author(); ?> </h4>
+      <h4 class="bt-post-author-icon--name"> <?php echo esc_html__('By', 'seine') . ' ' . get_the_author(); ?> </h4>
     </div>
   <?php }
 }
@@ -536,9 +536,10 @@ if (!function_exists('seine_related_posts')) {
     if ($list_posts->have_posts()) {
     ?>
       <div class="bt-related-posts">
-        <h2 class="bt-related-posts--heading">
-          <?php esc_html_e('Related Posts', 'seine'); ?>
-        </h2>
+        <div class="bt-related-posts--heading">
+          <h4 class="bt-sub"><?php esc_html_e('From The Blog', 'seine'); ?></h4>
+          <h2 class="bt-head"><?php esc_html_e('Related News ', 'seine'); ?><span><?php esc_html_e('& Articles', 'seine'); ?></span></h2>
+        </div>
         <div class="bt-related-posts--list bt-image-effect">
           <?php
           while ($list_posts->have_posts()) : $list_posts->the_post();

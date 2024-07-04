@@ -1,7 +1,6 @@
 <?php
 $post_id = get_the_ID();
 $category = get_the_terms($post_id, 'category');
-
 ?>
 <article <?php post_class('bt-post'); ?>>
   <div class="bt-post--inner">
