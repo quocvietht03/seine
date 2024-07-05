@@ -862,7 +862,7 @@
         },
         {
             "key": "field_6530f0658c230",
-            "label": "Dealers",
+            "label": "Therapist",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -881,7 +881,7 @@
         {
             "key": "field_6539eb81df4cd",
             "label": "Related Posts",
-            "name": "dealer_related_posts",
+            "name": "therapist_related_posts",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -894,6 +894,26 @@
             },
             "layout": "block",
             "sub_fields": [
+                {
+                    "key": "field_66865456ac66b",
+                    "label": "Sub Heading",
+                    "name": "sub_heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
                 {
                     "key": "field_6539eb81df4cf",
                     "label": "Heading",
@@ -933,6 +953,64 @@
                     "max": "",
                     "placeholder": "",
                     "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_66865474ac66c",
+                    "label": "Bottom Text",
+                    "name": "bottom_text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_668778bfba5a2",
+            "label": "Feature Section",
+            "name": "feature_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_668778d9ba5a7",
+                    "label": "Shortcode Feature Section",
+                    "name": "shortcode_feature_section",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
                     "prepend": "",
                     "append": ""
                 }
@@ -1389,5 +1467,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719901146
+    "modified": 1720154353
 }

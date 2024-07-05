@@ -83,27 +83,28 @@ if (!function_exists('seine_post_featured_render')) {
     ob_start();
 
     if (is_single()) {
-      if (has_post_thumbnail()) {
     ?>
-        <div class="bt-post--featured">
-          <div class="bt-cover-image">
-            <?php the_post_thumbnail($image_size); ?>
-          </div>
+      <div class="bt-post--featured">
+        <div class="bt-cover-image">
+          <?php if (has_post_thumbnail()) {
+            the_post_thumbnail($image_size);
+          } ?>
         </div>
-      <?php
-      }
-    } else {
-      if (has_post_thumbnail()) {
-      ?>
-        <div class="bt-post--featured">
-          <a href="<?php the_permalink(); ?>">
-            <div class="bt-cover-image">
-              <?php the_post_thumbnail($image_size); ?>
-            </div>
-          </a>
-        </div>
+      </div>
     <?php
-      }
+    } else {
+    ?>
+      <div class="bt-post--featured">
+        <a href="<?php the_permalink(); ?>">
+          <div class="bt-cover-image">
+            <?php if (has_post_thumbnail()) {
+              the_post_thumbnail($image_size);
+            } ?>
+          </div>
+        </a>
+      </div>
+    <?php
+
     }
 
     return ob_get_clean();

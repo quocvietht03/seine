@@ -37,10 +37,6 @@ if($list_posts->have_posts()) {
               if(!empty($related_posts['heading'])) {
                 echo '<h2 class="bt-main-text">' . $related_posts['heading'] . '</h2>';
               }
-
-              if(!empty($related_posts['text_heading'])) {
-                echo '<div class="bt-head-text">' . $related_posts['text_heading'] . '</div>';
-              }
             ?>
           </div>
         <?php } ?>

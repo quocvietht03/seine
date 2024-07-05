@@ -1,7 +1,5 @@
 <?php
 $job = get_field('job');
-$prf_link = get_field('profile_link');
-$socials = get_field('socials');
 
 ?>
 <article <?php post_class('bt-post'); ?>>

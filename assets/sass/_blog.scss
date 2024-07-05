@@ -45,6 +45,7 @@
     }
     &--featured-wrap {
       position: relative;
+      width: 100%;
     }
     &--category {
       position: absolute;
@@ -222,6 +223,7 @@
   .bt-post {
     &--featured-wrap {
       position: relative;
+         width: 100%;
     }
     &--category {
       position: absolute;
@@ -508,7 +510,7 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 13px;
-    margin: 0 0 12px;
+    margin: 0 0 14px;
     justify-content: center;
     align-items: center;
     flex-direction: column;

@@ -52,7 +52,7 @@ class Widget_TherapistLoopItem extends Widget_Base {
 				'label' => __( 'Image Ratio', 'seine' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
-					'size' => 1.16,
+					'size' => 1.18,
 				],
 				'range' => [
 					'px' => [
@@ -217,13 +217,6 @@ class Widget_TherapistLoopItem extends Widget_Base {
 				'label'    => esc_html__( 'Typography', 'seine' ),
 				'default'  => '',
 				'selector' => '{{WRAPPER}} .bt-post--job',
-			]
-		);
-
-		$this->add_control(
-			'button_style',[
-				'label' => esc_html__( 'Button', 'seine' ),
-				'type'  => Controls_Manager::HEADING,
 			]
 		);
 
