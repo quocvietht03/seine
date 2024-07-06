@@ -17,7 +17,7 @@ $query_args = array(
     'category__in'   => $cat_ids,
     'post_type'      => $current_post_type,
     'post__not_in'    => array($post_id),
-    'posts_per_page'  => !empty($related_posts['number_posts']) ? $related_posts['number_posts'] : 3,
+    'posts_per_page'  => !empty($related_posts['number_posts']) ? $related_posts['number_posts'] : 4,
  );
 
 $list_posts = new WP_Query( $query_args );

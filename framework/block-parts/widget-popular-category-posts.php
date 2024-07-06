@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Block Name: Widget - Make Appointment
+ * Block Name: Widget - Popular Category Posts
  **/
 $number_category = get_field('number_category');
 $popular_categories = get_field('popular_category');

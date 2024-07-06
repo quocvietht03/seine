@@ -1710,33 +1710,37 @@
     }
   }
 }
-.bt-elwg-icon-text-box-item {
-  .bt-icon-text-box {
+.bt-elwg-site-box-phone {
+  .bt-site-box-phone {
+   > a{
     display: flex;
     align-items: center;
+   }
     &--icon {
       width: 52px;
-      img {
+      img,svg{
         width: 100%;
         display: block;
       }
     }
     &--infor {
       width: calc(100% - 52px);
-    }
-    &--heading {
-      color: $color-accent;
-      font-size: 18px;
-      font-weight: 500;
-      text-transform: capitalize;
-      margin: 0 0 8px 0;
-    }
-    &--content {
-      color: $color-primary;
-      font-size: 26px;
-      font-weight: 700;
-      @media (max-width: $break-xs) {
-        font-size: 24px;
+      padding-left: 18px;
+      .bt-label {
+        color: $color-accent;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin: 0 0 8px 0;
+        line-height: normal;
+      }
+      .bt-phone {
+        color: $color-primary;
+        font-size: 26px;
+        font-weight: 700;
+        @media (max-width: $break-xs) {
+          font-size: 24px;
+        }
       }
     }
   }

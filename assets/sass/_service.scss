@@ -32,7 +32,7 @@
         padding-left: 20px;
         padding-right: 20px;
       }
-      @media(max-width:400px){
+      @media (max-width: 400px) {
         left: 15px;
         right: 15px;
         padding-left: 20px;
@@ -79,7 +79,7 @@
       font-size: 26px;
       font-weight: 600;
       margin-bottom: 6px;
-      a{
+      a {
         color: $color-primary;
       }
     }
@@ -93,7 +93,7 @@
       @media (max-width: 1100px) and (min-width: $break-tl) {
         margin: 0 15px;
       }
-      @media(max-width:400px){
+      @media (max-width: 400px) {
         margin: 0 15px;
       }
       a {
@@ -106,6 +106,179 @@
         width: 100%;
         display: block;
         padding: 14px 15px;
+      }
+    }
+  }
+}
+.single-service {
+  .bt-main-content-ss {
+    .bt-post {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      &--main {
+        width: calc(66.66% - 15px);
+      }
+      &--sidebar {
+        width: calc(33.33% - 15px);
+      }
+      .bt-sidebar-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .bt-sidebar-block {
+          .bt-block-heading {
+            color: #fff;
+            font-family: $secondary-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            background: $color-accent;
+            padding: 20px 40px;
+            margin: 0;
+          }
+          .bt-service-list {
+            background: #f7f4ef;
+            padding: 31px 23px 40px 25px;
+            list-style: none;
+            margin: 0;
+            &--item {
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              padding: 15px;
+              transition: all 0.5s ease-in-out;
+              &:hover,
+              &.active {
+                background: #fff;
+                padding-left: 30px;
+              }
+            }
+            &--icon {
+              width: 20px;
+              display: flex;
+            }
+            &--content {
+              width: calc(100% - 28px);
+              .bt-post--title {
+                margin: 0;
+                color: $color-primary;
+                font-family: $secondary-font;
+                font-size: 22px;
+                font-weight: 500;
+              }
+            }
+          }
+          &.bt-make-appointment-block {
+            @extend .__make-appointment-style;
+            background-image: url("../images/bg-sidebar-make-appointment-min.jpg");
+          }
+          &.bt-opening-hours-block {
+            background-image: url("../images/bg-opening-hours-sidebar-min.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 57px 52px 59px 56px;
+            .bt-opening-hours {
+              > svg {
+                display: block;
+              }
+              &--sub-head {
+                color: #fff;
+                font-size: 15px;
+                font-weight: 500;
+                background: $color-accent;
+                padding: 6px 18px;
+                margin-top: 12px;
+                display: inline-block;
+                line-height: 1.33;
+              }
+              &--head {
+                color: $color-primary;
+                font-family: $secondary-font;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+                margin: 11px 0 7px 0;
+              }
+              &--desc {
+                color: $color-text;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+              }
+              &--time-list {
+                margin: 27px 0 30px 0;
+                list-style: none;
+                padding: 0;
+              }
+              &--time-item {
+                &:not(:last-child) {
+                  padding-bottom: 14px;
+                  margin-bottom: 10px;
+                  border-bottom: 1px solid #c2c2c2;
+                }
+                display: flex;
+                column-gap: 15px;
+                flex-direction: column;
+                .bt-label {
+                  color: $color-text;
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 30px;
+                }
+                .bt-hours {
+                  color: $color-accent;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 30px;
+                }
+              }
+              &--phone {
+                background: #fff;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+                > a {
+                  display: flex;
+                  align-items: center;
+                }
+                &-icon {
+                  width: 52px;
+                  svg {
+                    width: 100%;
+                    display: block;
+                  }
+                }
+                &-infor {
+                  width: calc(100% - 52px);
+                  padding-left: 18px;
+                  .bt-label {
+                    color: $color-accent;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin: 0 0 8px 0;
+                    line-height: normal;
+                  }
+                  .bt-head {
+                    color: $color-primary;
+                    font-size: 26px;
+                    font-weight: 700;
+                    @media (max-width: $break-xs) {
+                      font-size: 24px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

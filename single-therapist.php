@@ -1,6 +1,6 @@
 <?php
 /*
- * Single Post
+ * Single Therapist
  */
 
 get_header();
@@ -170,9 +170,7 @@ $feature_section = get_field('feature_section', 'options');
 		?>
 	</div>
 	<?php get_template_part('framework/templates/therapist', 'related-posts'); ?>
-	<div class="bt-feature-ss">
-		<?php echo do_shortcode($feature_section['shortcode_feature_section']); ?>
-	</div>
+	<?php echo do_shortcode($feature_section['shortcode_feature_section']); ?>
 </main><!-- #main -->
 
 <?php get_footer(); ?>

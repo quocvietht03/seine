@@ -68,6 +68,17 @@ class Widget_TimeList extends Widget_Base
 				],
 			]
 		);
+		$this->add_control(
+			'time_list_enable',
+			[
+				'label' => __('Enable Custom List', 'seine'),
+				'type' => Controls_Manager::SWITCHER,
+				'label_on' => __('Yes', 'seine'),
+				'label_off' => __('No', 'seine'),
+				'return_value' => 'yes',
+				'default' => 'no',
+			]
+		);
 		$repeater = new Repeater();
 
 		$repeater->add_control(
@@ -114,6 +125,9 @@ class Widget_TimeList extends Widget_Base
 					],
 				],
 				'title_field' => '{{{ time_title }}}',
+				'condition' => [
+					'time_list_enable' => 'yes',
+				],
 			]
 		);
 
@@ -262,31 +276,57 @@ class Widget_TimeList extends Widget_Base
 	protected function render()
 	{
 		$settings = $this->get_settings_for_display();
+		$site_information = get_field('site_information', 'options');
 
-		if (empty($settings['list'])) {
-			return;
-		}
 ?>
 		<div class="bt-elwg-time-list--default">
 			<ul class="bt-time-list">
-				<?php foreach ($settings['list'] as $index => $item) {
+				<?php if (!empty($settings['time_list_enable']) && $settings['time_list_enable'] === 'yes') {
+					if (empty($settings['list'])) {
+						return;
+					}
+					foreach ($settings['list'] as $index => $item) {
 				?>
-					<li class="bt-time--item">
-						<?php if (!empty($settings['time_enable_icon']) && $settings['time_enable_icon'] === 'yes' && !empty($settings['time_icon']['url'])) { ?>
-							<div class="bt-time--icon">
-								<img src="<?php echo esc_url($settings['time_icon']['url']); ?>" alt="">
+						<li class="bt-time--item">
+							<?php if (!empty($settings['time_enable_icon']) && $settings['time_enable_icon'] === 'yes' && !empty($settings['time_icon']['url'])) { ?>
+								<div class="bt-time--icon">
+									<img src="<?php echo esc_url($settings['time_icon']['url']); ?>" alt="">
+								</div>
+							<?php } ?>
+							<div class="bt-time--infor">
+								<div class="bt-time--title">
+									<?php echo $item['time_title']; ?>
+								</div>
+								<div class="bt-time--date">
+									<?php echo $item['time_date']; ?>
+								</div>
 							</div>
-						<?php } ?>
-						<div class="bt-time--infor">
-							<div class="bt-time--title">
-								<?php echo $item['time_title']; ?>
-							</div>
-							<div class="bt-time--date">
-								<?php echo $item['time_date']; ?>
-							</div>
-						</div>
-					</li>
-				<?php } ?>
+						</li>
+						<?php }
+				} else {
+					if (!empty($site_information['opening_hours'])) {
+						foreach ($site_information['opening_hours'] as $item) {
+						?>
+							<li class="bt-time--item">
+								<?php if (!empty($settings['time_enable_icon']) && $settings['time_enable_icon'] === 'yes' && !empty($settings['time_icon']['url'])) { ?>
+									<div class="bt-time--icon">
+										<img src="<?php echo esc_url($settings['time_icon']['url']); ?>" alt="">
+									</div>
+								<?php } ?>
+								<div class="bt-time--infor">
+									<div class="bt-time--title">
+										<?php echo $item['heading']; ?>
+									</div>
+									<div class="bt-time--date">
+										<?php echo $item['hours']; ?>
+									</div>
+								</div>
+							</li>
+				<?php
+						}
+					}
+				}
+				?>
 			</ul>
 		</div>
 <?php

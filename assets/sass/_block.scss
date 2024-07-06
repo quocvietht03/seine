@@ -49,56 +49,7 @@
 }
 
 .bt-block-make-appointment {
-  padding: 61px 40px 52px;
-  background-color: var(--e-global-color-accent, #e96ca7);
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media (max-width: $break-lg) and (min-width: $break-md) {
-    padding: 30px 15px;
-  }
-  @media (max-width: $break-xs) {
-    padding: 40px 15px;
-  }
-  .bt-make-appointment {
-    &--sub-head {
-      color: #fff;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
-    }
-    &--head {
-      color: #fff;
-      font-family: $secondary-font;
-      font-size: 38px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      margin: 9px 0 18px 0;
-    }
-    &--desc {
-      color: #fff;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 33px;
-      margin-bottom: 40px;
-    }
-    &--button {
-      color: #fff;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      text-transform: uppercase;
-      border: 3px solid #fff;
-      display: block;
-      padding: 18px;
-      text-align: center;
-    }
-  }
+  @extend .__make-appointment-style;
 }
 .bt-block-popular-category-posts {
   .bt-popular-category-posts {
