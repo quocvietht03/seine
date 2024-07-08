@@ -7709,5 +7709,8 @@ body {
           padding-left: 15px; } }
 .elementor-element.bt-section-info-maps .elementor-button-wrapper .elementor-button {
   width: 100%; }
+.elementor-element.bt-loop-gallery .gallery {
+  margin-bottom: 0;
+  margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */
