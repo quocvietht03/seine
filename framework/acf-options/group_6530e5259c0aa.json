@@ -665,8 +665,8 @@
         },
         {
             "key": "field_6530ef7217120",
-            "label": "Related Posts",
-            "name": "service_related_posts",
+            "label": "Testimonials Section",
+            "name": "testimonials_section",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -680,106 +680,34 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_6530ef8e17121",
-                    "label": "Sub Heading",
-                    "name": "sub_heading",
+                    "key": "field_668b41024c7f5",
+                    "label": "Shortcode Testimonials",
+                    "name": "shortcode_testimonials",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "post_object",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_6530efd117122",
-                    "label": "Heading",
-                    "name": "heading",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_653c769bb30ba",
-                    "label": "Text Heading",
-                    "name": "text_heading",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": 4,
-                    "placeholder": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_6537453d5b379",
-                    "label": "Bottom Text",
-                    "name": "bottom_text",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": 4,
-                    "placeholder": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_6530efe217123",
-                    "label": "Nubmer Posts",
-                    "name": "number_posts",
-                    "aria-label": "",
-                    "type": "number",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "min": "",
-                    "max": "",
-                    "placeholder": "",
-                    "step": "",
-                    "prepend": "",
-                    "append": ""
+                    "post_type": [
+                        "elementor_library"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": [
+                        "elementor_library_type:section"
+                    ],
+                    "return_format": "object",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": []
                 }
             ]
         },
@@ -919,10 +847,10 @@
             "sub_fields": [
                 {
                     "key": "field_668778d9ba5a7",
-                    "label": "Shortcode Feature Section",
-                    "name": "shortcode_feature_section",
+                    "label": "Shortcode Feature",
+                    "name": "shortcode_feature",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "post_object",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -931,11 +859,21 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
+                    "post_type": [
+                        "elementor_library"
+                    ],
+                    "post_status": [
+                        "publish"
+                    ],
+                    "taxonomy": [
+                        "elementor_library_type:section"
+                    ],
+                    "return_format": "object",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": []
                 }
             ]
         },
@@ -1252,5 +1190,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720230071
+    "modified": 1720403472
 }

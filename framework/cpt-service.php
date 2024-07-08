@@ -35,6 +35,7 @@ function seine_service_register() {
 		'hierarchical'    => false,
 		'menu_icon'       => 'dashicons-admin-post',
 		'rewrite'         => array('slug' => $cpt_slug), // Permalinks format
+		'show_in_rest' 		=> true,
 		'supports'        => array('title', 'editor', 'excerpt', 'thumbnail', 'comments')
   );
 

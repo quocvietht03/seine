@@ -9,14 +9,17 @@ $post_id = get_the_ID();
 $top_service = get_field('top_services', 'options');
 $make_appointment = get_field('make_appointment', 'options');
 $opening_hours_sidebar = get_field('opening_hours_sidebar', 'options');
-$site_information = get_field('site_information', 'options')
+$site_information = get_field('site_information', 'options');
+$description = get_field('description_service', $post_id);
+$price = get_field('price_service', $post_id);
+$testimonials_section = get_field('testimonials_section', 'options');
 ?>
 <main id="bt_main" class="bt-site-main">
 	<div class="bt-main-content-ss">
 		<div class="bt-container">
 			<?php while (have_posts()) : the_post(); ?>
-				<div class="bt-post">
-					<div class="bt-post--sidebar">
+				<div class="bt-main-post-row">
+					<div class="bt-sidebar-col">
 						<div class="bt-sidebar-wrap">
 
 							<div class="bt-sidebar-block bt-top-service-block">
@@ -154,8 +157,8 @@ $site_information = get_field('site_information', 'options')
 							</div>
 						</div>
 					</div>
-					<div class="bt-post--main">
-						<div class="bt-main-posts-ss">
+					<div class="bt-main-post-col">
+						<div class="bt-post ">
 							<div class="bt-post--thumbnail">
 								<div class="bt-cover-image">
 									<?php
@@ -165,13 +168,23 @@ $site_information = get_field('site_information', 'options')
 									?>
 								</div>
 							</div>
-
-							<h3 class="bt-post--title">
-								<a href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>
-								</a>
-							</h3>
-
+							<div class="bt-post--infor">
+								<div class="bt-post--info">
+									<?php
+									if (!empty($price)) {
+										$price = number_format($price, 2);
+										echo '<div class="bt-post--price">$' . $price . '</div>';
+									}
+									?>
+									<?php echo seine_single_post_title_render(); ?>
+									<?php
+									if (!empty($description)) {
+										echo '<div class="bt-post--description">' . $description . '</div>';
+									}
+									?>
+								</div>
+								<?php echo seine_service_button_book_now_render('Book Now'); ?>
+							</div>
 							<div class="bt-post--content">
 								<?php the_content(); ?>
 							</div>
@@ -183,6 +196,12 @@ $site_information = get_field('site_information', 'options')
 			<?php endwhile; ?>
 		</div>
 	</div>
+	<?php
+	if (!empty($testimonials_section['shortcode_testimonials'])) {
+		$id_template = $testimonials_section['shortcode_testimonials']->ID;
+		echo do_shortcode('[elementor-template id="' . $id_template . '"]');
+	}
+	?>
 </main><!-- #main -->
 
 <?php get_footer(); ?>

@@ -109,7 +109,7 @@ require_once get_template_directory() . '/framework/cpt-therapist.php';
 require_once get_template_directory() . '/framework/cpt-service.php';
 require_once get_template_directory() . '/framework/cpt-brand.php';
 require_once get_template_directory() . '/framework/cpt-testimonial.php';
-
+require_once get_template_directory() . '/framework/cpt-gallery.php';
 /* ACF Options */
 require_once get_template_directory() . '/framework/acf-options.php';
 

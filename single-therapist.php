@@ -170,7 +170,12 @@ $feature_section = get_field('feature_section', 'options');
 		?>
 	</div>
 	<?php get_template_part('framework/templates/therapist', 'related-posts'); ?>
-	<?php echo do_shortcode($feature_section['shortcode_feature_section']); ?>
+	<?php
+	if (!empty($feature_section['shortcode_feature'])) {
+		$id_template = $feature_section['shortcode_feature']->ID;
+		echo do_shortcode('[elementor-template id="' . $id_template . '"]');
+	}
+	?>
 </main><!-- #main -->
 
 <?php get_footer(); ?>
