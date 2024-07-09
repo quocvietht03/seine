@@ -55,11 +55,11 @@ if ( post_password_required() ) {
 					do_action( 'seine_woocommerce_template_single_rating' );
 				?>
 			</div>
-			
-			<div class="bt-product-share-add-to-cart"> 
-				<?php 
+			<div class="bt-product-excerpt-add-to-cart"> 
+				<?php
+					do_action( 'seine_woocommerce_template_single_excerpt' ); 
 					do_action( 'seine_woocommerce_template_single_add_to_cart' );
-					echo seine_share_render();  
+				
 				?> 
 			</div>
 			

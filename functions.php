@@ -44,12 +44,12 @@ if (!function_exists('seine_enqueue_scripts')) {
 	{
 		global $seine_options;
 
-		// if(is_singular('car') || is_singular('product')) {
-		// 	wp_enqueue_script('slick-slider', get_template_directory_uri().'/assets/libs/slick/slick.min.js', array('jquery'), '', true);
-		// 	wp_enqueue_style('slick-slider', get_template_directory_uri(). '/assets/libs/slick/slick.css',array(), false);
+		 if(is_singular('product')) {
+			wp_enqueue_script('slick-slider', get_template_directory_uri().'/assets/libs/slick/slick.min.js', array('jquery'), '', true);
+			wp_enqueue_style('slick-slider', get_template_directory_uri(). '/assets/libs/slick/slick.css',array(), false);
 
-		// 	wp_enqueue_script('zoom-master', get_template_directory_uri().'/assets/libs/zoom-master/jquery.zoom.min.js', array('jquery'), '', true);
-		// }
+		 	wp_enqueue_script('zoom-master', get_template_directory_uri().'/assets/libs/zoom-master/jquery.zoom.min.js', array('jquery'), '', true);
+		 }
 
 		wp_enqueue_script('select2', get_template_directory_uri() . '/assets/libs/select2/select2.min.js', array('jquery'), '', true);
 		wp_enqueue_style('select2', get_template_directory_uri() . '/assets/libs/select2/select2.min.css', array(), false);

@@ -166,9 +166,8 @@ function seine_woocommerce_custom_field_save($post_id)
   } else {
     update_post_meta($post_id, '_subtitle', '');
   }
-
 }
-
+/* Sold Product */
 function seine_woocommerce_item_sold($product_id)
 {
   $args = array(
@@ -188,7 +187,42 @@ function seine_woocommerce_item_sold($product_id)
     }
   }
   echo '<div class="woocommerce-loop-product__sold">';
-  echo $total_quantity_sold . ' ' . esc_html__( 'Item Sold', 'seine' );
+  echo $total_quantity_sold . ' ' . esc_html__('Item Sold', 'seine');
   echo '</div>';
 }
 add_action('seine_woocommerce_shop_loop_item_sold', 'seine_woocommerce_item_sold', 10, 2);
+/* Add Sold Product affer Quanty Single Product */
+function seine_display_sold_after_quantity() {
+  global $product;
+  seine_woocommerce_item_sold($product->get_id());
+}
+add_action('woocommerce_after_add_to_cart_quantity', 'seine_display_sold_after_quantity');
+
+/* Remove the additional information tab */
+add_filter('woocommerce_product_tabs', 'seine_woocommerce_remove_additional_information_tabs', 98);
+
+function seine_woocommerce_remove_additional_information_tabs($tabs)
+{
+  unset($tabs['additional_information']);
+  return $tabs;
+}
+/* Add additional information to the bottom of the description */
+add_filter('the_content', 'seine_woocommerce_add_additional_information');
+function seine_woocommerce_add_additional_information($content)
+{
+  global $product;
+  if (is_product()) {
+    ob_start();
+    do_action('woocommerce_product_additional_information', $product);
+    $additional_info_content = ob_get_clean();
+    $content .= '<h3>' . esc_html__('Additional Information:', 'seine') . '</h3>' . $additional_info_content;
+  }
+  return $content;
+}
+/* Custom the "Description" tab title */
+add_filter('woocommerce_product_description_heading', 'seine_woocommerce_custom_description_heading');
+
+function seine_woocommerce_custom_description_heading()
+{
+  return esc_html__('Key Ingredient:', 'seine');
+}

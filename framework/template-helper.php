@@ -171,13 +171,14 @@ if (!function_exists('seine_page_title')) {
 if (!function_exists('seine_page_title_blurry')) {
     function seine_page_title_blurry() {
 		ob_start();
-
 		if(is_singular('post')){
 			esc_html_e('Blog Details', 'seine');
 		}elseif(is_singular('therapist')){
 			esc_html_e('SPA Therapist', 'seine');
 		}elseif(is_singular('service')){
 			esc_html_e('SPA Services', 'seine');
+		}elseif(is_singular('product')){
+			esc_html_e('Product Details', 'seine');
 		}else{
 			echo seine_page_title();
 		}
