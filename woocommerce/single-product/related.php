@@ -27,7 +27,6 @@ if ( $related_products ) :
 		$related_posts = array(
 			'sub_heading' => __( 'Style Change Your Life', 'seine' ),
 			'heading' => __( 'Related Products', 'seine' ),
-			'text_heading' => ''
 		);
 	}
 
@@ -45,9 +44,6 @@ if ( $related_products ) :
 					echo '<h2 class="bt-main-text">' . $related_posts['heading'] . '</h2>';
 				}
 
-				if(!empty($related_posts['text_heading'])) {
-					echo '<div class="bt-head-text">' . $related_posts['text_heading'] . '</div>';
-				}
 			?>
 		</div>
 

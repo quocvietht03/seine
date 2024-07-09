@@ -896,6 +896,26 @@
             "selected": 0
         },
         {
+            "key": "field_668cadcc8c2b9",
+            "label": "Enable Related Posts",
+            "name": "enable_related_posts",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
             "key": "field_653c78511e517",
             "label": "Related Posts",
             "name": "product_related_posts",
@@ -950,26 +970,6 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": ""
-                },
-                {
-                    "key": "field_653c78511e51a",
-                    "label": "Text Heading",
-                    "name": "text_heading",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": 4,
-                    "placeholder": "",
-                    "new_lines": ""
                 },
                 {
                     "key": "field_653c78511e51c",
@@ -1190,5 +1190,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720403472
+    "modified": 1720495766
 }

@@ -19,6 +19,13 @@ add_action('seine_woocommerce_template_single_sharing', 'woocommerce_template_si
 
 
 add_action('seine_woocommerce_shop_loop_item_subtitle', 'seine_woocommerce_template_loop_subtitle', 10, 2);
+
+if (function_exists('get_field')) {
+  $enable_related_posts = get_field('enable_related_posts', 'options');
+  if (!$enable_related_posts) {
+    remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+  }
+}
 function seine_woocommerce_template_loop_subtitle()
 {
   $subtitle = get_post_meta(get_the_ID(), '_subtitle', true);
@@ -192,7 +199,8 @@ function seine_woocommerce_item_sold($product_id)
 }
 add_action('seine_woocommerce_shop_loop_item_sold', 'seine_woocommerce_item_sold', 10, 2);
 /* Add Sold Product affer Quanty Single Product */
-function seine_display_sold_after_quantity() {
+function seine_display_sold_after_quantity()
+{
   global $product;
   seine_woocommerce_item_sold($product->get_id());
 }
@@ -219,10 +227,20 @@ function seine_woocommerce_add_additional_information($content)
   }
   return $content;
 }
-/* Custom the "Description" tab title */
+/* Custom the "Description" title */
 add_filter('woocommerce_product_description_heading', 'seine_woocommerce_custom_description_heading');
-
 function seine_woocommerce_custom_description_heading()
 {
   return esc_html__('Key Ingredient:', 'seine');
+}
+/* Custom the "Review" tab title */
+add_filter('woocommerce_product_tabs', 'seine_woocommerce_custom_reviews_tab_title');
+function seine_woocommerce_custom_reviews_tab_title($tabs)
+{
+  if (isset($tabs['reviews'])) {
+    global $product;
+    $review_count = $product->get_review_count();
+    $tabs['reviews']['title'] = sprintf(__('Reviews <span>%d</span>', 'seine'), $review_count);
+  }
+  return $tabs;
 }

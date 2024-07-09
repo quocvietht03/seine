@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying product content in the single-product.php template
  *
@@ -15,7 +16,7 @@
  * @version 3.6.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product;
 
@@ -24,15 +25,15 @@ global $product;
  *
  * @hooked woocommerce_output_all_notices - 10
  */
-do_action( 'woocommerce_before_single_product' );
+do_action('woocommerce_before_single_product');
 
-if ( post_password_required() ) {
+if (post_password_required()) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-	<div class="bt-product-inner"> 
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
+	<div class="bt-product-inner">
 		<?php
 		/**
 		 * Hook: woocommerce_before_single_product_summary.
@@ -40,48 +41,46 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_show_product_sale_flash - 10
 		 * @hooked woocommerce_show_product_images - 20
 		 */
-		do_action( 'woocommerce_before_single_product_summary' );
+		do_action('woocommerce_before_single_product_summary');
 		?>
 
 		<div class="summary entry-summary">
 			<?php
-				do_action( 'seine_woocommerce_shop_loop_item_subtitle' );
-				do_action( 'seine_woocommerce_template_single_title' );
+			do_action('seine_woocommerce_shop_loop_item_subtitle');
+			do_action('seine_woocommerce_template_single_title');
 			?>
 
 			<div class="woocommerce-product-price-wrap">
 				<?php
-					do_action( 'seine_woocommerce_template_single_price' );
-					do_action( 'seine_woocommerce_template_single_rating' );
+				do_action('seine_woocommerce_template_single_price');
+				do_action('seine_woocommerce_template_single_rating');
 				?>
 			</div>
-			<div class="bt-product-excerpt-add-to-cart"> 
+			<div class="bt-product-excerpt-add-to-cart">
 				<?php
-					do_action( 'seine_woocommerce_template_single_excerpt' ); 
-					do_action( 'seine_woocommerce_template_single_add_to_cart' );
-				
-				?> 
+				do_action('seine_woocommerce_template_single_excerpt');
+				do_action('seine_woocommerce_template_single_add_to_cart');
+
+				?>
 			</div>
-			
-			<?php do_action( 'seine_woocommerce_template_single_meta' ); ?>
+
+			<?php do_action('seine_woocommerce_template_single_meta'); ?>
 		</div>
 	</div>
 
-	<div class="bt-product-details-and-sidebar"> 
-		<?php
-			/**
-			 * Hook: woocommerce_after_single_product_summary.
-			 *
-			 * @hooked woocommerce_output_product_data_tabs - 10
-			 * @hooked woocommerce_upsell_display - 15
-			 * @hooked woocommerce_output_related_products - 20
-			 */
+	<?php
+	/**
+	 * Hook: woocommerce_after_single_product_summary.
+	 *
+	 * @hooked woocommerce_output_product_data_tabs - 10
+	 * @hooked woocommerce_upsell_display - 15
+	 * @hooked woocommerce_output_related_products - 20
+	 */
 
-			do_action( 'woocommerce_after_single_product_summary' );
-		?>
-	</div>
+	do_action('woocommerce_after_single_product_summary');
+	?>
 
 
 </div>
 
-<?php do_action( 'woocommerce_after_single_product' ); ?>
+<?php do_action('woocommerce_after_single_product'); ?>
