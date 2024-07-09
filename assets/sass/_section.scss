@@ -421,7 +421,9 @@
         @extend .__bt-pd-container-full-width;
         .bt-loop-testimonial-home1 {
             @media (max-width: $break-xs) {
-                padding-bottom: 80px;
+                > .elementor-widget-container {
+                    padding-bottom: 80px;
+                }
             }
             .elementor-swiper-button {
                 width: 60px;
@@ -618,7 +620,9 @@
             }
         }
         @media (max-width: $break-sm) {
-            padding-bottom: 80px;
+            > .elementor-widget-container {
+                padding-bottom: 80px;
+            }
         }
     }
     &.bt-section-appointment-home2 {
@@ -790,7 +794,7 @@
         }
     }
     &.bt-section-info-maps {
-        iframe{
+        iframe {
             filter: invert(85%) sepia(50%) saturate(220%) hue-rotate(172deg) brightness(60%) contrast(100%);
         }
         .bt-elwg-site-infor {
@@ -819,7 +823,7 @@
             &--default {
                 border-top: 1px solid #dededd;
                 margin-top: 41px;
-                @media(max-width:600px){
+                @media (max-width: 600px) {
                     margin-top: 30px;
                 }
                 .bt-elwg-site-infor {
@@ -830,7 +834,7 @@
                             border-left: 1px solid #dededd;
                             padding-left: 37px;
                         }
-                        @media(max-width:600px){
+                        @media (max-width: 600px) {
                             width: 100%;
                             padding: 15px;
                             &.email {
@@ -849,8 +853,8 @@
             }
         }
     }
-    &.bt-loop-gallery{
-        .gallery{
+    &.bt-loop-gallery {
+        .gallery {
             margin-bottom: 0;
             margin-right: 0;
         }

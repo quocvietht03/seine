@@ -20,12 +20,7 @@ add_action('seine_woocommerce_template_single_sharing', 'woocommerce_template_si
 
 add_action('seine_woocommerce_shop_loop_item_subtitle', 'seine_woocommerce_template_loop_subtitle', 10, 2);
 
-if (function_exists('get_field')) {
-  $enable_related_posts = get_field('enable_related_posts', 'options');
-  if (!$enable_related_posts) {
-    remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
-  }
-}
+
 function seine_woocommerce_template_loop_subtitle()
 {
   $subtitle = get_post_meta(get_the_ID(), '_subtitle', true);
@@ -148,7 +143,12 @@ function seine_woocommerce_related_products_args($args)
 
   return $args;
 }
-
+if (function_exists('get_field')) {
+  $enable_related_posts = get_field('enable_related_posts', 'options');
+  if (!$enable_related_posts) {
+    remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+  }
+}
 // WooCommerce custom field
 add_action('woocommerce_product_options_general_product_data', 'seine_woocommerce_custom_field');
 function seine_woocommerce_custom_field()
@@ -223,7 +223,9 @@ function seine_woocommerce_add_additional_information($content)
     ob_start();
     do_action('woocommerce_product_additional_information', $product);
     $additional_info_content = ob_get_clean();
-    $content .= '<h3>' . esc_html__('Additional Information:', 'seine') . '</h3>' . $additional_info_content;
+    if (!empty($additional_info_content)) {
+      $content .= '<h3>' . esc_html__('Additional Information:', 'seine') . '</h3>' . $additional_info_content;
+    }
   }
   return $content;
 }

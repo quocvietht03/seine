@@ -7228,7 +7228,7 @@ body {
     .elementor-element.bt-section-appointment .bt-form-appointment-home1 > .e-con-inner {
       padding: 31px; } }
 @media (max-width: 519.98px) {
-  .elementor-element.bt-section-testimonials-home1 .bt-loop-testimonial-home1 {
+  .elementor-element.bt-section-testimonials-home1 .bt-loop-testimonial-home1 > .elementor-widget-container {
     padding-bottom: 80px; } }
 .elementor-element.bt-section-testimonials-home1 .bt-loop-testimonial-home1 .elementor-swiper-button {
   width: 60px;
@@ -7361,7 +7361,7 @@ body {
       right: 40% !important;
       transform: translate(60%, -50%) !important; } }
 @media (max-width: 767.98px) {
-  .elementor-element.bt-loop-testimonial-home2 {
+  .elementor-element.bt-loop-testimonial-home2 > .elementor-widget-container {
     padding-bottom: 80px; } }
 @media (max-width: 1199.98px) and (min-width: 1024.98px) {
   .elementor-element.bt-section-appointment-home2 > .elementor-element:first-child .bt-heading-relaxation .elementor-heading-title {
