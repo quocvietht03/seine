@@ -79,7 +79,8 @@ class ElementorWidgets
 			'popular-service-style-1',
 			'service-loop-item',
 			'page-title-bar',
-			'site-box-phone'
+			'site-box-phone',
+			'location-list'
 		);
 
 		return $this->widgets;
@@ -207,6 +208,7 @@ class ElementorWidgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\TimeList\Widget_TimeList());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\SiteBoxPhone\Widget_SiteBoxPhone());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\PageTitleBar\Widget_PageTitleBar());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\LocationList\Widget_LocationList());
 	}
 
 	/**

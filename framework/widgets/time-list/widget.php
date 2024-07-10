@@ -94,7 +94,7 @@ class Widget_TimeList extends Widget_Base
 		$repeater->add_control(
 			'time_date',
 			[
-				'label' => __('Date', 'seine'),
+				'label' => __('Hours', 'seine'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
 				'default' => __('12:00 pm - 08:00 pm', 'seine'),
@@ -238,7 +238,7 @@ class Widget_TimeList extends Widget_Base
 		$this->add_control(
 			'timedate_style',
 			[
-				'label' => __('Date', 'seine'),
+				'label' => __('Hours', 'seine'),
 				'type' => Controls_Manager::HEADING,
 			]
 		);

@@ -738,7 +738,106 @@
             margin-right: 0;
         }
     }
-    &.bt-form-appointment-page{
+    &.bt-form-appointment-page {
         @extend .__bt-form-appointment-style;
+    }
+    &.bt-section-info-contact {
+        > .e-con-inner {
+            > .elementor-element {
+                > .e-con-inner {
+                    > .elementor-element {
+                        .gform_wrapper {
+                            &.gform-theme--api,
+                            &.gform-theme--foundation {
+                                --gf-form-gap-x: 21px;
+                                --gf-form-gap-y: 20px;
+                            }
+                            .gfield--width-half {
+                                @media (max-width: $break-sm) {
+                                    grid-column: 1 / -1;
+                                }
+                            }
+                            .gform_heading {
+                                margin-bottom: 0;
+                            }
+                            .gform-body {
+                                .select2-selection--single {
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    background: #fff;
+                                    padding-left: 30px;
+                                    border: none;
+                                    .select2-selection__arrow b {
+                                        border-color: $color-accent transparent transparent transparent;
+                                        border-width: 9px 8px 0 8px;
+                                        margin-left: -13px;
+                                        margin-top: 0;
+                                    }
+                                }
+                                input:not([type="checkbox"], [type="radio"]),
+                                select,
+                                textarea {
+                                    background: #fff;
+                                    padding: 10px 24px 10px 30px;
+                                    border: none;
+                                    height: 60px;
+                                }
+                                textarea {
+                                    height: 114px;
+                                }
+                            }
+                            .gform_footer {
+                                margin-top: 29px;
+                                input[type="submit"] {
+                                    padding: 20px 59px !important;
+                                }
+                            }
+                        }
+                        .bt-elwg-site-infor--style-1 {
+                            .bt-elwg-site-infor--item-content {
+                                span {
+                                    @media (max-width: 1090px) and (min-width: $break-tl) {
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                            .bt-elwg-site-infor--item.address {
+                                align-items: flex-start;
+                            }
+                        }
+                        iframe {
+                            filter: invert(85%) sepia(50%) saturate(220%) hue-rotate(172deg) brightness(60%)
+                                contrast(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.bt-section-location-contact {
+        > .e-con-inner {
+            > .elementor-element {
+                @media (max-width: 1275px) and (min-width: $break-tl) {
+                    &:first-child {
+                        width: 36%;
+                    }
+                    &:last-child {
+                        width: 64%;
+                    }
+                }
+                @media (max-width: 1150px) and (min-width: $break-tl) {
+                    .bt-elwg-location-list--default {
+                        .bt-location-list {
+                            &--inner {
+                                padding: 30px;
+                            }
+                            &--oppening-hours {
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
