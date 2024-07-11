@@ -306,7 +306,7 @@ class Widget_PostLoopItemStyle1 extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-			<div class="bt-elwg-post-loop-item--style-1">
+			<div class="bt-elwg-post-loop-item--style-1 bt-image-effect">
 				<?php get_template_part( 'framework/templates/post', 'style1', array('image-size' => $settings['thumbnail_size'])); ?>
 	    </div>
 		<?php

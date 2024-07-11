@@ -11,7 +11,7 @@ if (function_exists('get_field')) {
   $ovl_color = get_field('overlay_color', 'options');
   $ovl_opacity = get_field('overlay_opacity', 'options');
 } else {
-  $distance = true;
+  $distance = false;
   $bg_image = '';
   $ovl_color = '';
   $ovl_opacity = '';

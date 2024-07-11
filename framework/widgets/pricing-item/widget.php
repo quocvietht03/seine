@@ -594,7 +594,7 @@ class Widget_PricingItem extends Widget_Base
 
 ?>
 		<div class="bt-elwg-pricing-item--default">
-			<div class="bt-pricing-item">
+			<div class="bt-pricing-item ">
 				<div class="bt-pricing--featured">
 					<?php if (!empty($settings['pricing_image'])) {
 						$image = $settings['pricing_image'];

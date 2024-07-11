@@ -47,10 +47,10 @@ class Widget_HighlightedHeadingStyle1 extends Widget_Base
 		$repeater->add_control(
 			'text_title',
 			[
-				'label' => __('Text', 'autoart'),
+				'label' => __('Text', 'seine'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => __('Text Heading', 'autoart'),
+				'default' => __('Text Heading', 'seine'),
 			]
 		);
 		$repeater->add_control(
@@ -68,20 +68,20 @@ class Widget_HighlightedHeadingStyle1 extends Widget_Base
 		$this->add_control(
 			'list',
 			[
-				'label' => __('List Style Heading', 'autoart'),
+				'label' => __('List Style Heading', 'seine'),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'text_title' => __('This is the heading', 'autoart'),
+						'text_title' => __('This is the heading', 'seine'),
 						'style_title' => '1'
 					],
 					[
-						'text_title' => __('Highlighted', 'autoart'),
+						'text_title' => __('Highlighted', 'seine'),
 						'style_title' => '2'
 					],
 					[
-						'text_title' => __('After heading', 'autoart'),
+						'text_title' => __('After heading', 'seine'),
 						'style_title' => '1'
 					],
 				],

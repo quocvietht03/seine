@@ -340,7 +340,7 @@ class Widget_ServiceLoopItem extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-			<div class="bt-elwg-service-loop-item--default">
+			<div class="bt-elwg-service-loop-item--default bt-image-effect">
 				<?php get_template_part( 'framework/templates/service', 'style', array('image-size' => $settings['thumbnail_size'])); ?>
 	    	</div>
 		<?php

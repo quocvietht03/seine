@@ -92,7 +92,7 @@ class Widget_TimeList extends Widget_Base
 		);
 
 		$repeater->add_control(
-			'time_date',
+			'time_hours',
 			[
 				'label' => __('Hours', 'seine'),
 				'type' => Controls_Manager::TEXT,
@@ -112,16 +112,16 @@ class Widget_TimeList extends Widget_Base
 				'default' => [
 					[
 						'time_title' => __('Monday', 'seine'),
-						'time_date' => __('12:00 pm - 08:00 pm', 'seine'),
+						'time_hours' => __('12:00 pm - 08:00 pm', 'seine'),
 
 					],
 					[
 						'time_title' => __('Tuesday To Friday', 'seine'),
-						'time_date' => __('06:00 pm - 05:00 pm', 'seine'),
+						'time_hours' => __('06:00 pm - 05:00 pm', 'seine'),
 					],
 					[
 						'time_title' => __('Saturday - Sunday', 'seine'),
-						'time_date' => __('8:00 am - 3:30 pm', 'seine'),
+						'time_hours' => __('8:00 am - 3:30 pm', 'seine'),
 					],
 				],
 				'title_field' => '{{{ time_title }}}',
@@ -236,7 +236,7 @@ class Widget_TimeList extends Widget_Base
 		);
 
 		$this->add_control(
-			'timedate_style',
+			'timehours_style',
 			[
 				'label' => __('Hours', 'seine'),
 				'type' => Controls_Manager::HEADING,
@@ -244,13 +244,13 @@ class Widget_TimeList extends Widget_Base
 		);
 
 		$this->add_control(
-			'timedate_color',
+			'timehours_color',
 			[
 				'label' => __('Color', 'seine'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
-					'{{WRAPPER}} .bt-time--date' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .bt-time--hours' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -258,10 +258,10 @@ class Widget_TimeList extends Widget_Base
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'timedate_typography',
+				'name' => 'timehours_typography',
 				'label' => __('Typography', 'seine'),
 				'default' => '',
-				'selector' => '{{WRAPPER}} .bt-time--date',
+				'selector' => '{{WRAPPER}} .bt-time--hours',
 			]
 		);
 		$this->end_controls_section();
@@ -297,8 +297,8 @@ class Widget_TimeList extends Widget_Base
 								<div class="bt-time--title">
 									<?php echo $item['time_title']; ?>
 								</div>
-								<div class="bt-time--date">
-									<?php echo $item['time_date']; ?>
+								<div class="bt-time--hours">
+									<?php echo $item['time_hours']; ?>
 								</div>
 							</div>
 						</li>
@@ -317,7 +317,7 @@ class Widget_TimeList extends Widget_Base
 									<div class="bt-time--title">
 										<?php echo $item['heading']; ?>
 									</div>
-									<div class="bt-time--date">
+									<div class="bt-time--hours">
 										<?php echo $item['hours']; ?>
 									</div>
 								</div>

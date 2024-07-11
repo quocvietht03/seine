@@ -44,12 +44,12 @@ if (!function_exists('seine_enqueue_scripts')) {
 	{
 		global $seine_options;
 
-		 if(is_singular('product')) {
-			wp_enqueue_script('slick-slider', get_template_directory_uri().'/assets/libs/slick/slick.min.js', array('jquery'), '', true);
-			wp_enqueue_style('slick-slider', get_template_directory_uri(). '/assets/libs/slick/slick.css',array(), false);
+		if (is_singular('product')) {
+			wp_enqueue_script('slick-slider', get_template_directory_uri() . '/assets/libs/slick/slick.min.js', array('jquery'), '', true);
+			wp_enqueue_style('slick-slider', get_template_directory_uri() . '/assets/libs/slick/slick.css', array(), false);
 
-		 	wp_enqueue_script('zoom-master', get_template_directory_uri().'/assets/libs/zoom-master/jquery.zoom.min.js', array('jquery'), '', true);
-		 }
+			wp_enqueue_script('zoom-master', get_template_directory_uri() . '/assets/libs/zoom-master/jquery.zoom.min.js', array('jquery'), '', true);
+		}
 
 		wp_enqueue_script('select2', get_template_directory_uri() . '/assets/libs/select2/select2.min.js', array('jquery'), '', true);
 		wp_enqueue_style('select2', get_template_directory_uri() . '/assets/libs/select2/select2.min.css', array(), false);
@@ -59,24 +59,23 @@ if (!function_exists('seine_enqueue_scripts')) {
 		wp_enqueue_style('seine-main', get_template_directory_uri() . '/assets/css/main.css',  array(), false);
 		wp_enqueue_style('seine-style', get_template_directory_uri() . '/style.css',  array(), false);
 		wp_enqueue_script('seine-main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '', true);
+		if (function_exists('get_field')) {
+			$dev_mode = get_field('dev_mode', 'options');
+			/* Load custom style */
+			$custom_style = '';
 
-		/* Load custom style */
-		$custom_style = '';
-		$custom_style .= '.test{color: red;}';
+			$custom_style = get_field('custom_css_code', 'options');
+			if ($dev_mode && !empty($custom_style)) {
+				wp_add_inline_style('seine-style', $custom_style);
+			}
 
-		if ($custom_style) {
-			wp_add_inline_style('seine-style', $custom_style);
+			/* Custom script */
+			$custom_script = '';
+			$custom_script = get_field('custom_js_code', 'options');
+			if ($dev_mode && !empty($custom_script)) {
+				wp_add_inline_script('seine-main', $custom_script);
+			}
 		}
-
-		/* Custom script */
-		$custom_script = '';
-		if (isset($seine_options['custom_js_code']) && $seine_options['custom_js_code']) {
-			$custom_script .= $seine_options['custom_js_code'];
-		}
-		if ($custom_script) {
-			wp_add_inline_script('seine-main', $custom_script);
-		}
-
 		/* Options to script */
 		$js_options = array(
 			'ajax_url' => admin_url('admin-ajax.php'),
@@ -112,12 +111,6 @@ require_once get_template_directory() . '/framework/cpt-testimonial.php';
 require_once get_template_directory() . '/framework/cpt-gallery.php';
 /* ACF Options */
 require_once get_template_directory() . '/framework/acf-options.php';
-
-/* Shortcodes */
-require_once get_template_directory() . '/framework/shortcodes.php';
-
-/* Add Comment Rating */
-require_once get_template_directory() . '/framework/comment-rating.php';
 
 /* Template functions */
 require_once get_template_directory() . '/framework/template-helper.php';

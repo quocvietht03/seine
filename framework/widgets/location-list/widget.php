@@ -732,7 +732,7 @@ class Widget_LocationList extends Widget_Base
                                 </div>
                                 <div class="bt-location-list--maps">
                                     <?php if (!empty($item['location_address'])) : ?>
-                                        <iframe loading="lazy" src="https://maps.google.com/maps?q=<?php echo $item['location_address'] ?>&#038;t=m&#038;z=<?php echo $item['location_maps_zoom']['size'] ?>&#038;output=embed&#038;iwloc=near" title="<?php echo $item['location_address'] ?>" aria-label="<?php echo $item['location_address'] ?>"></iframe>
+                                        <iframe loading="lazy" src="https://maps.google.com/maps?q=<?php echo urlencode($item['location_address']) ?>&#038;t=m&#038;z=<?php echo $item['location_maps_zoom']['size'] ?>&#038;output=embed&#038;iwloc=near" title="<?php echo htmlspecialchars($item['location_address']) ?>" aria-label="<?php echo htmlspecialchars($item['location_address']) ?>"></iframe>
                                     <?php endif; ?>
                                 </div>
                             </div>

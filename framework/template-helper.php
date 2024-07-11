@@ -182,8 +182,6 @@ if (!function_exists('seine_page_title_blurry')) {
 		}else{
 			echo seine_page_title();
 		}
-		
-
 		return ob_get_clean();
     }
 }
