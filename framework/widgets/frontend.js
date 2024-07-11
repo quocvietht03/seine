@@ -5,7 +5,7 @@
 	**/
 
 	var SliderSyncingHandler = function ($scope, $) {
-		// console.log($scope);
+
 		var slideFor = $scope.find('.bt-slide-for-js'),
 			slideNav = $scope.find('.bt-slide-nav-js');
 
@@ -68,7 +68,6 @@
 	}
 
 	var MoreStepsHandler = function ($scope, $) {
-		// console.log($scope);
 		var moreBtn = $scope.find('.bt-show-more-btn-js'),
 			listStep = $scope.find('.bt-step-list-js');
 

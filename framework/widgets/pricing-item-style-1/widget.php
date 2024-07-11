@@ -743,7 +743,7 @@ class Widget_PricingItemStyle1 extends Widget_Base
 					}
 
 					if (!empty($settings['button_text'])) {
-						echo '<a class="bt-pricing--button" ' . $this->get_render_attribute_string('button_url') . '>' . $settings['button_text'] . '</a>';
+						echo '<a class="bt-pricing--button bt-button-effect" ' . $this->get_render_attribute_string('button_url') . '>' . $settings['button_text'] . '</a>';
 					}
 					if (!empty($settings['button_more_url']['url'])) {
 						$this->add_link_attributes('button_more_url', $settings['button_more_url']);

@@ -305,7 +305,6 @@ if ( ! function_exists( 'seine_paginate_links' ) ) {
 		if( $wp_query->max_num_pages <= 1) {
 			return;
 		}
-		// var_dump($wp_query);
 		?>
 		<nav class="bt-pagination" role="navigation">
 			<?php

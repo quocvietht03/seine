@@ -110,7 +110,6 @@ function seine_brand_column_display( $brand_columns, $post_id ) {
 			// Display the featured image in the column view if possible
 			if ( $thumbnail_id ) {
 				$thumb = wp_get_attachment_image( $thumbnail_id, array($width, $height), true );
-				var_dump($thumb);
 			}
 			if ( isset( $thumb ) ) {
 				echo $thumb; // No need to escape

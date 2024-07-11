@@ -584,3 +584,84 @@ body {
 		border-radius: 50%;
 	}
 }
+.bt-button-hover-enable {
+	.elementor-widget-button {
+		.elementor-button-wrapper {
+			overflow: hidden;
+		}
+		.elementor-button {
+			position: relative;
+			z-index: 1;
+			transition: all 0.2s ease-in-out;
+			.elementor-button-text {
+				transition: all 0.2s ease-in-out;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				width: 300%;
+				height: 0%;
+				left: 50%;
+				top: 50%;
+				background-color: rgba(255, 255, 255, 0.2);
+				transform: translate(-50%, -50%) rotate(-45deg);
+				z-index: 1;
+			}
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 100%;
+				background: $color-accent;
+				border-radius: 0;
+				transition: 0.4s ease-in-out;
+				z-index: -1;
+			}
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+				.elementor-button-text {
+					color: #fff;
+				}
+				&::before {
+					height: 250%;
+					transition: all 600ms linear !important;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	.gform_footer,
+	.bt-button-effect {
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		input {
+			position: relative;
+			z-index: 2;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			width: 300%;
+			height: 0%;
+			left: 50%;
+			top: 50%;
+			background-color: rgba(255, 255, 255, 0.2);
+			transform: translate(-50%, -50%) rotate(-45deg);
+			z-index: 1;
+		}
+		&:hover {
+			&::before {
+				height: 250%;
+				transition: all 600ms linear !important;
+				background-color: transparent;
+			}
+		}
+	}
+}

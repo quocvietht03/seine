@@ -390,7 +390,7 @@ if (!function_exists('seine_service_button_book_now_render')) {
       }
     ?>
       <div class="bt-post--button-booknow">
-        <a href="<?php echo $book_now; ?>">
+        <a href="<?php echo $book_now; ?>" class="bt-button-effect">
           <span> <?php echo esc_html($text) ?> </span>
         </a>
       </div>

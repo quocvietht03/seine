@@ -3157,6 +3157,71 @@ body {
   animation: crpn-pulseBig 2s infinite;
   border-radius: 50%; }
 
+.bt-button-hover-enable .elementor-widget-button .elementor-button-wrapper {
+  overflow: hidden; }
+.bt-button-hover-enable .elementor-widget-button .elementor-button {
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease-in-out; }
+  .bt-button-hover-enable .elementor-widget-button .elementor-button .elementor-button-text {
+    transition: all 0.2s ease-in-out; }
+  .bt-button-hover-enable .elementor-widget-button .elementor-button::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1; }
+  .bt-button-hover-enable .elementor-widget-button .elementor-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background: var(--e-global-color-accent, #E96CA7);
+    border-radius: 0;
+    transition: 0.4s ease-in-out;
+    z-index: -1; }
+  .bt-button-hover-enable .elementor-widget-button .elementor-button:hover::after {
+    width: 100%; }
+  .bt-button-hover-enable .elementor-widget-button .elementor-button:hover .elementor-button-text {
+    color: #fff; }
+  .bt-button-hover-enable .elementor-widget-button .elementor-button:hover::before {
+    height: 250%;
+    transition: all 600ms linear !important;
+    background-color: transparent; }
+.bt-button-hover-enable .gform_footer,
+.bt-button-hover-enable .bt-button-effect {
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  .bt-button-hover-enable .gform_footer input,
+  .bt-button-hover-enable .bt-button-effect input {
+    position: relative;
+    z-index: 2; }
+  .bt-button-hover-enable .gform_footer::before,
+  .bt-button-hover-enable .bt-button-effect::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1; }
+  .bt-button-hover-enable .gform_footer:hover::before,
+  .bt-button-hover-enable .bt-button-effect:hover::before {
+    height: 250%;
+    transition: all 600ms linear !important;
+    background-color: transparent; }
+
 .bt-page--content:after {
   content: "";
   display: block; }

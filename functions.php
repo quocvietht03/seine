@@ -138,6 +138,7 @@ if (function_exists('get_field')) {
 		$bg_buble = get_field('effect_bg_buble', 'options');
 		$bg_scroll = get_field('effect_bg_scroll', 'options');
 		$img_zoom = get_field('effect_img_zoom', 'options');
+		$button_hover = get_field('effect_button_hover', 'options');
 
 		if ($orbit_circle) {
 			$classes[] = 'bt-orbit-enable';
@@ -158,7 +159,9 @@ if (function_exists('get_field')) {
 		if ($img_zoom) {
 			$classes[] = 'bt-img-zoom-enable';
 		}
-
+		if ($button_hover) {
+			$classes[] = 'bt-button-hover-enable';
+		}
 		return $classes;
 	}
 	add_filter('body_class', 'seine_body_class');
