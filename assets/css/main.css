@@ -3054,37 +3054,15 @@ body {
 .bt-bg-scroll-enable .bt-site-titlebar {
   animation: effectBgScroll 130s infinite; }
 
-@keyframes effectPlayButton {
-  0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1; }
-  100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0; } }
-.bt-play-btn-effect .elementor-icon-box-icon a {
-  position: relative;
-  z-index: 1; }
-  .bt-play-btn-effect .elementor-icon-box-icon a .fa-play {
-    transform: translateX(2px); }
-  .bt-play-btn-effect .elementor-icon-box-icon a:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    border-radius: 50%;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
-    animation: effectPlayButton 1500ms ease-out infinite; }
-
 .bt-img-zoom-enable .bt-image-effect .bt-post .bt-cover-image img, .bt-img-zoom-enable .bt-image-effect .bt-post .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image img, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-image-effect .bt-post .wc-cover-image img, .bt-img-zoom-enable .bt-image-effect .bt-post .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image img, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-image-effect .bt-post .wc-cover-image img, .bt-img-zoom-enable .bt-image-effect .bt-post .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image img, .woocommerce .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-image-effect .bt-post .wc-cover-image img {
   transform: scale(1);
   transition: all 3s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s; }
 .bt-img-zoom-enable .bt-image-effect .bt-post:hover .bt-cover-image img, .bt-img-zoom-enable .bt-image-effect .bt-post:hover .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image img, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-image-effect .bt-post:hover .wc-cover-image img, .bt-img-zoom-enable .bt-image-effect .bt-post:hover .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image img, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-image-effect .bt-post:hover .wc-cover-image img, .bt-img-zoom-enable .bt-image-effect .bt-post:hover .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image img, .woocommerce .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-image-effect .bt-post:hover .wc-cover-image img {
+  transform: scale(1.1); }
+.bt-img-zoom-enable .bt-pricing-item .bt-cover-image img, .bt-img-zoom-enable .bt-pricing-item .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image img, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-pricing-item .wc-cover-image img, .bt-img-zoom-enable .bt-pricing-item .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image img, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-pricing-item .wc-cover-image img, .bt-img-zoom-enable .bt-pricing-item .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image img, .woocommerce .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-pricing-item .wc-cover-image img {
+  transform: scale(1);
+  transition: all 3s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s; }
+.bt-img-zoom-enable .bt-pricing-item:hover .bt-cover-image img, .bt-img-zoom-enable .bt-pricing-item:hover .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image img, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-pricing-item:hover .wc-cover-image img, .bt-img-zoom-enable .bt-pricing-item:hover .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image img, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-pricing-item:hover .wc-cover-image img, .bt-img-zoom-enable .bt-pricing-item:hover .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image img, .woocommerce .woocommerce-loop-product__thumbnail .bt-img-zoom-enable .bt-pricing-item:hover .wc-cover-image img {
   transform: scale(1.1); }
 
 .bt-effect-overflow {
@@ -3116,45 +3094,68 @@ body {
 .bt-effect-move-horizontal-center {
   animation: effectMoveHorizontalCenter 2s linear infinite; }
 
-@keyframes bt-animation-hang {
+@keyframes effectVibrateImages {
   0% {
     transform: translateY(8px); }
   50% {
     transform: translateY(4px); }
   100% {
     transform: translateY(8px); } }
-@keyframes bt-animation-hang-sink {
+@keyframes effectVibrateImagesSink {
   100% {
     transform: translateY(8px); } }
-.bt-animation-hang-img img {
-  animation-name: bt-animation-hang-sink, bt-animation-hang;
+.bt-images-vibrate-effect img {
+  animation-name: effectVibrateImagesSink, effectVibrateImages;
   animation-duration: 0.3s, 1.5s;
   animation-delay: 0s, 0.3s;
   animation-timing-function: ease-out, ease-in-out;
   animation-iteration-count: 1, infinite;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes crpn-pulseBig {
+@-webkit-keyframes effectPlayButton {
   0% {
     -webkit-box-shadow: 0 0 0 0 #fff; }
   70% {
     -webkit-box-shadow: 0 0 0 30px transparent; }
   100% {
     -webkit-box-shadow: 0 0 0 0 transparent; } }
-@keyframes crpn-pulseBig {
+@keyframes effectPlayButton {
   0% {
     box-shadow: 0 0 0 0 #fff; }
   70% {
     box-shadow: 0 0 0 30px transparent; }
   100% {
     box-shadow: 0 0 0 0 transparent; } }
-.bt-animation-pulseBig-icon .elementor-icon {
-  -webkit-animation: crpn-pulseBig 2s infinite;
-  animation: crpn-pulseBig 2s infinite;
+@-webkit-keyframes effectPlayButton2 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--e-global-color-accent, #E96CA7); }
+  70% {
+    -webkit-box-shadow: 0 0 0 30px transparent; }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 transparent; } }
+@keyframes effectPlayButton2 {
+  0% {
+    box-shadow: 0 0 0 0 var(--e-global-color-accent, #E96CA7); }
+  70% {
+    box-shadow: 0 0 0 30px transparent; }
+  100% {
+    box-shadow: 0 0 0 0 transparent; } }
+.bt-play-btn-effect .elementor-icon {
+  -webkit-animation: effectPlayButton 2s infinite;
+  animation: effectPlayButton 2s infinite;
   border-radius: 50%; }
-.bt-animation-pulseBig-icon .elementor-icon-box-icon {
-  -webkit-animation: crpn-pulseBig 2s infinite;
-  animation: crpn-pulseBig 2s infinite;
+.bt-play-btn-effect .elementor-icon-box-icon {
+  -webkit-animation: effectPlayButton 2s infinite;
+  animation: effectPlayButton 2s infinite;
+  border-radius: 50%; }
+
+.bt-play-btn-effect2 .elementor-icon {
+  -webkit-animation: effectPlayButton2 2s infinite;
+  animation: effectPlayButton2 2s infinite;
+  border-radius: 50%; }
+.bt-play-btn-effect2 .elementor-icon-box-icon {
+  -webkit-animation: effectPlayButton2 2s infinite;
+  animation: effectPlayButton2 2s infinite;
   border-radius: 50%; }
 
 .bt-button-hover-enable .elementor-widget-button .elementor-button-wrapper {
@@ -7283,7 +7284,7 @@ body {
 .elementor-element.bt-text-view-more a {
   color: var(--e-global-color-accent, #E96CA7); }
 .elementor-element.bt-section-hero-home1 .bt-section-content-hero .elementor-widget-image img {
-  animation-name: bt-animation-hang-sink, bt-animation-hang;
+  animation-name: effectVibrateImagesSink, effectVibrateImages;
   animation-duration: 0.3s, 1.5s;
   animation-delay: 0s, 0.3s;
   animation-timing-function: ease-out, ease-in-out;

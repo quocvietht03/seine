@@ -423,42 +423,6 @@ body {
 	}
 }
 
-@keyframes effectPlayButton {
-	0% {
-		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-		opacity: 1;
-	}
-	100% {
-		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-		opacity: 0;
-	}
-}
-
-.bt-play-btn-effect {
-	.elementor-icon-box-icon a {
-		position: relative;
-		z-index: 1;
-		.fa-play {
-			transform: translateX(2px);
-		}
-		&:before {
-			content: "";
-			position: absolute;
-			z-index: 0;
-			left: 50%;
-			top: 50%;
-			display: block;
-			width: 100%;
-			height: 100%;
-			background: #fff;
-			border-radius: 50%;
-			z-index: -1;
-			transform: translateX(-50%) translateY(-50%);
-			animation: effectPlayButton 1500ms ease-out infinite;
-		}
-	}
-}
-
 .bt-img-zoom-enable {
 	.bt-image-effect {
 		.bt-post {
@@ -470,6 +434,17 @@ body {
 				.bt-cover-image img {
 					transform: scale(1.1);
 				}
+			}
+		}
+	}
+	.bt-pricing-item {
+		.bt-cover-image img {
+			transform: scale(1);
+			transition: all 3s cubic-bezier(0.11, 0.52, 0.53, 0.79) 0s;
+		}
+		&:hover {
+			.bt-cover-image img {
+				transform: scale(1.1);
 			}
 		}
 	}
@@ -516,7 +491,7 @@ body {
 	animation: effectMoveHorizontalCenter 2s linear infinite;
 }
 
-@keyframes bt-animation-hang {
+@keyframes effectVibrateImages {
 	0% {
 		transform: translateY(8px);
 	}
@@ -530,14 +505,14 @@ body {
 	}
 }
 
-@keyframes bt-animation-hang-sink {
+@keyframes effectVibrateImagesSink {
 	100% {
 		transform: translateY(8px);
 	}
 }
-.bt-animation-hang-img {
+.bt-images-vibrate-effect {
 	img {
-		animation-name: bt-animation-hang-sink, bt-animation-hang;
+		animation-name: effectVibrateImagesSink, effectVibrateImages;
 		animation-duration: 0.3s, 1.5s;
 		animation-delay: 0s, 0.3s;
 		animation-timing-function: ease-out, ease-in-out;
@@ -545,7 +520,8 @@ body {
 		animation-fill-mode: forwards;
 	}
 }
-@-webkit-keyframes crpn-pulseBig {
+
+@-webkit-keyframes effectPlayButton {
 	0% {
 		-webkit-box-shadow: 0 0 0 0 #fff;
 	}
@@ -559,7 +535,7 @@ body {
 	}
 }
 
-@keyframes crpn-pulseBig {
+@keyframes effectPlayButton {
 	0% {
 		box-shadow: 0 0 0 0 #fff;
 	}
@@ -572,18 +548,58 @@ body {
 		box-shadow: 0 0 0 0 transparent;
 	}
 }
-.bt-animation-pulseBig-icon {
+@-webkit-keyframes effectPlayButton2 {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 $color-accent;
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 30px transparent;
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 transparent;
+	}
+}
+
+@keyframes effectPlayButton2 {
+	0% {
+		box-shadow: 0 0 0 0 $color-accent;
+	}
+
+	70% {
+		box-shadow: 0 0 0 30px transparent;
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
+.bt-play-btn-effect {
 	.elementor-icon {
-		-webkit-animation: crpn-pulseBig 2s infinite;
-		animation: crpn-pulseBig 2s infinite;
+		-webkit-animation: effectPlayButton 2s infinite;
+		animation: effectPlayButton 2s infinite;
 		border-radius: 50%;
 	}
 	.elementor-icon-box-icon {
-		-webkit-animation: crpn-pulseBig 2s infinite;
-		animation: crpn-pulseBig 2s infinite;
+		-webkit-animation: effectPlayButton 2s infinite;
+		animation: effectPlayButton 2s infinite;
 		border-radius: 50%;
 	}
 }
+.bt-play-btn-effect2 {
+	.elementor-icon {
+		-webkit-animation: effectPlayButton2 2s infinite;
+		animation: effectPlayButton2 2s infinite;
+		border-radius: 50%;
+	}
+	.elementor-icon-box-icon {
+		-webkit-animation: effectPlayButton2 2s infinite;
+		animation: effectPlayButton2 2s infinite;
+		border-radius: 50%;
+	}
+}
+
 .bt-button-hover-enable {
 	.elementor-widget-button {
 		.elementor-button-wrapper {
