@@ -1,4 +1,5 @@
 <?php
+
 namespace SeineElementorWidgets\Widgets\PopularServices;
 
 use Elementor\Widget_Base;
@@ -38,7 +39,8 @@ class Widget_PopularServices extends Widget_Base
 
 		$wp_query = new \WP_Query(array(
 			'post_type' => 'service',
-			'post_status' => 'publish'
+			'post_status' => 'publish',
+			'posts_per_page' => -1
 		));
 
 		if ($wp_query->have_posts()) {
@@ -80,7 +82,7 @@ class Widget_PopularServices extends Widget_Base
 		$this->add_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'seine' ),
+				'label' => __('Columns', 'seine'),
 				'type' => Controls_Manager::SELECT,
 				'default' => '5',
 				'options' => [
@@ -120,7 +122,7 @@ class Widget_PopularServices extends Widget_Base
 				'selectors' => [
 					'{{WRAPPER}} .bt-post--featured .bt-cover-image' => 'padding-bottom: calc( {{SIZE}} * 100% );',
 				],
-			] 
+			]
 		);
 
 		$this->end_controls_section();
@@ -398,7 +400,6 @@ class Widget_PopularServices extends Widget_Base
 		);
 
 		$this->end_controls_section();
-
 	}
 
 	protected function register_controls()
@@ -422,7 +423,7 @@ class Widget_PopularServices extends Widget_Base
 			'order' => $settings['order'],
 		];
 
-	
+
 		if (!empty($settings['ids'])) {
 			$args['post__in'] = $settings['ids'];
 		}

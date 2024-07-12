@@ -87,7 +87,7 @@ $testimonials_section = get_field('testimonials_section', 'options');
 									}
 
 									if (!empty($make_appointment['button'])) {
-										echo '<a class="bt-make-appointment--button" href="' . esc_url($make_appointment['button']['url']) . '" target="' . esc_attr($make_appointment['button']['target']) . '">' . $make_appointment['button']['title'] . '</a>';
+										echo '<a class="bt-make-appointment--button bt-button-effect" href="' . esc_url($make_appointment['button']['url']) . '" target="' . esc_attr($make_appointment['button']['target']) . '">' . $make_appointment['button']['title'] . '</a>';
 									}
 									?>
 								</div>

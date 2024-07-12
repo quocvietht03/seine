@@ -24,7 +24,7 @@ $button = get_field('button');
       }
 
       if(!empty($button)) {
-        echo '<a class="bt-make-appointment--button" href="' . esc_url($button['url']) . '" target="' . esc_attr($button['target']) . '">' . $button['title'] . '</a>';
+        echo '<a class="bt-make-appointment--button bt-button-effect" href="' . esc_url($button['url']) . '" target="' . esc_attr($button['target']) . '">' . $button['title'] . '</a>';
       }
     ?>
   </div>
