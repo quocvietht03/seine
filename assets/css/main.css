@@ -5286,6 +5286,16 @@ body {
 .select2-container--default .select2-search--dropdown .select2-search__field {
   margin: 0; }
 
+.woocommerce-cart .return-to-shop a {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 19px 30px;
+  background: var(--e-global-color-accent, #E96CA7);
+  display: inline-block; }
 .woocommerce-cart th,
 .woocommerce-cart .amount {
   font-family: var(--e-global-typography-primary-font-family, "DM Sans"); }
@@ -5523,7 +5533,8 @@ body {
     height: 58px; }
     .woocommerce-checkout .woocommerce form .form-row .select2-container--default .select2-selection--single {
       height: 58px;
-      border-color: #ececec; }
+      border: 1px solid #ececec;
+      border-radius: 5px; }
       .woocommerce-checkout .woocommerce form .form-row .select2-container--default .select2-selection--single .select2-selection__rendered {
         line-height: 58px;
         color: var(--e-global-color-text, #555);
@@ -5715,8 +5726,7 @@ body {
     text-transform: uppercase;
     padding: 15px 35px;
     color: #ffffff;
-    background: var(--e-global-color-accent, #E96CA7);
-    border-radius: 15px; }
+    background: var(--e-global-color-accent, #E96CA7); }
 .woocommerce-account .woocommerce-MyAccount-navigation ul {
   margin: 0;
   padding: 0; }
@@ -5759,6 +5769,16 @@ body {
     background: var(--e-global-color-accent, #E96CA7);
     padding: 20px 35px;
     border-radius: 15px; }
+.woocommerce-account .woocommerce-ResetPassword .button {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  background: var(--e-global-color-accent, #E96CA7);
+  display: inline-block; }
 
 .elementor-element h1,
 .elementor-element h2,

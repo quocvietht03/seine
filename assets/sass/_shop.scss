@@ -895,13 +895,13 @@
 
     @media (max-width: 570px) {
       div.product {
-        div.summary{
-          .woocommerce-product-price-wrap{
+        div.summary {
+          .woocommerce-product-price-wrap {
             gap: 8px 25px;
           }
         }
         .woocommerce-tabs {
-          #tab-description{
+          #tab-description {
             font-size: 18px;
           }
           ul.tabs {
@@ -930,13 +930,26 @@
 }
 
 .woocommerce-cart {
+  .return-to-shop {
+    a {
+      color: #fff;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 19px 30px;
+      background: $color-accent;
+      display: inline-block;
+    }
+  }
   th,
   .amount {
     font-family: $primary-font;
   }
   .woocommerce-cart-form {
     margin-bottom: 90px;
-    @media(max-width:$break-sm){
+    @media (max-width: $break-sm) {
       margin-bottom: 45px;
     }
     .shop_table {
@@ -1022,7 +1035,7 @@
               padding: 10px 25px;
               color: #ffffff;
               background: $color-accent;
-              @media(max-width:$break-xs){
+              @media (max-width: $break-xs) {
                 padding: 10px 16px;
               }
             }
@@ -1154,12 +1167,12 @@
       }
     }
   }
-  .wc-block-cart__submit-container{
-    background:$color-accent;
+  .wc-block-cart__submit-container {
+    background: $color-accent;
     color: #fff;
   }
-  .wc-block-cart__submit-button{
-    background:$color-accent;
+  .wc-block-cart__submit-button {
+    background: $color-accent;
     color: #fff;
   }
 }
@@ -1206,6 +1219,7 @@
       }
     }
   }
+
   .woocommerce form .form-row {
     padding: 0;
     margin-bottom: 20px;
@@ -1233,7 +1247,8 @@
       height: 58px;
       .select2-selection--single {
         height: 58px;
-        border-color: #ececec;
+        border: 1px solid #ececec;
+        border-radius: 5px;
         .select2-selection__rendered {
           line-height: 58px;
           color: $color-text;
@@ -1480,7 +1495,6 @@
       padding: 15px 35px;
       color: #ffffff;
       background: $color-accent;
-      border-radius: 15px;
     }
   }
   .woocommerce-MyAccount-navigation ul {
@@ -1532,6 +1546,19 @@
       background: $color-accent;
       padding: 20px 35px;
       border-radius: 15px;
+    }
+  }
+  .woocommerce-ResetPassword {
+    .button {
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 14px 30px;
+      background: $color-accent;
+      display: inline-block;
     }
   }
 }
