@@ -3143,11 +3143,13 @@ body {
 .bt-play-btn-effect .elementor-icon {
   -webkit-animation: effectPlayButton 2s infinite;
   animation: effectPlayButton 2s infinite;
-  border-radius: 50%; }
+  border-radius: 50%;
+  display: block; }
 .bt-play-btn-effect .elementor-icon-box-icon {
   -webkit-animation: effectPlayButton 2s infinite;
   animation: effectPlayButton 2s infinite;
-  border-radius: 50%; }
+  border-radius: 50%;
+  display: block; }
 
 .bt-play-btn-effect2 .elementor-icon {
   -webkit-animation: effectPlayButton2 2s infinite;
@@ -5295,7 +5297,27 @@ body {
   text-transform: uppercase;
   padding: 19px 30px;
   background: var(--e-global-color-accent, #E96CA7);
-  display: inline-block; }
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  .woocommerce-cart .return-to-shop a::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1; }
+  .woocommerce-cart .return-to-shop a:hover {
+    color: #fff;
+    background: var(--e-global-color-accent, #E96CA7); }
+    .woocommerce-cart .return-to-shop a:hover::before {
+      height: 250%;
+      transition: all 600ms linear !important;
+      background-color: transparent; }
 .woocommerce-cart th,
 .woocommerce-cart .amount {
   font-family: var(--e-global-typography-primary-font-family, "DM Sans"); }
