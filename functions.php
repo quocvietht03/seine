@@ -167,12 +167,12 @@ if (function_exists('get_field')) {
 	add_filter('body_class', 'seine_body_class');
 }
 
-// add js Gform affter Submit
+// Custom js Gravity
 add_action('gform_register_init_scripts', 'bt_custom_gform_init_script', 10, 2);
 function bt_custom_gform_init_script($form, $field_values)
 {
 	$script = "
-        function LoadJsAfterSubmit() {
+        function LoadJsCustom() {
 			if (jQuery('.gform_wrapper select').length > 0) {
          	   jQuery('.gform_wrapper select').select2();
 			}
@@ -198,7 +198,7 @@ function bt_custom_gform_init_script($form, $field_values)
 			}
 
         }
-        LoadJsAfterSubmit(); 
+        LoadJsCustom(); 
     ";
 
 	// Add the initialization script to Gravity Form
@@ -208,7 +208,7 @@ function bt_custom_gform_init_script($form, $field_values)
 	$complete_script = "
         jQuery(document).ajaxComplete(function(event, xhr, settings) {
             if (settings.url === '" . admin_url('admin-ajax.php') . "') {
-                LoadJsAfterSubmit(); 
+                LoadJsCustom(); 
             }
         });
     ";

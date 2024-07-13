@@ -103,6 +103,9 @@
 					$(this).removeClass('active');
 					$(this).children('span').text('More Information');
 				}else{
+					$('.bt-location-list--content').slideUp();
+					$('.bt-more-info.active').children('span').text('More Information');
+					$('.bt-more-info.active').removeClass('active');
 					$(this).parent().find('.bt-location-list--content').slideDown();
 					$(this).addClass('active');
 					$(this).children('span').text('Less Information');

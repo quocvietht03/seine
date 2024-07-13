@@ -3,7 +3,10 @@
 Template Name: 404 Template
 */
 ?>
-<?php get_header(); ?>
+<?php get_header();
+get_template_part( 'framework/templates/site', 'titlebar');
+?>
+
 <main id="bt_main" class="bt-site-main">
 	<div class="bt-main-content-ss">
 		<div class="bt-container">

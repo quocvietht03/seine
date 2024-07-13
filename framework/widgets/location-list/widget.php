@@ -183,17 +183,6 @@ class Widget_LocationList extends Widget_Base
                 'default' => '',
             ]
         );
-        $repeater->add_control(
-            'enable_toggle',
-            [
-                'label' => __('Enable Toggle', 'seine'),
-                'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Yes', 'seine'),
-                'label_off' => __('No', 'seine'),
-                'return_value' => 'yes',
-                'default' => 'no',
-            ]
-        );
 
         $this->add_control(
             'list',
@@ -692,7 +681,7 @@ class Widget_LocationList extends Widget_Base
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="bt-location-list--content <?php if (!empty($item['enable_toggle']) && $item['enable_toggle'] === 'yes') { ?> oppen <?php } ?>">
+                        <div class="bt-location-list--content <?php if ($index == 0) { ?> oppen <?php } ?>">
                             <div class="bt-location-list--inner">
                                 <div class="bt-location-list--oppening-hours">
                                     <div class="bt-location-icon-oppening">
@@ -780,14 +769,20 @@ class Widget_LocationList extends Widget_Base
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <?php if (!empty($item['enable_toggle']) && $item['enable_toggle'] === 'yes') { ?>
-                            <div class="bt-more-info active"><span><?php echo esc_html__('Less Information', 'seine') ?></span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <?php if ($index == 0) { ?>
+                            <div class="bt-more-info active">
+                                <span><?php echo esc_html__('Less Information', 'seine') ?></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M8.00053 10.6666C8.08826 10.6671 8.17524 10.6503 8.25646 10.6171C8.33769 10.584 8.41157 10.5351 8.47386 10.4733L12.4739 6.47329C12.5994 6.34776 12.6699 6.1775 12.6699 5.99996C12.6699 5.82243 12.5994 5.65216 12.4739 5.52663C12.3483 5.40109 12.1781 5.33057 12.0005 5.33057C11.823 5.33057 11.6527 5.40109 11.5272 5.52663L8.00053 9.05996L4.47386 5.53329C4.34633 5.42408 4.18228 5.36701 4.01449 5.37349C3.84671 5.37997 3.68755 5.44952 3.56882 5.56825C3.45009 5.68698 3.38053 5.84614 3.37405 6.01393C3.36757 6.18171 3.42464 6.34576 3.53386 6.47329L7.53386 10.4733C7.65803 10.5965 7.82563 10.6659 8.00053 10.6666Z" fill="#E96CA7" />
-                                </svg></div>
+                                </svg>
+                            </div>
                         <?php } else { ?>
-                            <div class="bt-more-info"><span><?php echo esc_html__('More Information', 'seine') ?></span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <div class="bt-more-info">
+                                <span><?php echo esc_html__('More Information', 'seine') ?></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M8.00053 10.6666C8.08826 10.6671 8.17524 10.6503 8.25646 10.6171C8.33769 10.584 8.41157 10.5351 8.47386 10.4733L12.4739 6.47329C12.5994 6.34776 12.6699 6.1775 12.6699 5.99996C12.6699 5.82243 12.5994 5.65216 12.4739 5.52663C12.3483 5.40109 12.1781 5.33057 12.0005 5.33057C11.823 5.33057 11.6527 5.40109 11.5272 5.52663L8.00053 9.05996L4.47386 5.53329C4.34633 5.42408 4.18228 5.36701 4.01449 5.37349C3.84671 5.37997 3.68755 5.44952 3.56882 5.56825C3.45009 5.68698 3.38053 5.84614 3.37405 6.01393C3.36757 6.18171 3.42464 6.34576 3.53386 6.47329L7.53386 10.4733C7.65803 10.5965 7.82563 10.6659 8.00053 10.6666Z" fill="#E96CA7" />
-                                </svg></div>
+                                </svg>
+                            </div>
                         <?php } ?>
 
                     </div>
