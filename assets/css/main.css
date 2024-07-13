@@ -4721,7 +4721,7 @@ body {
     font-weight: 500;
     text-transform: capitalize;
     margin: 0; }
-  .__bt-loop-product-style .woocommerce-loop-product .price, .bt-elwg-product-loop-item .woocommerce-loop-product .price, .woocommerce .woocommerce-loop-product .price {
+  .__bt-loop-product-style .woocommerce-loop-product .woocommerce-loop-product__infor .price, .bt-elwg-product-loop-item .woocommerce-loop-product .woocommerce-loop-product__infor .price, .woocommerce .woocommerce-loop-product .woocommerce-loop-product__infor .price {
     width: 100%;
     margin: 7px 0 0 0;
     color: var(--e-global-color-accent, #E96CA7);
@@ -4730,17 +4730,17 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse; }
-    .__bt-loop-product-style .woocommerce-loop-product .price .woocommerce-Price-amount, .bt-elwg-product-loop-item .woocommerce-loop-product .price .woocommerce-Price-amount, .woocommerce .woocommerce-loop-product .price .woocommerce-Price-amount {
+    .__bt-loop-product-style .woocommerce-loop-product .woocommerce-loop-product__infor .price .woocommerce-Price-amount, .bt-elwg-product-loop-item .woocommerce-loop-product .woocommerce-loop-product__infor .price .woocommerce-Price-amount, .woocommerce .woocommerce-loop-product .woocommerce-loop-product__infor .price .woocommerce-Price-amount {
       text-decoration-line: underline;
       text-align: center;
       text-underline-offset: 3px; }
-    .__bt-loop-product-style .woocommerce-loop-product .price del, .bt-elwg-product-loop-item .woocommerce-loop-product .price del, .woocommerce .woocommerce-loop-product .price del {
+    .__bt-loop-product-style .woocommerce-loop-product .woocommerce-loop-product__infor .price del, .bt-elwg-product-loop-item .woocommerce-loop-product .woocommerce-loop-product__infor .price del, .woocommerce .woocommerce-loop-product .woocommerce-loop-product__infor .price del {
       font-size: 90%;
       color: #85b7ba;
       opacity: 1; }
-      .__bt-loop-product-style .woocommerce-loop-product .price del .woocommerce-Price-amount, .bt-elwg-product-loop-item .woocommerce-loop-product .price del .woocommerce-Price-amount, .woocommerce .woocommerce-loop-product .price del .woocommerce-Price-amount {
+      .__bt-loop-product-style .woocommerce-loop-product .woocommerce-loop-product__infor .price del .woocommerce-Price-amount, .bt-elwg-product-loop-item .woocommerce-loop-product .woocommerce-loop-product__infor .price del .woocommerce-Price-amount, .woocommerce .woocommerce-loop-product .woocommerce-loop-product__infor .price del .woocommerce-Price-amount {
         text-decoration-line: none; }
-    .__bt-loop-product-style .woocommerce-loop-product .price ins, .bt-elwg-product-loop-item .woocommerce-loop-product .price ins, .woocommerce .woocommerce-loop-product .price ins {
+    .__bt-loop-product-style .woocommerce-loop-product .woocommerce-loop-product__infor .price ins, .bt-elwg-product-loop-item .woocommerce-loop-product .woocommerce-loop-product__infor .price ins, .woocommerce .woocommerce-loop-product .woocommerce-loop-product__infor .price ins {
       text-decoration-line: none;
       margin-right: 5px; }
   .__bt-loop-product-style .woocommerce-loop-product:hover .woocommerce-loop-product__thumbnail .button, .bt-elwg-product-loop-item .woocommerce-loop-product:hover .woocommerce-loop-product__thumbnail .button, .woocommerce .woocommerce-loop-product:hover .woocommerce-loop-product__thumbnail .button,
@@ -5783,6 +5783,9 @@ body {
   background: #fafafa;
   padding: 30px 0;
   border-radius: 15px; }
+  @media (max-width: 767px) {
+    .woocommerce-account .woocommerce-MyAccount-content {
+      margin-top: 30px; } }
   .woocommerce-account .woocommerce-MyAccount-content > * {
     max-width: calc(100% - 60px);
     margin-left: auto;
@@ -5800,6 +5803,8 @@ body {
     background: var(--e-global-color-accent, #E96CA7);
     padding: 20px 35px;
     border-radius: 15px; }
+.woocommerce-account .woocommerce-ResetPassword .form-row {
+  width: 100%; }
 .woocommerce-account .woocommerce-ResetPassword .button {
   color: #fff;
   font-size: 16px;
