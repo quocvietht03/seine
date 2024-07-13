@@ -58,60 +58,6 @@
 		});
 	}
 
-	/* Tabs */
-	function SeineTabs() {
-		if ($('.bt-tabs-js').length > 0) {
-			$('.bt-tabs-js .bt-nav-item').on('click', function (e) {
-				e.preventDefault();
-				$(this).addClass('bt-is-active').siblings().removeClass('bt-is-active');
-				$($.attr(this, 'href')).addClass('bt-is-active').siblings().removeClass('bt-is-active');
-			});
-		}
-	}
-
-	/* Gallery Carousel */
-	function SeineGallerCarousel() {
-		if ($('.js-gallery-carousel').length > 0) {
-			$('.js-gallery-carousel').slick({
-				slidesToShow: 2,
-				slidesToScroll: 1,
-				arrows: true,
-				prevArrow: '<button type=\"button\" class=\"slick-prev\">Prev</button>',
-				nextArrow: '<button type=\"button\" class=\"slick-next\">Next</button>'
-			});
-		}
-	}
-
-	/* Gallery Slider */
-	function SeineGallerSlider() {
-		if ($('.js-gallery-slider').length > 0) {
-			$('.js-gallery-slider-for').slick({
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				fade: true,
-				arrows: false,
-				asNavFor: '.js-gallery-slider-nav',
-				prevArrow: '<button type=\"button\" class=\"slick-prev\">Prev</button>',
-				nextArrow: '<button type=\"button\" class=\"slick-next\">Next</button>'
-			});
-			$('.js-gallery-slider-nav').slick({
-				slidesToShow: 4,
-				slidesToScroll: 1,
-				arrows: false,
-				focusOnSelect: true,
-				asNavFor: '.js-gallery-slider-for',
-				responsive: [
-					{
-						breakpoint: 600,
-						settings: {
-							slidesToShow: 3
-						}
-					}
-				]
-			});
-		}
-	}
-
 	/* Orbit effect */
 	function SeineOrbitEffect() {
 		if ($('.bt-orbit-enable').length > 0) {
@@ -233,13 +179,13 @@
 		}
 		
 	}
-	/* Checkbox Custom */
+	/* Checkbox Custom Newsletter */
 	function SeineCheckboxCustom() {
 		const $itemcheckbox = $('.tnp-privacy-field .tnp-privacy')
 		if (!$itemcheckbox.length) return;
-
 		const $divcheckbox = '<div class="checkmark"></div>';
 		$itemcheckbox.parent().append($divcheckbox);
+
 		if ($('.bt-newsletter-no-privacy').length > 0) {
 			var privacyCheckbox = $('.bt-newsletter-no-privacy input.tnp-privacy');
 			if (privacyCheckbox.length > 0 && !privacyCheckbox.prop('checked')) {
@@ -252,9 +198,6 @@
 		SeineSubmenuAuto();
 		SeineToggleMenuMobile();
 		SeineToggleSubMenuMobile();
-		SeineTabs();
-		SeineGallerSlider();
-		SeineGallerCarousel();
 		SeineOrbitEffect();
 		SeineCursorEffect();
 		SeineBubleEffect();
