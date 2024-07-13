@@ -580,6 +580,9 @@ body {
 		-webkit-animation: effectPlayButton 2s infinite;
 		animation: effectPlayButton 2s infinite;
 		border-radius: 50%;
+		> a {
+			display: block;
+		}
 	}
 }
 .bt-play-btn-effect2 {
@@ -587,6 +590,9 @@ body {
 		-webkit-animation: effectPlayButton2 2s infinite;
 		animation: effectPlayButton2 2s infinite;
 		border-radius: 50%;
+		> a {
+			display: block;
+		}
 	}
 }
 

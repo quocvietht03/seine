@@ -3146,11 +3146,15 @@ body {
   -webkit-animation: effectPlayButton 2s infinite;
   animation: effectPlayButton 2s infinite;
   border-radius: 50%; }
+  .bt-play-btn-effect .elementor-icon-box-icon > a {
+    display: block; }
 
 .bt-play-btn-effect2 .elementor-icon-box-icon {
   -webkit-animation: effectPlayButton2 2s infinite;
   animation: effectPlayButton2 2s infinite;
   border-radius: 50%; }
+  .bt-play-btn-effect2 .elementor-icon-box-icon > a {
+    display: block; }
 
 .bt-button-hover-enable .elementor-widget-button .elementor-button-wrapper {
   overflow: hidden; }
