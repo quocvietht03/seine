@@ -818,7 +818,7 @@ img.alignright {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; }
 
-.__bt-button-style, button, input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .bt-elwg-contact-information .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link, .single-therapist .bt-main-detail-ss .bt-post--button-booknow, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button, .woocommerce .woocommerce-loop-product__thumbnail .button,
+.__bt-button-style, button, input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .bt-elwg-contact-information .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button, .woocommerce .woocommerce-loop-product__thumbnail .button,
 .__bt-loop-product-style .woocommerce-loop-product__thumbnail .added_to_cart,
 .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .added_to_cart,
 .woocommerce .woocommerce-loop-product__thumbnail .added_to_cart, .woocommerce .bt-main-product-ss div.product div.summary form.cart .button, .woocommerce .bt-main-product-ss div.product .woocommerce-tabs #tab-reviews #respond .form-submit input {
@@ -836,17 +836,17 @@ img.alignright {
   font-family: var(--e-global-typography-primary-font-family, "DM Sans");
   height: auto;
   min-height: auto; }
-  .__bt-button-style:hover, button:hover, input[type="submit"]:hover, .__bt-button-dark-style:hover, .__bt-contact-information-style .bt-contact-information--button:hover, .bt-elwg-contact-information .bt-contact-information--button:hover, .__bt-button-outline-style:hover, .__bt-button-outline-dark-style:hover, .bt-srq-box--book-link:hover, .single-therapist .bt-main-detail-ss .bt-post--button-booknow:hover, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button:hover, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button:hover, .woocommerce .woocommerce-loop-product__thumbnail .button:hover,
+  .__bt-button-style:hover, button:hover, input[type="submit"]:hover, .__bt-button-dark-style:hover, .__bt-contact-information-style .bt-contact-information--button:hover, .bt-elwg-contact-information .bt-contact-information--button:hover, .__bt-button-outline-style:hover, .__bt-button-outline-dark-style:hover, .bt-srq-box--book-link:hover, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button:hover, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button:hover, .woocommerce .woocommerce-loop-product__thumbnail .button:hover,
   .__bt-loop-product-style .woocommerce-loop-product__thumbnail .added_to_cart:hover,
   .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .added_to_cart:hover,
-  .woocommerce .woocommerce-loop-product__thumbnail .added_to_cart:hover, .woocommerce .bt-main-product-ss div.product div.summary form.cart .button:hover, .woocommerce .bt-main-product-ss div.product .woocommerce-tabs #tab-reviews #respond .form-submit input:hover, .__bt-button-style:focus, button:focus, input[type="submit"]:focus, .__bt-button-dark-style:focus, .__bt-contact-information-style .bt-contact-information--button:focus, .bt-elwg-contact-information .bt-contact-information--button:focus, .__bt-button-outline-style:focus, .__bt-button-outline-dark-style:focus, .bt-srq-box--book-link:focus, .single-therapist .bt-main-detail-ss .bt-post--button-booknow:focus, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button:focus, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button:focus, .woocommerce .woocommerce-loop-product__thumbnail .button:focus,
+  .woocommerce .woocommerce-loop-product__thumbnail .added_to_cart:hover, .woocommerce .bt-main-product-ss div.product div.summary form.cart .button:hover, .woocommerce .bt-main-product-ss div.product .woocommerce-tabs #tab-reviews #respond .form-submit input:hover, .__bt-button-style:focus, button:focus, input[type="submit"]:focus, .__bt-button-dark-style:focus, .__bt-contact-information-style .bt-contact-information--button:focus, .bt-elwg-contact-information .bt-contact-information--button:focus, .__bt-button-outline-style:focus, .__bt-button-outline-dark-style:focus, .bt-srq-box--book-link:focus, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button:focus, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button:focus, .woocommerce .woocommerce-loop-product__thumbnail .button:focus,
   .__bt-loop-product-style .woocommerce-loop-product__thumbnail .added_to_cart:focus,
   .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .added_to_cart:focus,
   .woocommerce .woocommerce-loop-product__thumbnail .added_to_cart:focus, .woocommerce .bt-main-product-ss div.product div.summary form.cart .button:focus, .woocommerce .bt-main-product-ss div.product .woocommerce-tabs #tab-reviews #respond .form-submit input:focus {
     color: #ffffff;
     background: var(--e-global-color-accent, #E96CA7); }
   @media (max-width: 519.98px) {
-    .__bt-button-style, button, input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .bt-elwg-contact-information .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link, .single-therapist .bt-main-detail-ss .bt-post--button-booknow, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button, .woocommerce .woocommerce-loop-product__thumbnail .button,
+    .__bt-button-style, button, input[type="submit"], .__bt-button-dark-style, .__bt-contact-information-style .bt-contact-information--button, .bt-elwg-contact-information .bt-contact-information--button, .__bt-button-outline-style, .__bt-button-outline-dark-style, .bt-srq-box--book-link, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .button, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button, .woocommerce .woocommerce-loop-product__thumbnail .button,
     .__bt-loop-product-style .woocommerce-loop-product__thumbnail .added_to_cart,
     .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .added_to_cart,
     .woocommerce .woocommerce-loop-product__thumbnail .added_to_cart, .woocommerce .bt-main-product-ss div.product div.summary form.cart .button, .woocommerce .bt-main-product-ss div.product .woocommerce-tabs #tab-reviews #respond .form-submit input {
@@ -4013,7 +4013,7 @@ body {
 .__bt-therapist-style-default .bt-post--thumbnail, .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail, .bt-elwg-therapist-loop-item--default .bt-post--thumbnail {
   line-height: 0; }
   .__bt-therapist-style-default .bt-post--thumbnail .bt-cover-image, .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail .bt-cover-image, .bt-elwg-therapist-loop-item--default .bt-post--thumbnail .bt-cover-image, .__bt-therapist-style-default .bt-post--thumbnail .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .__bt-therapist-style-default .bt-post--thumbnail .wc-cover-image, .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail .wc-cover-image, .bt-elwg-therapist-loop-item--default .bt-post--thumbnail .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .bt-elwg-therapist-loop-item--default .bt-post--thumbnail .wc-cover-image, .__bt-therapist-style-default .bt-post--thumbnail .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .__bt-therapist-style-default .bt-post--thumbnail .wc-cover-image, .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail .wc-cover-image, .bt-elwg-therapist-loop-item--default .bt-post--thumbnail .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .bt-elwg-therapist-loop-item--default .bt-post--thumbnail .wc-cover-image, .__bt-therapist-style-default .bt-post--thumbnail .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image, .woocommerce .woocommerce-loop-product__thumbnail .__bt-therapist-style-default .bt-post--thumbnail .wc-cover-image, .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image, .woocommerce .woocommerce-loop-product__thumbnail .single-therapist .bt-related-posts-ss--list .bt-post--thumbnail .wc-cover-image, .bt-elwg-therapist-loop-item--default .bt-post--thumbnail .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image, .woocommerce .woocommerce-loop-product__thumbnail .bt-elwg-therapist-loop-item--default .bt-post--thumbnail .wc-cover-image {
-    padding-bottom: calc(1.18* 100%);
+    padding-bottom: calc(1.18 * 100%);
     box-sizing: border-box; }
 .__bt-therapist-style-default .bt-post--infor, .single-therapist .bt-related-posts-ss--list .bt-post--infor, .bt-elwg-therapist-loop-item--default .bt-post--infor {
   text-align: center;
@@ -4170,7 +4170,14 @@ body {
       font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
       font-size: 22px;
       font-weight: 600; }
-    .single-therapist .bt-main-detail-ss .bt-post--button-booknow {
+    .single-therapist .bt-main-detail-ss .bt-post--button-booknow a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      background: var(--e-global-color-accent, #E96CA7);
+      display: block;
       padding: 15px 40px; }
 .single-therapist .bt-related-posts-ss {
   padding: 100px 0;

@@ -7,7 +7,7 @@
     &--thumbnail {
       line-height: 0;
       .bt-cover-image {
-        padding-bottom: calc(1.18* 100%);
+        padding-bottom: calc(1.18 * 100%);
         box-sizing: border-box;
       }
     }
@@ -24,7 +24,7 @@
       font-weight: 500;
       text-transform: capitalize;
       margin: 0;
-      @media(max-width:$break-lg) and (min-width: $break-tl){
+      @media (max-width: $break-lg) and (min-width: $break-tl) {
         font-size: 25px;
       }
     }
@@ -51,7 +51,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
-    @media(max-width:$break-sm){
+    @media (max-width: $break-sm) {
       padding: 50px 0;
     }
     .bt-post {
@@ -70,7 +70,7 @@
         .bt-cover-image {
           padding-bottom: calc(1.28 * 100%);
         }
-        @media(max-width:991px){
+        @media (max-width: 991px) {
           width: 100%;
         }
       }
@@ -81,14 +81,14 @@
         box-sizing: border-box;
         margin-top: 70px;
         position: relative;
-        @media(max-width:1177px) and (min-width: 992px){
+        @media (max-width: 1177px) and (min-width: 992px) {
           padding: 30px;
         }
-        @media(max-width:991px){
+        @media (max-width: 991px) {
           width: 100%;
           margin: 0;
         }
-        @media(max-width:$break-xs){
+        @media (max-width: $break-xs) {
           padding: 30px 20px;
         }
       }
@@ -116,10 +116,10 @@
         flex-wrap: wrap;
         gap: 40px 50px;
         margin-top: 40px;
-        @media(max-width:1177px) and (min-width: 992px){
+        @media (max-width: 1177px) and (min-width: 992px) {
           gap: 20px;
         }
-        @media(max-width:$break-sm){
+        @media (max-width: $break-sm) {
           gap: 20px;
           margin-top: 20px;
         }
@@ -189,7 +189,7 @@
         gap: 15px;
         flex-wrap: wrap;
         justify-content: space-between;
-        @media(max-width:$break-sm){
+        @media (max-width: $break-sm) {
           padding: 20px;
         }
       }
@@ -203,8 +203,16 @@
         }
       }
       &--button-booknow {
-        @extend .__bt-button-style;
-        padding: 15px 40px;
+        a {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: center;
+          background: $color-accent;
+          display: block;
+          padding: 15px 40px;
+        }
       }
     }
   }
@@ -214,8 +222,8 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media(max-width:$break-sm){
-    padding: 50px 0;
+    @media (max-width: $break-sm) {
+      padding: 50px 0;
     }
     &--heading {
       .bt-sub-text {
@@ -237,7 +245,7 @@
         span {
           color: $color-accent;
         }
-        @media(max-width:$break-sm){
+        @media (max-width: $break-sm) {
           font-size: 44px;
         }
       }
@@ -252,10 +260,10 @@
         &--infor {
           background: #fff;
         }
-        @media(max-width:$break-tl){
+        @media (max-width: $break-tl) {
           width: calc(50% - 15px);
         }
-        @media(max-width:$break-sm){
+        @media (max-width: $break-sm) {
           width: 100%;
         }
       }
@@ -270,7 +278,7 @@
       a {
         color: $color-accent;
       }
-      @media(max-width:$break-sm){
+      @media (max-width: $break-sm) {
         margin-top: 35px;
         font-size: 18px;
       }
