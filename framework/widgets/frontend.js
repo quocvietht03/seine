@@ -95,6 +95,7 @@
 	/* location list toggle */
 	var LocationListHandler = function( $scope, $ ) {
 		var buttonMore = $scope.find('.bt-more-info');
+		var contentList = $scope.find('.bt-location-list--content');
 		if(buttonMore.length > 0) {
 			buttonMore.on('click', function(e) {
 				e.preventDefault();
@@ -103,9 +104,9 @@
 					$(this).removeClass('active');
 					$(this).children('span').text('More Information');
 				}else{
-					$('.bt-location-list--content').slideUp();
-					$('.bt-more-info.active').children('span').text('More Information');
-					$('.bt-more-info.active').removeClass('active');
+					contentList.slideUp();
+					buttonMore.children('span').text('More Information');
+					buttonMore.removeClass('active');
 					$(this).parent().find('.bt-location-list--content').slideDown();
 					$(this).addClass('active');
 					$(this).children('span').text('Less Information');
