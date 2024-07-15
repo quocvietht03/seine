@@ -165,7 +165,7 @@ class Widget_PageTitleBar extends Widget_Base
 
 			<div class="bt-page-titlebar">
 				<?php if (!empty($settings['custom_title_blurry'])) { ?>
-					<div class="bt-page-titlebar--title-blurry"><?php echo $settings['custom_title_blurry']; ?></div>
+					<div class="bt-page-titlebar--title-blurry"><?php echo esc_html($settings['custom_title_blurry']); ?></div>
 				<?php } else { ?>
 					<div class="bt-page-titlebar--title-blurry"><?php echo seine_page_title(); ?></div>
 				<?php } ?>

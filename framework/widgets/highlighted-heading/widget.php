@@ -257,37 +257,37 @@ class Widget_HighlightedHeading extends Widget_Base
 		$animation   = (isset($settings['show_animation']) && $settings['show_animation'] == 'yes') ? 'animationed' : '';
 ?>
 
-		<div class="bt-elwg-highlighted-heading <?php echo $animation ?>">
+		<div class="bt-elwg-highlighted-heading <?php echo esc_attr($animation) ?>">
 			<?php echo "<$html_tag>"; ?>
 
 			<?php if (!empty($link)) : ?>
 				<a href="<?php echo esc_url($link); ?>">
-					<?php echo !empty($before_text) ? $before_text : ''; ?>
+					<?php echo !empty($before_text) ? esc_html($before_text) : ''; ?>
 
 					<?php if (!empty($hl_text)) : ?>
 						<span class="__text-highlighted">
-							<?php echo $hl_text; ?>
+							<?php echo esc_html($hl_text); ?>
 							<?php if ($hl_image) { ?>
 								<img src='<?php echo esc_url($hl_image) ?>' alt="img" />
 							<?php } ?>
 						</span>
 					<?php endif; ?>
 
-					<?php echo !empty($after_text) ? $after_text : ''; ?>
+					<?php echo !empty($after_text) ? esc_html($after_text) : ''; ?>
 				</a>
 			<?php else : ?>
-				<?php echo !empty($before_text) ? $before_text : ''; ?>
+				<?php echo !empty($before_text) ? esc_html($before_text) : ''; ?>
 
 				<?php if (!empty($hl_text)) : ?>
 					<span class="__text-highlighted">
-						<?php echo $hl_text; ?>
+						<?php echo esc_html($hl_text); ?>
 						<?php if ($hl_image) { ?>
 							<img src='<?php echo esc_url($hl_image) ?>' alt="img" />
 						<?php } ?>
 					</span>
 				<?php endif; ?>
 
-				<?php echo !empty($after_text) ? $after_text : ''; ?>
+				<?php echo !empty($after_text) ? esc_html($after_text) : ''; ?>
 			<?php endif; ?>
 
 			<?php echo "</$html_tag>"; ?>

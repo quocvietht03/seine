@@ -233,10 +233,10 @@ class Widget_HighlightedHeadingStyle1 extends Widget_Base
 					<?php foreach ($settings['list'] as $index => $item) : ?>
 						<?php if ($item['text_title']) : ?>
 							<?php if ($item['style_title'] == 1) { ?>
-								<?php echo $item['text_title']; ?>
+								<?php echo esc_html($item['text_title']); ?>
 							<?php } else { ?>
 								<span class="__text-highlighted">
-									<?php echo $item['text_title']; ?>
+									<?php echo esc_html($item['text_title']); ?>
 								</span>
 							<?php } ?>
 						<?php endif; ?>
@@ -246,10 +246,10 @@ class Widget_HighlightedHeadingStyle1 extends Widget_Base
 				<?php foreach ($settings['list'] as $index => $item) : ?>
 					<?php if ($item['text_title']) : ?>
 						<?php if ($item['style_title'] == 1) { ?>
-							<?php echo $item['text_title']; ?>
+							<?php echo esc_html($item['text_title']); ?>
 						<?php } else { ?>
 							<span class="__text-highlighted">
-								<?php echo $item['text_title']; ?>
+								<?php echo esc_html($item['text_title']); ?>
 							</span>
 						<?php } ?>
 					<?php endif; ?>

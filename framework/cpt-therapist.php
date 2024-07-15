@@ -112,7 +112,7 @@ function seine_therapist_column_display( $therapist_columns, $post_id ) {
 				$thumb = wp_get_attachment_image( $thumbnail_id, array($width, $height), true );
 			}
 			if ( isset( $thumb ) ) {
-				echo $thumb; // No need to escape
+				echo wp_kses_post( $thumb );
 			} else {
 				echo esc_html__('None', 'seine');
 			}
@@ -122,7 +122,7 @@ function seine_therapist_column_display( $therapist_columns, $post_id ) {
 		case "therapist_categories":
 
 		if ( $category_list = get_the_term_list( $post_id, 'therapist_categories', '', ', ', '' ) ) {
-			echo $category_list; // No need to escape
+			echo wp_kses_post( $category_list );
 		} else {
 			echo esc_html__('None', 'seine');
 		}

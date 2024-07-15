@@ -26,7 +26,7 @@ $testimonials_section = get_field('testimonials_section', 'options');
 								<h3 class="bt-block-heading">
 									<?php
 									if (!empty($top_service['heading'])) {
-										echo $top_service['heading'];
+										echo esc_html($top_service['heading']);
 									} else {
 										echo esc_html__('Top Services', 'seine');
 									}
@@ -119,8 +119,8 @@ $testimonials_section = get_field('testimonials_section', 'options');
 										if (!empty($site_information['opening_hours'])) {
 											foreach ($site_information['opening_hours'] as $item) { ?>
 												<li class="bt-opening-hours--time-item">
-													<div class="bt-label"><?php echo $item['heading'] ?></div>
-													<div class="bt-hours"><?php echo $item['hours'] ?></div>
+													<div class="bt-label"><?php echo esc_html($item['heading']) ?></div>
+													<div class="bt-hours"><?php echo esc_html($item['hours']) ?></div>
 												</li>
 										<?php }
 										}

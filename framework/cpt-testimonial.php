@@ -116,7 +116,7 @@ function seine_testimonial_column_display($testimonial_columns, $post_id)
 				$thumb = wp_get_attachment_image($thumbnail_id, array($width, $height), true);
 			}
 			if (isset($thumb)) {
-				echo $thumb; // No need to escape
+				echo wp_kses_post( $thumb ); 
 			} else {
 				echo esc_html__('None', 'seine');
 			}
@@ -126,7 +126,7 @@ function seine_testimonial_column_display($testimonial_columns, $post_id)
 		case "testimonial_categories":
 
 			if ($category_list = get_the_term_list($post_id, 'testimonial_categories', '', ', ', '')) {
-				echo $category_list; // No need to escape
+				echo wp_kses_post( $category_list );
 			} else {
 				echo esc_html__('None', 'seine');
 			}

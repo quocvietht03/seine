@@ -445,7 +445,7 @@ class Widget_PopularServicesStyle1 extends Widget_Base
 			<?php
 			if ($query->have_posts()) {
 			?>
-				<div class="bt-service-popular bt-col-item-<?php echo $settings['posts_per_page'] ?>">
+				<div class="bt-service-popular bt-col-item-<?php echo esc_attr($settings['posts_per_page']) ?>">
 					<?php
 					while ($query->have_posts()) : $query->the_post();
 						get_template_part('framework/templates/service', 'popular', array('image-size' => $settings['thumbnail_size']));

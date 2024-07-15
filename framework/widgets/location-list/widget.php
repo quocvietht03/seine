@@ -668,16 +668,16 @@ class Widget_LocationList extends Widget_Base
                                 </div>
                                 <div class="bt-location-title-wrap">
                                     <?php if (!empty($item['location_title'])) : ?>
-                                        <h2> <?php echo $item['location_title'] ?> </h2>
+                                        <h2> <?php echo esc_html($item['location_title']); ?> </h2>
                                     <?php endif; ?>
                                     <?php if (!empty($item['location_address'])) : ?>
-                                        <span> <?php echo $item['location_address'] ?> </span>
+                                        <span> <?php echo esc_html($item['location_address']) ?> </span>
                                     <?php endif; ?>
                                 </div>
                             </div>
                             <div class="bt-location-list--heading-button">
                                 <?php if (!empty($item['location_button'])) : ?>
-                                    <a href="<?php echo $item['location_button_link'] ?>"> <?php echo $item['location_button'] ?> </a>
+                                    <a href="<?php echo esc_url($item['location_button_link']) ?>"> <?php echo esc_html($item['location_button']) ?> </a>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -696,7 +696,7 @@ class Widget_LocationList extends Widget_Base
                                     </div>
                                     <div class="bt-location-time">
                                         <?php if (!empty($item['location_opening_hours'])) : ?>
-                                            <h3> <?php echo $item['location_opening_hours'] ?> </h3>
+                                            <h3> <?php echo esc_html($item['location_opening_hours']) ?> </h3>
                                         <?php endif; ?>
 
                                         <?php if (!empty($item['location_time'])) : ?>
@@ -705,12 +705,12 @@ class Widget_LocationList extends Widget_Base
                                                     <div class="bt-location-time--item">
                                                         <?php if (!empty($time['sub_location_title'])) : ?>
                                                             <div class="bt-location-time--title">
-                                                                <?php echo $time['sub_location_title']; ?>
+                                                                <?php echo esc_html($time['sub_location_title']); ?>
                                                             </div>
                                                         <?php endif; ?>
                                                         <?php if (!empty($time['sub_location_hours'])) : ?>
                                                             <div class="bt-location-time--hours">
-                                                                <?php echo $time['sub_location_hours']; ?>
+                                                                <?php echo esc_html($time['sub_location_hours']); ?>
                                                             </div>
                                                         <?php endif; ?>
                                                     </div>
@@ -721,7 +721,7 @@ class Widget_LocationList extends Widget_Base
                                 </div>
                                 <div class="bt-location-list--maps">
                                     <?php if (!empty($item['location_address'])) : ?>
-                                        <iframe loading="lazy" src="https://maps.google.com/maps?q=<?php echo urlencode($item['location_address']) ?>&#038;t=m&#038;z=<?php echo $item['location_maps_zoom']['size'] ?>&#038;output=embed&#038;iwloc=near" title="<?php echo htmlspecialchars($item['location_address']) ?>" aria-label="<?php echo htmlspecialchars($item['location_address']) ?>"></iframe>
+                                        <iframe loading="lazy" src="https://maps.google.com/maps?q=<?php echo urlencode($item['location_address']) ?>&#038;t=m&#038;z=<?php echo esc_attr($item['location_maps_zoom']['size']) ?>&#038;output=embed&#038;iwloc=near" title="<?php echo htmlspecialchars($item['location_address']) ?>" aria-label="<?php echo htmlspecialchars($item['location_address']) ?>"></iframe>
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -736,7 +736,7 @@ class Widget_LocationList extends Widget_Base
                                             </div>
                                             <div class="bt-location-info">
                                                 <h4><?php echo esc_html__('Email:', 'seine'); ?></h4>
-                                                <span> <?php echo $item['location_email'] ?></span>
+                                                <span> <?php echo esc_html($item['location_email']) ?></span>
                                             </div>
                                         </a>
                                     </div>
@@ -761,7 +761,7 @@ class Widget_LocationList extends Widget_Base
                                             </div>
                                             <div class="bt-location-info">
                                                 <h4><?php echo esc_html__('Phone:', 'seine'); ?></h4>
-                                                <span> <?php echo $item['location_phone'] ?></span>
+                                                <span> <?php echo esc_html($item['location_phone']) ?></span>
                                             </div>
 
                                         </a>

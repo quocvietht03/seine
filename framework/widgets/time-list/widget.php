@@ -295,10 +295,10 @@ class Widget_TimeList extends Widget_Base
 							<?php } ?>
 							<div class="bt-time--infor">
 								<div class="bt-time--title">
-									<?php echo $item['time_title']; ?>
+									<?php echo esc_html($item['time_title']); ?>
 								</div>
 								<div class="bt-time--hours">
-									<?php echo $item['time_hours']; ?>
+									<?php echo esc_html($item['time_hours']); ?>
 								</div>
 							</div>
 						</li>
@@ -315,10 +315,10 @@ class Widget_TimeList extends Widget_Base
 								<?php } ?>
 								<div class="bt-time--infor">
 									<div class="bt-time--title">
-										<?php echo $item['heading']; ?>
+										<?php echo esc_html($item['heading']); ?>
 									</div>
 									<div class="bt-time--hours">
-										<?php echo $item['hours']; ?>
+										<?php echo esc_html($item['hours']); ?>
 									</div>
 								</div>
 							</li>

@@ -471,7 +471,7 @@ class Widget_PopularServices extends Widget_Base
 			<?php
 			if ($query->have_posts()) {
 			?>
-				<div class="bt-service-popular columns-<?php echo $settings['columns'] ?>">
+				<div class="bt-service-popular columns-<?php echo esc_attr($settings['columns']) ?>">
 					<?php
 					while ($query->have_posts()) : $query->the_post();
 						get_template_part('framework/templates/service', 'popular', array('image-size' => $settings['thumbnail_size']));

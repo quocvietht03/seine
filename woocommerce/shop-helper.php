@@ -194,7 +194,7 @@ function seine_woocommerce_item_sold($product_id)
     }
   }
   echo '<div class="woocommerce-loop-product__sold">';
-  echo $total_quantity_sold . ' ' . esc_html__('Item Sold', 'seine');
+  echo esc_html($total_quantity_sold) . ' ' . esc_html__('Item Sold', 'seine');
   echo '</div>';
 }
 add_action('seine_woocommerce_shop_loop_item_sold', 'seine_woocommerce_item_sold', 10, 2);

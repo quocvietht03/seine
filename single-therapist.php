@@ -32,7 +32,7 @@ $feature_section = get_field('feature_section', 'options');
 					<div class="bt-post--infor">
 						<?php if (!empty($job)) { ?>
 							<div class="bt-post--job">
-								<?php echo $job  ?>
+								<?php echo esc_html($job) ?>
 							</div>
 						<?php } ?>
 						<h3 class="bt-post--title">
