@@ -1229,6 +1229,11 @@
       }
     }
     .bt-post {
+      &:hover {
+        .bt-post--content {
+          border-radius: 0;
+        }
+      }
       &--inner {
         position: relative;
       }
@@ -1243,6 +1248,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 0.6s ease;
       }
       &--featured {
         .bt-cover-image {
@@ -1272,6 +1278,9 @@
         }
         a {
           color: #fff;
+          &:hover {
+            color: $color-accent;
+          }
         }
       }
     }
@@ -1306,6 +1315,14 @@
     }
     .bt-post {
       width: 24%;
+      &:hover {
+        .bt-post--content:before {
+          width: 100%;
+          height: 100%;
+          border-radius: 0;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+      }
       &:nth-child(n + 5) {
         margin-top: -4%;
       }
@@ -1343,6 +1360,19 @@
         @media (max-width: $break-tl) {
           max-width: 100%;
         }
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: calc(100% - 40px);
+          height: calc(100% - 40px);
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.83);
+          z-index: -1;
+          transform: translate(-50%, -50%);
+          transition: all 0.6s ease;
+        }
       }
       &--featured {
         max-width: 70%;
@@ -1365,8 +1395,6 @@
         font-family: $secondary-font;
         font-size: 24px;
         font-weight: 500;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.83);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1390,6 +1418,9 @@
         }
         a {
           color: $color-primary;
+          &:hover {
+            color: $color-accent;
+          }
         }
       }
     }

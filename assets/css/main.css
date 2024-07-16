@@ -4280,7 +4280,7 @@ body {
     border-top: 23px solid var(--e-global-color-accent, #E96CA7);
     border-left: 19px solid transparent;
     position: absolute;
-    left: -19px;
+    left: -18px;
     top: 0; }
   .__bt-service-style-default .bt-post--price::after, .bt-elwg-service-loop-item--default .bt-post--price::after {
     content: "";
@@ -4290,7 +4290,7 @@ body {
     border-bottom: 23px solid var(--e-global-color-accent, #E96CA7);
     border-left: 19px solid transparent;
     position: absolute;
-    left: -19px;
+    left: -18px;
     bottom: 0; }
 .__bt-service-style-default .bt-post--title, .bt-elwg-service-loop-item--default .bt-post--title {
   color: var(--e-global-color-primary, #222);
@@ -6700,6 +6700,8 @@ body {
       .bt-elwg-service-popular--default .bt-service-popular.columns-3 {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px; } }
+.bt-elwg-service-popular--default .bt-post:hover .bt-post--content {
+  border-radius: 0; }
 .bt-elwg-service-popular--default .bt-post--inner {
   position: relative; }
 .bt-elwg-service-popular--default .bt-post--content {
@@ -6712,7 +6714,8 @@ body {
   background: rgba(24, 29, 41, 0.5);
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transition: all 0.6s ease; }
 .bt-elwg-service-popular--default .bt-post--featured .bt-cover-image, .bt-elwg-service-popular--default .bt-post--featured .__bt-loop-product-style .woocommerce-loop-product__thumbnail .wc-cover-image, .__bt-loop-product-style .woocommerce-loop-product__thumbnail .bt-elwg-service-popular--default .bt-post--featured .wc-cover-image, .bt-elwg-service-popular--default .bt-post--featured .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .wc-cover-image, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .bt-elwg-service-popular--default .bt-post--featured .wc-cover-image, .bt-elwg-service-popular--default .bt-post--featured .woocommerce .woocommerce-loop-product__thumbnail .wc-cover-image, .woocommerce .woocommerce-loop-product__thumbnail .bt-elwg-service-popular--default .bt-post--featured .wc-cover-image {
   padding-bottom: calc(1 * 100%);
   border-radius: 0; }
@@ -6738,6 +6741,8 @@ body {
       max-width: 175px; } }
   .bt-elwg-service-popular--default .bt-post--title a {
     color: #fff; }
+    .bt-elwg-service-popular--default .bt-post--title a:hover {
+      color: var(--e-global-color-accent, #E96CA7); }
 .bt-elwg-service-popular--style1 .bt-service-popular {
   display: flex;
   width: 100%;
@@ -6762,6 +6767,11 @@ body {
         margin-bottom: 2%; } }
 .bt-elwg-service-popular--style1 .bt-post {
   width: 24%; }
+  .bt-elwg-service-popular--style1 .bt-post:hover .bt-post--content:before {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    transform: translate(-50%, -50%) rotate(45deg); }
   .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 5) {
     margin-top: -4%; }
   .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 8) {
@@ -6793,6 +6803,18 @@ body {
     @media (max-width: 1024.98px) {
       .bt-elwg-service-popular--style1 .bt-post--content {
         max-width: 100%; } }
+    .bt-elwg-service-popular--style1 .bt-post--content:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.83);
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      transition: all 0.6s ease; }
   .bt-elwg-service-popular--style1 .bt-post--featured {
     max-width: 70%;
     transform: rotate(45deg);
@@ -6811,8 +6833,6 @@ body {
     font-family: var(--e-global-typography-secondary-font-family, "Cormorant");
     font-size: 24px;
     font-weight: 500;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.83);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6836,6 +6856,8 @@ body {
         bottom: 5px; } }
     .bt-elwg-service-popular--style1 .bt-post--title a {
       color: var(--e-global-color-primary, #222); }
+      .bt-elwg-service-popular--style1 .bt-post--title a:hover {
+        color: var(--e-global-color-accent, #E96CA7); }
 
 .bt-elwg-pricing-item--default .bt-pricing--featured {
   position: relative; }
