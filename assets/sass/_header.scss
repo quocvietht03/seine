@@ -603,7 +603,8 @@ body.admin-bar .dialog-type-lightbox {
         padding-left: 50px;
         font-family: $text-font !important;
         font-size: 16px !important;
-        color: $color-text;
+        font-weight: 500 !important;
+        color: $color-primary;
         border: none;
         &:before {
           content: "";
@@ -612,7 +613,7 @@ body.admin-bar .dialog-type-lightbox {
           left: 20px;
           width: 18px;
           height: 1px;
-          background: #707070;
+          background: $color-primary;
         }
       }
     }

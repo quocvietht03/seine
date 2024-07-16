@@ -2004,7 +2004,8 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
     padding-left: 50px;
     font-family: var(--e-global-typography-text-font-family, "DM Sans") !important;
     font-size: 16px !important;
-    color: var(--e-global-color-text, #555);
+    font-weight: 500 !important;
+    color: var(--e-global-color-primary, #222);
     border: none; }
     .bt-menu-mobile-popup .elementor-nav-menu ul.elementor-nav-menu--dropdown a.elementor-sub-item:before {
       content: "";
@@ -2013,7 +2014,7 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
       left: 20px;
       width: 18px;
       height: 1px;
-      background: #707070; }
+      background: var(--e-global-color-primary, #222); }
 
 @media (min-width: 1024.98px) {
   .elementor-element.bt-site-footer-main > .e-con-inner > .elementor-element:not(:last-child)::after {
