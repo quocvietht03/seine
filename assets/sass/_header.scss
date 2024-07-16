@@ -601,7 +601,8 @@ body.admin-bar .dialog-type-lightbox {
       a.elementor-sub-item {
         position: relative;
         padding-left: 50px;
-        font-size: 20px !important;
+        font-family: $text-font !important;
+        font-size: 16px !important;
         color: $color-text;
         border: none;
         &:before {
