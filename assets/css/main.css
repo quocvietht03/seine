@@ -4681,7 +4681,14 @@ body {
     .__bt-loop-product-style .woocommerce-loop-product__thumbnail a.button.loading, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail a.button.loading, .woocommerce .woocommerce-loop-product__thumbnail a.button.loading {
       padding-right: 20px !important; }
       .__bt-loop-product-style .woocommerce-loop-product__thumbnail a.button.loading:after, .bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail a.button.loading:after, .woocommerce .woocommerce-loop-product__thumbnail a.button.loading:after {
-        top: 1em !important; }
+        font-family: WooCommerce;
+        content: "\e01c";
+        vertical-align: top;
+        font-weight: 400;
+        position: absolute;
+        top: .9em;
+        right: 1em;
+        animation: spin 2s linear infinite; }
   .__bt-loop-product-style .woocommerce-loop-product__infor, .bt-elwg-product-loop-item .woocommerce-loop-product__infor, .woocommerce .woocommerce-loop-product__infor {
     padding: 34px 30px 29px 30px;
     width: 100%;

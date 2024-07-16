@@ -54,7 +54,14 @@
       a.button.loading {
         padding-right: 20px !important;
         &:after {
-          top: 1em !important;
+          font-family: WooCommerce;
+          content: "\e01c";
+          vertical-align: top;
+          font-weight: 400;
+          position: absolute;
+          top: .9em;
+          right: 1em;
+          animation: spin 2s linear infinite;
         }
       }
     }
