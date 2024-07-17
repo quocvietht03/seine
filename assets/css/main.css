@@ -6820,6 +6820,10 @@ body {
       z-index: -1;
       transform: translate(-50%, -50%);
       transition: all 0.6s ease; }
+      @media (max-width: 519.98px) {
+        .bt-elwg-service-popular--style1 .bt-post--content:before {
+          width: calc(100% - 20px);
+          height: calc(100% - 20px); } }
   .bt-elwg-service-popular--style1 .bt-post--featured {
     max-width: 70%;
     transform: rotate(45deg);
@@ -6854,7 +6858,7 @@ body {
     @media (max-width: 519.98px) {
       .bt-elwg-service-popular--style1 .bt-post--title {
         font-size: 20px;
-        padding: 10px;
+        padding: 15px;
         left: 5px;
         right: 5px;
         top: 5px;
