@@ -14,9 +14,19 @@ $plugin_includes = array(
     'source'   => IMPORT_REMOTE_SERVER_PLUGIN_DOWNLOAD . 'elementor-pro.zip',
   ),
   array(
+    'name'     => __( 'Smart Slider 3 Pro', 'seine' ),
+    'slug'     => 'nextend-smart-slider3-pro',
+    'source'   => IMPORT_REMOTE_SERVER_PLUGIN_DOWNLOAD . 'nextend-smart-slider3-pro.zip',
+  ),
+  array(
     'name'     => __( 'Advanced Custom Fields PRO', 'seine' ),
     'slug'     => 'advanced-custom-fields-pro',
     'source'   => IMPORT_REMOTE_SERVER_PLUGIN_DOWNLOAD . 'advanced-custom-fields-pro.zip',
+  ),
+  array(
+    'name'     => __( 'Gravity Forms', 'seine' ),
+    'slug'     => 'gravityforms',
+    'source'   => IMPORT_REMOTE_SERVER_PLUGIN_DOWNLOAD . 'gravityforms.zip',
   ),
   array(
     'name'     => __( 'Newsletter', 'seine' ),

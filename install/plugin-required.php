@@ -59,31 +59,43 @@ function seine_register_required_plugins() {
 
   $plugin_includes = array(
     array(
-      'name'     			=> 'Elementor Website Builder',
-      'slug'     			=> 'elementor',
-      'required'     	=> true,
+		'name'     			=> 'Elementor Website Builder',
+		'slug'     			=> 'elementor',
+		'required'     	=> true,
     ),
     array(
-      'name'          => 'Elementor Pro',
-      'slug'          => 'elementor-pro',
-      'source'        => $pathfile . 'elementor-pro.zip',
-      'required'      => true,
+		'name'          => 'Elementor Pro',
+		'slug'          => 'elementor-pro',
+		'source'        => $pathfile . 'elementor-pro.zip',
+		'required'      => true,
+	),
+	array(
+		'name'          => 'Smart Slider 3 Pro',
+		'slug'          => 'nextend-smart-slider3-pro',
+		'source'        => $pathfile . 'nextend-smart-slider3-pro.zip',
+		'required'      => true,
+	),
+	array(
+		'name'          => 'Advanced Custom Fields PRO',
+		'slug'          => 'advanced-custom-fields-pro',
+		'source'        => $pathfile . 'advanced-custom-fields-pro.zip',
+		'required'      => true,
     ),
-		array(
-      'name'          => 'Advanced Custom Fields PRO',
-      'slug'          => 'advanced-custom-fields-pro',
-      'source'        => $pathfile . 'advanced-custom-fields-pro.zip',
-      'required'      => true,
-    ),
-		array(
-      'name'          => 'Newsletter',
-      'slug'          => 'newsletter',
-      'required'      => false,
+	array(
+		'name'          => 'Gravity Forms',
+		'slug'          => 'gravityforms',
+		'source'        => $pathfile . 'gravityforms.zip',
+		'required'      => true,
+	),
+	array(
+		'name'          => 'Newsletter',
+		'slug'          => 'newsletter',
+		'required'      => false,
     ),
     array(
-      'name'          => 'WooCommerce',
-      'slug'          => 'woocommerce',
-      'required'      => false,
+		'name'          => 'WooCommerce',
+		'slug'          => 'woocommerce',
+		'required'      => false,
     ),
 
   );
