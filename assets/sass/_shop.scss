@@ -155,6 +155,9 @@
 }
 .bt-elwg-product-loop-item {
   @extend .__bt-loop-product-style;
+  .woocommerce-loop-product__thumbnail .button {
+    max-width: 200px;
+  }
 }
 .woocommerce {
   @extend .__bt-loop-product-style;

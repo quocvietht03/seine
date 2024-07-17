@@ -1321,6 +1321,9 @@
           height: 100%;
           border-radius: 0;
           transform: translate(-50%, -50%) rotate(45deg);
+          @media (max-width: $break-tl) {
+            transform: translate(-50%, -50%) rotate(90deg);
+          }
         }
       }
       &:nth-child(n + 5) {
@@ -1359,6 +1362,7 @@
         left: 50%;
         @media (max-width: $break-tl) {
           max-width: 100%;
+          overflow: hidden;
         }
         &:before {
           content: "";

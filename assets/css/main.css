@@ -1378,24 +1378,6 @@ img.alignright {
       .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-email::placeholder,
       .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-email::placeholder {
         font-size: 16px; } }
-  .__bt-newsletter-form-style form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form::after {
-    content: "";
-    background-image: url("../images/icon-subcribe.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    position: absolute;
-    top: 105px;
-    left: 38px; }
-    @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form::after, .elementor-widget-shortcode .tnp-subscription-minimal form::after, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form::after {
-        width: 20px;
-        height: 20px;
-        top: 94px;
-        left: 30px; } }
   .__bt-newsletter-form-style form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-submit {
     width: unset;
     min-width: 216px;
@@ -1414,10 +1396,16 @@ img.alignright {
     color: #fff;
     border: 3px solid var(--e-global-color-accent, #E96CA7);
     background: var(--e-global-color-accent, #E96CA7);
+    background-image: url("../images/icon-subcribe.svg");
+    background-position: center left 38px;
+    background-repeat: no-repeat;
+    background-size: 24px;
     z-index: 1; }
     @media (max-width: 767.98px) {
       .__bt-newsletter-form-style form input.tnp-submit, .elementor-widget-shortcode .tnp-subscription-minimal form input.tnp-submit, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form input.tnp-submit {
-        padding: 16px 30px 15px 60px; } }
+        padding: 16px 30px 15px 60px;
+        background-size: 20px;
+        background-position: center left 32px; } }
   .__bt-newsletter-form-style form .tnp-privacy-field label, .elementor-widget-shortcode .tnp-subscription-minimal form .tnp-privacy-field label, .elementor-element.bt-section-hero-home1 .bt-form-subscribe-home1 .tnp-subscription-minimal form .tnp-privacy-field label {
     color: var(--e-global-color-text, #555);
     font-size: 15px;
@@ -1881,7 +1869,7 @@ img.alignright {
   @media (max-width: 1405px) and (min-width: 1024.98px) {
     .elementor-location-header .elementor-element.bt-header-main-nav .elementor-element.bt-col-left {
       padding-right: 30px; } }
-  @media (max-width: 1199.98px) and (min-width: 1024.98px) {
+  @media (max-width: 1230px) and (min-width: 1024.98px) {
     .elementor-location-header .elementor-element.bt-header-main-nav {
       padding-left: 15px;
       padding-right: 15px; }
@@ -2484,7 +2472,8 @@ body.admin-bar .dialog-type-lightbox.bt-menu-mobile-popup {
   position: relative; }
   .gform_wrapper .gform-body .ginput_container_date svg {
     position: absolute;
-    right: 13px; }
+    right: 13px;
+    z-index: -1; }
     .gform_wrapper .gform-body .ginput_container_date svg path {
       fill: var(--e-global-color-accent, #E96CA7); }
 .gform_wrapper .gform_footer input[type="submit"] {
@@ -4759,6 +4748,9 @@ body {
     visibility: visible;
     margin-top: 0; }
 
+.bt-elwg-product-loop-item .woocommerce-loop-product__thumbnail .button {
+  max-width: 200px; }
+
 .woocommerce .bt-site-main {
   padding-bottom: 0; }
 .woocommerce .bt-main-products-ss {
@@ -6781,6 +6773,9 @@ body {
     height: 100%;
     border-radius: 0;
     transform: translate(-50%, -50%) rotate(45deg); }
+    @media (max-width: 1024.98px) {
+      .bt-elwg-service-popular--style1 .bt-post:hover .bt-post--content:before {
+        transform: translate(-50%, -50%) rotate(90deg); } }
   .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 5) {
     margin-top: -4%; }
   .bt-elwg-service-popular--style1 .bt-post:nth-child(n + 8) {
@@ -6811,7 +6806,8 @@ body {
     left: 50%; }
     @media (max-width: 1024.98px) {
       .bt-elwg-service-popular--style1 .bt-post--content {
-        max-width: 100%; } }
+        max-width: 100%;
+        overflow: hidden; } }
     .bt-elwg-service-popular--style1 .bt-post--content:before {
       content: "";
       position: absolute;

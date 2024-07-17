@@ -858,24 +858,6 @@ html :where(.editor-styles-wrapper) {
       .__bt-newsletter-form-style form input.tnp-email,
       .__bt-newsletter-form-style form input.tnp-email::placeholder {
         font-size: 16px; } }
-  .__bt-newsletter-form-style form::after {
-    content: "";
-    background-image: url("../images/icon-subcribe.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    position: absolute;
-    top: 105px;
-    left: 38px; }
-    @media (max-width: 767.98px) {
-      .__bt-newsletter-form-style form::after {
-        width: 20px;
-        height: 20px;
-        top: 94px;
-        left: 30px; } }
   .__bt-newsletter-form-style form input.tnp-submit {
     width: unset;
     min-width: 216px;
@@ -894,10 +876,16 @@ html :where(.editor-styles-wrapper) {
     color: #fff;
     border: 3px solid var(--e-global-color-accent, #E96CA7);
     background: var(--e-global-color-accent, #E96CA7);
+    background-image: url("../images/icon-subcribe.svg");
+    background-position: center left 38px;
+    background-repeat: no-repeat;
+    background-size: 24px;
     z-index: 1; }
     @media (max-width: 767.98px) {
       .__bt-newsletter-form-style form input.tnp-submit {
-        padding: 16px 30px 15px 60px; } }
+        padding: 16px 30px 15px 60px;
+        background-size: 20px;
+        background-position: center left 32px; } }
   .__bt-newsletter-form-style form .tnp-privacy-field label {
     color: var(--e-global-color-text, #555);
     font-size: 15px;
