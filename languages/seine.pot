@@ -2,15 +2,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Seine\n"
-"POT-Creation-Date: 2024-02-15 15:20+0700\n"
-"PO-Revision-Date: 2024-02-15 15:19+0700\n"
+"POT-Creation-Date: 2024-07-17 14:05+0700\n"
+"PO-Revision-Date: 2024-07-17 14:02+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -21,28 +21,20 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: 404.php:10
+#: 404.php:13
 msgid "404 Error"
 msgstr ""
 
-#: 404.php:11
+#: 404.php:14
 msgid "Sorry! The Page Not Found ;("
 msgstr ""
 
-#: 404.php:12
+#: 404.php:15
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr ""
 
 #: comments.php:12
-msgid "Comment (0)"
-msgstr ""
-
-#: comments.php:12
-msgid "Comment (1)"
-msgstr ""
-
-#: comments.php:12
-msgid "Comments (%)"
+msgid "Post Comments:"
 msgstr ""
 
 #: comments.php:16 comments.php:33
@@ -69,7 +61,9 @@ msgstr ""
 msgid "Your name"
 msgstr ""
 
-#: comments.php:57 framework/widgets/site-information/widget.php:43
+#: comments.php:57 framework/widgets/location-list/widget.php:171
+#: framework/widgets/site-information-style-1/widget.php:43
+#: framework/widgets/site-information/widget.php:43
 msgid "Email"
 msgstr ""
 
@@ -130,243 +124,205 @@ msgstr ""
 msgid "Log out?"
 msgstr ""
 
-#: framework/block-load.php:19
+#: framework/acf-options.php:7 framework/acf-options.php:8
+msgid "Theme Options"
+msgstr ""
+
+#: framework/block-load.php:21
 msgid "Widget - Recent Posts"
 msgstr ""
 
-#: framework/block-load.php:20
+#: framework/block-load.php:22
 msgid "Widget - Recent Posts block."
 msgstr ""
 
-#: framework/block-load.php:30
-msgid "Widget - Contact Information"
+#: framework/block-load.php:32
+msgid "Widget - Make Appointment"
 msgstr ""
 
-#: framework/block-load.php:31
-msgid "Widget - Contact Information block."
-msgstr ""
-
-#: framework/block-load.php:41
-msgid "Widget - Instagram Posts"
+#: framework/block-load.php:33
+msgid "Widget - Make Appointment block."
 msgstr ""
 
 #: framework/block-load.php:42
+msgid "Widget - Popular Category Posts"
+msgstr ""
+
+#: framework/block-load.php:43
+msgid "Widget - Popular Category Posts block."
+msgstr ""
+
+#: framework/block-load.php:52
+msgid "Widget - Instagram Posts"
+msgstr ""
+
+#: framework/block-load.php:53
 msgid "Widget - Instagram Posts block."
 msgstr ""
 
-#: framework/block-parts/widget-recent-posts.php:32
+#: framework/block-parts/widget-recent-posts.php:37
 msgid "By "
 msgstr ""
 
-#: framework/comment-rating.php:9
-msgid "Rating"
+#: framework/cpt-brand.php:17
+msgid "Brands"
 msgstr ""
 
-#: framework/cpt-client.php:17
-msgid "Clients"
+#: framework/cpt-brand.php:18
+msgid "Brand"
 msgstr ""
 
-#: framework/cpt-client.php:18
-msgid "Client"
-msgstr ""
-
-#: framework/cpt-client.php:19 framework/cpt-podcast.php:19
-#: framework/cpt-pricing.php:19 framework/cpt-service.php:19
-#: framework/cpt-team.php:19 framework/cpt-testimonial.php:19
+#: framework/cpt-brand.php:19 framework/cpt-gallery.php:20
+#: framework/cpt-service.php:19 framework/cpt-testimonial.php:20
+#: framework/cpt-therapist.php:19
 msgid "Add New"
 msgstr ""
 
-#: framework/cpt-client.php:20 framework/cpt-client.php:23
-msgid "Add New Client"
+#: framework/cpt-brand.php:20 framework/cpt-brand.php:23
+msgid "Add New Brand"
 msgstr ""
 
-#: framework/cpt-client.php:21
-msgid "All Clients"
+#: framework/cpt-brand.php:21
+msgid "All Brands"
 msgstr ""
 
-#: framework/cpt-client.php:22
-msgid "Edit Client"
+#: framework/cpt-brand.php:22
+msgid "Edit Brand"
 msgstr ""
 
-#: framework/cpt-client.php:24 framework/cpt-podcast.php:24
-#: framework/cpt-pricing.php:24 framework/cpt-service.php:24
-#: framework/cpt-team.php:24 framework/cpt-testimonial.php:24
+#: framework/cpt-brand.php:24 framework/cpt-gallery.php:25
+#: framework/cpt-service.php:24 framework/cpt-testimonial.php:25
+#: framework/cpt-therapist.php:24
 msgid "View Item"
 msgstr ""
 
-#: framework/cpt-client.php:25
-msgid "Search Clients"
+#: framework/cpt-brand.php:25
+msgid "Search Brands"
 msgstr ""
 
-#: framework/cpt-client.php:26
-msgid "No client(s) found"
+#: framework/cpt-brand.php:26
+msgid "No brand(s) found"
 msgstr ""
 
-#: framework/cpt-client.php:27
-msgid "No client(s) found in trash"
+#: framework/cpt-brand.php:27
+msgid "No brand(s) found in trash"
 msgstr ""
 
-#: framework/cpt-client.php:67 framework/cpt-podcast.php:66
-#: framework/cpt-pricing.php:67 framework/cpt-service.php:66
-#: framework/cpt-team.php:66 framework/cpt-testimonial.php:67
+#: framework/cpt-brand.php:67 framework/cpt-gallery.php:69
+#: framework/cpt-service.php:67 framework/cpt-testimonial.php:69
+#: framework/cpt-therapist.php:67
 msgid "Tags"
 msgstr ""
 
-#: framework/cpt-client.php:68 framework/cpt-podcast.php:67
-#: framework/cpt-pricing.php:68 framework/cpt-service.php:67
-#: framework/cpt-team.php:67 framework/cpt-testimonial.php:68
+#: framework/cpt-brand.php:68 framework/cpt-gallery.php:70
+#: framework/cpt-service.php:68 framework/cpt-testimonial.php:70
+#: framework/cpt-therapist.php:68
 msgid "Tag"
 msgstr ""
 
-#: framework/cpt-client.php:82
-msgid "Enter the client's name here"
+#: framework/cpt-brand.php:82
+msgid "Enter the brand's name here"
 msgstr ""
 
-#: framework/cpt-client.php:91 framework/cpt-podcast.php:90
-#: framework/cpt-pricing.php:91 framework/cpt-service.php:90
-#: framework/cpt-team.php:90 framework/cpt-testimonial.php:91
-#: framework/widgets/podcast-grid-style-1/widget.php:220
-#: framework/widgets/podcast-grid-style-1/widget.php:345
-#: framework/widgets/podcast-grid-style-2/widget.php:199
-#: framework/widgets/podcast-grid-style-2/widget.php:293
-#: framework/widgets/podcast-grid/widget.php:199
-#: framework/widgets/podcast-grid/widget.php:235
-#: framework/widgets/podcast-loop-item-style-1/widget.php:226
-#: framework/widgets/podcast-loop-item/widget.php:174
+#: framework/cpt-brand.php:91 framework/cpt-gallery.php:94
+#: framework/cpt-service.php:91 framework/cpt-testimonial.php:94
+#: framework/cpt-therapist.php:91 framework/widgets/location-list/widget.php:61
+#: framework/widgets/location-list/widget.php:133
+#: framework/widgets/location-list/widget.php:341
+#: framework/widgets/page-title-bar/widget.php:96
+#: framework/widgets/popular-service-style-1/widget.php:189
+#: framework/widgets/popular-service-style-1/widget.php:336
+#: framework/widgets/popular-services/widget.php:225
+#: framework/widgets/popular-services/widget.php:363
 #: framework/widgets/post-grid-style-1/widget.php:220
 #: framework/widgets/post-grid-style-1/widget.php:502
-#: framework/widgets/post-grid-style-2/widget.php:199
-#: framework/widgets/post-grid-style-2/widget.php:335
-#: framework/widgets/post-grid/widget.php:220
-#: framework/widgets/post-grid/widget.php:344
-#: framework/widgets/post-loop-item-style-1/widget.php:273
-#: framework/widgets/post-loop-item-style-2/widget.php:186
-#: framework/widgets/post-loop-item/widget.php:174
-#: framework/widgets/pricing-tabs/widget.php:181
-#: framework/widgets/pricing-tabs/widget.php:427
-#: framework/widgets/pricing-tabs/widget.php:523
-#: framework/widgets/service-loop-item/widget.php:174
-#: framework/widgets/site-social/widget.php:37
+#: framework/widgets/post-grid/widget.php:230
+#: framework/widgets/post-grid/widget.php:357
+#: framework/widgets/post-loop-item-style-1/widget.php:228
+#: framework/widgets/post-loop-item/widget.php:148
+#: framework/widgets/service-loop-item/widget.php:148
+#: framework/widgets/services-list/widget.php:168
+#: framework/widgets/services-list/widget.php:253
+#: framework/widgets/site-information-style-1/widget.php:175
+#: framework/widgets/site-social-style-2/widget.php:37
+#: framework/widgets/site-social/widget.php:44
 #: framework/widgets/step-list/widget.php:67
 #: framework/widgets/step-list/widget.php:350
-#: framework/widgets/team-loop-item/widget.php:232
-#: framework/widgets/testimonial-loop-item/widget.php:167
+#: framework/widgets/testimonial-loop-item/widget.php:117
 #: framework/widgets/testimonial-slider/widget.php:181
 #: framework/widgets/testimonial-slider/widget.php:337
+#: framework/widgets/therapist-loop-item/widget.php:139
+#: framework/widgets/time-list/widget.php:87
+#: framework/widgets/time-list/widget.php:211
 msgid "Title"
 msgstr ""
 
-#: framework/cpt-client.php:92 framework/cpt-podcast.php:91
-#: framework/cpt-pricing.php:92 framework/cpt-service.php:91
-#: framework/cpt-team.php:91 framework/cpt-testimonial.php:92
+#: framework/cpt-brand.php:92 framework/cpt-gallery.php:95
+#: framework/cpt-service.php:92 framework/cpt-testimonial.php:95
+#: framework/cpt-therapist.php:92
 msgid "Thumbnail"
 msgstr ""
 
-#: framework/cpt-client.php:93 framework/cpt-podcast.php:92
-#: framework/cpt-pricing.php:93 framework/cpt-service.php:92
-#: framework/cpt-team.php:92 framework/cpt-testimonial.php:93
+#: framework/cpt-brand.php:93 framework/cpt-gallery.php:96
+#: framework/cpt-service.php:93 framework/cpt-testimonial.php:96
+#: framework/cpt-therapist.php:93
 msgid "Categories"
 msgstr ""
 
-#: framework/cpt-client.php:94 framework/cpt-podcast.php:93
-#: framework/cpt-pricing.php:94 framework/cpt-service.php:93
-#: framework/cpt-team.php:93 framework/cpt-testimonial.php:94
-#: framework/widgets/podcast-grid-style-1/widget.php:219
-#: framework/widgets/podcast-grid-style-2/widget.php:198
-#: framework/widgets/podcast-grid/widget.php:198
+#: framework/cpt-brand.php:94 framework/cpt-gallery.php:97
+#: framework/cpt-service.php:94 framework/cpt-testimonial.php:97
+#: framework/cpt-therapist.php:94
+#: framework/widgets/popular-service-style-1/widget.php:188
+#: framework/widgets/popular-services/widget.php:224
 #: framework/widgets/post-grid-style-1/widget.php:219
 #: framework/widgets/post-grid-style-1/widget.php:460
-#: framework/widgets/post-grid-style-2/widget.php:198
-#: framework/widgets/post-grid-style-2/widget.php:293
-#: framework/widgets/post-grid/widget.php:219
-#: framework/widgets/post-grid/widget.php:314
-#: framework/widgets/post-loop-item-style-1/widget.php:231
-#: framework/widgets/post-loop-item-style-2/widget.php:144
-#: framework/widgets/post-loop-item/widget.php:144
-#: framework/widgets/pricing-tabs/widget.php:180
+#: framework/widgets/post-grid/widget.php:229
+#: framework/widgets/post-grid/widget.php:327
+#: framework/widgets/post-loop-item-style-1/widget.php:185
+#: framework/widgets/services-list/widget.php:167
 #: framework/widgets/testimonial-slider/widget.php:180
 msgid "Date"
 msgstr ""
 
-#: framework/cpt-client.php:117 framework/cpt-client.php:127
-#: framework/cpt-podcast.php:116 framework/cpt-podcast.php:126
-#: framework/cpt-pricing.php:117 framework/cpt-pricing.php:127
-#: framework/cpt-service.php:116 framework/cpt-service.php:126
-#: framework/cpt-team.php:116 framework/cpt-team.php:126
-#: framework/cpt-testimonial.php:117 framework/cpt-testimonial.php:127
+#: framework/cpt-brand.php:117 framework/cpt-brand.php:127
+#: framework/cpt-gallery.php:121 framework/cpt-gallery.php:131
+#: framework/cpt-service.php:117 framework/cpt-service.php:127
+#: framework/cpt-testimonial.php:121 framework/cpt-testimonial.php:131
+#: framework/cpt-therapist.php:117 framework/cpt-therapist.php:127
 msgid "None"
 msgstr ""
 
-#: framework/cpt-podcast.php:17
-msgid "Podcasts"
+#: framework/cpt-gallery.php:18 framework/cpt-gallery.php:19
+#: framework/template-helper.php:145
+msgid "Gallery"
 msgstr ""
 
-#: framework/cpt-podcast.php:18
-msgid "Podcast"
+#: framework/cpt-gallery.php:21 framework/cpt-gallery.php:24
+msgid "Add New Gallery"
 msgstr ""
 
-#: framework/cpt-podcast.php:20 framework/cpt-podcast.php:23
-msgid "Add New Podcast"
+#: framework/cpt-gallery.php:22
+msgid "All Gallery"
 msgstr ""
 
-#: framework/cpt-podcast.php:21
-msgid "All Podcasts"
+#: framework/cpt-gallery.php:23
+msgid "Edit Gallery"
 msgstr ""
 
-#: framework/cpt-podcast.php:22
-msgid "Edit Podcast"
+#: framework/cpt-gallery.php:26
+msgid "Search Gallery"
 msgstr ""
 
-#: framework/cpt-podcast.php:25
-msgid "Search Podcasts"
+#: framework/cpt-gallery.php:27
+msgid "No gallery(s) found"
 msgstr ""
 
-#: framework/cpt-podcast.php:26
-msgid "No podcast(s) found"
+#: framework/cpt-gallery.php:28
+msgid "No gallery(s) found in trash"
 msgstr ""
 
-#: framework/cpt-podcast.php:27
-msgid "No podcast(s) found in trash"
-msgstr ""
-
-#: framework/cpt-podcast.php:81
-msgid "Enter the podcast's name here"
-msgstr ""
-
-#: framework/cpt-pricing.php:17
-msgid "Pricings"
-msgstr ""
-
-#: framework/cpt-pricing.php:18
-msgid "Pricing"
-msgstr ""
-
-#: framework/cpt-pricing.php:20 framework/cpt-pricing.php:23
-msgid "Add New Pricing"
-msgstr ""
-
-#: framework/cpt-pricing.php:21
-msgid "All Pricings"
-msgstr ""
-
-#: framework/cpt-pricing.php:22
-msgid "Edit Pricing"
-msgstr ""
-
-#: framework/cpt-pricing.php:25
-msgid "Search Pricings"
-msgstr ""
-
-#: framework/cpt-pricing.php:26
-msgid "No pricing(s) found"
-msgstr ""
-
-#: framework/cpt-pricing.php:27
-msgid "No pricing(s) found in trash"
-msgstr ""
-
-#: framework/cpt-pricing.php:82
-msgid "Enter the pricing's name here"
+#: framework/cpt-gallery.php:84
+msgid "Enter the gallery's name here"
 msgstr ""
 
 #: framework/cpt-service.php:17
@@ -401,293 +357,311 @@ msgstr ""
 msgid "No service(s) found in trash"
 msgstr ""
 
-#: framework/cpt-service.php:81
+#: framework/cpt-service.php:82
 msgid "Enter the service's name here"
 msgstr ""
 
-#: framework/cpt-team.php:17
-msgid "Teams"
-msgstr ""
-
-#: framework/cpt-team.php:18
-msgid "Team"
-msgstr ""
-
-#: framework/cpt-team.php:20 framework/cpt-team.php:23
-msgid "Add New Team"
-msgstr ""
-
-#: framework/cpt-team.php:21
-msgid "All Teams"
-msgstr ""
-
-#: framework/cpt-team.php:22
-msgid "Edit Team"
-msgstr ""
-
-#: framework/cpt-team.php:25
-msgid "Search Teams"
-msgstr ""
-
-#: framework/cpt-team.php:26
-msgid "No team(s) found"
-msgstr ""
-
-#: framework/cpt-team.php:27
-msgid "No team(s) found in trash"
-msgstr ""
-
-#: framework/cpt-team.php:81
-msgid "Enter the member's name here"
-msgstr ""
-
-#: framework/cpt-testimonial.php:17
+#: framework/cpt-testimonial.php:18
 msgid "Testimonials"
 msgstr ""
 
-#: framework/cpt-testimonial.php:18
+#: framework/cpt-testimonial.php:19
 msgid "Testimonial"
 msgstr ""
 
-#: framework/cpt-testimonial.php:20 framework/cpt-testimonial.php:23
+#: framework/cpt-testimonial.php:21 framework/cpt-testimonial.php:24
 msgid "Add New Testimonial"
 msgstr ""
 
-#: framework/cpt-testimonial.php:21
+#: framework/cpt-testimonial.php:22
 msgid "All Testimonials"
 msgstr ""
 
-#: framework/cpt-testimonial.php:22
+#: framework/cpt-testimonial.php:23
 msgid "Edit Testimonial"
 msgstr ""
 
-#: framework/cpt-testimonial.php:25
+#: framework/cpt-testimonial.php:26
 msgid "Search Testimonials"
 msgstr ""
 
-#: framework/cpt-testimonial.php:26
+#: framework/cpt-testimonial.php:27
 msgid "No testimonial(s) found"
 msgstr ""
 
-#: framework/cpt-testimonial.php:27
+#: framework/cpt-testimonial.php:28
 msgid "No testimonial(s) found in trash"
 msgstr ""
 
-#: framework/cpt-testimonial.php:82
+#: framework/cpt-testimonial.php:84
 msgid "Enter the testimonial's name here"
+msgstr ""
+
+#: framework/cpt-therapist.php:17
+msgid "Therapists"
+msgstr ""
+
+#: framework/cpt-therapist.php:18
+msgid "Therapist"
+msgstr ""
+
+#: framework/cpt-therapist.php:20 framework/cpt-therapist.php:23
+msgid "Add New Therapist"
+msgstr ""
+
+#: framework/cpt-therapist.php:21
+msgid "All Therapist"
+msgstr ""
+
+#: framework/cpt-therapist.php:22
+msgid "Edit Therapist"
+msgstr ""
+
+#: framework/cpt-therapist.php:25
+msgid "Search Therapist"
+msgstr ""
+
+#: framework/cpt-therapist.php:26
+msgid "No therapist(s) found"
+msgstr ""
+
+#: framework/cpt-therapist.php:27
+msgid "No therapist(s) found in trash"
+msgstr ""
+
+#: framework/cpt-therapist.php:82
+msgid "Enter the therapist's name here"
 msgstr ""
 
 #: framework/template-helper.php:24
 msgid "Primary Menu"
 msgstr ""
 
-#: framework/template-helper.php:60 framework/template-helper.php:61
-msgid "Theme Options"
-msgstr ""
-
-#: framework/template-helper.php:86
+#: framework/template-helper.php:73
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: framework/template-helper.php:99
+#: framework/template-helper.php:86
 msgid "Logo"
 msgstr ""
 
-#: framework/template-helper.php:126 framework/templates/site-titlebar.php:36
+#: framework/template-helper.php:112
 #: framework/widgets/page-breadcrumb/widget.php:109
 msgid "Home"
 msgstr ""
 
-#: framework/template-helper.php:128
+#: framework/template-helper.php:114
 msgid "Blog"
 msgstr ""
 
-#: framework/template-helper.php:130
+#: framework/template-helper.php:116
 msgid "Search"
 msgstr ""
 
-#: framework/template-helper.php:132
+#: framework/template-helper.php:118
 msgid "404"
 msgstr ""
 
-#: framework/template-helper.php:149
+#: framework/template-helper.php:135
 #, php-format
 msgid "Author: %s"
 msgstr ""
 
-#: framework/template-helper.php:151
+#: framework/template-helper.php:137
 #, php-format
 msgid "Day: %s"
 msgstr ""
 
-#: framework/template-helper.php:153
+#: framework/template-helper.php:139
 #, php-format
 msgid "Month: %s"
 msgstr ""
 
-#: framework/template-helper.php:155
+#: framework/template-helper.php:141
 #, php-format
 msgid "Year: %s"
 msgstr ""
 
-#: framework/template-helper.php:157
+#: framework/template-helper.php:143
 msgid "Aside"
 msgstr ""
 
-#: framework/template-helper.php:159
-msgid "Gallery"
-msgstr ""
-
-#: framework/template-helper.php:161
-#: framework/widgets/podcast-grid-style-2/widget.php:227
-#: framework/widgets/podcast-loop-item-style-1/widget.php:78
+#: framework/template-helper.php:147
+#: framework/widgets/popular-service-style-1/widget.php:235
+#: framework/widgets/popular-services/widget.php:262
 #: framework/widgets/post-grid-style-1/widget.php:248
 #: framework/widgets/post-grid-style-1/widget.php:394
-#: framework/widgets/post-grid-style-2/widget.php:227
-#: framework/widgets/post-grid/widget.php:248
-#: framework/widgets/post-loop-item-style-1/widget.php:165
-#: framework/widgets/post-loop-item-style-2/widget.php:78
+#: framework/widgets/post-grid/widget.php:259
+#: framework/widgets/post-loop-item-style-1/widget.php:78
 #: framework/widgets/post-loop-item/widget.php:78
+#: framework/widgets/service-loop-item/widget.php:78
 #: framework/widgets/step-list/widget.php:48
 #: framework/widgets/step-list/widget.php:217
-#: framework/widgets/team-loop-item/widget.php:166
+#: framework/widgets/therapist-loop-item/widget.php:78
 msgid "Image"
 msgstr ""
 
-#: framework/template-helper.php:163
+#: framework/template-helper.php:149
 msgid "Video"
 msgstr ""
 
-#: framework/template-helper.php:165
+#: framework/template-helper.php:151
 msgid "Quote"
 msgstr ""
 
-#: framework/template-helper.php:167
-#: framework/widgets/pricing-tabs/widget.php:789
+#: framework/template-helper.php:153
+#: framework/widgets/highlighted-heading-style-1/widget.php:95
+#: framework/widgets/highlighted-heading/widget.php:89
 msgid "Link"
 msgstr ""
 
-#: framework/template-helper.php:169
+#: framework/template-helper.php:155
 #: install/class-tgm-plugin-activation.php:2627
 msgid "Status"
 msgstr ""
 
-#: framework/template-helper.php:171
+#: framework/template-helper.php:157
 msgid "Audio"
 msgstr ""
 
-#: framework/template-helper.php:173
+#: framework/template-helper.php:159
 msgid "Chat"
 msgstr ""
 
-#: framework/template-helper.php:175
+#: framework/template-helper.php:161
 msgid "Archive"
 msgstr ""
 
-#: framework/template-helper.php:201
+#: framework/template-helper.php:175
+msgid "Blog Details"
+msgstr ""
+
+#: framework/template-helper.php:177
+msgid "SPA Therapist"
+msgstr ""
+
+#: framework/template-helper.php:179
+msgid "SPA Services"
+msgstr ""
+
+#: framework/template-helper.php:181
+msgid "Product Details"
+msgstr ""
+
+#: framework/template-helper.php:204
 msgid "Archive by category: "
 msgstr ""
 
-#: framework/template-helper.php:203
+#: framework/template-helper.php:206
 msgid "Posts tagged: "
 msgstr ""
 
-#: framework/template-helper.php:205
+#: framework/template-helper.php:208
+msgid "Archive: "
+msgstr ""
+
+#: framework/template-helper.php:210
 msgid "Archive by taxonomy: "
 msgstr ""
 
-#: framework/template-helper.php:207
+#: framework/template-helper.php:212
 msgid "Search results for: "
 msgstr ""
 
-#: framework/template-helper.php:265
+#: framework/template-helper.php:270
 msgid "Articles posted by "
 msgstr ""
 
-#: framework/template-helper.php:267
+#: framework/template-helper.php:272
 msgid "Error 404"
 msgstr ""
 
-#: framework/template-helper.php:272
+#: framework/template-helper.php:277
 msgid "Page"
 msgstr ""
 
-#: framework/template-helper.php:289
+#: framework/template-helper.php:294
 msgid "Previous Post"
 msgstr ""
 
-#: framework/template-helper.php:290
+#: framework/template-helper.php:295
 msgid "Next Post"
 msgstr ""
 
-#: framework/template-helper.php:315 framework/template-helper.php:360
-#: woocommerce/shop-helper.php:104
+#: framework/template-helper.php:319 framework/template-helper.php:364
+#: woocommerce/shop-helper.php:111
 msgid "Prev"
 msgstr ""
 
-#: framework/template-helper.php:316 framework/template-helper.php:361
-#: woocommerce/shop-helper.php:105
+#: framework/template-helper.php:320 framework/template-helper.php:365
+#: woocommerce/shop-helper.php:112
 msgid "Next"
 msgstr ""
 
-#: framework/templates/post-helper.php:28
+#: framework/templates/post-helper.php:30
 msgid "Views"
 msgstr ""
 
-#: framework/templates/post-helper.php:28
+#: framework/templates/post-helper.php:30
 msgid "View"
 msgstr ""
 
-#: framework/templates/post-helper.php:195
+#: framework/templates/post-helper.php:205
+#: framework/templates/post-helper.php:410
+msgid "By"
+msgstr ""
+
+#: framework/templates/post-helper.php:222
 msgid "0 Comments"
 msgstr ""
 
-#: framework/templates/post-helper.php:195
+#: framework/templates/post-helper.php:222
 msgid "1 Comment"
 msgstr ""
 
-#: framework/templates/post-helper.php:195
+#: framework/templates/post-helper.php:222
 msgid "% Comments"
 msgstr ""
 
-#: framework/templates/post-helper.php:217 page.php:16
+#: framework/templates/post-helper.php:267 page.php:16
 msgid "Pages:"
 msgstr ""
 
-#: framework/templates/post-helper.php:244
-msgid "Tags: "
-msgstr ""
-
-#: framework/templates/post-helper.php:260
-msgid "Facebook"
-msgstr ""
-
-#: framework/templates/post-helper.php:267
-msgid "Twitter"
-msgstr ""
-
-#: framework/templates/post-helper.php:274
-msgid "Google Plus"
-msgstr ""
-
-#: framework/templates/post-helper.php:281
+#: framework/templates/post-helper.php:316
 msgid "Linkedin"
 msgstr ""
 
-#: framework/templates/post-helper.php:288
-msgid "Pinterest"
+#: framework/templates/post-helper.php:323
+msgid "Facebook"
 msgstr ""
 
-#: framework/templates/post-helper.php:301
+#: framework/templates/post-helper.php:331
+msgid "Google Plus"
+msgstr ""
+
+#: framework/templates/post-helper.php:338
+msgid "Twitter"
+msgstr ""
+
+#: framework/templates/post-helper.php:350
+#: framework/templates/post-helper.php:357
 msgid "Share: "
 msgstr ""
 
-#: framework/templates/post-helper.php:435
-msgid "Related Posts"
+#: framework/templates/post-helper.php:541
+msgid "From The Blog"
 msgstr ""
 
-#: framework/templates/post-helper.php:511
+#: framework/templates/post-helper.php:542
+msgid "Related News "
+msgstr ""
+
+#: framework/templates/post-helper.php:542
+msgid "& Articles"
+msgstr ""
+
+#: framework/templates/post-helper.php:621
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
@@ -715,15 +689,6 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: framework/templates/service-style.php:28
-#: framework/widgets/step-list/widget.php:113
-#: framework/widgets/step-list/widget.php:121
-#: framework/widgets/step-list/widget.php:129
-#: framework/widgets/step-list/widget.php:137
-#: framework/widgets/step-list/widget.php:145
-msgid "Read More"
-msgstr ""
-
 #: framework/templates/site-footer.php:13
 #, php-format
 msgid "© All right reserved by %s."
@@ -733,9 +698,131 @@ msgstr ""
 msgid "https://themeforest.net/user/bearsthemes/"
 msgstr ""
 
+#: framework/templates/site-information-style.php:26
+#: framework/widgets/location-list/widget.php:763 single-therapist.php:65
+msgid "Phone:"
+msgstr ""
+
+#: framework/templates/site-information-style.php:63
+#: framework/widgets/location-list/widget.php:738 single-therapist.php:83
+msgid "Email:"
+msgstr ""
+
+#: framework/templates/site-information-style.php:109 single-therapist.php:123
+msgid "Address:"
+msgstr ""
+
 #. Theme Name of the plugin/theme
-#: framework/widget-load.php:141
+#: framework/widget-load.php:151
 msgid "Seine"
+msgstr ""
+
+#: framework/widgets/brand-loop-item/widget.php:19
+msgid "Brand Loop Item"
+msgstr ""
+
+#: framework/widgets/brand-loop-item/widget.php:39
+#: framework/widgets/contact-information/widget.php:139
+#: framework/widgets/post-grid-style-1/widget.php:306
+#: framework/widgets/pricing-item-style-1/widget.php:240
+#: framework/widgets/pricing-item/widget.php:216
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:45
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:38
+#: framework/widgets/testimonial-loop-item/widget.php:39
+#: framework/widgets/testimonial-slider/widget.php:209
+msgid "Box"
+msgstr ""
+
+#: framework/widgets/brand-loop-item/widget.php:47
+#: framework/widgets/contact-information/widget.php:147
+#: framework/widgets/location-list/widget.php:275
+#: framework/widgets/post-grid-style-1/widget.php:314
+#: framework/widgets/step-list/widget.php:225
+#: framework/widgets/step-list/widget.php:428
+#: framework/widgets/step-list/widget.php:607
+#: framework/widgets/testimonial-slider/widget.php:217
+msgid "Border Width"
+msgstr ""
+
+#: framework/widgets/brand-loop-item/widget.php:65
+#: framework/widgets/contact-information/widget.php:165
+#: framework/widgets/popular-service-style-1/widget.php:243
+#: framework/widgets/popular-service-style-1/widget.php:303
+#: framework/widgets/popular-services/widget.php:270
+#: framework/widgets/popular-services/widget.php:330
+#: framework/widgets/post-grid-style-1/widget.php:256
+#: framework/widgets/post-grid-style-1/widget.php:332
+#: framework/widgets/post-grid-style-1/widget.php:402
+#: framework/widgets/post-grid/widget.php:267
+#: framework/widgets/post-loop-item-style-1/widget.php:86
+#: framework/widgets/post-loop-item/widget.php:86
+#: framework/widgets/pricing-item-style-1/widget.php:249
+#: framework/widgets/pricing-item/widget.php:225
+#: framework/widgets/service-loop-item/widget.php:86
+#: framework/widgets/step-list/widget.php:243
+#: framework/widgets/step-list/widget.php:446
+#: framework/widgets/step-list/widget.php:625
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:64
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:57
+#: framework/widgets/testimonial-loop-item/widget.php:48
+#: framework/widgets/testimonial-slider/widget.php:235
+#: framework/widgets/therapist-loop-item/widget.php:86
+msgid "Border Radius"
+msgstr ""
+
+#: framework/widgets/brand-loop-item/widget.php:77
+#: framework/widgets/contact-information/widget.php:177
+#: framework/widgets/post-grid-style-1/widget.php:344
+#: framework/widgets/step-list/widget.php:458
+#: framework/widgets/step-list/widget.php:637
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:76
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:69
+#: framework/widgets/testimonial-loop-item/widget.php:60
+#: framework/widgets/testimonial-slider/widget.php:247
+msgid "Padding"
+msgstr ""
+
+#: framework/widgets/brand-loop-item/widget.php:103
+#: framework/widgets/buble-background/widget.php:48
+#: framework/widgets/contact-information/widget.php:203
+#: framework/widgets/contact-information/widget.php:302
+#: framework/widgets/contact-information/widget.php:334
+#: framework/widgets/location-list/widget.php:420
+#: framework/widgets/location-list/widget.php:463
+#: framework/widgets/post-grid-style-1/widget.php:370
+#: framework/widgets/post-grid-style-1/widget.php:480
+#: framework/widgets/post-grid-style-1/widget.php:576
+#: framework/widgets/post-loop-item-style-1/widget.php:163
+#: framework/widgets/post-loop-item-style-1/widget.php:206
+#: framework/widgets/pricing-item-style-1/widget.php:573
+#: framework/widgets/pricing-item-style-1/widget.php:606
+#: framework/widgets/pricing-item/widget.php:498
+#: framework/widgets/pricing-item/widget.php:531
+#: framework/widgets/service-loop-item/widget.php:277
+#: framework/widgets/service-loop-item/widget.php:309
+#: framework/widgets/step-list/widget.php:497
+#: framework/widgets/step-list/widget.php:549
+#: framework/widgets/step-list/widget.php:688
+#: framework/widgets/step-list/widget.php:752
+#: framework/widgets/testimonial-slider/widget.php:273
+#: framework/widgets/testimonial-slider/widget.php:325
+#: framework/widgets/testimonial-slider/widget.php:459
+#: framework/widgets/testimonial-slider/widget.php:513
+#: framework/widgets/testimonial-slider/widget.php:545
+msgid "Background Color"
+msgstr ""
+
+#: framework/widgets/brand-loop-item/widget.php:114
+#: framework/widgets/contact-information/widget.php:214
+#: framework/widgets/location-list/widget.php:301
+#: framework/widgets/post-grid-style-1/widget.php:381
+#: framework/widgets/step-list/widget.php:263
+#: framework/widgets/step-list/widget.php:509
+#: framework/widgets/step-list/widget.php:561
+#: framework/widgets/step-list/widget.php:700
+#: framework/widgets/step-list/widget.php:764
+#: framework/widgets/testimonial-slider/widget.php:284
+msgid "Border Color"
 msgstr ""
 
 #: framework/widgets/buble-background/widget.php:20
@@ -747,82 +834,53 @@ msgstr ""
 #: framework/widgets/contact-information/widget.php:230
 #: framework/widgets/instagram-posts/widget.php:30
 #: framework/widgets/instagram-posts/widget.php:107
+#: framework/widgets/location-list/widget.php:44
+#: framework/widgets/location-list/widget.php:114
+#: framework/widgets/location-list/widget.php:489
 #: framework/widgets/orbit-circle/widget.php:39
 #: framework/widgets/page-breadcrumb/widget.php:39
+#: framework/widgets/page-title-bar/widget.php:41
+#: framework/widgets/page-title-bar/widget.php:62
 #: framework/widgets/pattern-background/widget.php:40
-#: framework/widgets/podcast-grid-style-1/widget.php:337
-#: framework/widgets/podcast-grid-style-2/widget.php:285
-#: framework/widgets/podcast-grid/widget.php:227
-#: framework/widgets/podcast-loop-item-style-1/widget.php:34
-#: framework/widgets/podcast-loop-item-style-1/widget.php:136
-#: framework/widgets/podcast-loop-item/widget.php:34
-#: framework/widgets/podcast-loop-item/widget.php:166
+#: framework/widgets/popular-service-style-1/widget.php:328
+#: framework/widgets/popular-services/widget.php:355
 #: framework/widgets/post-grid-style-1/widget.php:452
-#: framework/widgets/post-grid-style-2/widget.php:285
-#: framework/widgets/post-grid/widget.php:306
+#: framework/widgets/post-grid/widget.php:319
 #: framework/widgets/post-loop-item-style-1/widget.php:34
-#: framework/widgets/post-loop-item-style-1/widget.php:223
-#: framework/widgets/post-loop-item-style-2/widget.php:34
-#: framework/widgets/post-loop-item-style-2/widget.php:136
-#: framework/widgets/post-loop-item/widget.php:34
-#: framework/widgets/post-loop-item/widget.php:136
-#: framework/widgets/pricing-tabs/widget.php:515
-#: framework/widgets/service-loop-item/widget.php:34
-#: framework/widgets/service-loop-item/widget.php:166
+#: framework/widgets/post-loop-item-style-1/widget.php:136
+#: framework/widgets/post-loop-item/widget.php:35
+#: framework/widgets/post-loop-item/widget.php:132
+#: framework/widgets/pricing-item-style-1/widget.php:42
+#: framework/widgets/pricing-item-style-1/widget.php:139
+#: framework/widgets/pricing-item-style-1/widget.php:429
+#: framework/widgets/pricing-item/widget.php:42
+#: framework/widgets/pricing-item/widget.php:129
+#: framework/widgets/pricing-item/widget.php:405
+#: framework/widgets/service-loop-item/widget.php:35
+#: framework/widgets/service-loop-item/widget.php:132
+#: framework/widgets/services-list/widget.php:207
+#: framework/widgets/site-box-phone/widget.php:42
 #: framework/widgets/site-copyright/widget.php:30
 #: framework/widgets/site-copyright/widget.php:92
+#: framework/widgets/site-information-style-1/widget.php:30
+#: framework/widgets/site-information-style-1/widget.php:139
 #: framework/widgets/site-information/widget.php:30
-#: framework/widgets/site-information/widget.php:139
-#: framework/widgets/site-social/widget.php:30
-#: framework/widgets/site-social/widget.php:90
+#: framework/widgets/site-information/widget.php:152
+#: framework/widgets/site-social-style-2/widget.php:30
+#: framework/widgets/site-social-style-2/widget.php:89
+#: framework/widgets/site-social/widget.php:37
+#: framework/widgets/site-social/widget.php:99
 #: framework/widgets/step-list/widget.php:40
 #: framework/widgets/step-list/widget.php:312
-#: framework/widgets/team-loop-item/widget.php:34
-#: framework/widgets/team-loop-item/widget.php:224
-#: framework/widgets/testimonial-loop-item/widget.php:127
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:104
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:97
+#: framework/widgets/testimonial-loop-item/widget.php:89
 #: framework/widgets/testimonial-slider/widget.php:297
+#: framework/widgets/therapist-loop-item/widget.php:35
+#: framework/widgets/therapist-loop-item/widget.php:132
+#: framework/widgets/time-list/widget.php:44
+#: framework/widgets/time-list/widget.php:203
 msgid "Content"
-msgstr ""
-
-#: framework/widgets/buble-background/widget.php:48
-#: framework/widgets/client-loop-item/widget.php:103
-#: framework/widgets/contact-information/widget.php:203
-#: framework/widgets/contact-information/widget.php:302
-#: framework/widgets/contact-information/widget.php:334
-#: framework/widgets/podcast-grid-style-1/widget.php:313
-#: framework/widgets/podcast-loop-item/widget.php:142
-#: framework/widgets/post-grid-style-1/widget.php:370
-#: framework/widgets/post-grid-style-1/widget.php:480
-#: framework/widgets/post-grid-style-1/widget.php:576
-#: framework/widgets/post-grid-style-2/widget.php:313
-#: framework/widgets/post-loop-item-style-1/widget.php:141
-#: framework/widgets/post-loop-item-style-1/widget.php:251
-#: framework/widgets/post-loop-item-style-1/widget.php:347
-#: framework/widgets/post-loop-item-style-2/widget.php:164
-#: framework/widgets/pricing-tabs/widget.php:273
-#: framework/widgets/pricing-tabs/widget.php:305
-#: framework/widgets/pricing-tabs/widget.php:355
-#: framework/widgets/pricing-tabs/widget.php:399
-#: framework/widgets/pricing-tabs/widget.php:465
-#: framework/widgets/pricing-tabs/widget.php:497
-#: framework/widgets/pricing-tabs/widget.php:702
-#: framework/widgets/pricing-tabs/widget.php:754
-#: framework/widgets/pricing-tabs/widget.php:851
-#: framework/widgets/service-loop-item/widget.php:142
-#: framework/widgets/step-list/widget.php:497
-#: framework/widgets/step-list/widget.php:549
-#: framework/widgets/step-list/widget.php:688
-#: framework/widgets/step-list/widget.php:752
-#: framework/widgets/team-loop-item/widget.php:142
-#: framework/widgets/testimonial-loop-item/widget.php:103
-#: framework/widgets/testimonial-loop-item/widget.php:155
-#: framework/widgets/testimonial-loop-item/widget.php:289
-#: framework/widgets/testimonial-slider/widget.php:273
-#: framework/widgets/testimonial-slider/widget.php:325
-#: framework/widgets/testimonial-slider/widget.php:459
-#: framework/widgets/testimonial-slider/widget.php:513
-#: framework/widgets/testimonial-slider/widget.php:545
-msgid "Background Color"
 msgstr ""
 
 #: framework/widgets/buble-background/widget.php:60
@@ -830,72 +888,61 @@ msgid "Buble"
 msgstr ""
 
 #: framework/widgets/buble-background/widget.php:69
-#: framework/widgets/podcast-grid-style-1/widget.php:353
-#: framework/widgets/podcast-grid-style-1/widget.php:395
-#: framework/widgets/podcast-grid-style-1/widget.php:442
-#: framework/widgets/podcast-grid-style-2/widget.php:301
-#: framework/widgets/podcast-grid-style-2/widget.php:343
-#: framework/widgets/podcast-grid-style-2/widget.php:385
-#: framework/widgets/podcast-grid-style-2/widget.php:432
-#: framework/widgets/podcast-grid/widget.php:243
-#: framework/widgets/podcast-grid/widget.php:285
-#: framework/widgets/podcast-grid/widget.php:332
-#: framework/widgets/podcast-loop-item-style-1/widget.php:152
-#: framework/widgets/podcast-loop-item-style-1/widget.php:163
-#: framework/widgets/podcast-loop-item-style-1/widget.php:193
-#: framework/widgets/podcast-loop-item-style-1/widget.php:204
-#: framework/widgets/podcast-loop-item-style-1/widget.php:234
-#: framework/widgets/podcast-loop-item/widget.php:182
-#: framework/widgets/podcast-loop-item/widget.php:224
+#: framework/widgets/highlighted-heading-style-1/widget.php:163
+#: framework/widgets/highlighted-heading-style-1/widget.php:198
+#: framework/widgets/highlighted-heading/widget.php:157
+#: framework/widgets/highlighted-heading/widget.php:192
+#: framework/widgets/location-list/widget.php:348
+#: framework/widgets/location-list/widget.php:379
+#: framework/widgets/location-list/widget.php:503
+#: framework/widgets/page-title-bar/widget.php:76
+#: framework/widgets/page-title-bar/widget.php:103
+#: framework/widgets/page-title-bar/widget.php:131
+#: framework/widgets/popular-service-style-1/widget.php:344
+#: framework/widgets/popular-services/widget.php:371
 #: framework/widgets/post-grid-style-1/widget.php:468
 #: framework/widgets/post-grid-style-1/widget.php:510
 #: framework/widgets/post-grid-style-1/widget.php:552
 #: framework/widgets/post-grid-style-1/widget.php:611
-#: framework/widgets/post-grid-style-2/widget.php:301
-#: framework/widgets/post-grid-style-2/widget.php:343
-#: framework/widgets/post-grid-style-2/widget.php:385
-#: framework/widgets/post-grid-style-2/widget.php:432
-#: framework/widgets/post-grid/widget.php:322
-#: framework/widgets/post-grid/widget.php:352
-#: framework/widgets/post-grid/widget.php:394
-#: framework/widgets/post-grid/widget.php:441
-#: framework/widgets/post-loop-item-style-1/widget.php:239
-#: framework/widgets/post-loop-item-style-1/widget.php:281
-#: framework/widgets/post-loop-item-style-1/widget.php:323
-#: framework/widgets/post-loop-item-style-2/widget.php:152
-#: framework/widgets/post-loop-item-style-2/widget.php:194
-#: framework/widgets/post-loop-item-style-2/widget.php:236
-#: framework/widgets/post-loop-item/widget.php:152
-#: framework/widgets/post-loop-item/widget.php:182
-#: framework/widgets/post-loop-item/widget.php:224
-#: framework/widgets/pricing-tabs/widget.php:343
-#: framework/widgets/pricing-tabs/widget.php:387
-#: framework/widgets/pricing-tabs/widget.php:453
-#: framework/widgets/pricing-tabs/widget.php:485
-#: framework/widgets/pricing-tabs/widget.php:531
-#: framework/widgets/pricing-tabs/widget.php:561
-#: framework/widgets/pricing-tabs/widget.php:591
-#: framework/widgets/pricing-tabs/widget.php:797
-#: framework/widgets/pricing-tabs/widget.php:839
-#: framework/widgets/service-loop-item/widget.php:182
-#: framework/widgets/service-loop-item/widget.php:224
-#: framework/widgets/service-loop-item/widget.php:254
+#: framework/widgets/post-grid/widget.php:335
+#: framework/widgets/post-grid/widget.php:365
+#: framework/widgets/post-grid/widget.php:407
+#: framework/widgets/post-grid/widget.php:454
+#: framework/widgets/post-loop-item-style-1/widget.php:151
+#: framework/widgets/post-loop-item-style-1/widget.php:193
+#: framework/widgets/post-loop-item-style-1/widget.php:236
+#: framework/widgets/post-loop-item-style-1/widget.php:278
+#: framework/widgets/post-loop-item/widget.php:155
+#: framework/widgets/post-loop-item/widget.php:192
+#: framework/widgets/post-loop-item/widget.php:228
+#: framework/widgets/service-loop-item/widget.php:155
+#: framework/widgets/service-loop-item/widget.php:192
+#: framework/widgets/service-loop-item/widget.php:218
+#: framework/widgets/services-list/widget.php:242
+#: framework/widgets/services-list/widget.php:261
+#: framework/widgets/site-information/widget.php:215
 #: framework/widgets/step-list/widget.php:328
 #: framework/widgets/step-list/widget.php:358
 #: framework/widgets/step-list/widget.php:388
-#: framework/widgets/team-loop-item/widget.php:240
-#: framework/widgets/team-loop-item/widget.php:282
-#: framework/widgets/team-loop-item/widget.php:312
-#: framework/widgets/testimonial-loop-item/widget.php:143
-#: framework/widgets/testimonial-loop-item/widget.php:175
-#: framework/widgets/testimonial-loop-item/widget.php:217
-#: framework/widgets/testimonial-loop-item/widget.php:259
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:120
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:139
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:168
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:113
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:142
+#: framework/widgets/testimonial-loop-item/widget.php:105
+#: framework/widgets/testimonial-loop-item/widget.php:125
+#: framework/widgets/testimonial-loop-item/widget.php:167
+#: framework/widgets/testimonial-loop-item/widget.php:209
 #: framework/widgets/testimonial-slider/widget.php:313
 #: framework/widgets/testimonial-slider/widget.php:345
 #: framework/widgets/testimonial-slider/widget.php:387
 #: framework/widgets/testimonial-slider/widget.php:429
 #: framework/widgets/testimonial-slider/widget.php:501
 #: framework/widgets/testimonial-slider/widget.php:533
+#: framework/widgets/therapist-loop-item/widget.php:146
+#: framework/widgets/therapist-loop-item/widget.php:194
+#: framework/widgets/time-list/widget.php:219
+#: framework/widgets/time-list/widget.php:249
 msgid "Color"
 msgstr ""
 
@@ -904,138 +951,59 @@ msgstr ""
 msgid "Opacity"
 msgstr ""
 
-#: framework/widgets/client-loop-item/widget.php:19
-msgid "Client Loop Item"
-msgstr ""
-
-#: framework/widgets/client-loop-item/widget.php:39
-#: framework/widgets/contact-information/widget.php:139
-#: framework/widgets/podcast-grid-style-1/widget.php:249
-#: framework/widgets/podcast-loop-item/widget.php:78
-#: framework/widgets/post-grid-style-1/widget.php:306
-#: framework/widgets/post-loop-item-style-1/widget.php:77
-#: framework/widgets/pricing-tabs/widget.php:209
-#: framework/widgets/service-loop-item/widget.php:78
-#: framework/widgets/team-loop-item/widget.php:78
-#: framework/widgets/testimonial-loop-item/widget.php:39
-#: framework/widgets/testimonial-slider/widget.php:209
-msgid "Box"
-msgstr ""
-
-#: framework/widgets/client-loop-item/widget.php:47
-#: framework/widgets/contact-information/widget.php:147
-#: framework/widgets/podcast-grid-style-1/widget.php:257
-#: framework/widgets/podcast-loop-item/widget.php:86
-#: framework/widgets/post-grid-style-1/widget.php:314
-#: framework/widgets/post-loop-item-style-1/widget.php:85
-#: framework/widgets/pricing-tabs/widget.php:217
-#: framework/widgets/pricing-tabs/widget.php:633
-#: framework/widgets/service-loop-item/widget.php:86
-#: framework/widgets/step-list/widget.php:225
-#: framework/widgets/step-list/widget.php:428
-#: framework/widgets/step-list/widget.php:607
-#: framework/widgets/team-loop-item/widget.php:86
-#: framework/widgets/testimonial-loop-item/widget.php:47
-#: framework/widgets/testimonial-slider/widget.php:217
-msgid "Border Width"
-msgstr ""
-
-#: framework/widgets/client-loop-item/widget.php:65
-#: framework/widgets/contact-information/widget.php:165
-#: framework/widgets/podcast-grid-style-1/widget.php:275
-#: framework/widgets/podcast-grid-style-2/widget.php:235
-#: framework/widgets/podcast-loop-item-style-1/widget.php:86
-#: framework/widgets/podcast-loop-item/widget.php:104
-#: framework/widgets/post-grid-style-1/widget.php:256
-#: framework/widgets/post-grid-style-1/widget.php:332
-#: framework/widgets/post-grid-style-1/widget.php:402
-#: framework/widgets/post-grid-style-2/widget.php:235
-#: framework/widgets/post-grid/widget.php:256
-#: framework/widgets/post-loop-item-style-1/widget.php:103
-#: framework/widgets/post-loop-item-style-1/widget.php:173
-#: framework/widgets/post-loop-item-style-2/widget.php:86
-#: framework/widgets/post-loop-item/widget.php:86
-#: framework/widgets/pricing-tabs/widget.php:235
-#: framework/widgets/pricing-tabs/widget.php:651
-#: framework/widgets/service-loop-item/widget.php:104
-#: framework/widgets/step-list/widget.php:243
-#: framework/widgets/step-list/widget.php:446
-#: framework/widgets/step-list/widget.php:625
-#: framework/widgets/team-loop-item/widget.php:104
-#: framework/widgets/team-loop-item/widget.php:174
-#: framework/widgets/testimonial-loop-item/widget.php:65
-#: framework/widgets/testimonial-slider/widget.php:235
-msgid "Border Radius"
-msgstr ""
-
-#: framework/widgets/client-loop-item/widget.php:77
-#: framework/widgets/contact-information/widget.php:177
-#: framework/widgets/podcast-grid-style-1/widget.php:287
-#: framework/widgets/podcast-loop-item/widget.php:116
-#: framework/widgets/post-grid-style-1/widget.php:344
-#: framework/widgets/post-loop-item-style-1/widget.php:115
-#: framework/widgets/pricing-tabs/widget.php:247
-#: framework/widgets/pricing-tabs/widget.php:663
-#: framework/widgets/service-loop-item/widget.php:116
-#: framework/widgets/step-list/widget.php:458
-#: framework/widgets/step-list/widget.php:637
-#: framework/widgets/team-loop-item/widget.php:116
-#: framework/widgets/testimonial-loop-item/widget.php:77
-#: framework/widgets/testimonial-slider/widget.php:247
-msgid "Padding"
-msgstr ""
-
-#: framework/widgets/client-loop-item/widget.php:114
-#: framework/widgets/contact-information/widget.php:214
-#: framework/widgets/podcast-grid-style-1/widget.php:324
-#: framework/widgets/podcast-loop-item/widget.php:153
-#: framework/widgets/post-grid-style-1/widget.php:381
-#: framework/widgets/post-loop-item-style-1/widget.php:152
-#: framework/widgets/pricing-tabs/widget.php:284
-#: framework/widgets/pricing-tabs/widget.php:367
-#: framework/widgets/pricing-tabs/widget.php:411
-#: framework/widgets/pricing-tabs/widget.php:714
-#: framework/widgets/pricing-tabs/widget.php:766
-#: framework/widgets/service-loop-item/widget.php:153
-#: framework/widgets/step-list/widget.php:263
-#: framework/widgets/step-list/widget.php:509
-#: framework/widgets/step-list/widget.php:561
-#: framework/widgets/step-list/widget.php:700
-#: framework/widgets/step-list/widget.php:764
-#: framework/widgets/team-loop-item/widget.php:153
-#: framework/widgets/testimonial-loop-item/widget.php:114
-#: framework/widgets/testimonial-slider/widget.php:284
-msgid "Border Color"
-msgstr ""
-
 #: framework/widgets/contact-information/widget.php:19
 msgid "Contact Infomation"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:41
+#: framework/widgets/highlighted-heading-style-1/widget.php:41
+#: framework/widgets/highlighted-heading-style-1/widget.php:128
+#: framework/widgets/highlighted-heading/widget.php:41
+#: framework/widgets/highlighted-heading/widget.php:122
 #: framework/widgets/instagram-posts/widget.php:37
+#: framework/widgets/location-list/widget.php:54
+#: framework/widgets/location-list/widget.php:334
+#: framework/widgets/pricing-item-style-1/widget.php:89
+#: framework/widgets/pricing-item-style-1/widget.php:298
+#: framework/widgets/pricing-item/widget.php:89
+#: framework/widgets/pricing-item/widget.php:274
+#: framework/widgets/site-box-phone/widget.php:73
+#: framework/widgets/site-box-phone/widget.php:185
 msgid "Heading"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:51
-#: framework/widgets/pricing-tabs/widget.php:583
+#: framework/widgets/service-loop-item/widget.php:186
 #: framework/widgets/step-list/widget.php:76
 #: framework/widgets/step-list/widget.php:380
-#: framework/widgets/testimonial-loop-item/widget.php:251
-#: framework/widgets/testimonial-slider/widget.php:421 single-service.php:98
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:131
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:105
+#: framework/widgets/testimonial-loop-item/widget.php:201
+#: framework/widgets/testimonial-slider/widget.php:421
 msgid "Description"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:61
+#: framework/widgets/pricing-item-style-1/widget.php:183
+#: framework/widgets/pricing-item/widget.php:159
 #: framework/widgets/step-list/widget.php:85
 msgid "Button Text"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:71
+#: framework/widgets/pricing-item-style-1/widget.php:193
+#: framework/widgets/pricing-item/widget.php:169
 msgid "Button Url"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:88
+#: framework/widgets/services-list/widget.php:234
+#: framework/widgets/site-box-phone/widget.php:59
+#: framework/widgets/site-box-phone/widget.php:115
+#: framework/widgets/site-information-style-1/widget.php:146
+#: framework/widgets/site-social-style-2/widget.php:118
+#: framework/widgets/time-list/widget.php:61
+#: framework/widgets/time-list/widget.php:143
 msgid "Icon"
 msgstr ""
 
@@ -1048,15 +1016,24 @@ msgid "Socials"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:238
+#: framework/widgets/pricing-item-style-1/widget.php:305
+#: framework/widgets/pricing-item/widget.php:281
+#: framework/widgets/site-box-phone/widget.php:192
 msgid "Heading Color"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:251
 #: framework/widgets/instagram-posts/widget.php:128
+#: framework/widgets/pricing-item-style-1/widget.php:328
+#: framework/widgets/pricing-item-style-1/widget.php:420
+#: framework/widgets/pricing-item/widget.php:304
+#: framework/widgets/pricing-item/widget.php:396
+#: framework/widgets/site-box-phone/widget.php:204
 msgid "Heading Typography"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:260
+#: framework/widgets/pricing-item-style-1/widget.php:467
 msgid "Description Color"
 msgstr ""
 
@@ -1065,33 +1042,40 @@ msgid "Description Typography"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:283
-#: framework/widgets/podcast-grid-style-2/widget.php:248
-#: framework/widgets/podcast-loop-item-style-1/widget.php:99
+#: framework/widgets/location-list/widget.php:401
+#: framework/widgets/popular-service-style-1/widget.php:257
+#: framework/widgets/popular-services/widget.php:284
 #: framework/widgets/post-grid-style-1/widget.php:269
 #: framework/widgets/post-grid-style-1/widget.php:415
-#: framework/widgets/post-grid-style-2/widget.php:248
-#: framework/widgets/post-grid/widget.php:269
-#: framework/widgets/post-loop-item-style-1/widget.php:186
-#: framework/widgets/post-loop-item-style-2/widget.php:99
+#: framework/widgets/post-grid/widget.php:281
+#: framework/widgets/post-loop-item-style-1/widget.php:99
 #: framework/widgets/post-loop-item/widget.php:99
-#: framework/widgets/pricing-tabs/widget.php:336
-#: framework/widgets/pricing-tabs/widget.php:446
-#: framework/widgets/pricing-tabs/widget.php:683
+#: framework/widgets/pricing-item-style-1/widget.php:554
+#: framework/widgets/pricing-item/widget.php:479
+#: framework/widgets/service-loop-item/widget.php:99
+#: framework/widgets/service-loop-item/widget.php:258
 #: framework/widgets/step-list/widget.php:275
 #: framework/widgets/step-list/widget.php:478
 #: framework/widgets/step-list/widget.php:657
-#: framework/widgets/team-loop-item/widget.php:187
 #: framework/widgets/testimonial-slider/widget.php:494
+#: framework/widgets/therapist-loop-item/widget.php:99
 msgid "Normal"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:290
 #: framework/widgets/contact-information/widget.php:322
+#: framework/widgets/location-list/widget.php:408
+#: framework/widgets/location-list/widget.php:451
 #: framework/widgets/page-breadcrumb/widget.php:59
-#: framework/widgets/pricing-tabs/widget.php:690
-#: framework/widgets/pricing-tabs/widget.php:742
+#: framework/widgets/pricing-item-style-1/widget.php:561
+#: framework/widgets/pricing-item-style-1/widget.php:594
+#: framework/widgets/pricing-item/widget.php:486
+#: framework/widgets/pricing-item/widget.php:519
+#: framework/widgets/service-loop-item/widget.php:265
+#: framework/widgets/service-loop-item/widget.php:297
 #: framework/widgets/site-copyright/widget.php:100
-#: framework/widgets/site-information/widget.php:159
+#: framework/widgets/site-information-style-1/widget.php:210
+#: framework/widgets/site-information/widget.php:172
 #: framework/widgets/step-list/widget.php:485
 #: framework/widgets/step-list/widget.php:537
 #: framework/widgets/step-list/widget.php:664
@@ -1100,26 +1084,203 @@ msgid "Text Color"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:315
-#: framework/widgets/podcast-grid-style-2/widget.php:264
-#: framework/widgets/podcast-loop-item-style-1/widget.php:115
+#: framework/widgets/location-list/widget.php:444
+#: framework/widgets/popular-service-style-1/widget.php:274
+#: framework/widgets/popular-services/widget.php:301
 #: framework/widgets/post-grid-style-1/widget.php:285
 #: framework/widgets/post-grid-style-1/widget.php:431
-#: framework/widgets/post-grid-style-2/widget.php:264
-#: framework/widgets/post-grid/widget.php:285
-#: framework/widgets/post-loop-item-style-1/widget.php:202
-#: framework/widgets/post-loop-item-style-2/widget.php:115
-#: framework/widgets/post-loop-item/widget.php:115
-#: framework/widgets/pricing-tabs/widget.php:735
+#: framework/widgets/post-grid/widget.php:298
+#: framework/widgets/post-loop-item-style-1/widget.php:115
+#: framework/widgets/post-loop-item/widget.php:113
+#: framework/widgets/pricing-item-style-1/widget.php:587
+#: framework/widgets/pricing-item/widget.php:512
+#: framework/widgets/service-loop-item/widget.php:113
+#: framework/widgets/service-loop-item/widget.php:290
 #: framework/widgets/step-list/widget.php:291
 #: framework/widgets/step-list/widget.php:530
 #: framework/widgets/step-list/widget.php:721
-#: framework/widgets/team-loop-item/widget.php:203
 #: framework/widgets/testimonial-slider/widget.php:526
+#: framework/widgets/therapist-loop-item/widget.php:113
 msgid "Hover"
 msgstr ""
 
 #: framework/widgets/contact-information/widget.php:351
+#: framework/widgets/pricing-item-style-1/widget.php:623
+#: framework/widgets/pricing-item/widget.php:548
 msgid "Button Typography"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:23
+msgid "Highlighted Heading Style 1"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:50
+#: framework/widgets/site-information-style-1/widget.php:203
+msgid "Text"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:53
+msgid "Text Heading"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:59
+msgid "Style"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:71
+msgid "List Style Heading"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:76
+#: framework/widgets/highlighted-heading/widget.php:51
+#: framework/widgets/pricing-item-style-1/widget.php:92
+#: framework/widgets/pricing-item/widget.php:92
+msgid "This is the heading"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:80
+#: framework/widgets/highlighted-heading/widget.php:61
+msgid "Highlighted"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:84
+msgid "After heading"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:105
+#: framework/widgets/highlighted-heading/widget.php:99
+msgid "HTML Tag"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:136
+#: framework/widgets/highlighted-heading/widget.php:130
+#: framework/widgets/site-copyright/widget.php:59
+#: framework/widgets/site-social-style-2/widget.php:58
+#: framework/widgets/site-social/widget.php:66
+msgid "Alignment"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:140
+#: framework/widgets/highlighted-heading/widget.php:134
+#: framework/widgets/site-copyright/widget.php:63
+#: framework/widgets/site-social-style-2/widget.php:62
+#: framework/widgets/site-social/widget.php:70
+msgid "Left"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:144
+#: framework/widgets/highlighted-heading/widget.php:138
+#: framework/widgets/site-copyright/widget.php:67
+#: framework/widgets/site-social-style-2/widget.php:66
+#: framework/widgets/site-social/widget.php:74
+msgid "Center"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:148
+#: framework/widgets/highlighted-heading/widget.php:142
+#: framework/widgets/site-copyright/widget.php:71
+#: framework/widgets/site-social-style-2/widget.php:70
+#: framework/widgets/site-social/widget.php:78
+msgid "Right"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:181
+#: framework/widgets/highlighted-heading/widget.php:175
+#: framework/widgets/location-list/widget.php:371
+#: framework/widgets/location-list/widget.php:391
+#: framework/widgets/location-list/widget.php:516
+#: framework/widgets/popular-service-style-1/widget.php:369
+#: framework/widgets/popular-services/widget.php:396
+#: framework/widgets/post-grid-style-1/widget.php:493
+#: framework/widgets/post-grid-style-1/widget.php:535
+#: framework/widgets/post-grid-style-1/widget.php:589
+#: framework/widgets/post-grid-style-1/widget.php:648
+#: framework/widgets/post-grid/widget.php:348
+#: framework/widgets/post-grid/widget.php:390
+#: framework/widgets/post-grid/widget.php:432
+#: framework/widgets/post-grid/widget.php:491
+#: framework/widgets/post-loop-item-style-1/widget.php:176
+#: framework/widgets/post-loop-item-style-1/widget.php:219
+#: framework/widgets/post-loop-item-style-1/widget.php:261
+#: framework/widgets/post-loop-item-style-1/widget.php:291
+#: framework/widgets/post-loop-item/widget.php:178
+#: framework/widgets/post-loop-item/widget.php:214
+#: framework/widgets/post-loop-item/widget.php:242
+#: framework/widgets/service-loop-item/widget.php:178
+#: framework/widgets/service-loop-item/widget.php:204
+#: framework/widgets/service-loop-item/widget.php:243
+#: framework/widgets/service-loop-item/widget.php:325
+#: framework/widgets/services-list/widget.php:286
+#: framework/widgets/site-copyright/widget.php:137
+#: framework/widgets/site-information-style-1/widget.php:195
+#: framework/widgets/site-information-style-1/widget.php:235
+#: framework/widgets/site-information/widget.php:197
+#: framework/widgets/step-list/widget.php:341
+#: framework/widgets/step-list/widget.php:371
+#: framework/widgets/step-list/widget.php:401
+#: framework/widgets/step-list/widget.php:419
+#: framework/widgets/step-list/widget.php:598
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:152
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:193
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:126
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:167
+#: framework/widgets/testimonial-loop-item/widget.php:150
+#: framework/widgets/testimonial-loop-item/widget.php:192
+#: framework/widgets/testimonial-loop-item/widget.php:222
+#: framework/widgets/testimonial-slider/widget.php:370
+#: framework/widgets/testimonial-slider/widget.php:412
+#: framework/widgets/testimonial-slider/widget.php:442
+#: framework/widgets/therapist-loop-item/widget.php:179
+#: framework/widgets/therapist-loop-item/widget.php:217
+#: framework/widgets/time-list/widget.php:232
+#: framework/widgets/time-list/widget.php:262
+msgid "Typography"
+msgstr ""
+
+#: framework/widgets/highlighted-heading-style-1/widget.php:190
+#: framework/widgets/highlighted-heading/widget.php:58
+#: framework/widgets/highlighted-heading/widget.php:184
+msgid "Highlighted Text"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:23
+msgid "Highlighted Heading"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:48
+msgid "Before Text"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:68
+msgid "After Text"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:78
+msgid "Highlighted Image"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:204
+msgid "Width Highlighted Image"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:231
+msgid "Animation"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:233
+#: framework/widgets/post-grid-style-1/widget.php:118
+#: framework/widgets/post-grid/widget.php:127
+#: framework/widgets/site-information/widget.php:135
+#: framework/widgets/step-list/widget.php:190
+msgid "Show"
+msgstr ""
+
+#: framework/widgets/highlighted-heading/widget.php:234
+#: framework/widgets/post-grid-style-1/widget.php:119
+#: framework/widgets/post-grid/widget.php:128
+#: framework/widgets/site-information/widget.php:136
+#: framework/widgets/step-list/widget.php:191
+msgid "Hide"
 msgstr ""
 
 #: framework/widgets/instagram-posts/widget.php:15
@@ -1139,23 +1300,21 @@ msgid "Follow Link Url"
 msgstr ""
 
 #: framework/widgets/instagram-posts/widget.php:81
-#: framework/widgets/podcast-grid-style-1/widget.php:68
-#: framework/widgets/podcast-grid-style-2/widget.php:68
-#: framework/widgets/podcast-grid/widget.php:68
+#: framework/widgets/popular-service-style-1/widget.php:77
+#: framework/widgets/popular-services/widget.php:78
 #: framework/widgets/post-grid-style-1/widget.php:68
-#: framework/widgets/post-grid-style-2/widget.php:68
-#: framework/widgets/post-grid/widget.php:68
-#: framework/widgets/pricing-tabs/widget.php:72
+#: framework/widgets/post-grid/widget.php:77
 #: framework/widgets/site-copyright/widget.php:52
+#: framework/widgets/site-information-style-1/widget.php:57
 #: framework/widgets/site-information/widget.php:57
-#: framework/widgets/site-social/widget.php:51
+#: framework/widgets/site-social-style-2/widget.php:51
+#: framework/widgets/site-social/widget.php:59
 #: framework/widgets/testimonial-slider/widget.php:72
-#: framework/widgets/widget.php:31 framework/widgets/widget.php:71
 msgid "Layout"
 msgstr ""
 
 #: framework/widgets/instagram-posts/widget.php:88
-#: framework/widgets/widget.php:38
+#: framework/widgets/popular-services/widget.php:85
 msgid "Columns"
 msgstr ""
 
@@ -1175,6 +1334,236 @@ msgstr ""
 msgid "Follow Link Typography"
 msgstr ""
 
+#: framework/widgets/location-list/widget.php:21
+msgid "Location List"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:64
+msgid "Our Locations"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:70
+#: framework/widgets/site-information-style-1/widget.php:44
+#: framework/widgets/site-information/widget.php:44
+msgid "Address"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:79
+msgid "Maps zoom"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:96
+#: framework/widgets/pricing-item-style-1/widget.php:545
+#: framework/widgets/pricing-item/widget.php:470
+#: framework/widgets/service-loop-item/widget.php:250
+#: framework/widgets/step-list/widget.php:410
+msgid "Button"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:99
+#: framework/widgets/location-list/widget.php:197
+#: framework/widgets/location-list/widget.php:217
+#: framework/widgets/location-list/widget.php:237
+msgid "Enquire"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:105
+#: framework/widgets/step-list/widget.php:94
+msgid "Button Link"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:121
+#: framework/widgets/location-list/widget.php:124
+#: framework/widgets/location-list/widget.php:199
+#: framework/widgets/location-list/widget.php:219
+#: framework/widgets/location-list/widget.php:239
+#: framework/widgets/location-list/widget.php:496
+msgid "Opening Hours"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:136
+#: framework/widgets/location-list/widget.php:157
+#: framework/widgets/location-list/widget.php:202
+#: framework/widgets/location-list/widget.php:222
+#: framework/widgets/location-list/widget.php:242
+msgid "Monday To Friday"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:143
+#: framework/widgets/time-list/widget.php:97
+#: framework/widgets/time-list/widget.php:241
+msgid "Hours"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:146
+#: framework/widgets/location-list/widget.php:158
+#: framework/widgets/location-list/widget.php:203
+#: framework/widgets/location-list/widget.php:223
+#: framework/widgets/location-list/widget.php:243
+#: framework/widgets/time-list/widget.php:100
+#: framework/widgets/time-list/widget.php:115
+msgid "12:00 pm - 08:00 pm"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:152
+#: framework/widgets/time-list/widget.php:21
+msgid "Time List"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:161
+#: framework/widgets/location-list/widget.php:206
+#: framework/widgets/location-list/widget.php:226
+#: framework/widgets/location-list/widget.php:246
+#: framework/widgets/time-list/widget.php:123
+msgid "Saturday - Sunday"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:162
+#: framework/widgets/location-list/widget.php:207
+#: framework/widgets/location-list/widget.php:227
+#: framework/widgets/location-list/widget.php:247
+#: framework/widgets/time-list/widget.php:120
+msgid "06:00 pm - 05:00 pm"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:180
+#: framework/widgets/site-box-phone/widget.php:86
+#: framework/widgets/site-box-phone/widget.php:212
+#: framework/widgets/site-information-style-1/widget.php:42
+#: framework/widgets/site-information/widget.php:42
+msgid "Phone"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:190
+msgid "Location list"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:195
+msgid "Sydney Double Bay"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:196
+msgid "66 Broklyn New Golden Street USA"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:210
+#: framework/widgets/location-list/widget.php:230
+#: framework/widgets/location-list/widget.php:250
+msgid "help@company.com"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:211
+#: framework/widgets/location-list/widget.php:231
+#: framework/widgets/location-list/widget.php:251
+msgid "+1(800)123-4566"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:215
+msgid "Newport Beach"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:216
+msgid "854 Avocado Ave. Street USA"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:235
+msgid "Waikoloa, USA"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:236
+msgid "Waikoloa Beach Resort, Unit D-8 250 Waikoloa Beach"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:268
+msgid "General"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:311
+msgid "Maps height"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:359
+#: framework/widgets/popular-service-style-1/widget.php:356
+#: framework/widgets/popular-services/widget.php:383
+#: framework/widgets/post-grid-style-1/widget.php:522
+#: framework/widgets/post-grid-style-1/widget.php:564
+#: framework/widgets/post-grid-style-1/widget.php:623
+#: framework/widgets/post-grid/widget.php:377
+#: framework/widgets/post-grid/widget.php:419
+#: framework/widgets/post-grid/widget.php:466
+#: framework/widgets/post-loop-item-style-1/widget.php:248
+#: framework/widgets/post-loop-item/widget.php:166
+#: framework/widgets/service-loop-item/widget.php:166
+#: framework/widgets/services-list/widget.php:273
+#: framework/widgets/site-copyright/widget.php:124
+#: framework/widgets/site-information-style-1/widget.php:222
+#: framework/widgets/site-information/widget.php:184
+#: framework/widgets/site-social-style-2/widget.php:136
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:180
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:154
+#: framework/widgets/testimonial-loop-item/widget.php:137
+#: framework/widgets/testimonial-loop-item/widget.php:179
+#: framework/widgets/therapist-loop-item/widget.php:157
+msgid "Color Hover"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:431
+#: framework/widgets/location-list/widget.php:474
+msgid "border Color"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:524
+#: framework/widgets/time-list/widget.php:109
+msgid "List Time"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:531
+#: framework/widgets/location-list/widget.php:580
+#: framework/widgets/site-information-style-1/widget.php:182
+#: framework/widgets/site-social-style-2/widget.php:96
+#: framework/widgets/site-social/widget.php:107
+msgid "Title Color"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:544
+#: framework/widgets/location-list/widget.php:592
+#: framework/widgets/page-title-bar/widget.php:115
+#: framework/widgets/site-social-style-2/widget.php:108
+#: framework/widgets/site-social/widget.php:120
+msgid "Title Typography"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:552
+msgid "Hours Color"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:565
+msgid "Hours Typography"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:573
+#: framework/widgets/post-grid-style-1/widget.php:544
+#: framework/widgets/post-grid/widget.php:399
+#: framework/widgets/post-loop-item/widget.php:221
+msgid "Meta"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:600
+msgid "Content Color"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:612
+msgid "Content Typography"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:774
+msgid "Less Information"
+msgstr ""
+
+#: framework/widgets/location-list/widget.php:781
+msgid "More Information"
+msgstr ""
+
 #: framework/widgets/orbit-circle/widget.php:19
 msgid "Orbit Circle"
 msgstr ""
@@ -1182,6 +1571,8 @@ msgstr ""
 #: framework/widgets/orbit-circle/widget.php:47
 #: framework/widgets/pattern-background/widget.php:48
 #: framework/widgets/pattern-background/widget.php:115
+#: framework/widgets/site-box-phone/widget.php:122
+#: framework/widgets/time-list/widget.php:153
 msgid "Size"
 msgstr ""
 
@@ -1218,7 +1609,8 @@ msgid "Page Breadcrumb"
 msgstr ""
 
 #: framework/widgets/page-breadcrumb/widget.php:47
-#: framework/widgets/site-information/widget.php:147
+#: framework/widgets/site-information-style-1/widget.php:153
+#: framework/widgets/site-information/widget.php:160
 #: framework/widgets/step-list/widget.php:676
 #: framework/widgets/step-list/widget.php:740
 msgid "Icon Color"
@@ -1230,6 +1622,30 @@ msgstr ""
 
 #: framework/widgets/page-breadcrumb/widget.php:84
 msgid "Text Typography"
+msgstr ""
+
+#: framework/widgets/page-title-bar/widget.php:23
+msgid "Page Title Bar"
+msgstr ""
+
+#: framework/widgets/page-title-bar/widget.php:47
+msgid "Custom Title Blurry"
+msgstr ""
+
+#: framework/widgets/page-title-bar/widget.php:69
+msgid "Title Blurry"
+msgstr ""
+
+#: framework/widgets/page-title-bar/widget.php:88
+msgid "Blurry Title Typography"
+msgstr ""
+
+#: framework/widgets/page-title-bar/widget.php:124
+msgid "Breadcrumb"
+msgstr ""
+
+#: framework/widgets/page-title-bar/widget.php:143
+msgid "Breadcrumb Typography"
 msgstr ""
 
 #: framework/widgets/pattern-background/widget.php:20
@@ -1248,420 +1664,219 @@ msgstr ""
 msgid "Image Repeat"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:19
-msgid "Podcast Grid Style 1"
+#: framework/widgets/popular-service-style-1/widget.php:22
+msgid "Popular Services Style 1"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:75
-#: framework/widgets/podcast-grid-style-2/widget.php:75
-#: framework/widgets/podcast-grid/widget.php:75
-#: framework/widgets/post-grid-style-1/widget.php:75
-#: framework/widgets/post-grid-style-2/widget.php:75
-#: framework/widgets/post-grid/widget.php:75
-#: framework/widgets/pricing-tabs/widget.php:79
-#: framework/widgets/testimonial-slider/widget.php:79
-msgid "Posts Per Page"
-msgstr ""
-
-#: framework/widgets/podcast-grid-style-1/widget.php:85
-#: framework/widgets/podcast-grid-style-2/widget.php:85
-#: framework/widgets/podcast-grid/widget.php:85
-#: framework/widgets/podcast-loop-item-style-1/widget.php:42
-#: framework/widgets/podcast-loop-item/widget.php:42
+#: framework/widgets/popular-service-style-1/widget.php:85
+#: framework/widgets/popular-services/widget.php:100
 #: framework/widgets/post-grid-style-1/widget.php:85
-#: framework/widgets/post-grid-style-2/widget.php:85
-#: framework/widgets/post-grid/widget.php:85
+#: framework/widgets/post-grid/widget.php:94
 #: framework/widgets/post-loop-item-style-1/widget.php:42
-#: framework/widgets/post-loop-item-style-2/widget.php:42
-#: framework/widgets/post-loop-item/widget.php:42
-#: framework/widgets/service-loop-item/widget.php:42
+#: framework/widgets/post-loop-item/widget.php:43
+#: framework/widgets/pricing-item-style-1/widget.php:59
+#: framework/widgets/pricing-item/widget.php:59
+#: framework/widgets/service-loop-item/widget.php:43
 #: framework/widgets/step-list/widget.php:157
-#: framework/widgets/team-loop-item/widget.php:42
+#: framework/widgets/therapist-loop-item/widget.php:43
 msgid "Image Size"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:95
-#: framework/widgets/podcast-loop-item-style-1/widget.php:52
-#: framework/widgets/podcast-loop-item/widget.php:52
-#: framework/widgets/post-grid-style-1/widget.php:95
-#: framework/widgets/post-grid/widget.php:95
-#: framework/widgets/post-loop-item-style-1/widget.php:52
-#: framework/widgets/post-loop-item-style-2/widget.php:52
-#: framework/widgets/post-loop-item/widget.php:52
-#: framework/widgets/service-loop-item/widget.php:52
-#: framework/widgets/step-list/widget.php:167
-#: framework/widgets/team-loop-item/widget.php:52
-msgid "Image Ratio"
-msgstr ""
-
-#: framework/widgets/podcast-grid-style-1/widget.php:116
-#: framework/widgets/podcast-grid-style-1/widget.php:431
-#: framework/widgets/podcast-grid-style-2/widget.php:95
-#: framework/widgets/podcast-grid-style-2/widget.php:421
-#: framework/widgets/podcast-grid/widget.php:95
-#: framework/widgets/podcast-grid/widget.php:321
-#: framework/widgets/post-grid-style-1/widget.php:116
-#: framework/widgets/post-grid-style-1/widget.php:600
-#: framework/widgets/post-grid-style-2/widget.php:95
-#: framework/widgets/post-grid-style-2/widget.php:421
-#: framework/widgets/post-grid/widget.php:116
-#: framework/widgets/post-grid/widget.php:430
-msgid "Pagination"
-msgstr ""
-
-#: framework/widgets/podcast-grid-style-1/widget.php:118
-#: framework/widgets/podcast-grid-style-2/widget.php:97
-#: framework/widgets/podcast-grid/widget.php:97
-#: framework/widgets/post-grid-style-1/widget.php:118
-#: framework/widgets/post-grid-style-2/widget.php:97
-#: framework/widgets/post-grid/widget.php:118
-#: framework/widgets/step-list/widget.php:190
-msgid "Show"
-msgstr ""
-
-#: framework/widgets/podcast-grid-style-1/widget.php:119
-#: framework/widgets/podcast-grid-style-2/widget.php:98
-#: framework/widgets/podcast-grid/widget.php:98
-#: framework/widgets/post-grid-style-1/widget.php:119
-#: framework/widgets/post-grid-style-2/widget.php:98
-#: framework/widgets/post-grid/widget.php:119
-#: framework/widgets/step-list/widget.php:191
-msgid "Hide"
-msgstr ""
-
-#: framework/widgets/podcast-grid-style-1/widget.php:131
-#: framework/widgets/podcast-grid-style-2/widget.php:110
-#: framework/widgets/podcast-grid/widget.php:110
+#: framework/widgets/popular-service-style-1/widget.php:100
+#: framework/widgets/popular-services/widget.php:136
 #: framework/widgets/post-grid-style-1/widget.php:131
-#: framework/widgets/post-grid-style-2/widget.php:110
-#: framework/widgets/post-grid/widget.php:131
-#: framework/widgets/pricing-tabs/widget.php:92
+#: framework/widgets/post-grid/widget.php:141
+#: framework/widgets/services-list/widget.php:79
 #: framework/widgets/testimonial-slider/widget.php:92
 msgid "Query"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:140
-#: framework/widgets/podcast-grid-style-2/widget.php:119
-#: framework/widgets/podcast-grid/widget.php:119
+#: framework/widgets/popular-service-style-1/widget.php:109
+#: framework/widgets/popular-services/widget.php:145
 #: framework/widgets/post-grid-style-1/widget.php:140
-#: framework/widgets/post-grid-style-2/widget.php:119
-#: framework/widgets/post-grid/widget.php:140
-#: framework/widgets/pricing-tabs/widget.php:101
+#: framework/widgets/post-grid/widget.php:150
+#: framework/widgets/services-list/widget.php:88
 #: framework/widgets/testimonial-slider/widget.php:101
 msgid "Include"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:147
-#: framework/widgets/podcast-grid-style-1/widget.php:179
-#: framework/widgets/podcast-grid-style-2/widget.php:126
-#: framework/widgets/podcast-grid-style-2/widget.php:158
-#: framework/widgets/podcast-grid/widget.php:126
-#: framework/widgets/podcast-grid/widget.php:158
+#: framework/widgets/popular-service-style-1/widget.php:116
+#: framework/widgets/popular-service-style-1/widget.php:148
+#: framework/widgets/popular-services/widget.php:152
+#: framework/widgets/popular-services/widget.php:184
 #: framework/widgets/post-grid-style-1/widget.php:147
 #: framework/widgets/post-grid-style-1/widget.php:179
-#: framework/widgets/post-grid-style-2/widget.php:126
-#: framework/widgets/post-grid-style-2/widget.php:158
-#: framework/widgets/post-grid/widget.php:147
-#: framework/widgets/post-grid/widget.php:179
-#: framework/widgets/pricing-tabs/widget.php:108
-#: framework/widgets/pricing-tabs/widget.php:140
+#: framework/widgets/post-grid/widget.php:157
+#: framework/widgets/post-grid/widget.php:189
+#: framework/widgets/services-list/widget.php:95
+#: framework/widgets/services-list/widget.php:127
 #: framework/widgets/testimonial-slider/widget.php:108
 #: framework/widgets/testimonial-slider/widget.php:140
 msgid "Ids"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:158
-#: framework/widgets/podcast-grid-style-1/widget.php:190
-#: framework/widgets/podcast-grid-style-2/widget.php:137
-#: framework/widgets/podcast-grid-style-2/widget.php:169
-#: framework/widgets/podcast-grid-style-2/widget.php:335
-#: framework/widgets/podcast-grid/widget.php:137
-#: framework/widgets/podcast-grid/widget.php:169
-#: framework/widgets/podcast-loop-item-style-1/widget.php:185
+#: framework/widgets/popular-service-style-1/widget.php:127
+#: framework/widgets/popular-service-style-1/widget.php:159
+#: framework/widgets/popular-services/widget.php:163
+#: framework/widgets/popular-services/widget.php:195
 #: framework/widgets/post-grid-style-1/widget.php:158
 #: framework/widgets/post-grid-style-1/widget.php:190
-#: framework/widgets/post-grid-style-2/widget.php:137
-#: framework/widgets/post-grid-style-2/widget.php:169
-#: framework/widgets/post-grid/widget.php:158
-#: framework/widgets/post-grid/widget.php:190
-#: framework/widgets/pricing-tabs/widget.php:119
-#: framework/widgets/pricing-tabs/widget.php:151
+#: framework/widgets/post-grid/widget.php:168
+#: framework/widgets/post-grid/widget.php:200
+#: framework/widgets/post-loop-item-style-1/widget.php:143
+#: framework/widgets/post-loop-item/widget.php:186
+#: framework/widgets/services-list/widget.php:106
+#: framework/widgets/services-list/widget.php:138
 #: framework/widgets/testimonial-slider/widget.php:119
 #: framework/widgets/testimonial-slider/widget.php:151
 msgid "Category"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:172
-#: framework/widgets/podcast-grid-style-2/widget.php:151
-#: framework/widgets/podcast-grid/widget.php:151
+#: framework/widgets/popular-service-style-1/widget.php:141
+#: framework/widgets/popular-services/widget.php:177
 #: framework/widgets/post-grid-style-1/widget.php:172
-#: framework/widgets/post-grid-style-2/widget.php:151
-#: framework/widgets/post-grid/widget.php:172
-#: framework/widgets/pricing-tabs/widget.php:133
+#: framework/widgets/post-grid/widget.php:182
+#: framework/widgets/services-list/widget.php:120
 #: framework/widgets/testimonial-slider/widget.php:133
 msgid "Exclude"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:201
-#: framework/widgets/podcast-grid-style-2/widget.php:180
-#: framework/widgets/podcast-grid/widget.php:180
+#: framework/widgets/popular-service-style-1/widget.php:170
+#: framework/widgets/popular-services/widget.php:206
 #: framework/widgets/post-grid-style-1/widget.php:201
-#: framework/widgets/post-grid-style-2/widget.php:180
-#: framework/widgets/post-grid/widget.php:201
-#: framework/widgets/pricing-tabs/widget.php:162
+#: framework/widgets/post-grid/widget.php:211
+#: framework/widgets/services-list/widget.php:149
 #: framework/widgets/testimonial-slider/widget.php:162
 msgid "Offset"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:204
-#: framework/widgets/podcast-grid-style-2/widget.php:183
-#: framework/widgets/podcast-grid/widget.php:183
+#: framework/widgets/popular-service-style-1/widget.php:173
+#: framework/widgets/popular-services/widget.php:209
 #: framework/widgets/post-grid-style-1/widget.php:204
-#: framework/widgets/post-grid-style-2/widget.php:183
-#: framework/widgets/post-grid/widget.php:204
-#: framework/widgets/pricing-tabs/widget.php:165
+#: framework/widgets/post-grid/widget.php:214
+#: framework/widgets/services-list/widget.php:152
 #: framework/widgets/testimonial-slider/widget.php:165
 msgid "Use this setting to skip over posts (e.g. '2' to skip over 2 posts)."
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:215
-#: framework/widgets/podcast-grid-style-2/widget.php:194
-#: framework/widgets/podcast-grid/widget.php:194
+#: framework/widgets/popular-service-style-1/widget.php:184
+#: framework/widgets/popular-services/widget.php:220
 #: framework/widgets/post-grid-style-1/widget.php:215
-#: framework/widgets/post-grid-style-2/widget.php:194
-#: framework/widgets/post-grid/widget.php:215
-#: framework/widgets/pricing-tabs/widget.php:176
+#: framework/widgets/post-grid/widget.php:225
+#: framework/widgets/services-list/widget.php:163
 #: framework/widgets/testimonial-slider/widget.php:176
 msgid "Order By"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:221
-#: framework/widgets/podcast-grid-style-2/widget.php:200
-#: framework/widgets/podcast-grid/widget.php:200
+#: framework/widgets/popular-service-style-1/widget.php:190
+#: framework/widgets/popular-services/widget.php:226
 #: framework/widgets/post-grid-style-1/widget.php:221
-#: framework/widgets/post-grid-style-2/widget.php:200
-#: framework/widgets/post-grid/widget.php:221
-#: framework/widgets/pricing-tabs/widget.php:182
+#: framework/widgets/post-grid/widget.php:231
+#: framework/widgets/services-list/widget.php:169
 #: framework/widgets/testimonial-slider/widget.php:182
 msgid "Menu Order"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:222
-#: framework/widgets/podcast-grid-style-2/widget.php:201
-#: framework/widgets/podcast-grid/widget.php:201
+#: framework/widgets/popular-service-style-1/widget.php:191
+#: framework/widgets/popular-services/widget.php:227
 #: framework/widgets/post-grid-style-1/widget.php:222
-#: framework/widgets/post-grid-style-2/widget.php:201
-#: framework/widgets/post-grid/widget.php:222
-#: framework/widgets/pricing-tabs/widget.php:183
+#: framework/widgets/post-grid/widget.php:232
+#: framework/widgets/services-list/widget.php:170
 #: framework/widgets/testimonial-slider/widget.php:183
 msgid "Random"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:230
-#: framework/widgets/podcast-grid-style-2/widget.php:209
-#: framework/widgets/podcast-grid/widget.php:209
+#: framework/widgets/popular-service-style-1/widget.php:199
+#: framework/widgets/popular-services/widget.php:235
 #: framework/widgets/post-grid-style-1/widget.php:230
-#: framework/widgets/post-grid-style-2/widget.php:209
-#: framework/widgets/post-grid/widget.php:230
-#: framework/widgets/pricing-tabs/widget.php:191
+#: framework/widgets/post-grid/widget.php:240
+#: framework/widgets/services-list/widget.php:178
 #: framework/widgets/testimonial-slider/widget.php:191
 msgid "Order"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:234
-#: framework/widgets/podcast-grid-style-2/widget.php:213
-#: framework/widgets/podcast-grid/widget.php:213
+#: framework/widgets/popular-service-style-1/widget.php:203
+#: framework/widgets/popular-services/widget.php:239
 #: framework/widgets/post-grid-style-1/widget.php:234
-#: framework/widgets/post-grid-style-2/widget.php:213
-#: framework/widgets/post-grid/widget.php:234
-#: framework/widgets/pricing-tabs/widget.php:195
+#: framework/widgets/post-grid/widget.php:244
+#: framework/widgets/services-list/widget.php:182
 #: framework/widgets/testimonial-slider/widget.php:195
 msgid "ASC"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:235
-#: framework/widgets/podcast-grid-style-2/widget.php:214
-#: framework/widgets/podcast-grid/widget.php:214
+#: framework/widgets/popular-service-style-1/widget.php:204
+#: framework/widgets/popular-services/widget.php:240
 #: framework/widgets/post-grid-style-1/widget.php:235
-#: framework/widgets/post-grid-style-2/widget.php:214
-#: framework/widgets/post-grid/widget.php:235
-#: framework/widgets/pricing-tabs/widget.php:196
+#: framework/widgets/post-grid/widget.php:245
+#: framework/widgets/services-list/widget.php:183
 #: framework/widgets/testimonial-slider/widget.php:196
 msgid "DESC"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:365
-#: framework/widgets/podcast-grid-style-1/widget.php:407
-#: framework/widgets/podcast-grid-style-1/widget.php:454
-#: framework/widgets/podcast-grid-style-2/widget.php:313
-#: framework/widgets/podcast-grid-style-2/widget.php:355
-#: framework/widgets/podcast-grid-style-2/widget.php:397
-#: framework/widgets/podcast-grid-style-2/widget.php:444
-#: framework/widgets/podcast-grid/widget.php:255
-#: framework/widgets/podcast-grid/widget.php:297
-#: framework/widgets/podcast-grid/widget.php:344
-#: framework/widgets/podcast-loop-item-style-1/widget.php:246
-#: framework/widgets/podcast-loop-item/widget.php:194
-#: framework/widgets/podcast-loop-item/widget.php:236
-#: framework/widgets/post-grid-style-1/widget.php:522
-#: framework/widgets/post-grid-style-1/widget.php:564
-#: framework/widgets/post-grid-style-1/widget.php:623
-#: framework/widgets/post-grid-style-2/widget.php:355
-#: framework/widgets/post-grid-style-2/widget.php:397
-#: framework/widgets/post-grid-style-2/widget.php:444
-#: framework/widgets/post-grid/widget.php:364
-#: framework/widgets/post-grid/widget.php:406
-#: framework/widgets/post-grid/widget.php:453
-#: framework/widgets/post-loop-item-style-1/widget.php:293
-#: framework/widgets/post-loop-item-style-1/widget.php:335
-#: framework/widgets/post-loop-item-style-2/widget.php:206
-#: framework/widgets/post-loop-item-style-2/widget.php:248
-#: framework/widgets/post-loop-item/widget.php:194
-#: framework/widgets/post-loop-item/widget.php:236
-#: framework/widgets/pricing-tabs/widget.php:809
-#: framework/widgets/service-loop-item/widget.php:194
-#: framework/widgets/service-loop-item/widget.php:266
-#: framework/widgets/site-copyright/widget.php:124
-#: framework/widgets/site-information/widget.php:171
-#: framework/widgets/team-loop-item/widget.php:252
-#: framework/widgets/team-loop-item/widget.php:324
-#: framework/widgets/testimonial-loop-item/widget.php:187
-#: framework/widgets/testimonial-loop-item/widget.php:229
-msgid "Color Hover"
+#: framework/widgets/popular-service-style-1/widget.php:211
+#: framework/widgets/popular-services/widget.php:247
+#: framework/widgets/post-grid-style-1/widget.php:75
+#: framework/widgets/post-grid/widget.php:84
+#: framework/widgets/services-list/widget.php:190
+#: framework/widgets/testimonial-slider/widget.php:79
+msgid "Posts Per Page"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:378
-#: framework/widgets/podcast-grid-style-1/widget.php:420
-#: framework/widgets/podcast-grid-style-1/widget.php:479
-#: framework/widgets/podcast-grid-style-2/widget.php:326
-#: framework/widgets/podcast-grid-style-2/widget.php:368
-#: framework/widgets/podcast-grid-style-2/widget.php:410
-#: framework/widgets/podcast-grid-style-2/widget.php:469
-#: framework/widgets/podcast-grid/widget.php:268
-#: framework/widgets/podcast-grid/widget.php:310
-#: framework/widgets/podcast-grid/widget.php:369
-#: framework/widgets/podcast-loop-item-style-1/widget.php:176
-#: framework/widgets/podcast-loop-item-style-1/widget.php:217
-#: framework/widgets/podcast-loop-item-style-1/widget.php:259
-#: framework/widgets/podcast-loop-item/widget.php:207
-#: framework/widgets/podcast-loop-item/widget.php:249
-#: framework/widgets/post-grid-style-1/widget.php:493
-#: framework/widgets/post-grid-style-1/widget.php:535
-#: framework/widgets/post-grid-style-1/widget.php:589
-#: framework/widgets/post-grid-style-1/widget.php:648
-#: framework/widgets/post-grid-style-2/widget.php:326
-#: framework/widgets/post-grid-style-2/widget.php:368
-#: framework/widgets/post-grid-style-2/widget.php:410
-#: framework/widgets/post-grid-style-2/widget.php:469
-#: framework/widgets/post-grid/widget.php:335
-#: framework/widgets/post-grid/widget.php:377
-#: framework/widgets/post-grid/widget.php:419
-#: framework/widgets/post-grid/widget.php:478
-#: framework/widgets/post-loop-item-style-1/widget.php:264
-#: framework/widgets/post-loop-item-style-1/widget.php:306
-#: framework/widgets/post-loop-item-style-1/widget.php:360
-#: framework/widgets/post-loop-item-style-2/widget.php:177
-#: framework/widgets/post-loop-item-style-2/widget.php:219
-#: framework/widgets/post-loop-item-style-2/widget.php:261
-#: framework/widgets/post-loop-item/widget.php:165
-#: framework/widgets/post-loop-item/widget.php:207
-#: framework/widgets/post-loop-item/widget.php:249
-#: framework/widgets/pricing-tabs/widget.php:326
-#: framework/widgets/pricing-tabs/widget.php:436
-#: framework/widgets/pricing-tabs/widget.php:544
-#: framework/widgets/pricing-tabs/widget.php:574
-#: framework/widgets/pricing-tabs/widget.php:605
-#: framework/widgets/pricing-tabs/widget.php:624
-#: framework/widgets/pricing-tabs/widget.php:822
-#: framework/widgets/pricing-tabs/widget.php:866
-#: framework/widgets/service-loop-item/widget.php:207
-#: framework/widgets/service-loop-item/widget.php:237
-#: framework/widgets/service-loop-item/widget.php:279
-#: framework/widgets/site-copyright/widget.php:137
-#: framework/widgets/site-information/widget.php:184
-#: framework/widgets/step-list/widget.php:341
-#: framework/widgets/step-list/widget.php:371
-#: framework/widgets/step-list/widget.php:401
-#: framework/widgets/step-list/widget.php:419
-#: framework/widgets/step-list/widget.php:598
-#: framework/widgets/team-loop-item/widget.php:265
-#: framework/widgets/team-loop-item/widget.php:295
-#: framework/widgets/team-loop-item/widget.php:337
-#: framework/widgets/testimonial-loop-item/widget.php:200
-#: framework/widgets/testimonial-loop-item/widget.php:242
-#: framework/widgets/testimonial-loop-item/widget.php:272
-#: framework/widgets/testimonial-slider/widget.php:370
-#: framework/widgets/testimonial-slider/widget.php:412
-#: framework/widgets/testimonial-slider/widget.php:442
-msgid "Typography"
+#: framework/widgets/popular-service-style-1/widget.php:295
+#: framework/widgets/popular-services/widget.php:322
+msgid "Background Overlay"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:387
-#: framework/widgets/podcast-grid/widget.php:277
-#: framework/widgets/podcast-loop-item/widget.php:216
-#: framework/widgets/team-loop-item/widget.php:304
-msgid "Profile Link"
+#: framework/widgets/popular-service-style-1/widget.php:314
+#: framework/widgets/popular-services/widget.php:341
+#: framework/widgets/post-loop-item/widget.php:202
+#: framework/widgets/service-loop-item/widget.php:228
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:53
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:46
+msgid "Background"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:466
-#: framework/widgets/podcast-grid-style-2/widget.php:456
-#: framework/widgets/podcast-grid/widget.php:356
-#: framework/widgets/post-grid-style-1/widget.php:635
-#: framework/widgets/post-grid-style-2/widget.php:456
-#: framework/widgets/post-grid/widget.php:465
-#: framework/widgets/testimonial-slider/widget.php:357
-#: framework/widgets/testimonial-slider/widget.php:399
-msgid "Color Current"
+#: framework/widgets/popular-services/widget.php:23
+msgid "Popular Services"
 msgstr ""
 
-#: framework/widgets/podcast-grid-style-1/widget.php:488
-#: framework/widgets/podcast-grid-style-2/widget.php:478
-#: framework/widgets/podcast-grid/widget.php:378
-#: framework/widgets/post-grid-style-1/widget.php:657
-#: framework/widgets/post-grid-style-2/widget.php:478
-#: framework/widgets/post-grid/widget.php:487
-msgid "Space"
-msgstr ""
-
-#: framework/widgets/podcast-grid-style-2/widget.php:19
-msgid "Podcast Grid Style 2"
-msgstr ""
-
-#: framework/widgets/podcast-grid-style-2/widget.php:377
-#: framework/widgets/podcast-loop-item-style-1/widget.php:144
-msgid "Play Link"
-msgstr ""
-
-#: framework/widgets/podcast-grid/widget.php:19
-msgid "Podcast Grid"
-msgstr ""
-
-#: framework/widgets/podcast-loop-item-style-1/widget.php:19
-msgid "Podcast Loop Item Style 1"
-msgstr ""
-
-#: framework/widgets/podcast-loop-item/widget.php:19
-msgid "Podcast Loop Item"
+#: framework/widgets/popular-services/widget.php:110
+#: framework/widgets/post-grid-style-1/widget.php:95
+#: framework/widgets/post-grid/widget.php:104
+#: framework/widgets/post-loop-item-style-1/widget.php:52
+#: framework/widgets/post-loop-item/widget.php:52
+#: framework/widgets/pricing-item-style-1/widget.php:69
+#: framework/widgets/pricing-item/widget.php:69
+#: framework/widgets/service-loop-item/widget.php:52
+#: framework/widgets/step-list/widget.php:167
+#: framework/widgets/therapist-loop-item/widget.php:52
+msgid "Image Ratio"
 msgstr ""
 
 #: framework/widgets/post-grid-style-1/widget.php:19
 msgid "Post Grid Style 1"
 msgstr ""
 
-#: framework/widgets/post-grid-style-1/widget.php:544
-#: framework/widgets/post-grid-style-2/widget.php:377
-#: framework/widgets/post-grid/widget.php:386
-#: framework/widgets/post-loop-item-style-1/widget.php:315
-#: framework/widgets/post-loop-item-style-2/widget.php:228
-#: framework/widgets/post-loop-item/widget.php:216
-msgid "Meta"
+#: framework/widgets/post-grid-style-1/widget.php:116
+#: framework/widgets/post-grid-style-1/widget.php:600
+#: framework/widgets/post-grid/widget.php:125
+#: framework/widgets/post-grid/widget.php:443
+msgid "Pagination"
 msgstr ""
 
-#: framework/widgets/post-grid-style-2/widget.php:19
-msgid "Post Grid Style 2"
+#: framework/widgets/post-grid-style-1/widget.php:635
+#: framework/widgets/post-grid/widget.php:478
+#: framework/widgets/testimonial-slider/widget.php:357
+#: framework/widgets/testimonial-slider/widget.php:399
+msgid "Color Current"
 msgstr ""
 
-#: framework/widgets/post-grid/widget.php:19
+#: framework/widgets/post-grid-style-1/widget.php:657
+#: framework/widgets/post-grid/widget.php:500
+msgid "Space"
+msgstr ""
+
+#: framework/widgets/post-grid/widget.php:23
 msgid "Post Grid"
 msgstr ""
 
@@ -1669,60 +1884,294 @@ msgstr ""
 msgid "Post Loop Item Style 1"
 msgstr ""
 
-#: framework/widgets/post-loop-item-style-2/widget.php:19
-msgid "Post Loop Item Style 2"
+#: framework/widgets/post-loop-item-style-1/widget.php:270
+msgid "Author"
 msgstr ""
 
-#: framework/widgets/post-loop-item/widget.php:19
+#: framework/widgets/post-loop-item/widget.php:20
 msgid "Post Loop Item"
 msgstr ""
 
-#: framework/widgets/pricing-tabs/widget.php:19
-msgid "Pricing Tabs"
+#: framework/widgets/post-loop-item/widget.php:138
+#: framework/widgets/pricing-item-style-1/widget.php:449
+#: framework/widgets/pricing-item/widget.php:412
+#: framework/widgets/service-loop-item/widget.php:138
+msgid "Background Content"
 msgstr ""
 
-#: framework/widgets/pricing-tabs/widget.php:297
-msgid "Navigation"
+#: framework/widgets/pricing-item-style-1/widget.php:24
+msgid "Pricing Item Style1"
 msgstr ""
 
-#: framework/widgets/pricing-tabs/widget.php:317
-msgid "Number"
+#: framework/widgets/pricing-item-style-1/widget.php:48
+#: framework/widgets/pricing-item/widget.php:48
+msgid "Images"
 msgstr ""
 
-#: framework/widgets/pricing-tabs/widget.php:380
-#: framework/widgets/pricing-tabs/widget.php:478
-#: install/class-tgm-plugin-activation.php:2405
-msgid "Active"
-msgstr ""
-
-#: framework/widgets/pricing-tabs/widget.php:553
+#: framework/widgets/pricing-item-style-1/widget.php:99
+#: framework/widgets/pricing-item-style-1/widget.php:336
+#: framework/widgets/pricing-item/widget.php:99
+#: framework/widgets/pricing-item/widget.php:312
+#: framework/widgets/service-loop-item/widget.php:211
 msgid "Price"
 msgstr ""
 
-#: framework/widgets/pricing-tabs/widget.php:615
-#: framework/widgets/step-list/widget.php:410
-msgid "Button"
+#: framework/widgets/pricing-item-style-1/widget.php:102
+#: framework/widgets/pricing-item/widget.php:102
+msgid "$200"
 msgstr ""
 
-#: framework/widgets/pricing-tabs/widget.php:831
-#: framework/widgets/pricing-tabs/widget.php:958
-msgid "Featured"
+#: framework/widgets/pricing-item-style-1/widget.php:108
+#: framework/widgets/pricing-item-style-1/widget.php:363
+#: framework/widgets/pricing-item/widget.php:108
+#: framework/widgets/pricing-item/widget.php:339
+msgid "Price After"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:111
+#: framework/widgets/pricing-item/widget.php:111
+msgid "/Month"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:117
+#: framework/widgets/pricing-item-style-1/widget.php:390
+#: framework/widgets/pricing-item/widget.php:117
+#: framework/widgets/pricing-item/widget.php:366
+msgid "Time"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:120
+#: framework/widgets/pricing-item/widget.php:120
+msgid "60 Mins"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:127
+#: framework/widgets/pricing-item-style-1/widget.php:460
+msgid "Description Info"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:142
+#: framework/widgets/pricing-item/widget.php:132
+msgid "This is the info"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:148
+msgid "Enable Strikethrough"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:150
+#: framework/widgets/site-box-phone/widget.php:50
+#: framework/widgets/time-list/widget.php:52
+#: framework/widgets/time-list/widget.php:76
+#: install/import-pack/import-functions.php:225
+msgid "Yes"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:151
+#: framework/widgets/site-box-phone/widget.php:51
+#: framework/widgets/time-list/widget.php:53
+#: framework/widgets/time-list/widget.php:77
+msgid "No"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:160
+#: framework/widgets/pricing-item-style-1/widget.php:487
+#: framework/widgets/pricing-item/widget.php:139
+#: framework/widgets/pricing-item/widget.php:423
+msgid "List Info"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:165
+msgid "Face masks"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:169
+msgid "Geothermal Spa"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:173
+msgid "Aroma therapy"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:186
+msgid "Book Now"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:208
+#: framework/widgets/pricing-item-style-1/widget.php:631
+#: framework/widgets/pricing-item/widget.php:184
+#: framework/widgets/pricing-item/widget.php:556
+msgid "Button More"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:211
+#: framework/widgets/pricing-item/widget.php:187
+msgid "pay per session."
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:218
+#: framework/widgets/pricing-item/widget.php:194
+msgid "Button More Url"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:279
+#: framework/widgets/pricing-item/widget.php:255
+msgid "Content Image"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:287
+msgid "Background Overlay Image"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:316
+#: framework/widgets/pricing-item/widget.php:292
+msgid "Heading Color Hover"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:343
+#: framework/widgets/pricing-item/widget.php:319
+msgid "Price Color"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:355
+#: framework/widgets/pricing-item/widget.php:331
+#: framework/widgets/site-box-phone/widget.php:231
+msgid "Price Typography"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:370
+#: framework/widgets/pricing-item/widget.php:346
+msgid "Price After Color"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:382
+#: framework/widgets/pricing-item/widget.php:358
+msgid "Price After Typography"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:397
+#: framework/widgets/pricing-item/widget.php:373
+msgid "Time Color"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:408
+#: framework/widgets/pricing-item/widget.php:384
+msgid "Time Background"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:436
+msgid "Background Images"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:479
+#: framework/widgets/pricing-item-style-1/widget.php:517
+#: framework/widgets/pricing-item/widget.php:442
+msgid "Info Typography"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:494
+msgid "Icon Info Color"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:505
+msgid "Text Info Color"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:525
+#: framework/widgets/pricing-item/widget.php:450
+msgid "Margin Bottom"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:638
+msgid "Button More Wrap Color"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:649
+#: framework/widgets/pricing-item/widget.php:563
+msgid "Button More Color"
+msgstr ""
+
+#: framework/widgets/pricing-item-style-1/widget.php:661
+#: framework/widgets/pricing-item/widget.php:575
+msgid "Button More Typography"
+msgstr ""
+
+#: framework/widgets/pricing-item/widget.php:24
+msgid "Pricing Item"
+msgstr ""
+
+#: framework/widgets/pricing-item/widget.php:144
+msgid "Eiusd tempor incididunt ut labore et dolore magna ."
+msgstr ""
+
+#: framework/widgets/pricing-item/widget.php:147
+msgid "Ut enim  minim veniam quis."
+msgstr ""
+
+#: framework/widgets/pricing-item/widget.php:150
+msgid "Proin efficitur, mauris vel condim entum pulvinar."
+msgstr ""
+
+#: framework/widgets/pricing-item/widget.php:162
+msgid "Subscribe Now"
+msgstr ""
+
+#: framework/widgets/pricing-item/widget.php:263
+msgid "Background Content Image"
+msgstr ""
+
+#: framework/widgets/pricing-item/widget.php:430
+msgid "Info Color"
 msgstr ""
 
 #: framework/widgets/product-loop-item/widget.php:19
 msgid "Product Loop Item"
 msgstr ""
 
-#: framework/widgets/service-loop-item/widget.php:19
+#: framework/widgets/service-loop-item/widget.php:20
 msgid "Service Loop Item"
 msgstr ""
 
-#: framework/widgets/service-loop-item/widget.php:216
-msgid "Excerpt"
+#: framework/widgets/services-list/widget.php:23
+msgid "Services List"
 msgstr ""
 
-#: framework/widgets/service-loop-item/widget.php:246
-msgid "Read More Link"
+#: framework/widgets/services-list/widget.php:214
+#: framework/widgets/site-information-style-1/widget.php:87
+#: framework/widgets/site-information-style-1/widget.php:111
+#: framework/widgets/site-information/widget.php:86
+#: framework/widgets/site-information/widget.php:111
+#: framework/widgets/time-list/widget.php:176
+msgid "Space Between"
+msgstr ""
+
+#: framework/widgets/site-box-phone/widget.php:24
+msgid "Site Box Phone"
+msgstr ""
+
+#: framework/widgets/site-box-phone/widget.php:48
+msgid "Enable Custom"
+msgstr ""
+
+#: framework/widgets/site-box-phone/widget.php:76
+#: framework/widgets/site-box-phone/widget.php:305 single-service.php:151
+msgid "Chat Us Anytime"
+msgstr ""
+
+#: framework/widgets/site-box-phone/widget.php:108
+msgid "Content Box"
+msgstr ""
+
+#: framework/widgets/site-box-phone/widget.php:143
+msgid "Gap"
+msgstr ""
+
+#: framework/widgets/site-box-phone/widget.php:163
+msgid "Content Spacing"
+msgstr ""
+
+#: framework/widgets/site-box-phone/widget.php:219
+msgid "Phone Color"
 msgstr ""
 
 #: framework/widgets/site-copyright/widget.php:15
@@ -1733,73 +2182,61 @@ msgstr ""
 msgid "Custom Copyright"
 msgstr ""
 
-#: framework/widgets/site-copyright/widget.php:59
-#: framework/widgets/site-social/widget.php:58
-msgid "Alignment"
-msgstr ""
-
-#: framework/widgets/site-copyright/widget.php:63
-#: framework/widgets/site-social/widget.php:62
-msgid "Left"
-msgstr ""
-
-#: framework/widgets/site-copyright/widget.php:67
-#: framework/widgets/site-social/widget.php:66
-msgid "Center"
-msgstr ""
-
-#: framework/widgets/site-copyright/widget.php:71
-#: framework/widgets/site-social/widget.php:70
-msgid "Right"
-msgstr ""
-
 #: framework/widgets/site-copyright/widget.php:112
 msgid "Link Color"
+msgstr ""
+
+#: framework/widgets/site-information-style-1/widget.php:15
+msgid "Site Information Style 1"
+msgstr ""
+
+#: framework/widgets/site-information-style-1/widget.php:37
+#: framework/widgets/site-information/widget.php:37
+msgid "Show Elements"
+msgstr ""
+
+#: framework/widgets/site-information-style-1/widget.php:64
+#: framework/widgets/site-information/widget.php:63
+msgid "Layout Style"
+msgstr ""
+
+#: framework/widgets/site-information-style-1/widget.php:68
+#: framework/widgets/site-information/widget.php:67
+msgid "Block"
+msgstr ""
+
+#: framework/widgets/site-information-style-1/widget.php:72
+#: framework/widgets/site-information/widget.php:71
+msgid "Inline"
+msgstr ""
+
+#: framework/widgets/site-information-style-1/widget.php:164
+msgid "Icon Background"
 msgstr ""
 
 #: framework/widgets/site-information/widget.php:15
 msgid "Site Information"
 msgstr ""
 
-#: framework/widgets/site-information/widget.php:37
-msgid "Show Elements"
+#: framework/widgets/site-information/widget.php:133
+#: framework/widgets/site-information/widget.php:205
+msgid "Separator"
 msgstr ""
 
-#: framework/widgets/site-information/widget.php:42
-msgid "Phone"
+#: framework/widgets/site-information/widget.php:229
+msgid "Width"
 msgstr ""
 
-#: framework/widgets/site-information/widget.php:44
-msgid "Address"
+#: framework/widgets/site-social-style-2/widget.php:15
+msgid "Site Social Style 2"
 msgstr ""
 
-#: framework/widgets/site-information/widget.php:64
-msgid "Layout Style"
+#: framework/widgets/site-social-style-2/widget.php:125
+msgid "Color Normal"
 msgstr ""
 
-#: framework/widgets/site-information/widget.php:68
-msgid "Block"
-msgstr ""
-
-#: framework/widgets/site-information/widget.php:72
-msgid "Inline"
-msgstr ""
-
-#: framework/widgets/site-information/widget.php:87
-#: framework/widgets/site-information/widget.php:111
-msgid "Space Between"
-msgstr ""
-
-#: framework/widgets/site-social/widget.php:15
+#: framework/widgets/site-social/widget.php:19
 msgid "Site Social"
-msgstr ""
-
-#: framework/widgets/site-social/widget.php:98
-msgid "Title Color"
-msgstr ""
-
-#: framework/widgets/site-social/widget.php:111
-msgid "Title Typography"
 msgstr ""
 
 #: framework/widgets/step-list/widget.php:21
@@ -1809,10 +2246,6 @@ msgstr ""
 #: framework/widgets/step-list/widget.php:58
 #: framework/widgets/step-list/widget.php:320
 msgid "Sub Title"
-msgstr ""
-
-#: framework/widgets/step-list/widget.php:94
-msgid "Button Link"
 msgstr ""
 
 #: framework/widgets/step-list/widget.php:104
@@ -1837,6 +2270,14 @@ msgstr ""
 #: framework/widgets/step-list/widget.php:136
 #: framework/widgets/step-list/widget.php:144
 msgid "This is description"
+msgstr ""
+
+#: framework/widgets/step-list/widget.php:113
+#: framework/widgets/step-list/widget.php:121
+#: framework/widgets/step-list/widget.php:129
+#: framework/widgets/step-list/widget.php:137
+#: framework/widgets/step-list/widget.php:145
+msgid "Read More"
 msgstr ""
 
 #: framework/widgets/step-list/widget.php:119
@@ -1868,64 +2309,92 @@ msgstr ""
 msgid "More Steps"
 msgstr ""
 
-#: framework/widgets/team-loop-item/widget.php:19
-msgid "Team Loop Item"
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:23
+msgid "Testimonial Loop Item Style 1"
 msgstr ""
 
-#: framework/widgets/team-loop-item/widget.php:274
-#: framework/widgets/testimonial-loop-item/widget.php:209
-#: framework/widgets/testimonial-slider/widget.php:379
-msgid "Job"
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:113
+msgid "Rating"
+msgstr ""
+
+#: framework/widgets/testimonial-loop-item-style-1/widget.php:160
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:134
+msgid "Name Author"
+msgstr ""
+
+#: framework/widgets/testimonial-loop-item-style-2/widget.php:19
+msgid "Testimonial Loop Item Style 2"
 msgstr ""
 
 #: framework/widgets/testimonial-loop-item/widget.php:19
 msgid "Testimonial Loop Item"
 msgstr ""
 
-#: framework/widgets/testimonial-loop-item/widget.php:135
+#: framework/widgets/testimonial-loop-item/widget.php:97
 #: framework/widgets/testimonial-slider/widget.php:305
 msgid "Quote Icon"
 msgstr ""
 
-#: framework/widgets/testimonial-loop-item/widget.php:281
-#: framework/widgets/testimonial-slider/widget.php:451
-msgid "Info Background"
-msgstr ""
-
-#: framework/widgets/testimonial-loop-item/widget.php:302
-#: framework/widgets/testimonial-slider/widget.php:471
-msgid "Background Color Hover"
+#: framework/widgets/testimonial-loop-item/widget.php:159
+#: framework/widgets/testimonial-slider/widget.php:379
+#: framework/widgets/therapist-loop-item/widget.php:187
+msgid "Job"
 msgstr ""
 
 #: framework/widgets/testimonial-slider/widget.php:19
 msgid "Testimonial Slider"
 msgstr ""
 
+#: framework/widgets/testimonial-slider/widget.php:451
+msgid "Info Background"
+msgstr ""
+
+#: framework/widgets/testimonial-slider/widget.php:471
+msgid "Background Color Hover"
+msgstr ""
+
 #: framework/widgets/testimonial-slider/widget.php:485
 msgid "Arrows"
 msgstr ""
 
-#: framework/widgets/widget.php:16
-msgid "Teams Grid With Filter"
+#: framework/widgets/therapist-loop-item/widget.php:20
+msgid "Therapist Loop Item"
 msgstr ""
 
-#: framework/widgets/widget.php:58
-msgid "Posts Number"
+#: framework/widgets/therapist-loop-item/widget.php:167
+msgid "Background Title"
 msgstr ""
 
-#: framework/widgets/widget.php:79
-msgid "Columns Gap"
+#: framework/widgets/therapist-loop-item/widget.php:204
+msgid "Background Job"
 msgstr ""
 
-#: framework/widgets/widget.php:99
-msgid "Rows Gap"
+#: framework/widgets/time-list/widget.php:50
+msgid "Enable Icon"
 msgstr ""
 
-#: functions.php:6
+#: framework/widgets/time-list/widget.php:74
+msgid "Enable Custom List"
+msgstr ""
+
+#: framework/widgets/time-list/widget.php:90
+#: framework/widgets/time-list/widget.php:114
+msgid "Monday"
+msgstr ""
+
+#: framework/widgets/time-list/widget.php:119
+msgid "Tuesday To Friday"
+msgstr ""
+
+#: framework/widgets/time-list/widget.php:124
+msgid "8:00 am - 3:30 pm"
+msgstr ""
+
+#: functions.php:7
 msgid "Main Sidebar"
 msgstr ""
 
-#: functions.php:32
+#: functions.php:35
 msgctxt "Google font: on or off"
 msgid "on"
 msgstr ""
@@ -2150,6 +2619,10 @@ msgstr ""
 
 #: install/class-tgm-plugin-activation.php:2403
 msgid "Installed But Not Activated"
+msgstr ""
+
+#: install/class-tgm-plugin-activation.php:2405
+msgid "Active"
 msgstr ""
 
 #: install/class-tgm-plugin-activation.php:2411
@@ -2411,22 +2884,30 @@ msgid "Elementor Pro"
 msgstr ""
 
 #: install/import-pack/data/import.php:17
-msgid "Advanced Custom Fields PRO"
+msgid "Smart Slider 3 Pro"
 msgstr ""
 
 #: install/import-pack/data/import.php:22
+msgid "Advanced Custom Fields PRO"
+msgstr ""
+
+#: install/import-pack/data/import.php:27
+msgid "Gravity Forms"
+msgstr ""
+
+#: install/import-pack/data/import.php:32
 msgid "Newsletter"
 msgstr ""
 
-#: install/import-pack/data/import.php:26
+#: install/import-pack/data/import.php:36
 msgid "WooCommerce"
 msgstr ""
 
-#: install/import-pack/data/import.php:37
+#: install/import-pack/data/import.php:47
 msgid "Seine Demo"
 msgstr ""
 
-#: install/import-pack/data/import.php:38
+#: install/import-pack/data/import.php:48
 msgid "Seine main demo."
 msgstr ""
 
@@ -2468,8 +2949,8 @@ msgstr ""
 
 #: install/import-pack/import-functions.php:183
 msgid ""
-"Thank you creating with Seine. Do not hesitate to contact us if you "
-"need help!"
+"Thank you creating with Seine. Do not hesitate to contact us if you need "
+"help!"
 msgstr ""
 
 #: install/import-pack/import-functions.php:204
@@ -2482,10 +2963,6 @@ msgstr ""
 
 #: install/import-pack/import-functions.php:222
 msgid "Skip"
-msgstr ""
-
-#: install/import-pack/import-functions.php:225
-msgid "Yes"
 msgstr ""
 
 #: install/import-pack/import-functions.php:272
@@ -2659,16 +3136,12 @@ msgid ""
 "GeoIP database from MaxMind."
 msgstr ""
 
-#: single-podcast.php:77
-msgid "Share Podcast:"
+#: single-service.php:31
+msgid "Top Services"
 msgstr ""
 
-#: single-service.php:101
-msgid "Time Schedule"
-msgstr ""
-
-#: single-service.php:105
-msgid "Reviews"
+#: single-therapist.php:136
+msgid "Follow Me:"
 msgstr ""
 
 #. translators: %s: Quantity.
@@ -2685,20 +3158,33 @@ msgstr ""
 msgid "Product quantity"
 msgstr ""
 
-#: woocommerce/shop-helper.php:115
+#: woocommerce/shop-helper.php:123
 msgid "In Stock"
 msgstr ""
 
-#: woocommerce/shop-helper.php:118
+#: woocommerce/shop-helper.php:126
 msgid "Availability: "
 msgstr ""
 
-#: woocommerce/shop-helper.php:144
+#: woocommerce/shop-helper.php:161
 msgid "Subtitle"
 msgstr ""
 
-#: woocommerce/shop-helper.php:145
-msgid "Enter the subtitle."
+#: woocommerce/shop-helper.php:197
+msgid "Item Sold"
+msgstr ""
+
+#: woocommerce/shop-helper.php:227
+msgid "Additional Information:"
+msgstr ""
+
+#: woocommerce/shop-helper.php:236
+msgid "Key Ingredient:"
+msgstr ""
+
+#: woocommerce/shop-helper.php:245
+#, php-format
+msgid "Reviews <span>%d</span>"
 msgstr ""
 
 #: woocommerce/single-product/product-image.php:90
@@ -2719,12 +3205,12 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Seine is a fully configurable and easy to use responsive WordPress "
-"Theme  with a lot of great features."
+"Seine is a fully configurable and easy to use responsive WordPress Theme  "
+"with a lot of great features."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "bearsthemes"
+msgid "Bearsthemes"
 msgstr ""
 
 #. Author URI of the plugin/theme

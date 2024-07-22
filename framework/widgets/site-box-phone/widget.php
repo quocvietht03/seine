@@ -86,7 +86,7 @@ class Widget_SiteBoxPhone extends Widget_Base
 				'label' => esc_html__('Phone', 'seine'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__('', 'seine'),
+				'default' => '',
 				'condition' => [
 					'phone_custom_enable' => 'yes',
 				],

@@ -49,6 +49,7 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      word-break: break-word;
       margin: 0 0 5px 0;
       @media(max-width:991px){
         font-size: 48px;
@@ -70,6 +71,7 @@
       font-weight: 500;
       line-height: normal;
       text-transform: uppercase;
+      word-break: break-word;
       display: flex;
       justify-content: center;
       grid-gap: 10px;
