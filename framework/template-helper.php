@@ -122,7 +122,14 @@ if (!function_exists('seine_page_title')) {
 			if (is_category()){
 				single_cat_title();
 			}elseif(get_post_type() == 'service'||get_post_type() == 'therapist'){
-				single_term_title();
+				if(is_post_type_archive('therapist')) {
+					esc_html_e('SPA Therapist', 'seine');
+				} elseif(is_post_type_archive('service')) {
+					esc_html_e('SPA Services', 'seine');
+				} else {
+					single_term_title();
+				}
+				
 			}elseif (get_post_type() == 'product'){
 				if(wc_get_page_id( 'shop' )){
 					echo get_the_title( wc_get_page_id( 'shop' ) );
@@ -173,9 +180,9 @@ if (!function_exists('seine_page_title_blurry')) {
 		ob_start();
 		if(is_singular('post')){
 			esc_html_e('Blog Details', 'seine');
-		}elseif(is_singular('therapist')){
+		}elseif(is_singular('therapist') || is_post_type_archive('therapist')){
 			esc_html_e('SPA Therapist', 'seine');
-		}elseif(is_singular('service')){
+		}elseif(is_singular('service') || is_post_type_archive('service')){
 			esc_html_e('SPA Services', 'seine');
 		}elseif(is_singular('product')){
 			esc_html_e('Product Details', 'seine');

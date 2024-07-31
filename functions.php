@@ -167,7 +167,19 @@ if (function_exists('get_field')) {
 	add_filter('body_class', 'seine_body_class');
 }
 
-// Custom js Gravity
+/* Custom number posts per page */
+add_action('pre_get_posts', 'bt_custom_posts_per_page');
+function bt_custom_posts_per_page($query) {
+	if ( $query->is_post_type_archive( 'service' ) && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'posts_per_page', 12 );
+	}
+
+	if ( $query->is_post_type_archive( 'therapist' ) && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'posts_per_page', 12 );
+	}
+};
+
+/* Custom js Gravity */
 add_action('gform_register_init_scripts', 'bt_custom_gform_init_script', 10, 2);
 function bt_custom_gform_init_script($form, $field_values)
 {

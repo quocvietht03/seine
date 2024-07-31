@@ -11,8 +11,7 @@
     }
     &--featured {
       .bt-cover-image {
-        min-height: 359px;
-        object-fit: cover;
+        padding-bottom: 95%;
       }
     }
 
@@ -22,10 +21,10 @@
     &--content {
       position: absolute;
       bottom: 0;
-      padding: 27px 31px 21px;
+      padding: 27px 30px 21px;
       background: #f7f4ef;
-      left: 31px;
-      right: 31px;
+      left: 30px;
+      right: 30px;
       @media (max-width: 1100px) and (min-width: $break-tl) {
         left: 15px;
         right: 15px;
@@ -89,7 +88,8 @@
       font-weight: 500;
     }
     &--button-booknow {
-      margin: 0 31px;
+      display: flex;
+      margin: 0 30px;
       @media (max-width: 1100px) and (min-width: $break-tl) {
         margin: 0 15px;
       }
@@ -110,6 +110,25 @@
     }
   }
 }
+
+.post-type-archive-service {
+  .bt-grid-post {
+    @extend .__bt-service-style-default;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    .bt-post {
+      width: calc(25% - 22.5px);
+      @media (max-width: $break-tl) {
+        width: calc(50% - 15px);
+      }
+      @media (max-width: $break-sm) {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .single-service {
   .bt-main-content-ss {
     @media (max-width: $break-md) {
@@ -165,7 +184,7 @@
           border-top: 23px solid $color-accent;
           border-left: 19px solid transparent;
           position: absolute;
-          left: -19px;
+          left: -18px;
           top: 0;
         }
         &::after {
@@ -176,7 +195,7 @@
           border-bottom: 23px solid $color-accent;
           border-left: 19px solid transparent;
           position: absolute;
-          left: -19px;
+          left: -18px;
           bottom: 0;
         }
       }
